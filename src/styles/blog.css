@@ -1,0 +1,15 @@
+section.blog .content{
+	max-width: 870px;
+}
+section.blog .content .copy h1{
+	font-size: 2.6rem;
+}
+section.blog .content .copy p{
+	font-size: 1.1rem;
+	color: var(--textPrimary);
+}
+section.blog .posts{
+	list-style: none;
+	padding: none;
+	margin: none;
+}
