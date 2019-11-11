@@ -1,0 +1,65 @@
+/* Header */
+header{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	position: sticky;
+	width:100%;
+	height: 60px;
+	padding: 2rem 10rem 0;
+}
+header .logo{
+	height: 40px;	
+}
+header .logo img{
+	max-height: 100%;
+}
+header nav{
+	display: flex;
+}
+header nav a{
+	box-sizing: border-box;
+	color: var(--textAlt);
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 1.2em;
+
+	line-height: 10px;
+}
+header nav a:first-child{
+	margin-left: 0;
+}
+header nav a:last-child{
+	margin-right: 0;
+}
+header nav a::after{
+	display: inline-block;
+	content: "";
+	height: 2px;
+	width: 100%;
+	background: var(--primary);
+
+	transition:
+		height 100ms ease-out;
+}
+header nav a:hover::after,
+header nav a:active::after{
+	height: 4px;
+}
+header .hamburger{
+	display: none;
+	font-size: .9em;
+	cursor: pointer;
+}
+header .hamburger img, 
+header .hamburger span{
+	display: block;
+	text-align:center;
+}
+header .hamburger img{
+	width: 36px;
+	height: 36px;
+}
