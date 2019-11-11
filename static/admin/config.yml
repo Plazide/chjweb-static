@@ -5,12 +5,17 @@ backend:
 media_folder: static/img
 public_folder: /images
 
+slug: 
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
   - name: "blog"
     label: "Blogg"
     folder: content/blog
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}"     
     editor:
       preview: false
     fields: 
