@@ -14,8 +14,8 @@ export default function blogg({ data }) {
 			<section className="blog">
 				<div className="content">
 					<div className="copy">
-						<h1>CHJ Webblösningar blogg</h1>
-						<p>Jag, Carl Hallén Jansson, personen som driver CHJ Webblösningar, försöker dokumentera mina erfarenheter och prohekt genom den här bloggen. Du kan alltså läsa om projektet som jag har slutfört, och andra saker som jag lärt mig under min tid som egenföretagare.</p>
+						<h1>Följ CHJ Webblösningar i livet som företagare</h1>
+						<p>Mitt namn Carl och jag är egenföretagare och webbutvecklare. Följ mitt arbete och ta del av mina erfarenheter i den här bloggen.</p>
 					</div>
 
 					<ul className="posts">
@@ -23,7 +23,8 @@ export default function blogg({ data }) {
 							const post = item.node;
 
 							return(
-								<Post 
+								<Post
+									key={post.id} 
 									title={post.frontmatter.title}
 									description={post.frontmatter.description}
 									published={post.frontmatter.publish_date}
@@ -60,8 +61,10 @@ query BloggQuery{
 					title
 					publish_date(locale: "sv", formatString: "DD MMM, YYY")
 					description
+					image
 				}
 				timeToRead
+				id
 			}
 		}
 	}
