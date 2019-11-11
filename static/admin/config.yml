@@ -16,7 +16,7 @@ site_url: https://chjweb-static.netlify.com
 collections:
   - name: "blog"
     label: "Blogg"
-    label_singular: "Inlägg",
+    label_singular: "Inlägg"
     folder: content/blog
     preview_path: "blogg/{{slug}}"
     create: true
