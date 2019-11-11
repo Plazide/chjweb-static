@@ -1,0 +1,37 @@
+.button{
+	text-decoration: none;
+	font-size: 1.2rem;
+	outline: none;
+	font-family: "Raleway", "Roboto", sans-serif;
+
+	border-radius: 4px;
+	color: var(--textAlt);
+	padding: 1rem 2rem;
+}
+
+/* Outlined button */
+.button-outlined{
+	border: 1px solid var(--primary);
+	color: var(--primary);
+
+	transition: background 150ms ease-in-out;
+}
+.button-outlined:hover,
+.button-outlined:active,
+.button-outlined:focus{
+	background: var(--lightShadow);
+}
+
+/* Filled button */
+.button-filled{
+	background: var(--primary);
+	color: var(--textSecondary);
+	box-shadow: 0 2px 6px var(--shadow);
+
+	transition: box-shadow 150ms ease-in-out;
+}
+.button-filled:hover,
+.button-filled:active,
+.button-filled:focus{
+	box-shadow: 0 6px 8px var(--shadow);
+}
