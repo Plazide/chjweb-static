@@ -24,7 +24,8 @@ collections:
     editor:
       preview: false
     fields: 
-      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Titel", name: "title", widget: "string", required: true }
+      - { label: "URL", name: "slug", widget: "string", default: "{{slug}}", required: true }
       - { label: "Publiceringsdatum", name: publish-date, widget: "datetime"}
       - { label: "Beskrivning", name: "description", widget: "string" }
       - { label: "Bild", name: "image", widget: "image" }
