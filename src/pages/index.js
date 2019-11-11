@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "gatsby";
 
+// Structure
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
+// Components
+import ButtonLink from "../components/ButtonLink";
+
+// Images
+import illustrationUrl, { ReactComponent as Illustration} from "../images/illustrations/create.svg";
 
 const IndexPage = () => (
 	<Layout>
@@ -10,12 +16,16 @@ const IndexPage = () => (
 		<section className="hero frontpage">
 			<div className="content">
 				<div className="copy">
-					<h1>Jag utvecklar hemsidor</h1>
+					<h1>Jag skapar hemsidor</h1>
 					<p>Jag skapar moderna och snabba hemsidor till ett ovanligt lågt pris.</p>
 					<div className="btns">
-						<a href="#" className="filled-button">Anlita mig</a>
-						<a href="#" className="outlined-button">Kontakta mig</a>
+						<ButtonLink href="#" variant="filled">Anlita mig</ButtonLink>
+						<ButtonLink href="#" variant="outlined">Kontakt mig</ButtonLink>
 					</div>
+				</div>
+
+				<div className="illustration">
+					<Illustration />
 				</div>
 			</div>
 		</section>
