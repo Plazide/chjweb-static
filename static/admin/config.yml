@@ -27,5 +27,5 @@ collections:
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Publiceringsdatum", name: publish-date, widget: "datetime"}
       - { label: "Beskrivning", name: "description", widget: "string" }
-      - { label: "Bild", name: "image", widget: "image", config: { multiple: false } }
+      - { label: "Bild", name: "image", widget: "image" }
       - { label: "innehåll", name: "body", widget: "markdown" }
