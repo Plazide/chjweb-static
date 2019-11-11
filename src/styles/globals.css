@@ -6,6 +6,8 @@
 	--primary: #c63d3d;
 	--secondary: #e99029;
 	--textAlt2: #232535;
+
+	--contentWidth: 1200px;
 }
 
 /* General */
@@ -20,9 +22,7 @@ html, body{
 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	/* Background pattern from [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns) */
-	/* background: url("../img/backgrounds/hexellence.png"); */
+	
 	background-repeat: repeat;
 }
 h1,h2,h3,h4,a{
@@ -49,7 +49,7 @@ p a:hover{
 	text-decoration: underline;
 }
 .content{
-	width: 1200px;
+	width: var(--contentWidth);
 	margin: auto;
 	padding: 5rem 0;
 }

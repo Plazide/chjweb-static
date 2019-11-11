@@ -17,7 +17,7 @@ export default function Footer({ siteTitle }) {
 		<footer>
 			<div className="content">
 				<div className="row">
-					<img src={LogoLight} alt={siteTitle} />
+					<img src={LogoLight} alt={siteTitle} alt={siteTitle} />
 				</div>
 				<Contact />
 				<Explore />
@@ -53,7 +53,7 @@ function Follow(){
 	return (
 		<div className="column">
 			<h3>Följ</h3>
-			<ul>
+			<ul className="social">
 				<li>
 					<SocialLink 
 						icon={FacebookIcon} 

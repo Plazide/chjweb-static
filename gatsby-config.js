@@ -22,8 +22,8 @@ module.exports = {
 				name: "chj-webblösningar",
 				short_name: "chjweb",
 				start_url: "/",
-				background_color: "#663399",
-				theme_color: "#663399",
+				background_color: "#ffffff",
+				theme_color: "#c63d3d",
 				display: "minimal-ui",
 				icon: "src/images/favicon.png" // This path is relative to the root of the site.
 			}

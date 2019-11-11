@@ -7,10 +7,12 @@ import Navigation from "./navigation";
 import "./styles/header.css";
 
 const Header = ({ siteTitle }) => (
-  <header>
-		<Logo />
-		<Navigation />
-  </header>
+	<header>
+		<div className="wrapper">
+	 		<Logo siteTitle={siteTitle} />
+			<Navigation />
+		</div>
+	</header>
 )
 
 Header.propTypes = {
