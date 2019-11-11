@@ -9,8 +9,6 @@ import "../styles/blog.css";
 export default function blogg({ data }) {
 	const posts = data.allMarkdownRemark.edges;
 
-	console.log(posts);
-
 	return (
 		<Layout>
 			<section className="blog">
