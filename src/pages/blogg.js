@@ -1,5 +1,6 @@
 import React from 'react'
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, Link } from "gatsby";
+import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 
@@ -21,15 +22,24 @@ export default function blogg({ data }) {
 					<ul className="posts">
 						{posts.map( (item, index) => {
 							const post = item.node;
+							const featured = index === 0;
+
+							const slug = post.fields.slug;
+							const imageFixed = post.frontmatter.image.childImageSharp.fixed;
+							const imageFluid = post.frontmatter.image.childImageSharp.fluid;
+
+							const image = featured ? imageFluid : imageFixed;
 
 							return(
 								<Post
-									key={post.id} 
+									key={slug}
+									image={image}
+									featured={featured}
+									slug={slug}
 									title={post.frontmatter.title}
 									description={post.frontmatter.description}
 									published={post.frontmatter.publish_date}
 									readTime={post.timeToRead}
-									index={index}
 								/>
 							);
 						})}
@@ -40,13 +50,20 @@ export default function blogg({ data }) {
 	)
 }
 
-function Post({ index, title, description, published, readTime }){
-	const featured = index === 0 ? "featured" : "";
+function Post({ title, description, published, readTime, image, slug, featured }){
+	const Image = featured ? <Img fluid={image} /> : <Img fixed={image} />;
 
 	return (
-		<li className={`post ${featured}`}>
-			<h2>{title}</h2>
-			<p>{description}</p>
+		<li className={`post ${featured ? "featured" : ""}`}>
+			<Link to={`/blogg/${slug}`}>
+				{Image}
+				<div className="meta">
+					<span className="published">{published}</span>
+					<span className="read-time">{readTime} minuter</span>
+				</div>
+				<h2>{title}</h2>
+				<p>{description}</p>
+			</Link>
 		</li>
 	);
 }
@@ -59,12 +76,23 @@ query BloggQuery{
 			node {
 				frontmatter {
 					title
-					publish_date(locale: "sv", formatString: "DD MMM, YYY")
+					publish_date(locale: "sv", formatString: "DD MMM, Y")
 					description
-					image
+					image {
+						childImageSharp {
+							fixed(width: 560, height: 345, quality: 70) {
+								...GatsbyImageSharpFixed
+							}
+							fluid(maxWidth: 870, maxHeight: 380, quality: 70) {
+								...GatsbyImageSharpFluid
+							}
+						}
+					}
 				}
 				timeToRead
-				id
+				fields {
+					slug
+				}
 			}
 		}
 	}
