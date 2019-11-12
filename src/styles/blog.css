@@ -1,7 +1,11 @@
 section.blog .content{
 	max-width: 870px;
 }
+section.blog .content .copy{
+	margin-bottom: 6rem;
+}
 section.blog .content .copy h1{
+	margin-top: 0;
 	font-size: 2.6rem;
 }
 section.blog .content .copy p{
@@ -10,6 +14,112 @@ section.blog .content .copy p{
 }
 section.blog .posts{
 	list-style: none;
-	padding: none;
-	margin: none;
+	padding: 0;
+	margin: 0;
+
+	width: 100%;
+}
+section.blog .posts .post a{
+	text-decoration: none;
+	color: var(--textAlt);
+}
+section.blog .posts .post .gatsby-image-wrapper{
+	border: 1px solid var(--textPrimary);
+	box-shadow: 2px 4px 10px var(--lightShadow);
+}
+section.blog .posts .post .meta{
+	color: var(--textPrimary);
+	margin: .5rem 0;
+	font-weight: 300;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+section.blog .posts .post h2{
+	margin: 0;
+}
+section.blog .posts .post p{
+	margin-top: 7px;
+}
+
+
+section.blog .posts .post.featured{
+	width: 100%;
+}
+
+/* Post page */
+.post-heading{
+	position: relative;
+}
+.post-heading .featured-image{
+	height: 40vh;
+	border: 1px solid var(--textPrimary);
+	box-shadow: 2px 4px 10px var(--lightShadow);
+}
+.post-heading .title{
+	left: 0;
+	right: 0;
+
+	text-align: center;
+	box-sizing: border-box;
+
+	display: inline-block;
+	width: 800px;
+	max-width: 90%;
+	background: var(--textSecondary);
+	position: absolute;
+	padding: 2rem;
+	margin: 0 auto;
+
+	box-shadow: 0 3px 10px var(--shadow);
+
+	transform: translateY(calc(-50vh / 2));
+}
+.post-heading .title h1{
+	color: var(--primary);
+	margin:0;
+
+	font-family: "Roboto", Verdana, sans-serif;
+}
+.post-heading .meta{
+	box-sizing: border-box;
+
+	display: flex;
+	width: 800px;
+	max-width: 90%;
+	margin: .4rem auto 2rem;
+
+	color: var(--textPrimary);
+	font-weight: 300;
+
+	flex-direction: row;
+	justify-content: space-between;
+}
+.post-body{
+	width: 800px;
+	max-width: 90%;
+
+	margin: 3rem auto;
+
+	font-family: "Yrsa", serif;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+.post-body h1,
+.post-body h2,
+.post-body h3{
+	margin-bottom: 0;
+	font-family: "Roboto", sans-serif;
+}
+.post-body p{
+	margin-top: 7px;
+}
+.post-body code{
+	background: var(--textSecondary);
+	padding: 0 .3rem;
+	font-family: monospace;
+}
+.post-body ul li,
+.post-body ol li{
+	margin-bottom: 1rem;
 }
