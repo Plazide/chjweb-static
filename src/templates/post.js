@@ -3,6 +3,24 @@ import { graphql } from 'gatsby'
 import rehypeReact from "rehype-react";
 import Img from "gatsby-image";
 
+// Share buttons
+import {
+	TwitterShareButton,
+	TwitterIcon,
+
+	FacebookShareButton,
+	FacebookIcon,
+
+	RedditShareButton,
+	RedditIcon,
+
+	LinkedinShareButton,
+	LinkedinIcon,
+
+	EmailShareButton,
+	EmailIcon
+} from "react-share";
+
 // Components
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -16,11 +34,14 @@ const renderAst = new rehypeReact({
 
 export default function post({ data }) {
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
+	const slug = data.markdownRemark.fields.slug;
 	const title = data.markdownRemark.frontmatter.title;
 	const description = data.markdownRemark.frontmatter.description;
 	const published = data.markdownRemark.frontmatter.publish_date;
 	const readTime = data.markdownRemark.timeToRead;
 	const htmlAst = data.markdownRemark.htmlAst;
+
+	const shareUrl = `https://www.chjweb.se/blogg/${slug}`;
 
 	return (
 		<Layout>
@@ -36,12 +57,59 @@ export default function post({ data }) {
 						<span>{readTime} minuter</span>
 					</div>
 				</div>
-				
+				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size="48" />
 				<section className="post-body">
 					<div>{renderAst(htmlAst)}</div>
 				</section>
+				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size="48" />
 			</article>
 		</Layout>
+	)
+}
+
+function SocialShare({ title, shareUrl, twitterVia, size }){
+	return (
+		<div className="share-area">
+			<TwitterShareButton via={twitterVia} title={title} url={shareUrl}>
+				<TwitterIcon 
+					iconBgStyle={{fill: "#1da1f2"}} 
+					logoFillColor="#f7f7f2" 
+					size={size}
+				/>
+			</TwitterShareButton>
+
+			<FacebookShareButton title={title} url={shareUrl}>
+				<FacebookIcon 
+					iconBgStyle={{fill: "#4267B2"}} 
+					logoFillColor="#f7f7f2" 
+					size={size}
+				/>
+			</FacebookShareButton>
+
+			<RedditShareButton title={title} url={shareUrl}>
+				<RedditIcon 
+					iconBgStyle={{fill: "#ff4500"}} 
+					logoFillColor="#f7f7f2"  
+					size={size}
+				/>
+			</RedditShareButton>
+
+			<LinkedinShareButton title={title} url={shareUrl}>
+				<LinkedinIcon 
+					iconBgStyle={{fill: "#2867b2"}} 
+					logoFillColor="#f7f7f2"  
+					size={size}
+				/>
+			</LinkedinShareButton>
+
+			<EmailShareButton title={title} url={shareUrl}>
+				<EmailIcon 
+					iconBgStyle={{fill: "#56535e"}} 
+					logoFillColor="#f7f7f2" 
+					size={size}
+				/>
+			</EmailShareButton>
+		</div>
 	)
 }
 
@@ -62,6 +130,9 @@ query PostQuery($slug: String!){
 		}
 		timeToRead
 		htmlAst
+		fields {
+			slug
+		}
 	}
 }
 `

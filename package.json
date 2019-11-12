@@ -26,6 +26,7 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
+    "react-share": "^3.0.1",
     "rehype-react": "^4.0.1"
   },
   "devDependencies": {

@@ -22,6 +22,8 @@ section.blog .posts{
 section.blog .posts .post a{
 	text-decoration: none;
 	color: var(--textAlt);
+
+	font-family: "Roboto", sans-serif;
 }
 section.blog .posts .post .gatsby-image-wrapper{
 	border: 1px solid var(--textPrimary);
@@ -37,6 +39,7 @@ section.blog .posts .post .meta{
 }
 section.blog .posts .post h2{
 	margin: 0;
+	font-family: "Roboto", sans-serif;
 }
 section.blog .posts .post p{
 	margin-top: 7px;
@@ -48,6 +51,20 @@ section.blog .posts .post.featured{
 }
 
 /* Post page */
+.share-area{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+
+	max-width: 800px;
+	margin: auto;
+}
+.share-area .SocialMediaShareButton{
+	margin: 0 .4rem;
+	cursor: pointer;
+}
+
 .post-heading{
 	position: relative;
 }
