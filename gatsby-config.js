@@ -10,6 +10,13 @@ module.exports = {
 		{
 			resolve: "gatsby-source-filesystem",
 			options: {
+				name: "media",
+				path: `${__dirname}/src/media`
+			}
+		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
 				name: "images",
 				path: `${__dirname}/src/images`
 			}
@@ -25,6 +32,7 @@ module.exports = {
 			resolve: "gatsby-transformer-remark",
 			options: {
 				plugins: [
+					"gatsby-remark-component",
 					"gatsby-remark-relative-images",
 					{
 						resolve: "gatsby-remark-images",
