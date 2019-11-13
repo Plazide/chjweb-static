@@ -1,6 +1,6 @@
 ---
 title: Ny hemsida åt sjötorps vandrarhem
-publish-date: 2019-11-12T09:39:23.152Z
+date: 2019-11-12T09:39:23.152Z
 description: Sjötorps Vandrarhem har fått en ny hemsida
 image: /img/framsida.jpg
 ---
