@@ -98,6 +98,41 @@ section.hero{
 	padding: 4rem 0 10rem;
 	position: relative;
 }
+section.hero .featured{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	background: var(--textSecondary);
+	border: 1px solid var(--textAlt);
+	padding: .5rem 2rem;
+
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: .9rem;
+	color: var(--textPrimary);
+	text-decoration: none;
+	border-radius: 20px;
+
+	margin-bottom: 2rem;
+	opacity: 0;
+
+	transition: box-shadow 100ms ease-out;
+	animation: fadeIn 500ms 1s ease-in forwards;
+}
+section.hero .featured:hover,
+section.hero .featured:active,
+section.hero .featured:focus{
+	box-shadow: 0 3px 6px var(--shadow);
+}
+section.hero .featured .title{
+	font-weight: 600;
+	margin-left: .2rem;
+	margin-right: auto;
+}
 section.hero .background{
 	position: absolute;
 	z-index: -1;
