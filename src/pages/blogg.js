@@ -71,7 +71,7 @@ function Post({ title, description, published, readTime, image, slug, featured }
 
 export const pageQuery = graphql`
 query BloggQuery{
-	allMarkdownRemark {
+	allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date] }) {
 		edges {
 			node {
 				frontmatter {
