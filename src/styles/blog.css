@@ -53,6 +53,8 @@ section.blog .posts .post.featured{
 /* Post page */
 .blog-posting{
 	padding-bottom: 4rem;
+
+	text-rendering: optimizeLegibility;
 }
 
 .share-area{
