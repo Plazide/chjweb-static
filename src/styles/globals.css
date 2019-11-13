@@ -95,7 +95,14 @@ h2.underlined{
 
 /* Hero section */
 section.hero{
-	padding: 10rem 0;
+	padding: 4rem 0 10rem;
+	position: relative;
+}
+section.hero .background{
+	position: absolute;
+	z-index: -1;
+	bottom: 0;
+	width: 100%;
 }
 section.hero .content{
 	display: flex;
