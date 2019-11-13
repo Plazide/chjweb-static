@@ -37,7 +37,7 @@ export default function post({ data }) {
 	const slug = data.markdownRemark.fields.slug;
 	const title = data.markdownRemark.frontmatter.title;
 	const description = data.markdownRemark.frontmatter.description;
-	const published = data.markdownRemark.frontmatter.publish_date;
+	const published = data.markdownRemark.frontmatter.date;
 	const readTime = data.markdownRemark.timeToRead;
 	const htmlAst = data.markdownRemark.htmlAst;
 
@@ -46,7 +46,7 @@ export default function post({ data }) {
 	return (
 		<Layout>
 			<SEO title={title + " | Blogg"} description={description} />
-			<article>
+			<article className="blog-posting">
 				<div className="post-heading">
 					<Img fluid={featuredImage} className="featured-image" />
 					<div className="title">
@@ -78,7 +78,7 @@ function SocialShare({ title, shareUrl, twitterVia, size }){
 				/>
 			</TwitterShareButton>
 
-			<FacebookShareButton title={title} url={shareUrl}>
+			<FacebookShareButton quote={title} url={shareUrl}>
 				<FacebookIcon 
 					iconBgStyle={{fill: "#4267B2"}} 
 					logoFillColor="#f7f7f2" 
@@ -119,7 +119,7 @@ query PostQuery($slug: String!){
 		frontmatter{
 			title
 			description
-			publish_date(formatString: "DD MMM, Y", locale: "sv")
+			date(formatString: "DD MMM, Y", locale: "sv")
 			image {
 				childImageSharp {
 					fluid(maxWidth: 2080, maxHeight: 564){

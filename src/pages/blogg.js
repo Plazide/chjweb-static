@@ -38,7 +38,7 @@ export default function blogg({ data }) {
 									slug={slug}
 									title={post.frontmatter.title}
 									description={post.frontmatter.description}
-									published={post.frontmatter.publish_date}
+									published={post.frontmatter.date}
 									readTime={post.timeToRead}
 								/>
 							);
@@ -76,7 +76,7 @@ query BloggQuery{
 			node {
 				frontmatter {
 					title
-					publish_date(locale: "sv", formatString: "DD MMM, Y")
+					date(locale: "sv", formatString: "DD MMM, Y")
 					description
 					image {
 						childImageSharp {
