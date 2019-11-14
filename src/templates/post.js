@@ -57,11 +57,11 @@ export default function post({ data }) {
 						<span>{readTime} minuter</span>
 					</div>
 				</div>
-				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size="48" />
+				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size={48} />
 				<section className="post-body">
 					<div>{renderAst(htmlAst)}</div>
 				</section>
-				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size="48" />
+				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size={48} />
 			</article>
 		</Layout>
 	)
