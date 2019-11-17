@@ -109,7 +109,45 @@ module.exports = {
 		"gatsby-transformer-sharp",
 		"gatsby-plugin-sharp",
 		"gatsby-plugin-netlify-cms",
-		"gatsby-plugin-sitemap",
+		{
+			resolve: "gatsby-plugin-sitemap",
+			options: {
+				query: `
+				{
+					site {
+						siteMetadata {
+							siteUrl
+						}
+					}
+					allSitePage {
+						edges {
+							node {
+								path
+							}
+						}
+					}
+				}
+				`,
+				serialize: ({ site, allSitePage }) => {
+					return allSitePage.edges.map( edge => {
+						const path = edge.node.path;
+						let priority = 0.8;
+						let changefreq = "daily";
+						let url = site.siteMetadata.siteUrl + path;
+
+
+						priority = /^\/integritetspolicy/.test(path) ? 0.2 : priority;
+						priority = /^\/blogg\/.+/.test(path) ? 0.6 : priority;
+
+						return {
+							url,
+							changefreq,
+							priority
+						}
+					})
+				}
+			}
+		},
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {
