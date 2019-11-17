@@ -48,6 +48,11 @@ const IndexPage = ({ data }) => (
 		</section>
 
 		<section className="features">
+			<div className="copy intro">
+				<h1>Varför är CHJ Webblösningar annorlunda?</h1>
+				<p>Det som skiljer CHJ Webblösningar från andra webbyråer är att jag inte använder Wordpress för skapa hemsidor. Istället bygger jag statiska sidor som är färdiga att serveras vid varje hämtning. Det här innebär att mina hemsidor är snabbare, säkrare och billigare än de flesta andra.</p>
+			</div>
+
 			<Row 
 				illustration={<Hosting />} 
 				link="/hosting" 
@@ -143,7 +148,7 @@ function Row({ illustration, link, align, title, children, paragraph = true, thr
 		transform: `translate(${align === "left" ? "-" : ""}${translate})`
 	}
 
-	const button = link ? <ButtonLink href={link} variant="outlined" style={{ alignSelf }}>Läs mer</ButtonLink> : "";
+	const button = link ? <ButtonLink href={link} variant="text" style={{ alignSelf }}>Läs mer</ButtonLink> : "";
 
 	return (
 		<div ref={ref} className="row" style={{ flexDirection: direction, opacity }}>
