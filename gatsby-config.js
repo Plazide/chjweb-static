@@ -110,6 +110,18 @@ module.exports = {
 		"gatsby-plugin-sharp",
 		"gatsby-plugin-netlify-cms",
 		{
+			resolve: "gatsby-plugin-robots-txt",
+			options: {
+				policy: [
+					{
+						userAgent: "*",
+						allow: "/",
+						disallow: "/admin"
+					}
+				]
+			}
+		},
+		{
 			resolve: "gatsby-plugin-sitemap",
 			options: {
 				query: `
