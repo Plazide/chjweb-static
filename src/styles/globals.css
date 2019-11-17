@@ -9,6 +9,7 @@
 	--shadow: rgba(86, 83, 94, 0.3);
 	--lightShadow: rgba(93, 92, 97, 0.1);
 	--lightBlue: #F2F9F9;
+	--lightRed: #c73c3c50;
 
 	--contentWidth: 1200px;
 }
@@ -28,8 +29,14 @@ html, body{
 
 	background-repeat: repeat;
 }
-h1,h2,h3,h4,a{
+a{
 	font-family: "Raleway", sans-serif;
+}
+p {
+	line-height: 1.3rem;
+}
+h1,h2,h3,h4{
+	font-family: "Roboto", sans-serif;
 	
 }
 h1{
@@ -177,7 +184,7 @@ section.hero .copy h1{
 section.hero .copy p{
 	box-sizing: border-box;
 	font-size: 1.1em;
-	margin-bottom: 5rem;
+	margin: 7px 0 5rem;
 
 	animation: fadeIn 500ms ease-in-out;
 }
@@ -208,6 +215,24 @@ section.features {
 	border-top: 1px solid var(--primary);
 	border-bottom: 1px solid var(--primary);
 	min-height: 50vh;
+}
+section.features .copy.intro{
+	box-sizing: border-box;
+	max-width: calc(var(--contentWidth) / 1.5);
+	width: 100%;
+	padding: 0 .5rem;
+	margin: 6rem auto 8rem;
+	text-align: center;
+}
+section.features .copy.intro h1{
+	color: var(--primary);
+	margin-bottom: 0;
+	font-size: 2.4rem;
+}
+section.features .copy.intro p{
+	margin-top: 7px;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
 }
 .row{
 	display: flex;
