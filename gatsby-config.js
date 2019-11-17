@@ -7,6 +7,13 @@ module.exports = {
 		lang: "sv"
 	},
 	plugins: [
+		{
+			resolve: "gatsby-plugin-freshchat",
+			options: {
+				token: "4d49cb96-8150-4e0c-ba69-1fcb8fd27953",
+				host: "https://wchat.freshchat.com"
+			}
+		},
 		"gatsby-plugin-react-helmet",
 		{
 			resolve: "gatsby-plugin-feed",
