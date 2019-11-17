@@ -1,12 +1,14 @@
 .button{
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	outline: none;
 	font-family: "Raleway", "Roboto", sans-serif;
 
 	border-radius: 4px;
 	color: var(--textAlt);
 	padding: 1rem 2rem;
+
+	text-transform: uppercase;
 }
 
 /* Outlined button */
@@ -34,4 +36,19 @@
 .button-filled:active,
 .button-filled:focus{
 	box-shadow: 0 6px 8px var(--shadow);
+}
+
+/* Text button */
+.button-text{
+	background: transparent;
+	color: var(--primary);
+	font-weight: bold;
+	padding: 1rem 1.2rem;
+
+	transition: background 150ms ease-in-out;
+}
+.button-text:hover,
+.button-text:active,
+.button-text:focus{
+	background: var(--lightRed);
 }
