@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 
 // Components
 import ButtonLink from "../components/ButtonLink";
+import CTA from "../components/CTA";
 
 // Images
 import _illustrationUrl, { ReactComponent as Illustration} from "../images/illustrations/create.svg";
@@ -113,6 +114,12 @@ const IndexPage = ({ data }) => (
 				</ol>
 			</Row>
 		</section>
+
+		<CTA
+			title="Låter det bra?"
+		>
+		Låt mig skapa en snabb, säker och modern hemsida som inte kostar något att driva.
+		</CTA>
 	</Layout>
 );
 
