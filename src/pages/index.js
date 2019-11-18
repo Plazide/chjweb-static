@@ -23,7 +23,7 @@ import _workflowArrowUrl, { ReactComponent as WorkflowArrow } from "../images/il
 
 const IndexPage = ({ data }) => (
 	<Layout>
-		<SEO title="Webbutveckling i Mariestad" />
+		<SEO title="Webbutveckling i Mariestad" url="/" />
 		<section className="hero frontpage">
 			<Wave className="background" />
 			<div className="content">

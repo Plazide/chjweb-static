@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 // CSS
 import "../styles/blog.css";
@@ -12,6 +13,11 @@ export default function blogg({ data }) {
 
 	return (
 		<Layout>
+			<SEO 
+				title="Blogg"
+				description="I min blogg skriver jag om hur det är att driva företag, olika projekt som jag gör och andra saker som har med företagande eller webbutveckling att göra."
+				url="/blogg"
+			/>
 			<section className="blog">
 				<div className="content">
 					<div className="copy">

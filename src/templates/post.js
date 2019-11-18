@@ -41,11 +41,11 @@ export default function post({ data }) {
 	const readTime = data.markdownRemark.timeToRead;
 	const htmlAst = data.markdownRemark.htmlAst;
 
-	const shareUrl = `https://www.chjweb.se/blogg/${slug}`;
+	const pageUrl = `https://www.chjweb.se/blogg/${slug}`;
 
 	return (
 		<Layout>
-			<SEO title={title + " | Blogg"} description={description} />
+			<SEO title={title + " | Blogg"} description={description} url={pageUrl} />
 			<article className="blog-posting">
 				<div className="post-heading">
 					<Img fluid={featuredImage} className="featured-image" />
@@ -57,11 +57,11 @@ export default function post({ data }) {
 						<span>{readTime} minuter</span>
 					</div>
 				</div>
-				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size={48} />
+				<SocialShare title={title} shareUrl={pageUrl} twitterVia="chj_web" size={48} />
 				<section className="post-body">
 					<div>{renderAst(htmlAst)}</div>
 				</section>
-				<SocialShare title={title} shareUrl={shareUrl} twitterVia="chj_web" size={48} />
+				<SocialShare title={title} shareUrl={pageUrl} twitterVia="chj_web" size={48} />
 			</article>
 		</Layout>
 	)
