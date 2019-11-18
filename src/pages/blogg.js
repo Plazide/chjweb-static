@@ -10,6 +10,44 @@ import "../styles/blog.css";
 
 export default function blogg({ data }) {
 	const posts = data.allMarkdownRemark.edges;
+	const siteUrl = data.allSite.edges[0].node.siteMetadata.siteUrl;
+	const structuredData = {
+		"@context": "http://schema.org",
+		"@type": "ItemList",
+		"url": siteUrl,
+		"numberOfItems": posts.length,
+		"itemListElement": posts.map( (item, index) => { 
+			const logoUrl = data.imageSharp.fixed.src;
+			const post = item.node;
+			const pos = index + 1;
+			const image = post.frontmatter.image.childImageSharp.fixed ||
+							post.frontmatter.image.childImageSharp.fluid;
+
+			return {
+					"@type": "BlogPosting",
+					"image": {
+						"@type": "ImageObject",
+						"url": image.src
+					},
+					"url": siteUrl + "/" + post.fields.slug,
+					"name": post.frontmatter.title,
+					"position": pos,
+					"headline": post.frontmatter.title,
+					"author": "Carl Hallén Jansson",
+					"datePublished": post.frontmatter.date,
+					"publisher": {
+						"@type": "Organization",
+						"@id": "https://www.chjweb.se",
+						"name": "CHJ Webblösningar",
+						"logo": { 
+							"@type": "ImageObject",
+							"url": logoUrl
+						}
+					}
+				}
+			})
+		
+	}
 
 	return (
 		<Layout>
@@ -17,6 +55,7 @@ export default function blogg({ data }) {
 				title="Blogg"
 				description="I min blogg skriver jag om hur det är att driva företag, olika projekt som jag gör och andra saker som har med företagande eller webbutveckling att göra."
 				url="/blogg"
+				structuredData={structuredData}
 			/>
 			<section className="blog">
 				<div className="content">
@@ -100,6 +139,20 @@ query BloggQuery{
 					slug
 				}
 			}
+		}
+	}
+	allSite{
+		edges{
+			node{
+				siteMetadata{
+					siteUrl
+				}
+			}
+		}
+	}
+	imageSharp( fixed: { originalName: { eq: "logotyp.png" } } ){
+		fixed(width: 265){
+			src
 		}
 	}
 }`;
