@@ -1,5 +1,11 @@
 section.cta{
 	background: var(--lightBlue);
+}
+section.cta .content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
 }
 section.cta h1{
@@ -10,4 +16,6 @@ section.cta p{
 	font-weight: 500;
 
 	margin-bottom: 4rem;
+	width: 450px;
+	max-width: 100%;
 }
