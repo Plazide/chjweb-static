@@ -1,0 +1,13 @@
+section.cta{
+	background: var(--lightBlue);
+	text-align: center;
+}
+section.cta h1{
+	font-size: 2.4rem;
+}
+section.cta p{
+	font-size: 1.3rem;
+	font-weight: 500;
+
+	margin-bottom: 4rem;
+}
