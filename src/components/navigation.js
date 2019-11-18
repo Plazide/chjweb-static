@@ -5,8 +5,10 @@ export default function navigation() {
 	return (
 		<nav>
 			<Link to="/">Hem</Link>
-			<Link to="/blogg">Blogg</Link>
-			<Link to="/kontakt">Kontakta mig</Link>
+			<Link to="/hosting">Hosting</Link>
+			<Link to="/webbyra">Webbyrå</Link>
+			<Link to="/cms">CMS</Link>
+			<Link to="/blogg">Läs blogg</Link>
 		</nav>
 	)
 }
