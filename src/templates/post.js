@@ -40,12 +40,40 @@ export default function post({ data }) {
 	const published = data.markdownRemark.frontmatter.date;
 	const readTime = data.markdownRemark.timeToRead;
 	const htmlAst = data.markdownRemark.htmlAst;
+	const logoUrl = data.imageSharp.fixed.src;
 
 	const pageUrl = `https://www.chjweb.se/blogg/${slug}`;
 
+	const structuredData = {
+		"@context": "http://schema.org",
+		"@type": "BlogPosting",
+		"@id": pageUrl,
+		"headline": title,
+		"description": description,
+		"datePublished": published,
+		"dateModified": published,
+		"image": featuredImage.src,
+		"mainEntityOfPage": pageUrl,
+		"author": "Carl Hallén Jansson",
+		"publisher": {
+			"@type": "Organization",
+			"@id": "https://www.chjweb.se",
+			"name": "CHJ Webblösningar",
+			"logo": { 
+				"@type": "ImageObject",
+				"url": logoUrl,
+			}
+		}
+	}
+
 	return (
 		<Layout>
-			<SEO title={title + " | Blogg"} description={description} url={pageUrl} />
+			<SEO 
+				title={title + " | Blogg"} 
+				description={description} 
+				url={pageUrl} 
+				structuredData={structuredData} 
+			/>
 			<article className="blog-posting">
 				<div className="post-heading">
 					<Img fluid={featuredImage} className="featured-image" />
@@ -132,6 +160,11 @@ query PostQuery($slug: String!){
 		htmlAst
 		fields {
 			slug
+		}
+	}
+	imageSharp( fixed: { originalName: { eq: "logotyp.png" } } ){
+		fixed(width: 265){
+			src
 		}
 	}
 }
