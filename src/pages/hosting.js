@@ -51,7 +51,7 @@ export default function Hosting(){
 
 			{/* CTA creates its own section */}
 			<CTA title="Vill ni minska era avgifter?">
-			Låt mig skapa en hemsida som är gratis att hosta.
+			Låt mig skapa en hemsida som är gratis att driva.
 			</CTA>
 			
 		</Layout>
