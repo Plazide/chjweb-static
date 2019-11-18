@@ -37,8 +37,8 @@ const IndexPage = ({ data }) => (
 					<h1>Jag skapar hemsidor</h1>
 					<p>Jag skapar snygga, snabba och unika hemsidor med hjälp av den senaste tekniken inom webbutveckling.</p>
 					<div className="btns">
-						<ButtonLink href="#" variant="filled">Anlita mig</ButtonLink>
-						<ButtonLink href="#" variant="outlined">Kontakta mig</ButtonLink>
+						<ButtonLink href="/anlita" variant="filled">Anlita mig</ButtonLink>
+						<ButtonLink href="/blogg" variant="outlined">Läs min blogg</ButtonLink>
 					</div>
 				</div>
 
