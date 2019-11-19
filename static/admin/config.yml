@@ -39,7 +39,7 @@ collections:
     editor: 
       preview: false
     fields: 
-      - { label: "Namn", name: "name", widget: "string", required: true }
+      - { label: "Namn", name: "title", widget: "string", required: true }
       - { label: "Beskrivning", name: "description", widget: "text", required: true, pattern: ['.{300,1000}', "Måste vara mellan 300 och 1000 tecken"] }
       - { label: "Hemsida", name: "website", widget: "string", pattern: ["^https?:\/\/.+..+$", "Måste vara en giltig webbadress som börjar med http/https."] }
       - { label: "Blogginlägg", name: "blogpost", widget: "string", pattern: ["^https?:\/\/(www.)?chjweb.se\/blogg\/.+$", "Måste vara en länk till ett blogginlägg på https://chjweb.se/blogg/"] }
