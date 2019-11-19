@@ -3,10 +3,12 @@
 	font-size: 1.1rem;
 	outline: none;
 	font-family: "Raleway", "Roboto", sans-serif;
+	cursor: pointer;
 
 	border-radius: 4px;
 	color: var(--textAlt);
 	padding: 1rem 2rem;
+	border: none;
 
 	text-transform: uppercase;
 }
