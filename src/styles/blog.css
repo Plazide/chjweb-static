@@ -134,7 +134,7 @@ section.blog .posts .post.featured{
 .post-body h2,
 .post-body h3{
 	margin-bottom: 0;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", Verdana, sans-serif;
 }
 .post-body p{
 	margin-top: 7px;
