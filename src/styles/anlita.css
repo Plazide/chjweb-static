@@ -1,0 +1,57 @@
+section.hire{
+	opacity: 0;
+	height: 100vh;
+
+	background: url("../images/illustrations/anlita_bg.svg");
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	animation: fadeIn 1000ms ease-in-out forwards;
+}
+section.hire .content{
+	margin-top: 0;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+}
+section.hire .content .copy{
+	margin-top: 10rem;
+	width: 700px;
+	text-align: center;
+
+	font-size: 1.2rem;
+	
+}
+
+section.hire .hire-form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: stretch;
+	margin-top: 20px;
+
+	opacity: 0;
+	animation: fadeIn 400ms 1000ms ease-in-out forwards;
+
+	max-width: 600px;
+	width: 100%;
+}
+
+section.hire .disclaimer{
+	font-weight: 300;
+	margin-top: 2rem;
+	margin-bottom: 150px;
+}
+
+
+section.hire .back-arrow{
+	transform: rotate(180deg);
+	z-index: -1;
+	margin-right: 10px;
+}
+section.hire .back-arrow path{
+	fill: var(--primary);
+}
