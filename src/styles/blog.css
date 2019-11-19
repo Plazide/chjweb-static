@@ -1,5 +1,6 @@
 section.blog .content{
 	max-width: 870px;
+	color: var(--textSecondary);
 }
 section.blog .content .copy{
 	margin-bottom: 6rem;
@@ -53,8 +54,8 @@ section.blog .posts .post.featured{
 /* Post page */
 .blog-posting{
 	padding-bottom: 4rem;
-
-	text-rendering: optimizeLegibility;
+	color: var(--textPrimary);
+	font-family: "Roboto", "Verdana", sans-serif;
 }
 
 .share-area{
@@ -119,14 +120,15 @@ section.blog .posts .post.featured{
 	justify-content: space-between;
 }
 .post-body{
+	text-rendering: optimizeLegibility;
 	width: 800px;
 	max-width: 90%;
 
 	margin: 3rem auto;
 
-	font-family: "Yrsa", serif;
-	font-size: 1.4rem;
-	line-height: 1.8rem;
+	font-family: "Roboto", Verdana, sans-serif;
+	font-size: 1.2rem;
+	line-height: 2.2rem;
 }
 .post-body h1,
 .post-body h2,
