@@ -14,7 +14,7 @@ export default function CTA({ title, children }) {
 				<h1>{title}</h1>
 				<p>{children}</p>
 
-				<ButtonLink variant="filled" href="#">Anlita mig</ButtonLink>
+				<ButtonLink variant="filled" href="/anlita">Anlita mig</ButtonLink>
 			</div>
 		</section>
 	)
