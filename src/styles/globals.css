@@ -424,3 +424,12 @@ svg path[data-name="Rectangle 244"]{
 		opacity: 1;
 	}
 }
+
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
