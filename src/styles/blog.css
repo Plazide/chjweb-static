@@ -1,9 +1,10 @@
 section.blog .content{
-	max-width: 870px;
+	max-width: 900px;
 	color: var(--textSecondary);
 }
 section.blog .content .copy{
-	margin-bottom: 6rem;
+	margin: 0 auto 6rem;
+	max-width: 80%;
 }
 section.blog .content .copy h1{
 	margin-top: 0;
@@ -20,6 +21,10 @@ section.blog .posts{
 
 	width: 100%;
 }
+section.blog .posts .post{
+	max-width: 400px;
+	margin-top: 100px;
+}
 section.blog .posts .post a{
 	text-decoration: none;
 	color: var(--textAlt);
@@ -29,6 +34,7 @@ section.blog .posts .post a{
 section.blog .posts .post .gatsby-image-wrapper{
 	border: 1px solid var(--textPrimary);
 	box-shadow: 2px 4px 10px var(--lightShadow);
+	max-width: 100%;
 }
 section.blog .posts .post .meta{
 	color: var(--textPrimary);
@@ -41,14 +47,18 @@ section.blog .posts .post .meta{
 section.blog .posts .post h2{
 	margin: 0;
 	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
 }
 section.blog .posts .post p{
 	margin-top: 7px;
+	font-size: 1rem;
 }
 
 
 section.blog .posts .post.featured{
-	width: 100%;
+	margin: 0 auto;
+	width: 80%;
+	max-width: 80%;
 }
 
 /* Post page */
