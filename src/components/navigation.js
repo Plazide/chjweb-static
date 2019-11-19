@@ -8,7 +8,7 @@ export default function navigation() {
 			<Link to="/hosting">Hosting</Link>
 			<Link to="/webbyra">Webbyrå</Link>
 			<Link to="/cms">CMS</Link>
-			<Link to="/blogg">Läs blogg</Link>
+			<Link to="/blogg">Blogg</Link>
 		</nav>
 	)
 }
