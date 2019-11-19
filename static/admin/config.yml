@@ -32,7 +32,7 @@ collections:
 
   - name: "projects"
     label: "Projekt"
-    folder: content/blog
+    folder: content/projects
     preview_path: "projekt/{{slug}}"
     create: true
     slug: "{{slug}}"
