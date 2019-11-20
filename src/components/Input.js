@@ -13,11 +13,16 @@ export default function Input({
 	helperText = "",
 	name,
 	id = name || randomId(),
-	style = null
+	style = null,
+	required = true,
+	pattern = "",
+	onChange
 }) {
 	const [focus, setFocus] = useState(false);
 	const errorClass = error ? "error" : "";
 	const focusClass = focus ? "focused" : "";
+
+	const errorAlert = error ? <span className="error-text" role="alert">{errorText}</span> : "";
 
 	const onFocus = (e) => {
 		setFocus(true);
@@ -33,9 +38,19 @@ export default function Input({
 	return (
 		<div className={`text-field ${variant} ${errorClass} ${focusClass}`} style={style}>
 			<label htmlFor={id}>{label}</label>
-			<input type={type} id={id} name={name} onFocus={onFocus} onBlur={onBlur} />
+			<input 
+				aria-invalid={error}
+				type={type} 
+				id={id} 
+				name={name}
+				onFocus={onFocus} 
+				onBlur={onBlur} 
+				required={required} 
+				pattern={pattern}
+				onChange={onChange}
+			/>
 			<span className="helper-text">{helperText}</span>
-			<span className="error-text">{errorText}</span>
+			{errorAlert}
 		</div>
 	)
 }
