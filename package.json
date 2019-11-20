@@ -42,7 +42,8 @@
     "react-share": "^3.0.1",
     "rehype-react": "^4.0.1",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.8"
+    "request-promise-native": "^1.0.8",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
