@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
 						<Arrow />
 					</a>
 					<h1>Jag skapar hemsidor</h1>
-					<p>Jag skapar snygga, snabba och unika hemsidor med hjälp av den senaste tekniken inom webbutveckling.</p>
+					<p>Jag skapar hemsidor med hjälp av JAMStack. Det betyder att jag kan utveckla snygga, snabba och säkra hemsidor på mycket kort tid.</p>
 					<div className="btns">
 						<ButtonLink href="/anlita" variant="filled">Anlita mig</ButtonLink>
 						<ButtonLink href="/blogg" variant="outlined">Läs min blogg</ButtonLink>
@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => (
 		<section className="features">
 			<div className="copy intro">
 				<h1>Varför är CHJ Webblösningar annorlunda?</h1>
-				<p>Det som skiljer CHJ Webblösningar från andra webbyråer är att jag inte använder Wordpress för skapa hemsidor. Istället bygger jag statiska sidor som är färdiga att serveras vid varje hämtning. Det här innebär att mina hemsidor är snabbare, säkrare och billigare än de flesta andra.</p>
+				<p>Det som skiljer CHJ Webblösningar från andra webbyråer är att jag inte använder Wordpress för skapa hemsidor. Istället bygger jag hemsidor utifrån JAMStack principer. Det betyder att jag utvecklar statiska sidor som är färdiga att serveras vid varje hämtning. Det här innebär att mina hemsidor är snabbare, säkrare och billigare än de flesta andra.</p>
 			</div>
 
 			<Row 
@@ -59,7 +59,7 @@ const IndexPage = ({ data }) => (
 				link="/hosting" 
 				align="left"
 				title="Gratis hosting utan webbhotell">
-				Jag bygger hemsidor som kan vara online utan något webbhotell. Istället ligger hemsidan på en CDN (Content Delivery Network) som serverar hemsidan riktigt snabbt, oberoende av var användarna befinner sig i världen. Detta betyder att hemsidan är otroligt snabb samtidigt som den kan vara online avgiftsfritt.
+				En av fördelarna med hemsidor byggda på JAMStack är att de blir riktigt billiga att driva. Det krävs inget webbhotell för att hålla hemsidan på nätet, istället används en modern och kostnadseffektiv CDN tjänst. Det betyder att mindre hemsidor kan synas på nätet utan någon som helst kostnad.
 			</Row>
 
 			<Row 
@@ -67,7 +67,8 @@ const IndexPage = ({ data }) => (
 				link="/webbyra" 
 				align="right"
 				title="Inte en traditionell webbyrå">
-				CHJ Webblösningar drivs ensamt av mig, Carl Hallén Jansson, och jag är alltid ute efter att hänga med i utvecklingen av webben. Därför använder jag mig inte av Wordpress eller liknande CMS verktyg. Istället använder jag mig av JAMStack principer, vilket betyder att jag kan erbjuda snabba, säkra och unika hemsidor till ett billigt pris.
+				De flesta av dagens webbyråer använder Wordpress för att bygga hemsidor till sina kunder. Det gör inte jag. CHJ Webblösningar bygger hemsidor som är snabbare, säkrare och billigare än vad en Wordpress sida någonsin kan vara. JAMStack tillåter mig att integrera flera olika CMS verktyg med er hemsida, inklusive Wordpress, samtidigt som den kan drivas helt utan kostnad. 
+				{/* CHJ Webblösningar drivs ensamt av mig, Carl Hallén Jansson, och jag är alltid ute efter att hänga med i utvecklingen av webben. Därför använder jag mig inte av Wordpress eller liknande CMS verktyg. Istället använder jag mig av JAMStack principer, vilket betyder att jag kan erbjuda snabba, säkra och unika hemsidor till ett billigt pris. */}
 			</Row>
 
 			<Row 
@@ -158,16 +159,16 @@ function Row({ illustration, link, align, title, children, paragraph = true, thr
 	const button = link ? <ButtonLink href={link} variant="text" style={{ alignSelf }}>Läs mer</ButtonLink> : "";
 
 	return (
-		<div ref={ref} className="row" style={{ flexDirection: direction, opacity }}>
+		<section ref={ref} className="row" style={{ flexDirection: direction, opacity }}>
 			<div className="copy" style={copyStyle}>
-				<h2>{title}</h2>
+				<h1>{title}</h1>
 				{content}
 				{button}
 			</div>
-			<div className="illustration">
+			<div className="illustration" role="presentation">
 				{illustration}
 			</div>
-		</div>
+		</section>
 	)
 }
 
