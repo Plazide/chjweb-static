@@ -12,6 +12,9 @@ export const onClientEntry = async () => {
 	if(typeof IntersectionObserver === "undefined")
 		await import("intersection-observer");
 
+	if(typeof window.fetch === "undefined")
+		await import("whatwg-fetch");
+
 	if(!browserCanUseCssVariables())
 		cssVars();
 	
