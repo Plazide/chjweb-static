@@ -33,7 +33,7 @@ html, body{
 	background-repeat: repeat;
 }
 p {
-	line-height: 1.3rem;
+	line-height: 1.5rem;
 	margin-top: 7px;
 }
 h1,h2,h3,h4{
@@ -194,7 +194,7 @@ section.hero .copy h1{
 }
 section.hero .copy p{
 	box-sizing: border-box;
-	font-size: 1.1em;
+	font-size: 1.4em;
 	margin: 7px 0 5rem;
 
 	animation: fadeIn 500ms ease-in-out;
