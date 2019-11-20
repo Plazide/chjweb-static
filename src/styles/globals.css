@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500|Roboto:100,200,300,400,500,600,700&display=swap');
 :root{
 	--textPrimary: #56535e;
 	--textSecondary: #f7f7f2;
@@ -15,6 +15,9 @@
 }
 
 /* General */
+svg {
+	font-family: "Raleway";
+}
 html, body{
 	margin: 0;
 	padding: 0;
@@ -66,6 +69,17 @@ p a:hover{
 	margin-top: 10px;
 	font-size: 1.4rem;
 	font-weight: 500;
+}
+.reset-button{
+	background: transparent;
+	border: none;
+	outline: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+.reset-button:focus,
+.reset-button:active{
+	outline: none;
 }
 
 /* Main content */
@@ -200,7 +214,7 @@ section.hero .btn{
 }
 section.hero .illustration{
 	width: 550px;
-	max-width: 100%;
+	max-width: 90%;
 	text-align: right;
 }
 
@@ -226,7 +240,7 @@ section.features .copy.intro{
 section.features .copy.intro h1{
 	color: var(--primary);
 	margin-bottom: 0;
-	font-size: 2.4rem;
+	font-size: 2.2rem;
 }
 section.features .copy.intro p{
 	margin-top: 7px;
@@ -265,7 +279,8 @@ section.features .copy.intro p{
 
 	transition: transform 400ms ease;
 }
-.row .copy h2{
+.row .copy h1{
+	font-size: 2.2rem;
 	color: var(--primary);
 	margin: 0;
 }
@@ -430,3 +445,90 @@ svg path[data-name="Rectangle 244"]{
 		opacity: 0;
 	}
 }
+
+@media only screen and (max-width: 1300px){
+	:root{
+		--contentWidth: 100%;
+	}
+	header .wrapper,
+	section .content{
+		box-sizing: border-box;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	section.hero .content {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 5rem 2rem 5rem;
+	}
+	section.hero .featured{
+		display: none;
+	}
+	section.hero .illustration{
+		margin-left: 50px;
+		max-width: 50%;
+	}
+}
+
+@media only screen and (max-width: 930px){
+	section.hero .illustration{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	section.hero.frontpage p{
+		font-size: 1rem;
+	}
+	section.hero.frontpage .btns .button{
+		font-size: .9rem;
+	}
+	section.hero .content{
+		display: flex;
+		justify-content: center;
+	}
+	section.hero .btns{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	section.hero .btns .button:first-child{
+		margin: 0 0 1rem 0;
+	}
+	section.hero .content .copy{
+		text-align: center;
+	}
+
+	section.features .copy.intro{
+		box-sizing: border-box;
+		padding: 0 1rem;
+		max-width: 100%;
+	}
+
+	/* Rows */
+	section.about .row,
+	section.workflow .row,
+	section.features .row{
+		display: block;
+	}
+	section.about .row .copy,
+	section.workflow .row .copy,
+	section.features .row .copy{
+		z-index: 60;
+	}
+	section.about .row .illustration,
+	section.workflow .row .illustration,
+	section.features .row .illustration{
+		position: absolute;
+		transform: translateY(-120%);
+		max-width: 100%;
+		z-index: 0;
+		opacity: .1;
+	}
+	section.about .row .illustration svg,
+	section.workflow .row .illustration svg,
+	section.features .row .illustration svg{
+		max-width: 100%;
+	}
+}	
+

@@ -20,6 +20,7 @@ section.hire .content{
 section.hire .content .copy{
 	margin-top: 10rem;
 	width: 700px;
+	max-width: 100%;
 	text-align: center;
 
 	font-size: 1.2rem;
@@ -47,6 +48,10 @@ section.hire .disclaimer{
 }
 
 
+section.hire .content .button{
+	text-align: center;
+	padding: 1rem;
+}
 section.hire .back-arrow{
 	transform: rotate(180deg);
 	z-index: -1;
@@ -54,4 +59,37 @@ section.hire .back-arrow{
 }
 section.hire .back-arrow path{
 	fill: var(--primary);
+}
+
+@media only screen and (max-width: 1000px){
+	section.hire .content{
+		padding-top: 4rem;
+	}
+
+	section.hire .content .copy{
+		margin-top: 2rem;
+	}
+
+	section.hire .disclaimer{
+		display: none;
+	}
+
+	section.hire .hire-form{
+		flex-direction: column;
+	}
+	section.hire .hire-form .button{
+		margin-top: 1.4rem;
+	}
+}
+
+@media only screen and (max-height: 600px){
+	section.hire .content .copy p{
+		display: none;
+	}
+}
+
+@media only screen and (max-height: 450px){
+	section.hire .content .copy h1{
+		display: none;
+	}
 }

@@ -15,6 +15,11 @@ section.blog .content .copy p{
 	color: var(--textPrimary);
 }
 section.blog .posts{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -35,6 +40,7 @@ section.blog .posts .post .gatsby-image-wrapper{
 	border: 1px solid var(--textPrimary);
 	box-shadow: 2px 4px 10px var(--lightShadow);
 	max-width: 100%;
+	max-height: 345px;
 }
 section.blog .posts .post .meta{
 	color: var(--textPrimary);
@@ -59,6 +65,15 @@ section.blog .posts .post.featured{
 	margin: 0 auto;
 	width: 80%;
 	max-width: 80%;
+
+	padding-bottom: 1rem;
+	border-bottom: 1px solid var(--textAlt);
+}
+section.blog .posts .post.featured h2{
+	font-size: 2.2rem;
+}
+section.blog .posts .post.featured p{
+	font-size: 1.2rem;
 }
 
 /* Post page */
@@ -153,8 +168,51 @@ section.blog .posts .post.featured{
 	background: var(--textSecondary);
 	padding: 0 .3rem;
 	font-family: monospace;
+	font-size: .9em;
 }
 .post-body ul li,
 .post-body ol li{
 	margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1000px){
+	section.blog .posts{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	section.blog .posts .post.featured{
+		max-width: 100%;
+		width: 100%;
+	}
+	section.blog .content .copy{
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	section.blog .content .copy h1{
+		font-size: 2.3rem;
+	}
+
+	section.blog .posts .post.featured h2{
+		font-size: 1.6rem;
+	}
+	section.blog .posts .post.featured p{
+		font-size: 1.1rem;
+	}
+
+	section.blog .posts .post h2{
+		font-size: 1.4rem;
+	}
+	section.blog .posts .post p{
+		font-size: .9rem;
+	}
+
+	.post-body p{
+		font-size: 1.1rem;
+	}
 }
