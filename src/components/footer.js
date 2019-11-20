@@ -68,7 +68,7 @@ export default function Footer() {
 						const post = item.node;
 
 						return (
-							<div className="post">
+							<div className="post" key={post.fields.slug}>
 								<a href={`/blogg/${post.fields.slug}`} className="title">{post.frontmatter.title}</a>
 							</div>
 						)
