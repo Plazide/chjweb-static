@@ -101,28 +101,29 @@ section.blog .posts .post.featured p{
 	position: relative;
 }
 .post-heading .featured-image{
-	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 40vh;
+	padding: 2rem 0;
 	border: 1px solid var(--textPrimary);
 	box-shadow: 2px 4px 10px var(--lightShadow);
 }
 .post-heading .title{
-	left: 0;
-	right: 0;
-
 	text-align: center;
 	box-sizing: border-box;
 
-	display: inline-block;
 	width: 800px;
 	max-width: 90%;
 	background: var(--textSecondary);
-	position: absolute;
+	/* position: absolute; */
 	padding: 2rem;
-	margin: 0 auto;
+	/* margin: 10% auto 0; */
 
 	box-shadow: 0 3px 10px var(--shadow);
 
-	transform: translateY(calc(-50vh / 2));
+	/* transform: translateY(calc(-50vh / 2)); */
 }
 .post-heading .title h1{
 	color: var(--primary);

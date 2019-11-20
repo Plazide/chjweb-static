@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import rehypeReact from "rehype-react";
 import Img from "gatsby-image";
 
+import BackgroundImage from "gatsby-background-image";
+
 // Share buttons
 import {
 	TwitterShareButton,
@@ -76,10 +78,15 @@ export default function post({ data }) {
 			/>
 			<article className="blog-posting">
 				<div className="post-heading">
-					<Img fluid={featuredImage} className="featured-image" />
-					<div className="title">
-						<h1>{title}</h1>
-					</div>
+					{/* <Img fluid={featuredImage} className="featured-image" /> */}
+					<BackgroundImage
+						className="featured-image"
+						fluid={featuredImage}
+					>
+						<div className="title">
+							<h1>{title}</h1>
+						</div>
+					</BackgroundImage>
 					<div className="meta">
 						<span>{published}</span>
 						<span>{readTime} minuter</span>
