@@ -6,3 +6,11 @@
 
 // You can delete this file if you're not using it
 import "./src/styles/globals.css";
+import cssVars from "css-vars-ponyfill";
+
+cssVars();
+
+export const onClientEntry = async () => {
+	if(typeof IntersectionObserver === "undefined")
+		await import("intersection-observer");
+}
