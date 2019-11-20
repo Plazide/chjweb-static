@@ -22,3 +22,31 @@
 .info:nth-child(even){
 	text-align: right;
 }
+
+@media only screen and (max-width: 1300px){
+	.more-info{
+		box-sizing: border-box;
+		padding: 0 2rem;
+	}
+}
+
+@media only screen and (max-width: 1150px){
+	.more-info{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.info{
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	.info:nth-child(even){
+		text-align: center;
+	}
+	.info h2{
+		font-size: 1.8rem;
+	}
+	.info p{
+		font-size: 1rem;
+	}
+}
