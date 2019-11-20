@@ -68,7 +68,6 @@ const IndexPage = ({ data }) => (
 				align="right"
 				title="Inte en traditionell webbyrå">
 				De flesta av dagens webbyråer använder Wordpress för att bygga hemsidor till sina kunder. Det gör inte jag. CHJ Webblösningar bygger hemsidor som är snabbare, säkrare och billigare än vad en Wordpress sida någonsin kan vara. JAMStack tillåter mig att integrera flera olika CMS verktyg med er hemsida, inklusive Wordpress, samtidigt som den kan drivas helt utan kostnad. 
-				{/* CHJ Webblösningar drivs ensamt av mig, Carl Hallén Jansson, och jag är alltid ute efter att hänga med i utvecklingen av webben. Därför använder jag mig inte av Wordpress eller liknande CMS verktyg. Istället använder jag mig av JAMStack principer, vilket betyder att jag kan erbjuda snabba, säkra och unika hemsidor till ett billigt pris. */}
 			</Row>
 
 			<Row 
