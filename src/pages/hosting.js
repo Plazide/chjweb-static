@@ -35,16 +35,16 @@ export default function Hosting(){
 				<Intro
 					title="Hur fungerar det?"
 				>
-				Att hosta en hemsida utan webbhotell är ganska enkelt, det är bara att använda rätt tjänster och bygga hemsidan på rätt sätt. Istället för att gå till ett traditionellt webbhotell och lägga sin hemsida där, använder man en modern CDN som serverar statiska filer, alltså HTML, CSS och JavaScript.
+				Att hosta en hemsida utan webbhotell är ganska enkelt, det är bara att använda rätt tjänster och bygga hemsidan på rätt sätt. Istället för att gå till ett traditionellt webbhotell och lägga sin hemsida där, använder man en modern CDN som serverar statiska sidor, alltså sådana som jag bygger.
 				</Intro>
 
 				<MoreInfo>
-					<Info title="Varför är det billigare?">
+					<Info title="Mindre resurser">
 					Anledningen till att den här metoden är billigare grundar sig i att det krävs mindre serverresurser för att servera varje sida. Det betyder att du kan betala betydligt mindre för att hålla hemsidan online. Små hemsidor kan faktiskt hostas helt gratis.
 					</Info>
 
-					<Info title="Varför är det snabbare?">
-					Eftersom att alla sidor redan är färdiga vid tidpunkten då en användare ska hämta de, går det mycket snabbare att servera dem. Traditionella dynamiska sidor bygger ihop sidan vid varje hämtning, detta ökar tiden det tar att servera sidan.
+					<Info title="Snabbare servering">
+					Eftersom att alla sidor redan är färdigbyggda vid tidpunkten då en användare ska hämta de, går det mycket snabbare att servera dem. Traditionella dynamiska sidor bygger ihop sidan vid varje hämtning, detta ökar tiden det tar att servera sidan.
 					</Info>
 				</MoreInfo>
 			</section>

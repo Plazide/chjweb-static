@@ -61,7 +61,7 @@ export default function blogg({ data }) {
 				<div className="content">
 					<div className="copy">
 						<h1>Följ CHJ Webblösningar i livet som företagare</h1>
-						<p>Mitt namn Carl och jag är egenföretagare och webbutvecklare. Följ mitt arbete och ta del av mina erfarenheter i den här bloggen.</p>
+						<p>Mitt namn är Carl och jag är egenföretagare och webbutvecklare. Följ mitt arbete och ta del av mina erfarenheter i den här bloggen.</p>
 					</div>
 
 					<ul className="posts">

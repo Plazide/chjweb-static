@@ -27,7 +27,7 @@ export default function Webbyra(){
 				title="Inte en vanlig webbyrå"
 				illustration={<WebbyraIllustration />}
 			>
-			CHJ Webblösningar är inte en vanlig webbyrå, för det första är jag ensam, vilket per definition betyder att jag inte är en byrå. För det andra så använder jag mig av andra tekniker än de flesta webbyråer, jag använder inte Wordpress, jag bygger statiska sidor som är billiga att hosta på nätet.
+			CHJ Webblösningar bygger inte hemsidor bundna till ett enda CMS verktyg. Genom att använda den allra senaste tekniken inom webbutveckling kan jag erbjuda snabbare och säkrare hemsidor än vad gårdagens CMS plattformar kan göra.
 			</Hero>
 
 			<section className="features">
@@ -38,19 +38,19 @@ export default function Webbyra(){
 				</Intro>
 
 				<MoreInfo>
-					<Info title="Vad gör sidorna bättre?">
+					<Info title="Statiskt, men ändå dynamiskt">
 					Jag bygger statiska sidor som serveras utan en traditionell webserver. Istället ligger sidorna på en modern CDN tjänst. Att sidorna är statiska betyder dock inte att innehållet är statiskt, det kan vara lika dynamiskt som vilken annan sida som helst. Det är dock säkrare att inte använda en webserver, snabbare att inte bygga sidorna vid varje hämtning och billigare att hosta statiska sidor.
 					</Info>
 
-					<Info title="Kan jag ändra sidorna själv?">
-					En av de största fördelarna med Wordpress är att det inte krävs någon programmeringskunskap för att ändra hemsidan. Men det krävs inte för att ändra mina sidor heller. Det finns en uppsjö av olika CMS verktyg att använda, och tillsammans kan vi hitta ett, eller en kombination, som passar just dina behov.
+					<Info title="Ändra sidorna som du vill">
+					När en webbyrå bygger hemsidor med Wordpress kan man lugnt lämna över sidan till kunden och veta att de kan ändra text och innehåll själva. Det kan mina kunder också göra, men de har större valmöjligheter när det kommer till CMS verktyg.
 					</Info>
 				</MoreInfo>
 			</section>
 
 			{/* CTA creates its own section */}
 			<CTA title="Ska jag bygga er hemsida?">
-			Låt mig skapa en sida som får era besökare att lyfta på ögonbrynen.
+			Låt mig skapa en modern hemsida med den senaste tekniken.
 			</CTA>
 		</Layout>
 	)

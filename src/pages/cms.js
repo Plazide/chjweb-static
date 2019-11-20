@@ -44,9 +44,9 @@ export default function CMS(){
 					</Info>
 
 					<Info
-						title="Vad finns det för alternativ?"
+						title="Många alternativ"
 					>
-					Som sagt finns det ett stort antal CMS verktyg tillgängliga, dessa inkluderar traditionella CMS:er som Wordpress, Joomla och Drupal. Men även många så kallade headless CMS:er som Strapi, Contentful och Directus, samt det populära bloggverktyget Ghost. Om inget alternativ passar, kan jag alltid bygga ett skräddarsytt CMS till er.
+					Som sagt finns det ett stort antal CMS verktyg tillgängliga, dessa inkluderar traditionella CMS:er som Wordpress, Joomla och Drupal. Men även många så kallade headless CMS:er som Strapi, Contentful och Ghost. Om inget alternativ passar, kan jag alltid bygga ett skräddarsytt CMS till er.
 					</Info>
 				</MoreInfo>
 			</section>
