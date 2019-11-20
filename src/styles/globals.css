@@ -313,6 +313,7 @@ section.workflow ol{
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	max-width: 100%;
 }
 section.workflow ol li{
 	display: flex;
