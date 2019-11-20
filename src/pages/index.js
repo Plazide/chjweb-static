@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => (
 				link="/cms" 
 				align="left"
 				title="Fritt val av CMS">
-				Eftersom jag inte använder Wordpress för att bygga hemsidor, har du möjlighet att välja mellan flera olika CMS verktyg för att hantera sidan. Om du vill ha en blogg kan jag integrera Ghost, som har ett fantastisks redigeringsverktyg. Om du behöver hantera andra typer av innehåll än blogginlägg finns Directus, Strapi eller Contentful.
+				Eftersom jag inte använder Wordpress för att bygga hemsidor, har du möjlighet att välja mellan flera olika CMS verktyg för att hantera sidan. Om du vill ha en blogg kan jag integrera Ghost, som har ett fantastiskt redigeringsverktyg. Om du behöver hantera andra typer av innehåll än blogginlägg finns Directus, Strapi eller Contentful.
 			</Row>
 		</section>
 
