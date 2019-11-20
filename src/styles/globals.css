@@ -285,6 +285,7 @@ section.features .copy.intro p{
 }
 .row .copy p{
 	margin-top: 7px;
+	max-width: 100%;
 }
 .row .copy a{
 	margin-top: 1rem;
