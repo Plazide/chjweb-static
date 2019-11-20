@@ -73,7 +73,7 @@ export default function blogg({ data }) {
 							const imageFixed = post.frontmatter.image.childImageSharp.fixed;
 							const imageFluid = post.frontmatter.image.childImageSharp.fluid;
 
-							const image = featured ? imageFluid : imageFixed;
+							const image = imageFluid;
 
 							return(
 								<Post
@@ -96,7 +96,7 @@ export default function blogg({ data }) {
 }
 
 function Post({ title, description, published, readTime, image, slug, featured }){
-	const Image = featured ? <Img fluid={image} /> : <Img fixed={image} />;
+	const Image = <Img fluid={image} />;
 
 	return (
 		<li className={`post ${featured ? "featured" : ""}`}>
@@ -125,10 +125,7 @@ query BloggQuery{
 					description
 					image {
 						childImageSharp {
-							fixed(width: 560, height: 345, quality: 70) {
-								...GatsbyImageSharpFixed
-							}
-							fluid(maxWidth: 870, maxHeight: 380, quality: 70) {
+							fluid(maxWidth: 870, maxHeight: 380, quality: 100) {
 								...GatsbyImageSharpFluid
 							}
 						}
