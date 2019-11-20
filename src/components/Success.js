@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from "prop-types";
 
 // Components
@@ -8,24 +8,30 @@ import Countdown from "react-countdown-now";
 import "./styles/status.css";
 
 // Images
-import _successUrl, { ReactComponent as SuccessImage } from "../images/illustrations/success.svg";
+import successUrl from "../images/illustrations/success.svg";
 
 export default function Success({ message, hidden = true, countdown = 0 }) {
+	const [successMsg, setSuccessMsg] = useState("");
+
 	const hiddenClass = hidden ? "hidden" : "";
 	const countdownElement = countdown ? <Countdown date={Date.now() + countdown} renderer={renderCountdown} /> : "";
 
+	setTimeout( () => {
+		setSuccessMsg(message);
+	}, 100);
+
 	return (
-		<div className={`status success ${hiddenClass}`}>
-			<SuccessImage className="illustration" />
-			<p className="message">{message}</p>
+		<dialog className={`status success ${hiddenClass}`} aria-live="polite" role="status">
+			<img src={successUrl} alt="Lyckades" className="illustration" role="presentation" />
+			<h1 className="message">{successMsg}</h1>
 			{countdownElement}
-		</div>
+		</dialog>
 	)
 }
 
 function renderCountdown({ seconds }){
 	return (
-		<div>
+		<div role="presentation">
 			<span>Omdirigeras om:</span>
 			<span className="countdown">{seconds}</span>
 		</div>
