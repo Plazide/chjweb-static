@@ -21,7 +21,7 @@ svg {
 html, body{
 	margin: 0;
 	padding: 0;
-	color: var(--txt-prim-clr);
+	color: var(--textPrimary);
 
 	box-sizing: border-box;
 	font-family: "Roboto", sans-serif;
@@ -47,11 +47,10 @@ h1{
 }
 h2{
 	font-size: 2rem;
-	color: var(--sec-clr);
 	margin-bottom: 0;
 }
 h3,h4{
-	color: var(--txt-prim-clr);
+	color: var(--textPrimary);
 }
 p a{
 	text-decoration: none;
@@ -104,7 +103,7 @@ h2.underlined{
 	display: inline-block;
 	content: "";
 	height: 1px;
-	background: var(--txt-sec-clr);
+	background: var(--textSecondary);
 	width: 150%;
 }
 .horizontal-list{
