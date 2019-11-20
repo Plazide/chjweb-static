@@ -1,0 +1,7 @@
+section.legal h1{
+	color: var(--textPrimary);
+	font-size: 2.4rem;
+}
+section.legal .content{
+	max-width: 800px;
+}
