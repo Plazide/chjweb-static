@@ -4,7 +4,12 @@ module.exports = {
 		description: "Skaffa dig en modern, väl presterande och säker hemsida med CHJ Webblösningar.",
 		author: "CHJ Webblösningar",
 		siteUrl: "https://www.chjweb.se",
-		lang: "sv"
+		lang: "sv",
+		streetAddress: "Basunvägen 2",
+		zipCode: "542 41",
+		city: "Mariestad",
+		email: "contact@chjweb.se",
+		phone: "0501-60 19 09"
 	},
 	plugins: [
 		{
