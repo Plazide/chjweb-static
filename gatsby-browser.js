@@ -8,9 +8,15 @@
 import "./src/styles/globals.css";
 import cssVars from "css-vars-ponyfill";
 
-cssVars();
-
 export const onClientEntry = async () => {
 	if(typeof IntersectionObserver === "undefined")
 		await import("intersection-observer");
+
+	if(!browserCanUseCssVariables())
+		cssVars();
+	
+}
+
+function browserCanUseCssVariables() {
+	return window.CSS && CSS.supports('color', 'var(--fake-var)');
 }
