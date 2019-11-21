@@ -35,6 +35,7 @@ export default function blogg({ data }) {
 					"headline": post.frontmatter.title,
 					"author": "Carl Hallén Jansson",
 					"datePublished": post.frontmatter.date,
+					"dateModified": post.frontmatter.updated,
 					"publisher": {
 						"@type": "Organization",
 						"@id": "https://www.chjweb.se",
@@ -124,6 +125,7 @@ query BloggQuery{
 				frontmatter {
 					title
 					date(formatString: "YYYY-MM-DD")
+					updated(formatString: "YYYY-MM-DD")
 					description
 					image {
 						childImageSharp {

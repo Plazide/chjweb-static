@@ -40,6 +40,7 @@ export default function post({ data }) {
 	const title = data.markdownRemark.frontmatter.title;
 	const description = data.markdownRemark.frontmatter.description;
 	const published = data.markdownRemark.frontmatter.date;
+	const updated = data.markdownRemark.frontmatter.updated;
 	const readTime = data.markdownRemark.timeToRead;
 	const htmlAst = data.markdownRemark.htmlAst;
 	const logoUrl = data.imageSharp.fixed.src;
@@ -58,7 +59,7 @@ export default function post({ data }) {
 		"headline": title,
 		"description": description,
 		"datePublished": published,
-		"dateModified": published,
+		"dateModified": updated,
 		"image": featuredImage.src,
 		"mainEntityOfPage": pageUrl,
 		"author": "Carl Hallén Jansson",
@@ -160,6 +161,7 @@ query PostQuery($slug: String!){
 			title
 			description
 			date(formatString: "YYYY-MM-DD")
+			updated(formatString: "YYYY-MM-DD")
 			image {
 				childImageSharp {
 					fluid(maxWidth: 2080, maxHeight: 564){
