@@ -1,6 +1,7 @@
 ---
 title: CHJ Webblösningar gör om hemsidan och skaffar en blogg
 date: 2019-10-02T09:34:40.248Z
+updated: 2019-11-21T08:12:25.737Z
 description: >-
   Jag har gjort om min hemsida om skaffat en blogg. I det här första inlägget
   skriver jag om varför och hur jag gjorde detta.
@@ -62,7 +63,7 @@ För att lösa problemet med .html förlängningen lade jag bara till en instäl
 
 Det jag har lärt mig från det att göra om hemsidan, förutom vissa tekniska saker, är att jag måste planera bättre. När jag gjorde den här hemsidan var jag stressad och ville få ut den så fort som möjligt. Det misstaget kommer jag inte göra igen. Jag kommer planera framtida hemsidor i förväg, så som jag gjort med min första kund (det kommer ett framtida inlägg om detta).
 
-Jag tror mitt inlägg är slut här. Om du har läst så här långt antar jag att du är intresserad av det jag gör. Om du är det föreslår jag att du följer mig på någon av mina social medier, du hittar de längst ner på sidan. Det finns inte speciellt mycket aktivitet där just nu, men det kommer att förändras framöver.
+Jag tror mitt inlägg är slut här. Om du har läst så här långt antar jag att du är intresserad av det jag gör. Om du är det föreslår jag att du följer mig på någon av mina sociala medier, du hittar dem längst ner på sidan. Det finns inte speciellt mycket aktivitet där just nu, men det kommer att förändras framöver.
 
 Tack för att du läst och ha en fortsatt fantastisk dag.
 
