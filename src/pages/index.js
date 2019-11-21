@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => (
 				align="right"
 				title="Självlärd webbutvecklare"
 				>
-				Mina erfarenheter och kunskaper kommer ifrån att jag under många år testat och experimenterat mig fram genom olika projekt. Jag har skapat webbshoppar, köp- och säljsidor och presentationssidor till olika företag innan jag startade mitt företag. Jag har alltså lärt mig genom att skapa verkliga hemsidor som använts av människor. 
+				Mina erfarenheter och kunskaper kommer ifrån att jag under många år testat och experimenterat mig fram genom olika projekt. Jag har skapat webbshoppar, köp- och säljsidor och presentationssidor till olika företag innan jag startade mitt företag. Jag har alltså lärt mig webbutveckling genom att skapa verkliga hemsidor som använts av riktiga människor. 
 			</Row>
 		</section>
 
