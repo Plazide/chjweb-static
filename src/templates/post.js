@@ -44,6 +44,11 @@ export default function post({ data }) {
 	const htmlAst = data.markdownRemark.htmlAst;
 	const logoUrl = data.imageSharp.fixed.src;
 
+	const formattedPublishDate = new Intl.DateTimeFormat("sv-SE", { 
+		day: "2-digit",
+		month: "short",
+		year: "numeric" 
+	}).format(new Date(published));
 	const pageUrl = `https://www.chjweb.se/blogg/${slug}`;
 
 	const structuredData = {
@@ -88,7 +93,7 @@ export default function post({ data }) {
 						</div>
 					</BackgroundImage>
 					<div className="meta">
-						<span>{published}</span>
+						<span>{formattedPublishDate}</span>
 						<span>{readTime} minuter</span>
 					</div>
 				</div>
@@ -154,7 +159,7 @@ query PostQuery($slug: String!){
 		frontmatter{
 			title
 			description
-			date(formatString: "DD MMM, Y", locale: "sv")
+			date(formatString: "YYYY-MM-DD")
 			image {
 				childImageSharp {
 					fluid(maxWidth: 2080, maxHeight: 564){

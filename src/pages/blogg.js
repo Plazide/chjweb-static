@@ -68,12 +68,14 @@ export default function blogg({ data }) {
 						{posts.map( (item, index) => {
 							const post = item.node;
 							const featured = index === 0;
-
 							const slug = post.fields.slug;
-							const imageFixed = post.frontmatter.image.childImageSharp.fixed;
-							const imageFluid = post.frontmatter.image.childImageSharp.fluid;
+							const image = post.frontmatter.image.childImageSharp.fluid;
 
-							const image = imageFluid;
+							const publishDate = new Intl.DateTimeFormat("sv-SE", { 
+								day: "2-digit", 
+								month: "short", 
+								year: "numeric" 
+							}).format(new Date(post.frontmatter.date));
 
 							return(
 								<Post
@@ -83,7 +85,7 @@ export default function blogg({ data }) {
 									slug={slug}
 									title={post.frontmatter.title}
 									description={post.frontmatter.description}
-									published={post.frontmatter.date}
+									published={publishDate}
 									readTime={post.timeToRead}
 								/>
 							);
@@ -121,7 +123,7 @@ query BloggQuery{
 			node {
 				frontmatter {
 					title
-					date(locale: "sv", formatString: "DD MMM, Y")
+					date(formatString: "YYYY-MM-DD")
 					description
 					image {
 						childImageSharp {
