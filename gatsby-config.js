@@ -3,7 +3,7 @@ module.exports = {
 		title: "CHJ Webblösningar",
 		description: "Skaffa dig en modern, väl presterande och säker hemsida med CHJ Webblösningar.",
 		author: "CHJ Webblösningar",
-		siteUrl: "https://www.chjweb.se",
+		siteUrl: "https://chjweb.se",
 		lang: "sv",
 		streetAddress: "Basunvägen 2",
 		zipCode: "542 41",
