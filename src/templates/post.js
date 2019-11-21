@@ -50,7 +50,7 @@ export default function post({ data }) {
 		month: "short",
 		year: "numeric" 
 	}).format(new Date(published));
-	const pageUrl = `https://www.chjweb.se/blogg/${slug}`;
+	const pageUrl = `https://chjweb.se/blogg/${slug}`;
 
 	const structuredData = {
 		"@context": "http://schema.org",
@@ -65,7 +65,7 @@ export default function post({ data }) {
 		"author": "Carl Hallén Jansson",
 		"publisher": {
 			"@type": "Organization",
-			"@id": "https://www.chjweb.se",
+			"@id": "https://chjweb.se",
 			"name": "CHJ Webblösningar",
 			"logo": { 
 				"@type": "ImageObject",
@@ -79,7 +79,7 @@ export default function post({ data }) {
 			<SEO 
 				title={title + " | Blogg"} 
 				description={description} 
-				url={pageUrl} 
+				url={`/blogg/${slug}`} 
 				structuredData={structuredData} 
 			/>
 			<article className="blog-posting">

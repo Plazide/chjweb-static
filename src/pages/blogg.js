@@ -38,7 +38,7 @@ export default function blogg({ data }) {
 					"dateModified": post.frontmatter.updated,
 					"publisher": {
 						"@type": "Organization",
-						"@id": "https://www.chjweb.se",
+						"@id": "https://chjweb.se",
 						"name": "CHJ Webblösningar",
 						"logo": { 
 							"@type": "ImageObject",
