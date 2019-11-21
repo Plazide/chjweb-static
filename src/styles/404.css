@@ -1,0 +1,14 @@
+section.not-found .content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+section.not-found .content a{
+	margin-bottom: 3rem;
+	color: var(--primary);
+	text-decoration: none;
+}
+section.not-found .content .code{
+	font-size: 18rem;
+}
