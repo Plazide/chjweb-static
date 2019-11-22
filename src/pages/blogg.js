@@ -29,7 +29,7 @@ export default function blogg({ data }) {
 						"@type": "ImageObject",
 						"url": image.src
 					},
-					"url": siteUrl + "/blogg/" + post.fields.slug,
+					"url": siteUrl + "/" + post.fields.slug,
 					"name": post.frontmatter.title,
 					"position": pos,
 					"headline": post.frontmatter.title,
