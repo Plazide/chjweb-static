@@ -3,3 +3,8 @@
 	command="gatsby build"
 	functions="functions"
 	publish="public"
+
+[[redirects]]
+	from = "/blogg/chj-webblosningar-hemsida-blogg"
+	to = "/blogg/chj-webblosningar-gor-om-hemsidan-och-skaffar-en-blogg"
+	status = 301
