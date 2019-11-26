@@ -3,8 +3,9 @@ title: Ny hemsida åt Sjötorps Vandrarhem
 date: 2019-12-01T21:20:05.233Z
 updated: 2019-12-01T12:49:03.372Z
 description: >-
-  CHJ Webblösningar har skapat Sjötorps Vandrarhems första hemsida. Läs om vad
-  jag har gjort och hur jag har gjort det.
+  CHJ Webblösningar har skapat den första hemsidan till Sjötorps Vandrarhem.
+  Detta är den både första hemsidan som Sjötorps Vandrarhem har och den första
+  hemsidan som jag skapar åt en kund genom CHJ Webblösningar.
 image: /static/framsida.jpg
 ---
 ## Sjötorps Vandrarhem har fått sin första egna hemsida
@@ -59,3 +60,50 @@ Kunden tar emot många gäster från andra länder, t.ex. Nederländerna och Tys
 ### Språk och SEO
 
 En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidan med flera innehåll på flera olika språk är sökmotoroptimering. Som tur är har Google ganska klara riktlinjer på hur man sökmotoroptimerar en flerspråkssida. Man använder `hreflang` taggarna i huvudet på sidan för att peka på vilken sida som gäller för vilket språk. Sedan är det rekommenderat att man serverar olika språk på egna undersidor, t.ex. `https://sjötorpsvandrarhem.se/en/boka-rum` istället för att använda cookies eller basera språket på IP adressen.
+
+### Översättningar
+
+Själva översättningarna på hemsidan gjordes av kunden, i alla fall innehållet. Översättningarna i sidans huvud och fot gjordes med hjälp av DeepL Translate. Även översättningar för texten i bokningsprocessen gjordes med hjälp av DeepL Translate. Kunden behärskar alla språk som används på sidan, så jag har låtit honom granska alla automatiska översättningar för att säkerställa att dem är korrekta.
+
+För att låta kunden göra översättningar på olika språk byggde jag ett enkelt CMS. Det är beroende av vilken sida som användaren redigerar på, och eftersom alla språk har sina egna undersidor behöver man bara navigera till rätt sida och sedan ändra den önskade texten.
+
+## Teknologi
+
+För de som är intresserade av vad jag använt mig av för att skapa hemsidan och kontrollpanelen till Sjötorps Vandrarhem så har jag sammanställt en liten lista av de program och tjänster som jag använt mig av.
+
+**Frontend**
+
+* Webpack
+* Handlebars (för hemsidan)
+* React (För kontrollpanelen)
+* JavaScript
+* HTML
+* CSS
+
+**Backend**
+
+* JavaScript
+* Node.js
+* Express
+* MongoDB
+* Mongoose
+
+### Hosting
+
+Den första tanken med hemsidan till Sjötorps Vandrarhem var att hosta den genom Oderland Webbhotell AB. Jag hade min egen hemsidan hos dem tills för några veckor sedan. Problemet var att jag ville erbjuda ett bättre värde till mina kunder. Ett Agency paket, som låter mig hosta sidor åt mina kunder, hos Oderland hade en kostnad på 500 kr i månaden. När jag endast har en betalande kund är detta inte ekonomiskt sunt.
+
+Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. Det visade senare att de egentligen inte hade något gränssnitt för Node, utan man var ändå tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy.
+
+Support för MongoDB hade de inte heller, det finns det nog inget svenskt webbhotell som har. För att kunna använda MongoDB var jag tvungen att använda Oderlands gör-det-själv servrar, det är deras namn för VPS. Detta skulle dock visa sig vara ganska dyrt. Att ha en server med 1 CPU och 500 MB RAM kostade mig runt 150 kr i månaden. Detta kanske inte låter som så mycket, men den summan gäller bara databasen. Tillsammans med själva webbservern blir detta totalt nästan 300 kr i månaden.
+
+När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Framtida kunder kan faktiskt räkna med ännu billigare hosting.
+
+### E-post
+
+Eftersom jag inte använder ett webbhotell har jag inte inbyggd e-post. Jag var alltså tvungen att hitta en annan lösning för detta. Jag kollade runt på flera olika webbhotell som erbjöd email hosting. Vissa var dyrare än andra, men de flesta låg på runt 10 kr för varje konto. Till slut hittade jag ett Italienskt företag vid namn Qboxmail. De erbjöd inte billigare priser eller så, men deras kontrollpanel och verktyg verkade mycket bättre än något annat jag tittade på.
+
+De erbjöd även ett så kallat reseller konto, vilket betyder att jag sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadressen och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
+
+## Avslutande ord
+
+Jag kom in lite på villovägar när jag började skriva om hosting, jag hoppas att du kunde hänga med. Det här projektet har utan tvekan varit lärorikt, både när det gäller utveckling och serverhantering. Jag hoppas att
