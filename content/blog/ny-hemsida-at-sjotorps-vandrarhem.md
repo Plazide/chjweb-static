@@ -65,7 +65,7 @@ En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidan med
 
 Själva översättningarna på hemsidan gjordes av kunden, i alla fall innehållet. Översättningarna i sidans huvud och fot gjordes med hjälp av DeepL Translate. Även översättningar för texten i bokningsprocessen gjordes med hjälp av DeepL Translate. Kunden behärskar alla språk som används på sidan, så jag har låtit honom granska alla automatiska översättningar för att säkerställa att dem är korrekta.
 
-För att låta kunden göra översättningar på olika språk byggde jag ett enkelt CMS. Det är beroende av vilken sida som användaren redigerar på, och eftersom alla språk har sina egna undersidor behöver man bara navigera till rätt sida och sedan ändra den önskade texten.
+För att låta kunden göra översättningar på olika språk byggde jag ett enkelt CMS. Det är beroende av vilken sida som användaren redigerar på, och eftersom alla språk har sina egna undersidor behöver man bara navigera till rätt sida och sedan ändra den önskade texten. Detta fungerar bra för det här ändamålet, men jag skulle inte vilja använda det till något annat.
 
 ## Teknologi
 
@@ -106,4 +106,14 @@ De erbjöd även ett så kallat reseller konto, vilket betyder att jag sälja vi
 
 ## Avslutande ord
 
-Jag kom in lite på villovägar när jag började skriva om hosting, jag hoppas att du kunde hänga med. Det här projektet har utan tvekan varit lärorikt, både när det gäller utveckling och serverhantering. Jag hoppas att
+Jag kom in lite på villovägar när jag började skriva om hosting, jag hoppas att du kunde hänga med. Det här projektet har utan tvekan varit lärorikt, både när det gäller utveckling och serverhantering. Jag hoppas att framtida projekt kommer att vara lika roliga att jobba på.
+
+Det här var nog allt för mig. Du kan dela inlägget genom någon av knapparna nedanför och fråga mig frågor på sociala medier.
+
+Tack för att du läst och ha en fortsatt bra dag!
+
+
+
+PS. Om du är intresserad av att börja använda DigitalOcean så kan du registrera dig genom min [referal länk](https://m.do.co/c/ced72bda5083). Då får du 50$ att spendera på deras tjänster under 30 dagar. När du spenderat 25$ så får jag 25$ på mitt konto. Alla vinner!
+
+Länk: <https://m.do.co/c/ced72bda5083>
