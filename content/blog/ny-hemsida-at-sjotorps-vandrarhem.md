@@ -96,7 +96,9 @@ Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen 
 
 Support för MongoDB hade de inte heller, det finns det nog inget svenskt webbhotell som har. För att kunna använda MongoDB var jag tvungen att använda Oderlands gör-det-själv servrar, det är deras namn för VPS. Detta skulle dock visa sig vara ganska dyrt. Att ha en server med 1 CPU och 500 MB RAM kostade mig runt 150 kr i månaden. Detta kanske inte låter som så mycket, men den summan gäller bara databasen. Tillsammans med själva webbservern blir detta totalt nästan 300 kr i månaden.
 
-När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Framtida kunder kan faktiskt räkna med ännu billigare hosting.
+När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att DigitalOcean erbjuder den billigaste lösningen på marknaden. Deras billigaste droplet (VPS) med 1 GB RAM, 1 CPU och 25 GB SSD kostar 50 kr i månaden. En VM Instance från Google Cloud med samma CPU och RAM kostar över 200 kr i månaden, och då har den bara en HDD med 10 GB utrymme.
+
+ Det blev lite tekniskt där, förlåt!
 
 ### E-post
 
