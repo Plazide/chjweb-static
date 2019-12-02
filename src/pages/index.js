@@ -59,7 +59,7 @@ const IndexPage = ({ data }) => {
 				<Wave className="background" />
 				<div className="content">
 					<div className="copy">
-						<a href={`/blogg/${data.allMarkdownRemark.nodes[0].fields.slug}`} className="featured">
+						<a href={`/blogg/${data.allMarkdownRemark.nodes[0].fields.slug}`} title={data.allMarkdownRemark.nodes[0].frontmatter.title} className="featured">
 							<span>Senaste inlägget: </span>
 							<span className="title">{data.allMarkdownRemark.nodes[0].frontmatter.title}</span>
 							<Arrow />
