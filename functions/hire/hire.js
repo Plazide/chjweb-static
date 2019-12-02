@@ -7,8 +7,6 @@ const secure = process.env.EMAIL_SECURE;
 const user = process.env.EMAIL_USER;
 const pass = process.env.EMAIL_PASS;
 
-console.log(host);
-
 const transporter = nodemailer.createTransport({
 	host,
 	port,
