@@ -8,3 +8,23 @@
 	from = "/blogg/chj-webblosningar-hemsida-blogg"
 	to = "/blogg/chj-webblosningar-gor-om-hemsidan-och-skaffar-en-blogg"
 	status = 301
+
+[[redirects]]
+	from = "/cms"
+	to = "/webbyra/cms"
+	status = 301
+
+[[redirects]]
+	from = "/hosting"
+	to = "/webbyra/hosting"
+	status = 301
+
+[[redirects]]
+	from = "/personuppgifter.html"
+	to = "/integritetspolicy"
+	status = 301
+
+[[redirects]]
+	from = "/personuppgifter"
+	to = "/integritetspolicy"
+	status = 301
