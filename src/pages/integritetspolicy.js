@@ -14,7 +14,10 @@ export default function integritetspolicy() {
 				<SEO 
 					title="Integritetspolicy"
 					description="Integritetspolicy för CHJ Webblösningar."
-					url="/integritetspolicy"
+					url="/integritetspolicy/"
+					breadcrumb={[
+						{ name: "Integritetspolicy", url: "/integritetspolicy" }
+					]}
 				/>
 				<section className="legal">
 				<div class="content">
