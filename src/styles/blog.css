@@ -99,6 +99,7 @@ section.blog .posts .post.featured p{
 
 .post-heading{
 	position: relative;
+	z-index: -1;
 }
 .post-heading .featured-image{
 	display: flex;
