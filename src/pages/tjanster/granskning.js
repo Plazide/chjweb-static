@@ -17,6 +17,7 @@ import "../../styles/granskning.css";
 
 // Images
 import heroUrl from "../../images/illustrations/granskning_hero.svg";
+import auditUrl from "../../images/illustrations/granskning.svg";
 
 export default function Granskning() {
 	return (
@@ -35,6 +36,7 @@ export default function Granskning() {
 						url: "/tjanster/granskning"
 					}
 				]}
+				image={auditUrl}
 			/>
 
 			<Hero
