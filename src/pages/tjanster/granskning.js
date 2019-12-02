@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useStaticQuery, graphql } from 'gatsby';
 
 // Layout
 import Layout from "../../components/layout";
@@ -17,9 +18,21 @@ import "../../styles/granskning.css";
 
 // Images
 import heroUrl from "../../images/illustrations/granskning_hero.svg";
-import auditUrl from "../../images/illustrations/granskning.svg";
 
 export default function Granskning() {
+	const { imageSharp } = useStaticQuery(
+		graphql`
+			query {
+				imageSharp(resolutions: {originalName: {eq: "granskning.png"}}) {
+					fixed {
+						src
+					}
+				}
+			}
+		`
+	)
+	const image = imageSharp.fixed.src;
+
 	return (
 		<Layout>
 			<SEO 
@@ -36,7 +49,7 @@ export default function Granskning() {
 						url: "/tjanster/granskning"
 					}
 				]}
-				image={auditUrl}
+				image={image}
 			/>
 
 			<Hero
