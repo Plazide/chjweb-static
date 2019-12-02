@@ -57,6 +57,9 @@ export default function blogg({ data }) {
 				description="I min blogg skriver jag om hur det är att driva företag, olika projekt som jag gör och andra saker som har med företagande eller webbutveckling att göra."
 				url="/blogg"
 				structuredData={structuredData}
+				breadcrumb={[
+					{ name: "Blogg", url: "/blogg" }
+				]}
 			/>
 			<section className="blog">
 				<div className="content">
