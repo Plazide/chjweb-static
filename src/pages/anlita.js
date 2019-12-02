@@ -21,6 +21,9 @@ export default function Anlita() {
 				title="Anlita en modern webbutvecklare"
 				description="Skicka en förfrågan om att anlita CHJ Webblösningar."
 				url="/anlita"
+				breadcrumb={[
+					{ name: "Anlita", url: "/anlita" }
+				]}
 			/>
 			<main>
 				<section className="hire">
@@ -31,7 +34,7 @@ export default function Anlita() {
 
 						<div className="copy">
 							<h1>Anlita CHJ Webblösningar</h1>
-							<p>Efter att ni har skickat en förfrågan om att anlita mig kommer jag att kontakta er för att boka ett möte. I det mötet kommer vi att diskutera er hemsidas omfattning. Det är först i slutet av mötet som jag kan ge er ett pris.</p>
+							<p>Efter att ni har skickat en förfrågan om att anlita mig kommer jag att kontakta er för att boka ett möte. I det mötet kommer vi att diskutera er hemsidas omfattning. Det är först i slutet av mötet som jag kan ge er ett pris. Ni förbinder er inte till något genom att trycka på ANLITA</p>
 						</div>
 
 						<Form />
