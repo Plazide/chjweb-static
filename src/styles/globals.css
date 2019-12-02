@@ -131,8 +131,8 @@ section.hero .featured{
 	justify-content: flex-start;
 	align-items: center;
 
-	background: var(--textSecondary);
-	border: 1px solid var(--textAlt);
+	background: var(--lightShadow);
+	border: 1px solid var(--lightRed);
 	padding: .5rem 2rem;
 
 	font-family: "Roboto", sans-serif;
