@@ -1,0 +1,62 @@
+.audit-form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 1rem;
+
+	background: var(--darkLightRed);
+	width:100%;
+	min-height: 80px;
+	border-radius: 4px;
+	text-align: left;
+}
+.audit-form.hide{
+	animation: hideAuditForm 100ms ease-out forwards;
+}
+.audit-form .text-field .error-text{
+	color: var(--textAlt);
+}
+.submit-error{
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid var(--primary);
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+.submit-success{
+	width: 100%;
+	margin-top: 2rem;
+}
+.submit-success p{
+	max-width: 300px;
+	margin:auto;
+}
+
+@keyframes hideAuditForm{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+		display: none;
+		min-height: 0;
+		height: 0;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.audit-form{
+		flex-direction: column;
+	}
+	.audit-form .text-field{
+		width: 100% !important;
+		margin-bottom: 1rem;
+	}
+	.audit-form .button{
+		width: 100%;
+		margin-top: 2rem;
+	}
+}
