@@ -1,8 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby';
-
-// Components
-import Navigation from "./navigation";
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 // css
 import "./styles/footer.css";
@@ -49,7 +46,12 @@ export default function Footer() {
 			<div className="content">
 				<section className="nav">
 					<h1>Bläddra</h1>
-					<Navigation />
+					<nav>
+						<Link to="/">Hem</Link>
+						<Link to="tjanster">Tjänster</Link>
+						<Link to="/webbyra">Webbyrå</Link>
+						<Link to="/blogg">Blogg</Link>
+					</nav>
 				</section>
 
 				<section className="contact">
