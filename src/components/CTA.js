@@ -1,11 +1,10 @@
 import React from 'react'
 
 // Components
-import Button from "./ButtonLink";
+import ButtonLink from './ButtonLink';
 
 // css
 import "./styles/cta.css";
-import ButtonLink from './ButtonLink';
 
 export default function CTA({ title, children }) {
 	return (
