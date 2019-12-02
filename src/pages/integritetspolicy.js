@@ -23,11 +23,7 @@ export default function integritetspolicy() {
 				<div class="content">
 					<h1>Hantering av personuppgifter</h1>
 
-					<p>För att CHJ webblösningar ska kunna genomföra avtalet med kunden samlas vissa personuppgifter från kunden. Dessa uppgifter inkluderar namn och e-postadress. Kundens namn används för att identifiera kunden, det vill säga för att veta vem som köper tjänsten. E-postadressen används för att kommunicera med kunden och för att kunna skicka en faktura på den utförda tjänsten. Andra personuppgifter kan också komma samlas in vid kundens samtycke.</p>
-
-					<p>När en användare skickar meddelande från CHJ webblösningars webbplats(chjweb.se) via ett kontaktformulär begärs vissa personuppgifter från användaren. För att kunna skicka ett meddelande måste användaren ange sitt namn och sin e-postadress. Användarens namn används för att kunna identifiera användaren och e-postadressen används för att kunna svara på användarens meddelande.</p>
-
-					<p>E-postmeddelanden som skickas via webbplatsen sparas tills då ärendet som användaren vill ha hjälp med är avklarat. Om ärendet gäller beställning av en hemsida kommer användarens e-post sparas tills avtalet för beställningen är avklarat.</p>
+					<p>Beroende på hur du använder hemsidan kan CHJ Webblösningar komma att samla in vissa personuppgifter. Dessa personuppgifter inkluderar, för närvarande, endast din e-postadress. CHJ Webblösningar använder din e-post för att kontakta dig vid ett senare skede. Om det gäller en granskning kommer ett svar med en rapport om den angivna webbplatsen skickas till e-postadressen. Om det gäller en förfrågan om att anlita mig kommer e-posten användas som en kommunikationskanal under utvecklingen av projektet.</p>
 
 					<h1>Hantering av cookies</h1>
 					<p>chjweb.se använder cookies för att kunna föra statistik om hur sidan används samt för att kunna upptäcka om användaren är inloggad på webbplatsen. Om du som användare inte accepterar den här användningen av cookies kan du avaktivera dem i din webbläsare genom att följa guiden för din webbläsare.</p>
