@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, url, structuredData }) {
+function SEO({ description, lang, meta, title, url, structuredData, breadcrumb }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -78,7 +78,30 @@ function SEO({ description, lang, meta, title, url, structuredData }) {
         },
       ].concat(meta)}
     >
-		{structuredData ? <script type="application/ld+json">{JSON.stringify(structuredData)}</script> : ""}
+		{structuredData ? (
+			Array.isArray(structuredData) 
+			? structuredData.map(
+				(data, index) => <script type="application/ld+json" key={index}>{JSON.stringify(data)}</script>
+				)
+			: <script type="application/ld+json">{JSON.stringify(structuredData)}</script>) : ""}
+
+		{breadcrumb ? 
+			<script type="application/ld+json">
+				{JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "BreadcrumbList",
+					"itemListElement": breadcrumb.map((data, index) => (
+						{
+							"@type": "ListItem",
+							"position": index + 1,
+							"name": data.name,
+							"item": `https://chjweb.se${data.url}`
+						}
+					))
+				})}
+			</script>
+			: ""
+		}
 	</Helmet>
   )
 }
