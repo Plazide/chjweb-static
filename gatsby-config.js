@@ -13,13 +13,6 @@ module.exports = {
 	},
 	plugins: [
 		{
-			resolve: "gatsby-plugin-freshchat",
-			options: {
-				token: "4d49cb96-8150-4e0c-ba69-1fcb8fd27953",
-				host: "https://wchat.freshchat.com"
-			}
-		},
-		{
 			resolve: "gatsby-plugin-google-analytics",
 			options: {
 				trackingId: "UA-143244918-1",
