@@ -80,7 +80,11 @@ export default function post({ data }) {
 				title={title + " | Blogg"} 
 				description={description} 
 				url={`/blogg/${slug}`} 
-				structuredData={structuredData} 
+				structuredData={structuredData}
+				breadcrumb={[
+					{ name: "Blogg", url: "/blogg" },
+					{ name: title, url: `/blogg/${slug}` }
+				]}
 			/>
 			<article className="blog-posting">
 				<div className="post-heading">
