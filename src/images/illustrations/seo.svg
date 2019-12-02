@@ -1,0 +1,25 @@
+<svg id="undraw_search_2dfv" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="509.695" height="320.812" viewBox="0 0 509.695 320.812">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_73" data-name="Rectangle 73" width="506.737" height="93.704" transform="translate(2.958)" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_74" data-name="Rectangle 74" width="500.077" height="85.654" transform="translate(5.916 3.069)" fill="#fff"/>
+  <rect id="Rectangle_75" data-name="Rectangle 75" width="290.701" height="50.975" transform="translate(36.632 20.551)" fill="#f5f5f5"/>
+  <rect id="Rectangle_76" data-name="Rectangle 76" width="505.999" height="196.218" transform="translate(0 124.593)" fill="url(#linear-gradient)"/>
+  <rect id="Rectangle_77" data-name="Rectangle 77" width="494.021" height="185.153" transform="translate(5.916 129.382)" fill="#fff"/>
+  <circle id="Ellipse_20" data-name="Ellipse 20" cx="41.531" cy="41.531" r="41.531" transform="translate(28.844 179.997)" fill="#c73c3c"/>
+  <rect id="Rectangle_78" data-name="Rectangle 78" width="173.035" height="20.766" transform="translate(142.186 188.651)" fill="rgba(199,60,60,0.7)"/>
+  <rect id="Rectangle_79" data-name="Rectangle 79" width="173.035" height="20.766" transform="translate(142.186 231.043)" fill="rgba(199,60,60,0.47)"/>
+  <rect id="Rectangle_80" data-name="Rectangle 80" width="163.521" height="185.153" transform="translate(337.282 129.382)" fill="#c73c3c"/>
+  <g id="Group_167" data-name="Group 167" transform="translate(21)">
+    <g id="Ellipse_122" data-name="Ellipse 122" transform="translate(376.695 12.002)" fill="none" stroke="#c73c3c" stroke-width="8">
+      <circle cx="27" cy="27" r="27" stroke="none"/>
+      <circle cx="27" cy="27" r="23" fill="none"/>
+    </g>
+    <rect id="Rectangle_290" data-name="Rectangle 290" width="10" height="36" rx="4" transform="translate(417.847 58.609) rotate(-52)" fill="#c73c3c"/>
+  </g>
+</svg>
