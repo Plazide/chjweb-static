@@ -85,6 +85,7 @@ export default function post({ data }) {
 					{ name: "Blogg", url: "/blogg" },
 					{ name: title, url: `/blogg/${slug}` }
 				]}
+				image={featuredImage.src}
 			/>
 			<article className="blog-posting">
 				<div className="post-heading">
