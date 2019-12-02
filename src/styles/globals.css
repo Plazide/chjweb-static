@@ -10,12 +10,13 @@
 	--lightShadow: rgba(93, 92, 97, 0.1);
 	--lightBlue: #F2F9F9;
 	--lightRed: #c73c3c50;
+	--darkLightRed: #c73c3cb3;
 
 	--contentWidth: 1200px;
 }
 
 /* General */
-svg {
+svg, img {
 	font-family: "Raleway";
 }
 html, body{
@@ -119,8 +120,8 @@ h2.underlined{
 section.hero{
 	box-sizing: border-box;
 	padding: 0 0 5rem;
-	height: 92vh;
-	position: relative;
+	height: 80vh;
+
 }
 section.hero .featured{
 	box-sizing: border-box;
@@ -211,10 +212,13 @@ section.hero .btns a:first-child{
 section.hero .btn{
 	margin-bottom: 1em;
 }
-section.hero .illustration{
+section.hero .content .illustration{
 	width: 550px;
-	max-width: 90%;
+	max-width: 40%;
 	text-align: right;
+}
+section.hero .content .illustration img{
+	max-width: 100%;
 }
 
 /* Features */
@@ -290,6 +294,12 @@ section.features .copy.intro p{
 }
 .row .copy a{
 	margin-top: 1rem;
+}
+.row .illustration{
+	max-width: 40%;
+}
+.row .illustration img{
+	max-width: 100%;
 }
 
 /* About */
