@@ -54,6 +54,12 @@ Eftersom en CDN består av flera olika servrar är driftsäkerheten mycket högr
 
 För att faktiskt dra nytta av cachestrategierna som en CDN erbjuder kan inte hemsidan byggas ihop vid varje hämtning. Istället är alla sidor på webbplatsen redan färdiga när dem laddas upp på CDN:en.
 
+### Statiska sidor
+
+Det finns ett namn för sidor som inte byggs ihop vid varje hämtning, dem kallas statiska hemsidor. Det här namnet kan dock vara lite missvisande eftersom innehållet på dessa sidor inte alls behöver vara statiskt. Dessa hemsidor hanterar bara innehåll på ett annat sätt.
+
+
+
 
 
 ## Fördelar med JAMStack
