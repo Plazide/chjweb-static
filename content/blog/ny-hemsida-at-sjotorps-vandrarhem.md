@@ -12,6 +12,8 @@ image: /static/framsida.jpg
 
 Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti och i november 2019 är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
 
+Om du vill kolla in hemsidan kan göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
+
 ## Bokning
 
 När jag träffade ägaren till Sjötorps Vandrarhem för första gången var hans ord tydliga, han ville ha en enkel hemsida. När vi väl började prata om vad som skulle finnas på sidan blev den helt plötsligt mer komplex. Tanken var självklart att hemsidan, utöver att vara en presentationssida för vandrarhemmet, skulle fungera som ännu än kanal för att få bokningar. Detta var jag något jag förväntade mig innan vi träffades, men hur denna bokning skulle implementeras var mer hade jag ingen aning om.
@@ -98,7 +100,7 @@ Support för MongoDB hade de inte heller, det finns det nog inget svenskt webbho
 
 När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att DigitalOcean erbjuder den billigaste lösningen på marknaden. Deras billigaste droplet (VPS) med 1 GB RAM, 1 CPU och 25 GB SSD kostar 50 kr i månaden. En VM Instance från Google Cloud med samma CPU och RAM kostar över 200 kr i månaden, och då har den bara en HDD med 10 GB utrymme.
 
- Det blev lite tekniskt där, förlåt!
+Det blev lite tekniskt där, förlåt!
 
 ### E-post
 
@@ -114,8 +116,6 @@ Det här var nog allt för mig. Du kan dela inlägget genom någon av knapparna 
 
 Tack för att du läst och ha en fortsatt bra dag!
 
-
-
-PS. Om du är intresserad av att börja använda DigitalOcean så kan du registrera dig genom min [referal länk](https://m.do.co/c/ced72bda5083). Då får du 50$ att spendera på deras tjänster under 30 dagar. När du spenderat 25$ så får jag 25$ på mitt konto. Alla vinner!
+PS. Om du är intresserad av att börja använda DigitalOcean så kan du registrera dig genom min [referal länk](https://m.do.co/c/ced72bda5083). Då får du $50 att spendera på deras tjänster under 30 dagar. När du spenderat $25 så får jag $25 på mitt konto. Alla vinner!
 
 Länk: <https://m.do.co/c/ced72bda5083>
