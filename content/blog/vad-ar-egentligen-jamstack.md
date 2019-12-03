@@ -42,6 +42,12 @@ Som du kanske kan förstå är denna metod inte optimal. Om en server som bygger
 
 Detta betyder även att kostnaderna för att driva en hemsida ökar i stadig takt med antalet besökare till hemsidan. Dessa kostnader kan även mätas i tiden det tar för utvecklare att skapa nya funktioner på webbplatsen.
 
+Det följande diagrammet förklarar hur varje förfrågan hanteras med en traditionell webbserver.
+
+![Diagram över dataflöde med en traditionell webbserver](/static/traditionell.png "Diagram över dataflöde med en traditionell webbserver")
+
+
+
 ### Den moderna CDN:en
 
 Jag nämnde innan att det inte var teknologin man bygger JAMStack sidor med som skiljer dem från andra hemsidor. Det som faktiskt skiljer JAMStack från andra hemsidor är saknaden av en traditionell webbserver.
@@ -54,11 +60,21 @@ Eftersom en CDN består av flera olika servrar är driftsäkerheten mycket högr
 
 För att faktiskt dra nytta av cachestrategierna som en CDN erbjuder kan inte hemsidan byggas ihop vid varje hämtning. Istället är alla sidor på webbplatsen redan färdiga när dem laddas upp på CDN:en.
 
+Det följande diagrammet visar hur varje förfrågan hanteras med en JAMStack hemsida.
+
+![Dataflöde med en JAMStack hemsida.](/static/jamstack.png "Dataflöde med en JAMStack hemsida.")
+
+
+
 ### Statiska sidor
 
 Det finns ett namn för sidor som inte byggs ihop vid varje hämtning, dem kallas statiska hemsidor. Det här namnet kan dock vara lite missvisande eftersom innehållet på dessa sidor inte alls behöver vara statiskt. Dessa hemsidor hanterar bara innehåll på ett annat sätt.
 
+Hur en JAMStack sida hanterar dynamiskt innehåll, alltså innehåll som förändras, varierar mellan olika hemsidor. På min egen sparar jag mina blogginlägg i mitt _GitHub_ konto. GitHub är en tjänst där utvecklare kan lagra sin källkod.
 
+GitHub är faktiskt ett väldigt viktigt verktyg när man hanterar JAMStack sidor. Det låter utvecklare hantera olika versioner av hemsidan, så att man snabbt kan återställa hemsidan till en tidigare version ifall något inte fungerar.
+
+GitHub låter även utvecklare lansera nya versioner av hemsidan genom att bara ladda upp sina filer på kontot. En tjänst som _Netlify_ eller _Zeit Now_ kan sedan bygga ihop hemsidan och lägga upp den sin CDN. Detta gör både utveckling och lansering otroligt enkelt med JAMStack.
 
 
 
