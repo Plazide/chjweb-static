@@ -16,6 +16,8 @@ I den här listan räknar jag upp en rad olika tjänster som underlättat för m
 
 Då sätter vi igång! 
 
+
+
 ## 1. Bokio - Gratis bokföring och fakturering
 
 Bokio är ett svenskt bolag som erbjuder en gratis bokföring- och faktureringsapp. Innan jag startade mitt företag hade jag tänkt att använda Visma som bokföringsprogram, men av en slump så hittade jag Bokio. 
@@ -52,6 +54,10 @@ En av dessa är **återkommande fakturering.** Att kunna ställa in en återkomm
 
 Det skulle även vara ett stort plus om Bokio hade ett **API.** Detta kanske inte är något de flesta egenföretagare tänker på, men för mig som är webbutvecklare, skulle det betyda att jag koppla Bokio till andra tjänster och effektivisera min administration ännu mer.
 
+[Läs mer om Bokio](https://www.bokio.se/)
+
+
+
 ## 2. Google Docs - kalkylark och dokument
 
 Google Docs är förmodligen något de flesta egenföretagare använder i början, så den här punkten är antagligen inte ett nytt program för dig. Men jag tänker att jag nämner det ändå.
@@ -74,10 +80,40 @@ Jag har än så länge inte haft ett behov av en desktop version. Google Docs mo
 
 ### Vad saknas?
 
-Det enda jag saknat än så länge i Google Docs är möjligheten att automatiskt lägga till **numrerade rubriker**. Detta var något jag använde hela tiden när jag uppsatser i Word. När jag sedan skulle skriva min affärsplan visade det sig att Google dokument inte har stöd för numrerade rubriker.
+Det enda jag saknat än så länge i Google Docs är möjligheten att automatiskt lägga till **numrerade rubriker**. Detta var något jag använde hela tiden när jag skrev uppsatser i Word. När jag sedan skulle skriva min affärsplan visade det sig att Google dokument inte har stöd för numrerade rubriker.
 
-Google Docs har dock, som tur är, en katalog av tillägg som skapats av användare. Och som tur för mig hade an av dessa användare skapat ett tillägg som lät mig skapa numrerade rubriker. Men det skulle naturligtvis varit bättre om detta var inbyggt från början.
+Google Docs har dock, som tur är, en katalog av tillägg som skapats av användare. Och som tur för mig hade en av dessa användare skapat ett tillägg som lät mig skapa numrerade rubriker. Men det skulle naturligtvis varit bättre om detta var inbyggt från början.
+
+[Läs mer om Google Docs](https://www.google.se/intl/sv/docs/about/)
 
 
 
-## 3. Telavox Flow - företagsnummer
+## 3. Telavox Flow - gratis företagsnummer
+
+Detta verktyg kanske inte kommer spara dig tid, men förhoppningsvis kommer det spara dig lite smärta och irritation.
+
+Innan jag startade företaget var jag lite skeptisk till att lägga ut mitt eget telefonnummer på nätet. Det var självklart för mig att potentiella kunder skulle kunna ringa mig, men att lämna ut mitt personliga telefonnummer verkade lite farligt.
+
+Jag var rädd att jag skulle få samtal mitt i natten och att någon bot skulle skicka oändligt många sms till mig. Som tur var blev det aldrig så, eftersom jag hittade Telavox flow.
+
+### Öppettider och telefonkö
+
+I gratis versionen av Telavox flow ingår endast ett nummer. För mig fungerar detta utmärkt eftersom jag driver mitt företag helt ensam. I denna version finns två funktioner som var väldigt attraktiva för mig: förmågan att sätta öppettider och hantering av flera samtal genom en telefonkö.
+
+Öppettider är fantastiskt bra eftersom jag kan bestämma under vilken tid på dygnet som jag kan få samtal rörande företaget. Jag behöver inte oroa mig för att få samtal mitt i natten.
+
+Telefonkön som gratis versionen av Telavox Flow erbjuder hjälper mig i de stunder där mitt företag är populärt. Om flera personer ringer samtidigt så sätts de i en kö istället för att få höra att det är upptaget.
+
+### Problem?
+
+Jag har personligen inte haft några problem med Telavox Flow, men en av mina kunder har haft det. Jag rekommenderade Telavox Flow till en av mina kunder eftersom han driver sitt företag helt ensam och får mycket samtal.
+
+Jag fick senare höra att han hade fått samtal från personer som trodde sig ringa till en restaurang. Vad han gjorde åt detta vet jag inte, men förmodligen slutade han att använda numret.
+
+Jag har även läst om andra personer som haft liknande problem med Telavox Flow. Om man kollar på Trustpilot sidan för Telavox så ser man att människor har mycket negativa erfarenheter av företaget.
+
+### Rekommenderas?
+
+Det finns uppenbarligen många problem med den här tjänsten, inga som jag själv har upplevt, så att rekommendera den känns lite fel. Jag uppmanar dig i alla fall att kolla upp tjänsten och se om det är något för dig. 
+
+[Läs mer om Telavox Flow](https://addflow.com/sv-se/)
