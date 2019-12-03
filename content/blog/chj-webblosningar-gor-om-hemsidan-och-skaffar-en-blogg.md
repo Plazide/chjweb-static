@@ -7,6 +7,10 @@ description: >-
   skriver jag om varför och hur jag gjorde detta.
 image: /static/img_20191119_115251_bokeh.jpg
 ---
+**UPPDATERING:** Det här inlägget är inte längre aktuellt. Jag har gjort om hemsidan ännu än gång efter att jag publicerade detta inlägg. Det mesta som står här stämmer inte, men du är självklart välkommen att läsa ändå.
+
+
+
 Det här är det absolut första inlägget i den här sprillans nya bloggen. Jag valde att göra om min egen hemsida eftersom den var framtvingad till att börja med, mer om det senare. Samtidigt ville jag även skapa en blogg där jag kan berätta om vad jag håller på med och på så sätt bygga upp en slags tilltro hos potentiella kunder. Så det här inlägget kommer fungera som en slags introduktion till bloggen där jag tar upp nuvarande funktioner och framtida planer. Inlägget kommer självklart också handla om varför jag valde att renovera min hemsida. Så låt oss börja med att prata om bloggen.
 
 ## En enkel men genomtänkt blogg
