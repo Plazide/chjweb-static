@@ -26,27 +26,25 @@ Trots namnets likhet med det engelska ordet för sylt, så har det egentligen in
 
 Ordet **Stack** används inom programmering för att beskriva en samling teknologier och verktyg som används för att bygga webbplatser och program.
 
-Med hjälp av den här informationen kanske du förstår att JAMStack byggs med hjälpa av samlingen teknologier: JavaScript, API:er och Markup. Det som skiljer JAMStack från andra typer av webbutveckling är inte dessa teknologier, de används på majoriteten av webbplatser nu för tiden.
+JAMStack är alltså en samling teknologier (JavaScript, API:er och Markup) som man använder för att bygga hemsidor. Det som skiljer JAMStack från andra typer av webbutveckling är dock inte dessa teknologier, de används på majoriteten av webbplatser nu för tiden. 
+
+Jag förklarar det som gör JAMStack speciellt lite senare.
 
 ### Den traditionella webbservern
 
 Det enda sättet att få hemsidor till slutanvändaren har länge varit att använda en webbserver. En webbserver är, som du kanske kan gissa, programvaran som är ansvarig för att servera (skicka) hemsidan till webbläsaren.
 
-Webbservrar använder sig ofta av ett _serverspråk_. Det finns ett antal olika serverspråk, men det vanligaste serverspråket är _PHP_. Det är exempelvis det språket som används av _Wordpress_, det mest populära CMS verktyget_._
+Webbservrar använder sig ofta av ett _serverspråk_. Det finns ett antal olika serverspråk, men det vanligaste serverspråket är _PHP_. Det är exempelvis det språket som används av _Wordpress_, det mest populära _CMS_ verktyget_._
 
-Den kanske största uppgiften för dessa språk är att bygga ihop hemsidan innan den skickas till webbläsaren. Det fungerar oftast genom att man hämtar information från en databas och sätter in den informationen på rätt plats i en HTML fil. 
+Den kanske största uppgiften för dessa språk är att bygga ihop hemsidan innan den skickas till webbläsaren. Det fungerar oftast genom att man hämtar information från en _databas_ och sätter in den informationen på rätt plats i en HTML fil. 
 
-Om inte servern _cachar_ olika förfrågningar, byggs sidan ihop vid varje förfrågan om att hämta en viss sida. Att cacha en sidan innebär att webbservern inte behöver arbeta så mycket eftersom den redan sparat svaret som kommer skickas med en specifik förfrågan.
+Varje gång en användare hämtar en sida, alltså vill titta på den i en webbläsare, bygger det här serverspråket ihop hemsidan på nytt. Alltså, om du tittar på ett blogginlägg så har det hämtats ifrån en databas och satts in i en HTML fil. Om du nu laddar om hemsidan kommer servern göra samma sak igen, även fast innehållet är det samma. 
 
-Som du kanske kan förstå är denna metod inte optimal. Om en server som bygger ihop sidor vid varje hämtning ska fungera när hemsidan får mycket trafik, krävs ganska bra hårdvara och avancerade cache-strategier. Detta kostar självklart en del pengar och är besvärligt för utvecklare att hantera.
-
-Detta betyder även att kostnaderna för att driva en hemsida ökar i stadig takt med antalet besökare till hemsidan. Dessa kostnader kan även mätas i tiden det tar för utvecklare att skapa nya funktioner på webbplatsen.
+Som du kanske kan förstå är denna metod inte optimal. Om en server som bygger ihop sidor vid varje hämtning ska fungera när hemsidan får mycket trafik, krävs ganska bra hårdvara. Detta betyder att kostnaderna för att driva en hemsida ökar i stadig takt med antalet besökare till hemsidan.
 
 Det följande diagrammet förklarar hur varje förfrågan hanteras med en traditionell webbserver.
 
 ![Diagram över dataflöde med en traditionell webbserver](/static/traditionell.png "Diagram över dataflöde med en traditionell webbserver")
-
-
 
 ### Den moderna CDN:en
 
@@ -56,15 +54,13 @@ En JAMStack hemsida använder oftast en modern _CDN._ CDN står för **C**ontent
 
 En CDN är ett nätverk av servrar som är geografiskt utspridda för att minska fördröjningen mellan förfrågan att hämta en resurs till den faktiska leveransen av resursen. Dessa nätverk använder cachestrategier för minska användning av serverresurser.
 
-Eftersom en CDN består av flera olika servrar är driftsäkerheten mycket högre än en vanlig webbserver. Om den närmaste servern inte kan hantera din föfrågan kommer den att skickas vidare till nästa. Detta betyder att JAMStack sidor sällan ligger nere.
+Eftersom en CDN består av flera olika servrar är driftsäkerheten mycket högre än en vanlig webbserver. Om den närmaste servern inte kan hantera din förfrågan kommer den att skickas vidare till nästa. Detta betyder att JAMStack sidor sällan ligger nere.
 
 För att faktiskt dra nytta av cachestrategierna som en CDN erbjuder kan inte hemsidan byggas ihop vid varje hämtning. Istället är alla sidor på webbplatsen redan färdiga när dem laddas upp på CDN:en.
 
 Det följande diagrammet visar hur varje förfrågan hanteras med en JAMStack hemsida.
 
 ![Dataflöde med en JAMStack hemsida.](/static/jamstack.png "Dataflöde med en JAMStack hemsida.")
-
-
 
 ### Statiska sidor
 
@@ -76,12 +72,18 @@ GitHub är faktiskt ett väldigt viktigt verktyg när man hanterar JAMStack sido
 
 GitHub låter även utvecklare lansera nya versioner av hemsidan genom att bara ladda upp sina filer på kontot. En tjänst som _Netlify_ eller _Zeit Now_ kan sedan bygga ihop hemsidan och lägga upp den sin CDN. Detta gör både utveckling och lansering otroligt enkelt med JAMStack.
 
-
-
 ## Fördelar med JAMStack
 
 Det finns ganska många fördelar med JAMStack, både för utvecklare och för företagen. Eftersom jag är både företagare och webbutvecklare så har jag dragit nytta av de flesta fördelar som JAMStack har ett erbjuda, och kan därför styrka många av dessa fördelar med personliga exempel.
 
 ### 1. Minskade kostnader
 
-Det här kanske är den fördel med JAMStack som hjälpt mig
+Det här är en av de fördelarna med JAMStack som jag har personlig erfarenhet av. Jag hade nämligen min hemsida på ett traditionellt webbhotell innan jag hittade JAMStack. Det här webbhotellet kostade 137 kr i månaden och fakturerades en gång i kvartalet med en summa 550 kr.
+
+Det här var dock inte hela kostnaden för att driva hemsidan. Eftersom jag använde en databas som webbhotellet inte hade stöd för, var jag tvungen att betala för en _VPS_, eller Virtual Private Server. Det är helt enkelt en server dator som du kan kontrollera från din egen dator.
+
+På denna VPS installerade jag den programvara som krävdes för att köra databasen och kopplade sedan min hemsidan till denna. Den här VPS:en lade till nästan 200 kr på min driftkostnad. Det betyder att min totala kostnad för att driva hemsidan var över 300 kr i månaden.
+
+När jag sedan bytte till JAMStack har mina driftkostnader bokstavligen försvunnit. Nu driver jag hemsidan utan att betala någonting, den är helt gratis.
+
+Detta är något som jag vill kunna erbjuda mina kunder, en kostnadsfri drift av hemsidan.
