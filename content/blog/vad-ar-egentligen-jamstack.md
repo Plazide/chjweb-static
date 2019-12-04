@@ -84,6 +84,14 @@ Det här var dock inte hela kostnaden för att driva hemsidan. Eftersom jag anv�
 
 På denna VPS installerade jag den programvara som krävdes för att köra databasen och kopplade sedan min hemsidan till denna. Den här VPS:en lade till nästan 200 kr på min driftkostnad. Det betyder att min totala kostnad för att driva hemsidan var över 300 kr i månaden.
 
-När jag sedan bytte till JAMStack har mina driftkostnader bokstavligen försvunnit. Nu driver jag hemsidan utan att betala någonting, den är helt gratis.
+När jag sedan bytte till JAMStack har mina driftkostnader bokstavligen försvunnit. Nu driver jag hemsidan utan att betala någonting, den är helt gratis. Detta är något som jag vill kunna erbjuda mina kunder, en kostnadsfri drift av hemsidan.
 
-Detta är något som jag vill kunna erbjuda mina kunder, en kostnadsfri drift av hemsidan.
+### 2. Hanterar ökning av trafik utan problem
+
+Folk som skriver om JAMStack brukar ofta nämna e-handeln som ett exempel på den här fördelen. Syftning ligger ofta på Black Friday. E-handlar har en dag om året som trafik ökar avsevärt. Med traditionella webbservrar måste man förbereda inför den här dagen med ökade resurser.
+
+På JAMStack är detta inget problem. Det är nästan omöjligt att hemsidan får för mycket trafik och slutar fungera. Eftersom hemsidan använder en CDN är driftsäkerheten väldigt stor, om en server i nätverket slutar fungera skickas hemsidan bara från nästa.
+
+Det här betyder även att JAMStack sidor inte bara är billiga att driva med en vanlig mängd trafik, dem är även billiga under perioder med ovanligt mycket trafik.
+
+JAMStack hemsidor kan alltså skalas upp automatiskt. Det är fantastiskt bra för företag som vill växa.
