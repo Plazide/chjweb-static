@@ -94,4 +94,24 @@ På JAMStack är detta inget problem. Det är nästan omöjligt att hemsidan få
 
 Det här betyder även att JAMStack sidor inte bara är billiga att driva med en vanlig mängd trafik, dem är även billiga under perioder med ovanligt mycket trafik.
 
-JAMStack hemsidor kan alltså skalas upp automatiskt. Det är fantastiskt bra för företag som vill växa.
+JAMStack hemsidor kan alltså skalas upp automatiskt. Det är fantastiskt bra för företag som förväntar sig att växa.
+
+### 3. Snabbare och smidigare utveckling
+
+Eftersom man inte behöver hantera serverspråk med JAMStack, så kan man bygga hemsidor mycket snabbare. En utvecklare kan alltså fokusera på att skapa en snygg och presterande hemsida, istället för att hantera kopplingar till databaser och andra serverfunktioner.
+
+Om man vill att en hemsida ska bli färdig snabbt, då är JAMStack ett väldigt bra val. Jag gjorde själv om min egen hemsida på JAMStack, och det tof ungefär två veckor. Då var jag även en nybörjare på JAMStack och kunde inte alla principer, så jag lärde mig samtidigt.
+
+För mina kunder betyder det här att jag kan bygga deras hemsidor mycket snabbare än innan. Eftersom jag kan lägga ner mindre tid på varje projekt, blir det också billigare för mina kunder.
+
+### 4. Ökad säkerhet
+
+Den sista fördelen, men absolut inte den minsta, är säkerhet. Som de flesta fördelarna med JAMStack kommer den här ifrån att man inte använder traditionella webbservrar. Eftersom en JAMStack hemsida saknar en webbserver, finns det mindre att attackera för potentiella hackare.
+
+Det finns överlag mindre kod på en JAMStack sida, vilket betyder att det finns mindre säkerhetshål. Mindre kod betyder även att det finns mindre saker att underhålla, vilket i sin tur betyder mindre risk för utdaterad kod med säkerhetshål. 
+
+## Sammanfattning
+
+Har du hängt med? Det har antagligen nämnts en hel del nya termer, så det kan vara svårt att förstå allt. Men det är lugnt för jag ska sammanfatta allting på ett enkelt sätt.
+
+JAMStack är alltså en samling webbteknologier som används för att bygga statiska sidor. Dessa sidor ligger inte på traditionella webbservrar, utan på moderna nätverk av servrar som kallas för CDN:er.
