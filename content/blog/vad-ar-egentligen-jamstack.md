@@ -74,7 +74,7 @@ GitHub låter även utvecklare lansera nya versioner av hemsidan genom att bara 
 
 ## Fördelar med JAMStack
 
-Det finns ganska många fördelar med JAMStack, både för utvecklare och för företagen. Eftersom jag är både företagare och webbutvecklare så har jag dragit nytta av de flesta fördelar som JAMStack har ett erbjuda, och kan därför styrka många av dessa fördelar med personliga exempel.
+Det finns ganska många fördelar med JAMStack, både för utvecklare och för företagen. Eftersom jag är både företagare och webbutvecklare så har jag dragit nytta av de flesta fördelar som JAMStack har att erbjuda, och kan därför styrka många av dessa fördelar med personliga exempel.
 
 ### 1. Minskade kostnader
 
