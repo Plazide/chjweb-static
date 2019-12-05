@@ -100,9 +100,9 @@ JAMStack hemsidor kan alltså skalas upp automatiskt. Det är fantastiskt bra f�
 
 Eftersom man inte behöver hantera serverspråk med JAMStack, så kan man bygga hemsidor mycket snabbare. En utvecklare kan alltså fokusera på att skapa en snygg och presterande hemsida, istället för att hantera kopplingar till databaser och andra serverfunktioner.
 
-Om man vill att en hemsida ska bli färdig snabbt, då är JAMStack ett väldigt bra val. Jag gjorde själv om min egen hemsida på JAMStack, och det tof ungefär två veckor. Då var jag även en nybörjare på JAMStack och kunde inte alla principer, så jag lärde mig samtidigt.
+Om man vill att en hemsida ska bli färdig snabbt, då är JAMStack ett väldigt bra val. Jag gjorde själv om min egen hemsida på JAMStack, och det tog ungefär två veckor. Då var jag även en nybörjare på JAMStack och kunde inte alla principer, så jag lärde mig samtidigt.
 
-För mina kunder betyder det här att jag kan bygga deras hemsidor mycket snabbare än innan. Eftersom jag kan lägga ner mindre tid på varje projekt, blir det också billigare för mina kunder.
+För mina kunder betyder det här att jag kan bygga deras hemsidor mycket snabbare än innan. Eftersom jag kan lägga ner mindre tid på varje projekt, blir det också billigare för kunderna.
 
 ### 4. Ökad säkerhet
 
@@ -114,4 +114,10 @@ Det finns överlag mindre kod på en JAMStack sida, vilket betyder att det finns
 
 Har du hängt med? Det har antagligen nämnts en hel del nya termer, så det kan vara svårt att förstå allt. Men det är lugnt för jag ska sammanfatta allting på ett enkelt sätt.
 
-JAMStack är alltså en samling webbteknologier som används för att bygga statiska sidor. Dessa sidor ligger inte på traditionella webbservrar, utan på moderna nätverk av servrar som kallas för CDN:er.
+JAMStack är alltså en samling webbteknologier som används för att bygga statiska sidor. Dessa sidor ligger inte på traditionella webbservrar, utan på moderna nätverk av servrar som kallas för CDN:er. Dessa sidor är snabbare, säkrare och hanterar mycket trafik utan problem.
+
+Förhoppningsvis har jag gett dig någon slags klarhet i vad JAMStack egentligen betyder och vad det innebär för ditt företag. Med den här informationen är det sedan upp till dig att bestämma vilken typ av hemsida som passar ditt företag och dess syften.
+
+Om du har några frågor angående JAMStack eller mitt företag, är det fritt fram att skicka ett e-postmeddelande, eller kontakta på någon av mina social medier. Dessa finner du längst ner på hemsidan tillsammans med min e-postadress.
+
+Tack för att du har läst och ha en fortsatt bra dag!
