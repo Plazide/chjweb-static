@@ -1,14 +1,16 @@
 ---
 title: Vad är egentligen JAMStack?
-date: 2019-12-05T10:43:03.024Z
-updated: 2019-12-05T10:43:03.049Z
+date: 2019-12-06T10:43:03.024Z
+updated: 2019-12-06T10:43:03.049Z
 description: >-
   Jag förklarar förklarar vad JAMStack är och varför jag använder det för att
-  bygga hemsidor till kunder. Förklaringen försöker vara så otekniskt som
-  möjligt för att även människor utan kunskaper om webbutveckling ska förstå.
+  bygga hemsidor till kunder. Förklaringen utgår ifrån att läsaren inte har
+  någon som helst kunskap om webbutveckling eller hur hemsidor fungerar.
 image: /static/img_20191203_120316_01_bokeh.jpg
 ---
 På min hemsida nämner jag termen _JAMStack_ exakt 15 gånger om man inkluderar sidtitlar och beskrivningar, det här inlägget ökar den siffran rejält. Anledningen till att jag repeterar denna konstiga term, som verkar ha något med sylt att göra, är för att det är metoden jag använder för att skapa hemsidor.
+
+![Syltburk på bord](/static/jam_small.jpg "Syltburk")
 
 Jag förstår att denna term är främmande för många personer som läser på min hemsida. Det finns många webbutvecklare som ännu inte introducerats för den här typen av utveckling, så jag förväntar mig inte att personer utan teknisk kunskap ska veta vad JAMStack innebär.
 
@@ -31,6 +33,8 @@ JAMStack är alltså en samling teknologier (JavaScript, API:er och Markup) som 
 Jag förklarar det som gör JAMStack speciellt lite senare.
 
 ### Den traditionella webbservern
+
+![Korridor med servrar](/static/servers.jpg "Webbhotell")
 
 Det enda sättet att få hemsidor till slutanvändaren har länge varit att använda en webbserver. En webbserver är, som du kanske kan gissa, programvaran som är ansvarig för att servera (skicka) hemsidan till webbläsaren.
 
