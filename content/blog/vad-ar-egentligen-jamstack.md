@@ -34,13 +34,13 @@ Jag förklarar det som gör JAMStack speciellt lite senare.
 
 ### Den traditionella webbservern
 
-Det enda sättet att få hemsidor till slutanvändaren har länge varit att använda en _webbserver_. En webbserver är, som du kanske kan gissa, programvaran som är ansvarig för att servera (skicka) hemsidan till webbläsaren. Denna webbserver måste måste finnas på en dator någonstans i världen, helst så nära användaren som möjligt. 
+Det enda sättet att få hemsidor till slutanvändaren har länge varit att använda en _webbserver_. En webbserver är, som du kanske kan gissa, programvaran som är ansvarig för att servera (skicka) hemsidan till webbläsaren. Denna webbserver måste finnas på en dator någonstans i världen, helst så nära användaren som möjligt. 
 
 ![Korridor med servrar](/static/servers.jpg "Webbhotell")
 
 Webbservrar använder sig ofta av ett _serverspråk_. Det finns ett antal olika serverspråk, men det vanligaste serverspråket är _PHP_. Det är exempelvis det språket som används av _Wordpress_, det mest populära _CMS_ verktyget_._
 
-Den kanske största uppgiften för dessa språk är att bygga ihop hemsidan innan den skickas till webbläsaren. Det fungerar oftast genom att man hämtar information från en databas och sätter in den informationen på rätt plats i en HTML fil. 
+Den kanske största uppgiften för dessa språk är att bygga ihop hemsidan innan den skickas till webbläsaren. Det fungerar oftast genom att man hämtar information från en _databas_ och sätter in den informationen på rätt plats i en HTML (Markup) fil. 
 
 Varje gång en användare hämtar en sida, alltså vill titta på den i en webbläsare, bygger det här serverspråket ihop hemsidan på nytt. Alltså, om du tittar på ett blogginlägg så har det hämtats ifrån en databas och satts in i en HTML fil. Om du nu laddar om hemsidan kommer servern göra samma sak igen, även fast innehållet är det samma. 
 
@@ -56,13 +56,15 @@ Jag nämnde innan att det inte var teknologin man bygger JAMStack sidor med som 
 
 ![Ingen server](/static/computer-2777254_1920.jpg "Ingen server")
 
-En JAMStack hemsida använder oftast en modern _CDN._ CDN står för **C**ontent **D**elivery **N**etwork och är inte en ny teknik för att leverera innehåll på webben. Dessa innehållsleveransnätverk, som det heter på svenska, har tidigare används för att effektivt servera bilder och andra filer till användaren.
+En JAMStack hemsida använder oftast en modern _CDN._ CDN står för **C**ontent **D**elivery **N**etwork och är inte en ny teknik för att leverera innehåll på webben. Dessa innehållsleveransnätverk, som det heter på svenska, har tidigare används för att effektivt servera bilder och andra filer till användaren. Att servera hela hemsidor från en CDN är dock något nytt.
 
-En CDN är ett nätverk av servrar som är geografiskt utspridda för att minska fördröjningen mellan förfrågan att hämta en resurs till den faktiska leveransen av resursen. Dessa nätverk använder cachestrategier för minska användning av serverresurser.
+En CDN är ett nätverk av servrar som är geografiskt utspridda för att minska fördröjningen mellan förfrågan att hämta en resurs till den faktiska leveransen av resursen. Förfrågningar till en CDN är utspridda över flera olika servrar och inte koncentrerade till en enda.
+
+Effekten av det här blir att en hemsida som ligger på en CDN nästan aldrig kan överbelastas. Om en server i nätverket hanterar för mycket trafik, kommer framtida hämtningar hanteras av en annan server i nätverket. Effekten för slutanvänderen blir som värst att hemsidan är lite långsammare än vanligt.
 
 Eftersom en CDN består av flera olika servrar är driftsäkerheten mycket högre än en vanlig webbserver. Om den närmaste servern inte kan hantera din förfrågan kommer den att skickas vidare till nästa. Detta betyder att JAMStack sidor sällan ligger nere.
 
-För att faktiskt dra nytta av cachestrategierna som en CDN erbjuder kan inte hemsidan byggas ihop vid varje hämtning. Istället är alla sidor på webbplatsen redan färdiga när dem laddas upp på CDN:en.
+För största effektivitet och hastighetsökning, bygger man inte JAMStack sidor med serverspråk. Istället bygger man statiska sidor som är färdiga att serveras vid varje hämtning. Det betyder att den serverande servern inte behöver bygga ihop någon sida, allting finns redan färdigt.
 
 Det följande diagrammet visar hur varje förfrågan hanteras med en JAMStack hemsida.
 
@@ -70,9 +72,9 @@ Det följande diagrammet visar hur varje förfrågan hanteras med en JAMStack he
 
 ### Statiska sidor
 
-Det finns ett namn för sidor som inte byggs ihop vid varje hämtning, dem kallas statiska hemsidor. Det här namnet kan dock vara lite missvisande eftersom innehållet på dessa sidor inte alls behöver vara statiskt. Dessa hemsidor hanterar bara innehåll på ett annat sätt.
+Namnet "statiska sidor" kan vara lite missvisande eftersom innehållet på dessa sidor inte alls behöver vara statiskt. Att sidorna är statiska syftar på själva koden på den hämtade sidan aldrig förändras. Innehållet på sidan kan dock förändras hur mycket som helst.
 
-Hur en JAMStack sida hanterar dynamiskt innehåll, alltså innehåll som förändras, varierar mellan olika hemsidor. På min egen sparar jag mina blogginlägg i mitt _GitHub_ konto. GitHub är en tjänst där utvecklare kan lagra sin källkod.
+Hur en JAMStack sida hanterar dynamiskt innehåll, alltså innehåll som förändras, varierar mellan olika hemsidor. Det går att hämta information via en API efter att sidan har laddats. På min egen hemsida sparar jag mina blogginlägg i mitt _GitHub_ konto. GitHub är en tjänst där utvecklare kan lagra sin källkod.
 
 GitHub är faktiskt ett väldigt viktigt verktyg när man hanterar JAMStack sidor. Det låter utvecklare hantera olika versioner av hemsidan, så att man snabbt kan återställa hemsidan till en tidigare version ifall något inte fungerar.
 
@@ -88,7 +90,7 @@ Det finns ganska många fördelar med JAMStack, både för utvecklare och för f
 
 Det här är en av de fördelarna med JAMStack som jag har personlig erfarenhet av. Jag hade nämligen min hemsida på ett traditionellt webbhotell innan jag hittade JAMStack. Det här webbhotellet kostade 137 kr i månaden och fakturerades en gång i kvartalet med en summa 550 kr.
 
-Det här var dock inte hela kostnaden för att driva hemsidan. Eftersom jag använde en databas som webbhotellet inte hade stöd för, var jag tvungen att betala för en _VPS_, eller Virtual Private Server. Det är helt enkelt en server dator som du kan kontrollera från din egen dator.
+Det här var dock inte hela kostnaden för att driva hemsidan. Eftersom jag använde en databas som webbhotellet inte hade stöd för, var jag tvungen att betala för en _VPS_, eller Virtual Private Server. Det är helt enkelt en serverdator som du kan kontrollera från din egen dator.
 
 På denna VPS installerade jag den programvara som krävdes för att köra databasen och kopplade sedan min hemsidan till denna. Den här VPS:en lade till nästan 200 kr på min driftkostnad. Det betyder att min totala kostnad för att driva hemsidan var över 300 kr i månaden.
 
