@@ -3,9 +3,9 @@ title: Vad är egentligen JAMStack?
 date: 2019-12-06T10:43:03.024Z
 updated: 2019-12-06T10:43:03.049Z
 description: >-
-  Jag förklarar förklarar vad JAMStack är och varför jag använder det för att
-  bygga hemsidor till kunder. Förklaringen utgår ifrån att läsaren inte har
-  någon som helst kunskap om webbutveckling eller hur hemsidor fungerar.
+  Jag förklarar vad JAMStack är och varför jag använder det för att bygga
+  hemsidor till kunder. Förklaringen utgår ifrån att läsaren inte har någon som
+  helst kunskap om webbutveckling eller hur hemsidor fungerar.
 image: /static/img_20191203_120316_01_bokeh.jpg
 ---
 På min hemsida nämner jag termen _JAMStack_ exakt 15 gånger om man inkluderar sidtitlar och beskrivningar, det här inlägget ökar den siffran rejält. Anledningen till att jag repeterar denna konstiga term, som verkar ha något med sylt att göra, är för att det är metoden jag använder för att skapa hemsidor.
