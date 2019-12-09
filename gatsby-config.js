@@ -1,3 +1,10 @@
+
+function removeTrailingSlash(path){
+	const hasSlash = path.substr(-1) === "/";
+	const noSlash = path.substr(0, path.length - 1);
+	return hasSlash ? noSlash : path;
+}
+
 module.exports = {
 	siteMetadata: {
 		title: "CHJ Webblösningar",
@@ -150,11 +157,11 @@ module.exports = {
 						const path = edge.node.path;
 						let priority = 0.8;
 						let changefreq = "daily";
-						let url = site.siteMetadata.siteUrl + path;
+						let url = removeTrailingSlash(site.siteMetadata.siteUrl + path);
 
 
 						priority = /^\/integritetspolicy/.test(path) ? 0.2 : priority;
-						priority = /^\/blogg\/.+/.test(path) ? 0.6 : priority;
+						priority = /^\/blogg\/.+/.test(path) ? 0.9 : priority;
 
 						return {
 							url,
