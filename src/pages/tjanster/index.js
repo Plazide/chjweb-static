@@ -19,7 +19,7 @@ export default function Tjanster() {
 			<SEO
 				title="Tjänster"
 				description="CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
-				url="/tjanster"
+				url="/tjanster/"
 			/>
 			<Hero
 				title="Jag hjälper er hemsida att må bra"

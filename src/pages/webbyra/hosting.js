@@ -19,15 +19,15 @@ export default function Hosting(){
 			<SEO 
 				title="Gratis hosting" 
 				description="CHJ Webblösningar bygger hemsidor som kan vara online utan ett traditionellt webbhotell."
-				url="/hosting"
+				url="/hosting/"
 				breadcrumb={[
 					{
 						name: "Webbyrå",
-						url: "/webbyra"
+						url: "/webbyra/"
 					},
 					{
 						name: "Hosting",
-						url: "/webbyra/hosting"
+						url: "/webbyra/hosting/"
 					}
 				]}
 			/>

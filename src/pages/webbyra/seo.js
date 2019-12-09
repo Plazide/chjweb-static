@@ -17,15 +17,15 @@ export default function SEOPage() {
 			<SEO 
 				title="Sökmotoroptimering"
 				description="Jag bygger naturligt sökmotoroptimerade hemsidor. Tack vare hastigheten som JAMStack för med sig, rankar sidorna bättre i sökresultat."
-				url="/webbyra/seo"
+				url="/webbyra/seo/"
 				breadcrumb={[
 					{
 						name: "Webbyrå",
-						url: "/webbyra"
+						url: "/webbyra/"
 					},
 					{
 						name: "SEO",
-						url: "/webbyra/seo"
+						url: "/webbyra/seo/"
 					}
 				]}
 			/>

@@ -19,15 +19,15 @@ export default function CMS(){
 			<SEO 
 				title="Valfri CMS" 
 				description="CHJ Webblösningar låter er välja den CMS som passar er bäst." 
-				url="/cms"
+				url="/cms/"
 				breadcrumb={[
 					{
 						name: "Webbyrå",
-						url: "/webbyra"
+						url: "/webbyra/"
 					},
 					{
 						name: "Valfri CMS",
-						url: "/webbyra/cms"
+						url: "/webbyra/cms/"
 					}
 				]}
 			/>

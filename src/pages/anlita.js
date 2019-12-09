@@ -20,7 +20,7 @@ export default function Anlita() {
 			<SEO 
 				title="Anlita en modern webbutvecklare"
 				description="Skicka en förfrågan om att anlita CHJ Webblösningar."
-				url="/anlita"
+				url="/anlita/"
 				breadcrumb={[
 					{ name: "Anlita", url: "/anlita" }
 				]}

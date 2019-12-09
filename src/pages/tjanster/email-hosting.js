@@ -15,15 +15,15 @@ export default function EmailHosting (){
 			<SEO 
 				title="E-post hosting"
 				description="Jag erbjuder e-post tjänster till alla mina kunder."
-				url="/tjanster/email-hosting"
+				url="/tjanster/email-hosting/"
 				breadcrumb={[
 					{
 						name: "Tjänster",
-						url: "/tjanster"
+						url: "/tjanster/"
 					},
 					{
 						name: "E-post hosting",
-						url: "/tjanster/email-hosting"
+						url: "/tjanster/email-hosting/"
 					}
 				]}
 			/>

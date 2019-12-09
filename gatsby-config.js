@@ -1,8 +1,8 @@
 
-function removeTrailingSlash(path){
+function addTrailingSlash(path){
 	const hasSlash = path.substr(-1) === "/";
-	const noSlash = path.substr(0, path.length - 1);
-	return hasSlash ? noSlash : path;
+	const addedSlash = path + "/";
+	return !hasSlash ? addedSlash : path;
 }
 
 module.exports = {
@@ -157,7 +157,7 @@ module.exports = {
 						const path = edge.node.path;
 						let priority = 0.8;
 						let changefreq = "daily";
-						let url = removeTrailingSlash(site.siteMetadata.siteUrl + path);
+						let url = addTrailingSlash(site.siteMetadata.siteUrl + path);
 
 
 						priority = /^\/integritetspolicy/.test(path) ? 0.2 : priority;

@@ -38,15 +38,15 @@ export default function Granskning() {
 			<SEO 
 				title="Kostnadsfri granskning"
 				description="Jag erbjuder att göra en gratis granskning av din webbplats. Jag identifierar problem med prestanda, sökmotoroptimering och tillgänglighet."
-				url="/tjanster/granskning"
+				url="/tjanster/granskning/"
 				breadcrumb={[
 					{
 						name: "Tjänster",
-						url: "/tjanster"
+						url: "/tjanster/"
 					},
 					{
 						name: "Granskning",
-						url: "/tjanster/granskning"
+						url: "/tjanster/granskning/"
 					}
 				]}
 				image={image}

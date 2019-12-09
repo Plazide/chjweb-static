@@ -26,7 +26,13 @@ export default function Utveckling() {
 			<SEO
 				title="Utveckling av hemsidor"
 				description="CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
-				url="/webbyra"
+				url="/webbyra/"
+				breadcrumb={[
+					{
+						name: "Webbyrå",
+						url: "/webbyra/"
+					}
+				]}
 			/>
 			<Hero
 				title="Framtidens hemsidor"
