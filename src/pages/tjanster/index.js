@@ -20,6 +20,12 @@ export default function Tjanster() {
 				title="Tjänster"
 				description="CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
 				url="/tjanster/"
+				breadcrumb={[
+					{
+						name: "Tjänster",
+						url: "/tjanster/"
+					}
+				]}
 			/>
 			<Hero
 				title="Jag hjälper er hemsida att må bra"
