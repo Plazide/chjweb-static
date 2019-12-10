@@ -16,12 +16,12 @@ export default function Row({ illustration, link, align, title, children, paragr
 	const content = paragraph ? <p>{children}</p> : children;
 
 	const copyStyle = {
-		alignItems, 
-		textAlign: align, 
+		alignItems: "flex-start", 
+		textAlign: "left", 
 		transform: `translate(${align === "left" ? "-" : ""}${translate})`
 	}
 
-	const button = link ? <ButtonLink href={link} variant="text" style={{ alignSelf }}>Läs mer</ButtonLink> : "";
+	const button = link ? <ButtonLink href={link} variant="text" style={{ alignSelf: "flex-start" }}>Läs mer</ButtonLink> : "";
 
 	return (
 		<section ref={ref} className="row" style={{ flexDirection: direction, opacity }}>
