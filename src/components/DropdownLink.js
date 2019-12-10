@@ -39,7 +39,6 @@ export default function DropdownLink({ to, children, subLinks }) {
 			onMouseOver={onHover}
 			onMouseOut={onBlur}
 			onClick={onTouch}
-			/* onTouchEnd={onTouch} */
 			>
 			<Link 
 				to={to} 
