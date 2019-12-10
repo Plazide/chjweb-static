@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 // Components
 import Logo from "./logo";
 import ButtonLink from "./ButtonLink";
+import Navigation from "./navigation";
 
 // CSS
 import "./styles/mobile-menu.css";
@@ -23,7 +24,8 @@ export default function MobileMenu({ open = false, onClose }) {
 						<CloseIcon />
 					</button>
 				</header>
-				<nav>
+				<Navigation />
+				{/* <nav>
 					<Link to="/" activeClassName="active">Hem</Link>
 					<Link to="/tjanster" activeClassName="active" partiallyActive={true}>Tjänster</Link>
 					<div className="sublinks">
@@ -39,7 +41,7 @@ export default function MobileMenu({ open = false, onClose }) {
 					</div>
 
 					<ButtonLink href="/anlita" variant="outlined">Anlita mig</ButtonLink>
-				</nav>
+				</nav> */}
 			</div>
 		</dialog>
 	)

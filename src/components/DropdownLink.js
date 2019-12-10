@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import {useMediaQuery} from "react-responsive";
 
 // CSS
 import "./styles/dropdownLink.css";
@@ -9,26 +10,37 @@ import _arrowUrl, { ReactComponent as Arrow} from "../images/illustrations/arrow
 
 export default function DropdownLink({ to, children, subLinks }) {
 	const [active, setActive] = useState(false);
+	const isMobile = useMediaQuery({ query: "(max-width: 880px)" });
 	let timeout = null;
 
 	const onHover = () => {
-		setActive(true);
-		if(timeout !== null)
-			clearTimeout(timeout);	
+		if(!isMobile){
+			setActive(true);
+			if(timeout !== null)
+				clearTimeout(timeout);	
+		}	
 	}
 
 	const onBlur = (e) => {
-		timeout = setTimeout( () => {
-			setActive(false);
-		}, 600);
-		
+		if(!isMobile){
+			timeout = setTimeout( () => {
+				setActive(false);
+			}, 600);
+		}
+	}
+
+	const onTouch = () => {
+		setActive(!active);
 	}
 
 	return (
 		<div 
 			className={`dropdown-link ${active ? "active" : ""}`} 
 			onMouseOver={onHover}
-			onMouseOut={onBlur}>
+			onMouseOut={onBlur}
+			onClick={onTouch}
+			/* onTouchEnd={onTouch} */
+			>
 			<Link 
 				to={to} 
 				onFocus={onHover}
