@@ -7,12 +7,10 @@ import Hero from "../../components/Hero";
 import Intro from "../../components/Intro";
 import Row from "../../components/Row"
 import CTA from "../../components/CTA";
+import Pros, { Pro } from "../../components/Pros";
 
 // Components
 import ButtonLink from "../../components/ButtonLink";
-
-// CSS
-import "../../styles/utveckling.css";
 
 // Images
 import seoUrl from "../../images/illustrations/seo.svg";
@@ -50,35 +48,31 @@ export default function Utveckling() {
 				</Intro>
 
 
-				<section className="pros">
-					<h2>Fördelar med JAMStack</h2>
-					<div className="list">
-						<div className="pro">
-							<h3>Naturlig SEO</h3>
-							<p>Tack vare JAMStack sidornas hastighet, har de ofta bättre sökranking än andra sidor.</p>
-						</div>
-						<div className="pro">
-							<h3>Mycket snabbt</h3>
-							<p>JAMStack sidor är otroligt snabba eftersom de alltid är färdiga att serveras.</p>
-						</div>
-						<div className="pro">
-							<h3>Billigare att driva</h3>
-							<p>Eftersom JAMStack inte kräver någon avancerad infrastruktur, är sidorna billigare att driva.</p>
-						</div>
-						<div className="pro">
-							<h3>Flera CMS val</h3>
-							<p>Det finns många olika CMS:er att välja mellan, från bloggverktyg till skräddarsytt innehåll.</p>
-						</div>
-						<div className="pro">
-							<h3>Säkrare hemsidor</h3>
-							<p>Eftersom det inte finns någon bakomliggande server finns det ingenting att attackera.</p>
-						</div>
-						<div className="pro">
-							<h3>Hanterar hög trafik</h3>
-							<p>När din hemsida får oväntat mycket trafik kommer den fortfarande fungera som vanligt, utan att du behöver öka dina resurser.</p>
-						</div>
-					</div>
-				</section>
+				<Pros title="Fördelar med JAMStack">
+					<Pro title="Naturlig SEO">
+					Tack vare JAMStack sidornas hastighet, har de ofta bättre sökranking än andra sidor.
+					</Pro>
+
+					<Pro title="Mycket snabbt">
+					JAMStack sidor är otroligt snabba eftersom de alltid är färdiga att serveras.
+					</Pro>
+
+					<Pro title="Billigare att driva">
+					Eftersom JAMStack inte kräver någon avancerad infrastruktur, är sidorna billigare att driva.
+					</Pro>
+
+					<Pro title="Flera val av CMS">
+					Det finns många olika CMS:er att välja mellan, från bloggverktyg till skräddarsytt innehåll.
+					</Pro>
+
+					<Pro title="Säkrare hemsidor">
+					Eftersom det inte finns någon bakomliggande server finns det ingenting att attackera.	
+					</Pro>
+
+					<Pro title="Hanterar hög trafik">
+					När din hemsida får oväntat mycket trafik kommer den fortfarande fungera som vanligt, utan att du behöver öka dina resurser.
+					</Pro>
+				</Pros>
 
 				<Row
 					illustration={seoUrl}
