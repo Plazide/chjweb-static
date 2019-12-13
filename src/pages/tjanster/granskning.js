@@ -95,6 +95,7 @@ function Form(){
 	const [websiteError, setWebsiteError] = useState("");
 	const [formError, setFormError] = useState("");
 	const [success, setSuccess] = useState(false);
+	const [loading, setLoading] = useState(false);
 
 	const onSubmit = async (e) => {
 		e.preventDefault();
@@ -105,6 +106,7 @@ function Form(){
 		const email = form[0].value;
 		const website = form[1].value;
 
+		setLoading(true);
 		const response = await fetch(endpoint, {
 			method,
 			headers: {
@@ -115,6 +117,7 @@ function Form(){
 				website
 			})
 		});
+		setLoading(false);
 
 		if(!response.ok){
 			setFormError("Något gick fel! Din förfrågan gick inte att skicka!")
@@ -165,7 +168,7 @@ function Form(){
 					errorText={websiteError}
 				/>
 
-				<Button>Granska</Button>
+				<Button loading={loading}>Granska</Button>
 			</form>
 			{success ? <div className="submit-success">
 				<h2>Skickat!</h2>
