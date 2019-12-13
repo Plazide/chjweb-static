@@ -12,6 +12,11 @@
 	border-radius: 4px;
 	text-align: left;
 }
+.audit-form .button-wrapper{
+	min-width: 12%;
+	display: flex;
+	justify-content: center;
+}
 .audit-form.hide{
 	animation: hideAuditForm 100ms ease-out forwards;
 }
