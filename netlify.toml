@@ -28,3 +28,8 @@
 	from = "/personuppgifter"
 	to = "/integritetspolicy"
 	status = 301
+
+[[redirects]]
+	from = "/anlita"
+	to = "/offert"
+	status = 301
