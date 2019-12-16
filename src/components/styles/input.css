@@ -1,7 +1,7 @@
 /* Default */
 .text-field{
 	position: relative;
-	height: 56px;
+	height: auto;
 
 	cursor: text;
 }
@@ -16,7 +16,8 @@
 
 	transition: transform 100ms ease-out;
 }
-.text-field input{
+.text-field input,
+.text-field textarea{
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
@@ -27,11 +28,28 @@
 
 	transition: border-color 100ms ease-out;
 }
+.text-field input{
+	height: 56px;
+}
+.text-field textarea{
+	height: 120px;
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+}
+.text-field.textarea{
+	min-height: 100px;
+}
 .text-field .error-text{
 	opacity: 0;
 	padding: 0 1rem;
 	font-size: .9rem;
 	color: var(--primary);
+}
+.text-field .helper-text{
+	display: block;
+	padding: 0 1rem;
+	font-size: .9rem;
+	height: auto;
 }
 
 /* Focused */
@@ -39,10 +57,14 @@
 	transform: translate(.5rem, -50%) scale(.75);
 	background: #fff;
 }
-.text-field.focused input{
+.text-field.focused input,
+.text-field.focused textarea{
 	border-color: var(--primary);
 }
 
 .text-field.error .error-text{
 	animation: fadeIn 100ms ease forwards;
+}
+.text-field.error .helper-text{
+	display: none;
 }
