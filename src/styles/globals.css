@@ -191,20 +191,15 @@ section.hero .content .copy{
 section.hero .copy h1{
 	font-size: 3em;
 	margin-top: 0;
-	animation: fadeIn 500ms ease-in-out;
 }
 section.hero .copy p{
 	box-sizing: border-box;
 	font-size: 1.4em;
 	margin: 7px 0 5rem;
-
-	animation: fadeIn 500ms ease-in-out;
 }
 section.hero .btns{
 	display: flex;
 	flex-wrap: wrap;
-
-	animation: fadeIn 500ms ease-in-out;
 }
 section.hero .btns a:first-child{
 	margin-right: 1em;
