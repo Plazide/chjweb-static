@@ -31,9 +31,10 @@ export default function navigation() {
 				activeClassName="active"
 				partiallyActive={true}
 				subLinks={[
-					{ name: "SEO", to: "/webbyra/seo/" }, 
+					{ name: "Webbshop", to: "/webbyra/webbshop/" },
+					{ name: "SEO", to: "/webbyra/seo/" },
 					{ name: "Hosting", to:"/webbyra/hosting/" },
-					{ name: "Webbshop", to: "/webbyra/webbshop/" }
+					{ name: "CMS", to: "/webbyra/cms/" }
 				]}
 			>
 				Webbyrå
