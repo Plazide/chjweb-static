@@ -16,7 +16,7 @@ import ButtonLink from "../../components/ButtonLink";
 import seoUrl from "../../images/illustrations/seo.svg";
 import webbyraUrl from "../../images/illustrations/webbyra_hero.svg";
 import hostingUrl from "../../images/illustrations/hosting.svg";
-import cmsUrl from "../../images/illustrations/cms.svg";
+import shopUrl from "../../images/illustrations/shop.svg";
 
 export default function Utveckling() {
 	return (
@@ -79,7 +79,7 @@ export default function Utveckling() {
 					threshold={.4}
 					title="Sökmotoroptimering"
 					align="left"
-					link="/webbyra/seo">
+					link="/webbyra/seo/">
 					Det blir allt viktigare för dagens företag att synas på nätet. Ett effektivt sätt för att göra det är genom sökmotoroptimering (SEO). När jag bygger er hemsida kommer jag ta stor hänsyn till sökmotoroptimering, samtidigt som metoden jag använder för att bygga hemsidor ger en naturlig fördel i sökresultaten.
 				</Row>
 
@@ -87,16 +87,16 @@ export default function Utveckling() {
 					illustration={hostingUrl}
 					title="Gratis hosting utan webbhotell"
 					align="right"
-					link="/webbyra/hosting">
+					link="/webbyra/hosting/">
 					En av fördelarna med hemsidor byggda på JAMStack är att de blir riktigt billiga att driva. Det krävs inget webbhotell för att hålla hemsidan på nätet, istället används en modern och kostnadseffektiv CDN tjänst. Det betyder att mindre hemsidor kan synas på nätet utan någon som helst driftkostnad.
 				</Row>
 
 				<Row 
-					illustration={cmsUrl} 
-					link="/webbyra/cms" 
+					illustration={shopUrl} 
+					link="/webbyra/webbshop/" 
 					align="left"
-					title="Fritt val av CMS">
-					Eftersom jag inte använder Wordpress för att bygga hemsidor, har du möjlighet att välja mellan flera olika CMS verktyg för att hantera sidan. Om du vill ha en blogg kan jag integrera Ghost, som har ett fantastiskt redigeringsverktyg. Om du behöver hantera andra typer av innehåll än blogginlägg finns Directus, Strapi eller Contentful.
+					title="En snabbare webbshop">
+					Öka försäljningen och minska era serverkostnader med en webbshop byggd på JAMStack. Snabba webbshoppar säljer mer, och det blir inte snabbare än JAMStack. Det är inte heller nödvändigt att investera i dyra servrar för att webbshopen ska vara snabb.
 				</Row>
 			</section>
 
