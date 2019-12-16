@@ -68,7 +68,7 @@ const IndexPage = ({ data }) => {
 						<h1>Jag skapar hemsidor</h1>
 						<p>Jag är en webbutvecklare från Mariestad som skapar hemsidor med JAMStack. Det betyder att jag kan designa och utveckla snygga, snabba och säkra hemsidor utan krångel.</p>
 						<div className="btns">
-							<ButtonLink href="/anlita" variant="filled">Anlita mig</ButtonLink>
+							<ButtonLink href="/offert/" variant="filled">Få Offert</ButtonLink>
 							<ButtonLink href="/tjanster/granskning#cta" variant="outlined">Granska hemsida</ButtonLink>
 						</div>
 					</div>
