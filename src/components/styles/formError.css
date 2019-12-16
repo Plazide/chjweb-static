@@ -1,0 +1,10 @@
+.form-error{
+	box-sizing: border-box;
+	display: block;
+	padding: 1rem;
+	border: 1px solid var(--primary);
+
+	background: var(--lightRed);
+	font-weight: bold;
+	margin-bottom: 2.5rem;
+}
