@@ -16,7 +16,8 @@ export default function Input({
 	style = null,
 	required = true,
 	pattern = "",
-	onChange
+	onChange,
+	mode = "input"
 }) {
 	const [focus, setFocus] = useState(false);
 	const errorClass = error ? "error" : "";
@@ -36,8 +37,9 @@ export default function Input({
 	}
 
 	return (
-		<div className={`text-field ${variant} ${errorClass} ${focusClass}`} style={style}>
+		<div className={`text-field ${variant} ${errorClass} ${focusClass} ${mode}`} style={style}>
 			<label htmlFor={id}>{label}</label>
+			{mode === "input" ?
 			<input 
 				aria-invalid={error}
 				type={type} 
@@ -49,6 +51,19 @@ export default function Input({
 				pattern={pattern}
 				onChange={onChange}
 			/>
+			:
+			<textarea
+				aria-invalid={error}
+				type={type} 
+				id={id} 
+				name={name}
+				onFocus={onFocus} 
+				onBlur={onBlur} 
+				required={required} 
+				pattern={pattern}
+				onChange={onChange}></textarea>
+			}
+			
 			<span className="helper-text">{helperText}</span>
 			{errorAlert}
 		</div>
