@@ -35,7 +35,7 @@ export default function Utveckling() {
 			<Hero
 				title="Framtidens hemsidor"
 				illustration={webbyraUrl}
-				cta={<ButtonLink href="/anlita" variant="filled">Anlita mig</ButtonLink>}
+				cta={<ButtonLink href="/offert/" variant="filled">Be om offert</ButtonLink>}
 			>
 				CHJ Webblösningar utvecklar hemsidor med hjälp av den senaste tekniken. Det här betyder att ni kan få en snabb, snygg och modern hemsida som är billig att driva.
 			</Hero>
