@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Hero({ title, children, illustration, cta = "" }) {
+export default function Hero({ title, children, illustration, cta = "", className }) {
 	return (
-		<section className="hero">
+		<section className={`hero ${className}`}>
 			<div className="content">
 				<div className="copy">
 					<h1>{title}</h1>
