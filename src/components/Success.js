@@ -21,22 +21,11 @@ export default function Success({ message, hidden = true, countdown = 0 }) {
 	}, 100);
 
 	return (
-		<dialog className={`status success ${hiddenClass}`} aria-live="polite" role="status">
-			<img src={successUrl} alt="Lyckades" className="illustration" role="presentation" />
+		<div className={`status success ${hiddenClass}`} aria-live="polite" role="status">
 			<h1 className="message">{successMsg}</h1>
-			{countdownElement}
-		</dialog>
-	)
-}
-
-function renderCountdown({ seconds }){
-	return (
-		<div role="presentation">
-			<span>Omdirigeras om:</span>
-			<span className="countdown">{seconds}</span>
+			<img src={successUrl} alt="Lyckades" className="illustration" role="presentation" />
 		</div>
-		
-	);
+	)
 }
 
 Success.propTypes = {
