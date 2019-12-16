@@ -1,4 +1,4 @@
-section.hire{
+/* section.hire{
 	opacity: 0;
 	height: 100vh;
 
@@ -8,6 +8,11 @@ section.hire{
 	background-repeat: no-repeat;
 
 	animation: fadeIn 1000ms ease-in-out forwards;
+} */
+section.hero.hire{
+	height: auto;
+	min-height: 70vh;
+	padding: 5rem 0;
 }
 section.hire .content{
 	margin-top: 0;
@@ -18,24 +23,26 @@ section.hire .content{
 	align-items: center;
 }
 section.hire .content .copy{
-	margin-top: 10rem;
 	width: 700px;
 	max-width: 100%;
 	text-align: center;
 
-	font-size: 1.2rem;
-	
+	font-size: 1.05rem;
 }
 
 section.hire .hire-form{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: nowrap;
-	justify-content: stretch;
+	justify-content: flex-start;
+	align-items: stretch;
 	margin-top: 20px;
+	text-align: left;
+	margin: 3rem auto;
+	font-size: 1.2rem;
 
 	opacity: 0;
-	animation: fadeIn 400ms 1000ms ease-in-out forwards;
+	animation: fadeIn 200ms ease-in-out forwards;
 
 	max-width: 600px;
 	width: 100%;
@@ -79,17 +86,5 @@ section.hire .back-arrow path{
 	}
 	section.hire .hire-form .button{
 		margin-top: 1.4rem;
-	}
-}
-
-@media only screen and (max-height: 600px){
-	section.hire .content .copy p{
-		display: none;
-	}
-}
-
-@media only screen and (max-height: 450px){
-	section.hire .content .copy h1{
-		display: none;
 	}
 }
