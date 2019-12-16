@@ -26,6 +26,13 @@ module.exports = {
 				head: true
 			}
 		},
+		{
+			resolve: "gatsby-plugin-hotjar",
+			options: {
+				id: 1392838,
+				sv: 6
+			}
+		},
 		"gatsby-plugin-react-helmet",
 		{
 			resolve: "gatsby-plugin-feed",
