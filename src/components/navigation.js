@@ -47,7 +47,7 @@ export default function navigation() {
 				Blogg
 			</Link>
 
-			<ButtonLink variant="outlined" href="/anlita/">Anlita mig</ButtonLink>
+			<ButtonLink variant="outlined" href="/offert/">Få Offert</ButtonLink>
 		</nav>
 	)
 }
