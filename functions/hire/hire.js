@@ -17,14 +17,16 @@ const transporter = nodemailer.createTransport({
 	}
 });
 
-async function sendHireEmail(email){
+async function sendHireEmail(email, msg){
 	try{
 		const info = await transporter.sendMail({
-			from: email,
+			from: "contact@chjweb.se",
 			to: "contact@chjweb.se",
-			subject: "Förfrågan om att anlita",
+			subject: `${email} vill ha en offert!`,
 			html: `
-			<a href="mailto:${email}">${email}</a> är intresserad av att anlita CHJ Webblösningar. Skicka ett mejl direkt!
+			<p><a href="mailto:${email}">${email}</a> har skickat en offertförfrågan. Hen har skrivit så här:<p>
+
+			<pre>${msg}<pre>
 			`
 		});
 
@@ -38,10 +40,13 @@ async function sendHireEmail(email){
 exports.handler = async (event, context) => {
 	if(event.httpMethod !== "POST") return { statusCode: 400, body: "Method not supported" }
 
-	const email = JSON.parse(event.body).email;
+	const body = JSON.parse(event.body);
+	const email = body.email;
+	const msg = body.msg;
 	if(!email || !/^.+@.+\..{2,8}$/.test(email)) return { statusCode: 400, body: "Malformed data" }
+	if(!msg) return { statusCode: 400, body: "Maformed data" }
 
-	const accepted = await sendHireEmail(email);
+	const accepted = await sendHireEmail(email, msg);
 
 	if(accepted)
 		return { statusCode: 200, body: "Accepted" };
