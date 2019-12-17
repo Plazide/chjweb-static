@@ -119,8 +119,7 @@ h2.underlined{
 /* Hero section */
 section.hero{
 	box-sizing: border-box;
-	padding: 0 0 5rem;
-	height: 80vh;
+	min-height: 80vh;
 
 }
 section.hero .featured{
