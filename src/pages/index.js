@@ -81,8 +81,8 @@ const IndexPage = ({ data }) => {
 
 			<section className="features">
 				<div className="copy intro">
-					<h1>Varför är CHJ Webblösningar annorlunda?</h1>
-					<p>Det som skiljer CHJ Webblösningar från andra webbyråer är att jag inte använder Wordpress för att skapa hemsidor. Istället bygger jag hemsidor utifrån JAMStack principer. Det betyder att jag utvecklar statiska sidor som är färdiga att serveras vid varje hämtning. Det här innebär att mina hemsidor är snabbare och säkrare än vanliga hemsidor.</p>
+					<h1>Snabbare hemsidor</h1>
+					<p>Hemsidor måste vara snabba, annars förlorar man besökarna. Snabbhet är en av de största tekniska fördelarna med att välja mig som webbutvecklare. Oavsett om ditt företag behöver en presentationssida eller webbshop, så kan jag göra en hemsida som skapar nöjda kunder.</p>
 				</div>
 
 				<Row 
@@ -115,9 +115,9 @@ const IndexPage = ({ data }) => {
 				<Row
 					illustration={circles1Url}
 					align="left"
-					title="Vad är CHJ Webblösningar?"
+					title="Bakom CHJ Webblösningar"
 					>
-					CHJ Webblösningar är ett företag som består av mig, Carl Hallén Jansson. Jag har nästan 10 års erfarenhet av webbutveckling. Jag har gjort allting från dynamiska sidor med PHP till statiska sidor med JAMStack. Sommaren 2019 bestämde jag mig för att starta ett företag i syfte att utveckla hemsidor på fulltid.
+					CHJ Webblösningar är en enskild firma som drivs av Carl Hallén Jansson. Jag har nästan 10 års erfarenhet av att skapa hemsidor. Det började med enkla HTML sidor med en släng av CSS. Sedan hittade jag PHP och började skapa dynamiska hemsidor. Nu har jag hittat JAMStack och utvecklar snabbare och säkrare hemsidor än någonsin.
 				</Row>
 
 				<Row
