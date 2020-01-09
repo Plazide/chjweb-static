@@ -122,6 +122,6 @@ Det här var nog allt för mig. Du kan dela inlägget genom någon av knapparna 
 
 Tack för att du läst och ha en fortsatt bra dag!
 
-PS. Om du är intresserad av att börja använda DigitalOcean så kan du registrera dig genom min [referal länk](https://m.do.co/c/ced72bda5083). Då får du $50 att spendera på deras tjänster under 30 dagar. När du spenderat $25 så får jag $25 på mitt konto. Alla vinner!
+PS. Om du är intresserad av att börja använda DigitalOcean så kan du registrera dig genom min [referal länk](https://m.do.co/c/ced72bda5083). Då får du $100 att spendera på deras tjänster under 60 dagar. När du spenderat $25 så får jag $25 på mitt konto. Alla vinner!
 
 Länk: <https://m.do.co/c/ced72bda5083>
