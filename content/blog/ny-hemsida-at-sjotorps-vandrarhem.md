@@ -10,19 +10,25 @@ image: /static/framsida.jpg
 ---
 ## Sjötorps Vandrarhem har fått sin första egna hemsida
 
-Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti och nu, i Januari 2020 är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
+Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti 2019 och nu, i Januari 2020, är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
 
 Om du vill kolla in hemsidan kan göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
 
 ## Bokning
 
-När jag träffade ägaren till Sjötorps Vandrarhem för första gången var hans ord tydliga, han ville ha en enkel hemsida. När vi väl började prata om vad som skulle finnas på sidan blev den helt plötsligt mer komplex. Tanken var självklart att hemsidan, utöver att vara en presentationssida för vandrarhemmet, skulle fungera som ännu än kanal för att få bokningar. Detta var jag något jag förväntade mig innan vi träffades, men hur denna bokning skulle implementeras var mer hade jag ingen aning om.
+När jag träffade ägaren till Sjötorps Vandrarhem för första gången var hans ord tydliga, han ville ha en enkel hemsida. När vi väl började prata om vad som skulle finnas på sidan blev den helt plötsligt mer komplex. Tanken var självklart att hemsidan, utöver att vara en presentationssida för vandrarhemmet, skulle fungera som en bokningskanal. Detta var jag något jag förväntade mig innan vi träffades, men hur denna bokning skulle implementeras var en större fråga.
 
 ### Använda en Channel Manager
 
-Den mest tidseffektiva och smidiga lösningen skulle ha varit att koppla hemsidan till en Channel Manager. En Channel Manager är ett system för hotell och B&B värdar som tar emot bokningar på flera olika plattformar. Den används för att automatiskt synka alla bokningar mellan de olika plattformarna, så att boenden inte behöver göra det manuellt. Det skulle då vara möjligt att lägga till hemsidan som en bokningskanal. Detta skulle betyda att Channel Managern sköter kontrollering och uppdatering av tillgänglighet samtidigt som den har ett användarvänlig gränssnitt för att sköta alla bokningskanaler från en plats.
+Den mest tidseffektiva och smidiga lösningen skulle ha varit att koppla hemsidan till en Channel Manager. En Channel Manager är ett system för hotell och B&B värdar som tar emot bokningar på flera olika plattformar. 
 
-Tyvärr ansåg kunden att en sådan lösning skulle bli allt för dyr i slutändan då de Channel Managers vi tittade på kom med en månadskostnad. Det hade än så länge gått bra att uppdatera de olika sidorna manuellt, och det kostade inte extra pengar. Han ville därför ha en kontrollpanel till sidan som liknar den på booking.com. Det blev alltså bara att utveckla de nödvändiga funktionerna och kontrollpanelen själv, något som kunden blev riktigt nöjd med i slutändan.
+Sådana används för att automatiskt synka alla bokningar mellan de olika plattformarna, så att värdarna inte behöver göra det manuellt. Det skulle då vara möjligt att lägga till hemsidan som en bokningskanal, och låta Channel Managern sköta kontrollering och uppdatering av tillgänglighet. 
+
+De lösningar som vi tittade på kom dock med en rätt hög månadskostnad, och därför ansåg kunden att en Channel Manager skulle bli för dyr i slutändan. Det hade än så länge gått bra att uppdatera de olika sidorna manuellt, och det kostade inte extra pengar. 
+
+Han ville därför ha en kontrollpanel till sidan som liknar den på booking.com så att han kan enkelt kan uppdatera tillgängligheten själv. Det istället mitt uppdrag att skapa ett helt bokningssystem med en kontrollpanel för att uppdatera rum, ändra priser och hantera bokningar.
+
+Det var en utmaning och inte något jag hade räknat med, men i slutändan blev kunden nöjd med resultatet.
 
 ### Kontrollpanelen
 
