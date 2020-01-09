@@ -1,7 +1,7 @@
 ---
 title: Ny hemsida åt Sjötorps Vandrarhem
-date: 2019-12-01T21:20:05.233Z
-updated: 2019-12-01T12:49:03.372Z
+date: 2020-01-10T21:20:05.233Z
+updated: 2020-01-10T12:49:03.372Z
 description: >-
   CHJ Webblösningar har skapat den första hemsidan till Sjötorps Vandrarhem.
   Detta är den både första hemsidan som Sjötorps Vandrarhem har och den första
@@ -10,7 +10,7 @@ image: /static/framsida.jpg
 ---
 ## Sjötorps Vandrarhem har fått sin första egna hemsida
 
-Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti och i november 2019 är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
+Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti och nu, i Januari 2020 är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
 
 Om du vill kolla in hemsidan kan göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
 
