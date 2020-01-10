@@ -16,7 +16,9 @@ Om du vill kolla in hemsidan kan göra det på [sjötorpsvandrarhem.se](https://
 
 ## Bokning
 
-När jag träffade ägaren till Sjötorps Vandrarhem för första gången var hans ord tydliga, han ville ha en enkel hemsida. När vi väl började prata om vad som skulle finnas på sidan blev den helt plötsligt mer komplex. Tanken var självklart att hemsidan, utöver att vara en presentationssida för vandrarhemmet, skulle fungera som en bokningskanal. Detta var jag något jag förväntade mig innan vi träffades, men hur denna bokning skulle implementeras var en större fråga.
+När jag träffade ägaren till Sjötorps Vandrarhem för första gången var hans ord tydliga, han ville ha en enkel hemsida. När vi väl började prata om vad som skulle finnas på sidan blev den helt plötsligt mer komplex. 
+
+Tanken var självklart att hemsidan, utöver att vara en presentationssida för vandrarhemmet, skulle fungera som en bokningskanal. Detta var jag något jag förväntade mig innan vi träffades, men hur denna bokning skulle implementeras var en större fråga.
 
 ### Använda en Channel Manager
 
@@ -26,17 +28,23 @@ Sådana används för att automatiskt synka alla bokningar mellan de olika platt
 
 De lösningar som vi tittade på kom dock med en rätt hög månadskostnad, och därför ansåg kunden att en Channel Manager skulle bli för dyr i slutändan. Det hade än så länge gått bra att uppdatera de olika sidorna manuellt, och det kostade inte extra pengar. 
 
-Han ville därför ha en kontrollpanel till sidan som liknar den på booking.com så att han kan enkelt kan uppdatera tillgängligheten själv. Det istället mitt uppdrag att skapa ett helt bokningssystem med en kontrollpanel för att uppdatera rum, ändra priser och hantera bokningar.
+Han ville därför ha en kontrollpanel till sidan som liknar den på booking.com så att han kan enkelt kan uppdatera tillgängligheten själv. Mitt uppdrag blev alltså att skapa ett helt bokningssystem med en kontrollpanel för att uppdatera rum, ändra priser och hantera bokningar.
 
 Det var en utmaning och inte något jag hade räknat med, men i slutändan blev kunden nöjd med resultatet.
 
 ### Kontrollpanelen
 
-Huvuddelarna av kontrollpanelen består av tre olika vyer. Den första och mest grundläggande är vyn för att skapa rum. Eftersom det är möjligt att vandrarhemmet bygger om sina rum i framtiden, eller lägger till fler rum, var det viktigt att kunden hade möjligheten att kontrollera inställningar för olika rumtyper. Kunden kan ändra hur många rum det finns för varje typ, hur många sängar det finns i varje rum av en typ och namnet på typen såklart. Det går även att ändra priset för de olika tilläggen som går att köpa till rumtypen.
+Huvuddelarna av kontrollpanelen består av tre olika vyer. Den första och mest grundläggande är vyn för att skapa rum. Eftersom det är möjligt att vandrarhemmet bygger om sina rum i framtiden, eller lägger till fler rum, var det viktigt att kunden hade möjligheten att kontrollera inställningar för olika rumstyper. 
 
-Den andra vyn visar en lista av genomförda och avbokade bokningar. Kunden har möjlighet att filtrera efter aktiva och avbokade bokningar, samt efter datuminterval. Det går att sortera efter ankomstdatum, avfärdsdatum, och hur många som personer som ingår i bokningen. Genom att klicka på en bokning kan kunden se kontaktuppgifter för personen som genomförde bokningen, samt annan informationen som är viktig för bokningen.
+Kunden kan ändra hur många rum det finns för varje typ, hur många sängar det finns i varje rum av en typ och namnet på rumstypen såklart. Det går även att ändra priset för de olika tilläggen som går att köpa till rumstypen.
 
-I den tredje, och kanske den viktigaste vyn, kan kunden kontrollera tillgängligheten för de olika rumtyperna. Det var den här funktionen som kunden frågade efter från början, de andra vyerna var helt enkelt bara nödvändiga för en fungerande bokningshantering. Eftersom kunden önskade en tillgänglighetskontroll som liknade den på booking.com, behövde jag inte designa hela gränsnittet från grunden. Jag kunden titta på bilder och videor som visade hur gränssnittet fungerade, och sedan bygga något som var liknande.
+Den andra vyn visar en lista av genomförda bokningar och avbokade vistelser. Kunden har möjlighet att filtrera efter aktiva bokningar och avbokningar, samt efter datum interval. Det går att sortera efter ankomstdatum, avfärdsdatum, och hur många som personer som ingår i bokningen.
+
+Genom att klicka på en bokning kan kunden se kontaktuppgifter för personen som genomförde bokningen, samt annan information som är viktig för bokningen. Här är det även möjligt att avboka en vistelse manuellt, ifall någon avbokar via mejl eller telefon.
+
+I den tredje, och kanske den viktigaste vyn, kan kunden kontrollera tillgängligheten för de olika rumstyperna. Det var den här funktionen som kunden frågade efter från början, de andra vyerna var helt enkelt bara nödvändiga för en fungerande bokningshantering. 
+
+Eftersom kunden önskade en tillgänglighetskontroll som liknade den på booking.com, behövde jag inte designa hela gränssnittet från grunden. Jag kunden titta på bilder och videor som visade hur gränssnittet fungerade, och sedan bygga något som var liknande.
 
 Resultatet ser ut så här:
 
@@ -44,36 +52,45 @@ Resultatet ser ut så här:
 
 ### Bokningsfunktionen
 
-Själva bokningsfunktionen på framsidan var en intressant uppgift. Jag ville att den skulle vara så enkel som möjligt att använda, och även se ganska bra ut. Resultatet blev riktigt bra om jag får säga det själv.
+Själva bokningsfunktionen på framsidan var en intressant uppgift. Jag ville att den skulle vara så enkel som möjligt att använda, och även se ganska bra ut. Jag ville att användaren skulle guidas genom bokningsprocessen, och valde därför att dela upp bokningen i flera olika delar.
 
-![bokningsfunktionen på sjötorpsvandrarhem.se](/img/bokning_1.jpg "Första sidan i bokningsprocessen på sjötorpsvandrarhem.se")
+Användaren går igenom dessa steg:
 
-Bokningen fungerar så här:
-
-1. Användaren väljer hur många vuxna personer som ska bo på vandrarhemmet (se bilden)
+1. Användaren väljer hur många vuxna personer som ska bo på vandrarhemmet (se bilden nedan)
 2. Användaren väljer hur många barn som följer med
-3. Baserat på den tidigare informationen kommer måste användaren välja ett visst antal rum. Om antalet vuxna är tre och antalet barn kan man inte välja mindre än två rum, eftersom det endast finns två sängar i rummen.
+3. Baserat på den tidigare informationen måste användaren välja ett visst antal rum. Om antalet vuxna är tre och antalet barn är 1 kan man inte välja mindre än två rum, eftersom det endast finns två sängar i rummen.
 4. Baserat på den tidigare informationen presenteras de typer av rum som är tillgängliga
 5. Användaren väljer sedan ankomst datum och avfärdsdatum där pris och tillgänglighet uppdateras i realtid
 6. Användaren anger namn
 7. Användaren anger e-post och ett frivilligt telefonnummer
 8. Användaren visas en sammanfattning av den angivna informationen och kan välja att gå tillbaka eller slutföra bokningen
 9. Användaren bekräftar sin e-post
-10. När e-posten är bekräftad får både vandrarhemmet och användaren en bokningsbekräftelse
+
+När allt detta är färdigt skickas en bekräftelse på bokningen till både vandrarhemmet och gästen. 
+
+Resultatet blev riktigt bra om jag får säga det själv.
+
+![bokningsfunktionen på sjötorpsvandrarhem.se](/img/bokning_1.jpg "Första sidan i bokningsprocessen på sjötorpsvandrarhem.se")
+
+
 
 ## Flera språk
 
-Kunden tar emot många gäster från andra länder, t.ex. Nederländerna och Tyskland. Det var därför viktigt att hemsidan hade stöd för flera olika språk. Jag hade aldrig gjort en hemsida med flerspråksstöd innan, så det här blev en riktigt viktig lärdom.
+Ett annat krav från kunden var att sidan skulle ha stöd för flera olika språk. Dessa var från början svenska, engelska, nederländska och tyska. Kunden valde dock att inte inkludera tyska i slutändan.
+
+Det här var första gången jag gjorde en hemsidan på flera olika språk, så det var en utmaning. Jag fick läsa på en hel del om bäst praxis för både användarupplevelse och SEO.
+
+Det visade sig att man kunde implementera detta på flera olika sätt. Man kunde välja att skriva allting på ett språk och sedan använda automatiska översättningar från Google varje gång en användare gick in på sidan. Eller så kunde man översätta innehållet manuellt och anpassa det efter varje språk.
+
+För innehållet på sidan, alltså informationstexter, använde vi oss av den senare metoden. Eftersom kunden kommer från Nederländerna kunde han översätta texterna till nederländska och engelska. Vissa delar av hemsidan är dock automatiskt översatt till nederländska och sedan granskat av kunden. 
 
 ### Språk och SEO
 
-En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidan med flera innehåll på flera olika språk är sökmotoroptimering. Som tur är har Google ganska klara riktlinjer på hur man sökmotoroptimerar en flerspråkssida. Man använder `hreflang` taggarna i huvudet på sidan för att peka på vilken sida som gäller för vilket språk. Sedan är det rekommenderat att man serverar olika språk på egna undersidor, t.ex. `https://sjötorpsvandrarhem.se/en/boka-rum` istället för att använda cookies eller basera språket på IP adressen.
+En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidan med flera innehåll på flera olika språk är sökmotoroptimering. Som tur är har Google ganska klara riktlinjer på hur man sökmotoroptimerar en flerspråkssida. Man använder `hreflang` taggarna i huvudet på sidan för att peka på vilken sida som gäller för vilket språk. 
 
-### Översättningar
+Sedan är det rekommenderat att man serverar olika språk på egna undersidor, t.ex. `https://sjötorpsvandrarhem.se/en/boka-rum` istället för att använda cookies eller basera språket på IP adressen.
 
-Själva översättningarna på hemsidan gjordes av kunden, i alla fall innehållet. Översättningarna i sidans huvud och fot gjordes med hjälp av DeepL Translate. Även översättningar för texten i bokningsprocessen gjordes med hjälp av DeepL Translate. Kunden behärskar alla språk som används på sidan, så jag har låtit honom granska alla automatiska översättningar för att säkerställa att dem är korrekta.
-
-För att låta kunden göra översättningar på olika språk byggde jag ett enkelt CMS. Det är beroende av vilken sida som användaren redigerar på, och eftersom alla språk har sina egna undersidor behöver man bara navigera till rätt sida och sedan ändra den önskade texten. Detta fungerar bra för det här ändamålet, men jag skulle inte vilja använda det till något annat.
+Jag har dock gjort ett misstag när det gäller detta. För att ge bäst sökresultat på de olika språken, borde även URL:er vara översatta till det gällande språket. Detta var tyvärr inte möjligt på grund av dåliga beslut gällande metoden för att servera sidorna.
 
 ## Teknologi
 
