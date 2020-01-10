@@ -94,7 +94,7 @@ Jag har dock gjort ett misstag när det gäller detta. För att ge bäst sökres
 
 ## Teknologi
 
-För de som är intresserade av vad jag använt mig av för att skapa hemsidan och kontrollpanelen till Sjötorps Vandrarhem så har jag sammanställt en liten lista av de program och tjänster som jag använt mig av.
+För de som är intresserade av vad jag använt mig av för att skapa hemsidan och kontrollpanelen till Sjötorps Vandrarhem så har jag sammanställt en liten lista av de verktyg som jag använt mig av.
 
 **Frontend**
 
@@ -115,27 +115,45 @@ För de som är intresserade av vad jag använt mig av för att skapa hemsidan o
 
 ### Hosting
 
-Den första tanken med hemsidan till Sjötorps Vandrarhem var att hosta den genom Oderland Webbhotell AB. Jag hade min egen hemsidan hos dem tills för några veckor sedan. Problemet var att jag ville erbjuda ett bättre värde till mina kunder. Ett Agency paket, som låter mig hosta sidor åt mina kunder, hos Oderland hade en kostnad på 500 kr i månaden. När jag endast har en betalande kund är detta inte ekonomiskt sunt.
+Den första tanken med hemsidan till Sjötorps Vandrarhem var att hosta den genom Oderland Webbhotell AB. Jag hade min egen hemsidan hos dem tills för några veckor sedan. Problemet var att jag ville erbjuda ett bättre värde till mina kunder. 
 
-Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. Det visade senare att de egentligen inte hade något gränssnitt för Node, utan man var ändå tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy.
+Ett Agency paket, som låter mig hosta sidor åt mina kunder, hos Oderland hade en kostnad på 500 kr i månaden. När jag endast har en betalande kund är detta inte ekonomiskt sunt. Antingen skulle jag vara tvungen att ta minst 500 kr i månaden från bara en kund, eller ha stadiga utgifter som inte ger något tillbaka.
 
-Support för MongoDB hade de inte heller, det finns det nog inget svenskt webbhotell som har. För att kunna använda MongoDB var jag tvungen att använda Oderlands gör-det-själv servrar, det är deras namn för VPS. Detta skulle dock visa sig vara ganska dyrt. Att ha en server med 1 CPU och 500 MB RAM kostade mig runt 150 kr i månaden. Detta kanske inte låter som så mycket, men den summan gäller bara databasen. Tillsammans med själva webbservern blir detta totalt nästan 300 kr i månaden.
+Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. 
 
-När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att DigitalOcean erbjuder den billigaste lösningen på marknaden. Deras billigaste droplet (VPS) med 1 GB RAM, 1 CPU och 25 GB SSD kostar 50 kr i månaden. En VM Instance från Google Cloud med samma CPU och RAM kostar över 200 kr i månaden, och då har den bara en HDD med 10 GB utrymme.
+Det visade senare att de egentligen inte hade något gränssnitt för Node, utan man ändå var tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy. Detta gav mig stora problem när kom till min egna hemsida och jag ville inte ha samma upplevelse med Sjötorps Vandrarhem.
+
+Support för MongoDB hade de inte heller, det är faktiskt väldigt ovanligt med hostade lösningar för MongoDB. För att kunna använda MongoDB var jag tvungen att använda Oderlands gör-det-själv servrar, det är deras namn för VPS. 
+
+Detta skulle dock visa sig vara ganska dyrt. Att ha en server med 1 CPU och 500 MB RAM kostade mig runt 150 kr i månaden. Detta kanske inte låter som så mycket, men den summan gäller bara databasen. Tillsammans med själva webbservern blir detta totalt nästan 300 kr i månaden.
+
+När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att DigitalOcean erbjuder den billigaste lösningen på marknaden. 
+
+Deras billigaste droplet (VPS) med 1 GB RAM, 1 CPU och 25 GB SSD kostar 50 kr i månaden. En VM Instance från Google Cloud med samma CPU och RAM kostar över 200 kr i månaden, och då har den bara en HDD med 10 GB utrymme.
+
+Till en början hade jag faktiskt webbservern och databasservern på samma VPS. Detta är inte en bra lösning om man någon gång vill skala upp eller om trafiken ökar under en viss period.
+
+Därför flyttade jag sedan databasen till MongoDB Atlas, MongoDBs egna databastjänst. Detta låter mig skala upp databasen ifall det skulle behövas. Och eftersom databasen och webbservern inte längre ligger på samma dator, kan jag klona VPS:en och konfigurera en load balancer för att få extra prestanda om det skulle behövas. 
 
 Det blev lite tekniskt där, förlåt!
 
 ### E-post
 
-Eftersom jag inte använder ett webbhotell har jag inte inbyggd e-post. Jag var alltså tvungen att hitta en annan lösning för detta. Jag kollade runt på flera olika webbhotell som erbjöd email hosting. Vissa var dyrare än andra, men de flesta låg på runt 10 kr för varje konto. Till slut hittade jag ett Italienskt företag vid namn Qboxmail. De erbjöd inte billigare priser eller så, men deras kontrollpanel och verktyg verkade mycket bättre än något annat jag tittade på.
+Eftersom jag inte använder ett webbhotell har jag inte inbyggd e-post. Jag var alltså tvungen att hitta en annan lösning för detta. Jag kollade runt på flera olika webbhotell som erbjöd email hosting. Vissa var dyrare än andra, men de flesta låg på runt 10 kr för varje konto. 
 
-De erbjöd även ett så kallat reseller konto, vilket betyder att jag sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadressen och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
+Till slut hittade jag ett Italienskt företag vid namn Qboxmail. De erbjöd inte billigare priser eller så, men deras kontrollpanel och verktyg verkade mycket bättre än något annat jag tittade på.
+
+De erbjöd även ett så kallat reseller konto, vilket betyder att jag sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. 
+
+Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadressen och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
 
 ## Avslutande ord
 
-Jag kom in lite på villovägar när jag började skriva om hosting, jag hoppas att du kunde hänga med. Det här projektet har utan tvekan varit lärorikt, både när det gäller utveckling och serverhantering. Jag hoppas att framtida projekt kommer att vara lika roliga att jobba på.
+Jag kom in lite på villovägar när jag började skriva om hosting, jag hoppas att du kunde hänga med. 
 
-Det här var nog allt för mig. Du kan dela inlägget genom någon av knapparna nedanför och fråga mig frågor på sociala medier.
+Det här projektet har utan tvekan varit lärorikt, både när det gäller utveckling och serverhantering. Jag hoppas att framtida projekt kommer att vara lika roliga att jobba med.
+
+Det här var allt för mig. Du kan dela inlägget genom någon av knapparna nedanför och fråga mig frågor på sociala medier.
 
 Tack för att du läst och ha en fortsatt bra dag!
 
