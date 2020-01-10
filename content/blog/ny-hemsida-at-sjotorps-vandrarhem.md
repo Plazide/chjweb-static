@@ -12,7 +12,9 @@ image: /static/framsida.jpg
 
 Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min första hemsida till en kund som CHJ Webblösningar. Det hela började i augusti 2019 och nu, i Januari 2020, är hemsidan äntligen klar. I det här inlägget kommer jag berätta vilka utmaningar och lärdomar som det här projektet fört med sig.
 
-Om du vill kolla in hemsidan kan göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
+Om du vill kolla in hemsidan kan du göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
+
+![Sjötorps Vandrarhem framsida](/static/hemsida.jpg "Sjötorps Vandrarhem framsida")
 
 ## Bokning
 
@@ -38,13 +40,13 @@ Huvuddelarna av kontrollpanelen består av tre olika vyer. Den första och mest 
 
 Kunden kan ändra hur många rum det finns för varje typ, hur många sängar det finns i varje rum av en typ och namnet på rumstypen såklart. Det går även att ändra priset för de olika tilläggen som går att köpa till rumstypen.
 
-Den andra vyn visar en lista av genomförda bokningar och avbokade vistelser. Kunden har möjlighet att filtrera efter aktiva bokningar och avbokningar, samt efter datum interval. Det går att sortera efter ankomstdatum, avfärdsdatum, och hur många som personer som ingår i bokningen.
+Den andra vyn visar en lista av genomförda bokningar och avbokade vistelser. Kunden har möjlighet att filtrera efter aktiva bokningar och avbokningar, samt efter datum interval. Det går att sortera efter ankomstdatum, avfärdsdatum, och hur många personer som ingår i bokningen.
 
 Genom att klicka på en bokning kan kunden se kontaktuppgifter för personen som genomförde bokningen, samt annan information som är viktig för bokningen. Här är det även möjligt att avboka en vistelse manuellt, ifall någon avbokar via mejl eller telefon.
 
 I den tredje, och kanske den viktigaste vyn, kan kunden kontrollera tillgängligheten för de olika rumstyperna. Det var den här funktionen som kunden frågade efter från början, de andra vyerna var helt enkelt bara nödvändiga för en fungerande bokningshantering. 
 
-Eftersom kunden önskade en tillgänglighetskontroll som liknade den på booking.com, behövde jag inte designa hela gränssnittet från grunden. Jag kunden titta på bilder och videor som visade hur gränssnittet fungerade, och sedan bygga något som var liknande.
+Eftersom kunden önskade en tillgänglighetskontroll som liknade den på booking.com, behövde jag inte designa hela gränssnittet från grunden. Jag kunde titta på bilder och videor som visade hur gränssnittet fungerade, och sedan bygga något som var liknande.
 
 Resultatet ser ut så här:
 
@@ -60,7 +62,7 @@ Användaren går igenom dessa steg:
 2. Användaren väljer hur många barn som följer med
 3. Baserat på den tidigare informationen måste användaren välja ett visst antal rum. Om antalet vuxna är tre och antalet barn är 1 kan man inte välja mindre än två rum, eftersom det endast finns två sängar i rummen.
 4. Baserat på den tidigare informationen presenteras de typer av rum som är tillgängliga
-5. Användaren väljer sedan ankomst datum och avfärdsdatum där pris och tillgänglighet uppdateras i realtid
+5. Användaren väljer sedan ankomstdatum och avfärdsdatum där pris och tillgänglighet uppdateras i realtid
 6. Användaren anger namn
 7. Användaren anger e-post och ett frivilligt telefonnummer
 8. Användaren visas en sammanfattning av den angivna informationen och kan välja att gå tillbaka eller slutföra bokningen
@@ -78,7 +80,7 @@ Resultatet blev riktigt bra om jag får säga det själv.
 
 Ett annat krav från kunden var att sidan skulle ha stöd för flera olika språk. Dessa var från början svenska, engelska, nederländska och tyska. Kunden valde dock att inte inkludera tyska i slutändan.
 
-Det här var första gången jag gjorde en hemsidan på flera olika språk, så det var en utmaning. Jag fick läsa på en hel del om bäst praxis för både användarupplevelse och SEO.
+Det här var första gången jag gjorde en hemsidan på flera olika språk, så det var en utmaning. Jag fick läsa på en hel del om bästa praxis för både användarupplevelse och SEO.
 
 Det visade sig att man kunde implementera detta på flera olika sätt. Man kunde välja att skriva allting på ett språk och sedan använda automatiska översättningar från Google varje gång en användare gick in på sidan. Eller så kunde man översätta innehållet manuellt och anpassa det efter varje språk.
 
@@ -86,7 +88,7 @@ För innehållet på sidan, alltså informationstexter, använde vi oss av den s
 
 ### Språk och SEO
 
-En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidan med flera innehåll på flera olika språk är sökmotoroptimering. Som tur är har Google ganska klara riktlinjer på hur man sökmotoroptimerar en flerspråkssida. Man använder `hreflang` taggarna i huvudet på sidan för att peka på vilken sida som gäller för vilket språk. 
+En av de viktigaste faktorerna att ta hänsyn till när det gäller hemsidor med innehåll på flera olika språk är sökmotoroptimering. Som tur är har Google ganska klara riktlinjer på hur man sökmotoroptimerar en flerspråkssida. Man använder `hreflang` taggarna i huvudet på sidan för att peka på vilken sida som gäller för vilket språk. 
 
 Sedan är det rekommenderat att man serverar olika språk på egna undersidor, t.ex. `https://sjötorpsvandrarhem.se/en/boka-rum` istället för att använda cookies eller basera språket på IP adressen.
 
@@ -121,7 +123,7 @@ Ett Agency paket, som låter mig hosta sidor åt mina kunder, hos Oderland hade 
 
 Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. 
 
-Det visade senare att de egentligen inte hade något gränssnitt för Node, utan man ändå var tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy. Detta gav mig stora problem när kom till min egna hemsida och jag ville inte ha samma upplevelse med Sjötorps Vandrarhem.
+Det visade sig senare att de egentligen inte hade något gränssnitt för Node, utan man ändå var tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy. Detta gav mig stora problem när det kom till min egna hemsida och jag ville inte ha samma upplevelse med Sjötorps Vandrarhem.
 
 Support för MongoDB hade de inte heller, det är faktiskt väldigt ovanligt med hostade lösningar för MongoDB. För att kunna använda MongoDB var jag tvungen att använda Oderlands gör-det-själv servrar, det är deras namn för VPS. 
 
@@ -143,7 +145,7 @@ Eftersom jag inte använder ett webbhotell har jag inte inbyggd e-post. Jag var 
 
 Till slut hittade jag ett Italienskt företag vid namn Qboxmail. De erbjöd inte billigare priser eller så, men deras kontrollpanel och verktyg verkade mycket bättre än något annat jag tittade på.
 
-De erbjöd även ett så kallat reseller konto, vilket betyder att jag sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. 
+De erbjöd även ett så kallat reseller konto, vilket betyder att jag kan sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. 
 
 Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadressen och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
 
