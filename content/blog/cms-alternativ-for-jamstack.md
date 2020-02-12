@@ -68,3 +68,7 @@ Om man inte vill bygga om webbplatsen varje gång en ändring görs, kan man ist
 ## Alternativ
 
 Nu när vi förstår vilka typer av CMS:er som finns tillgängliga för JAMStack, kan vi börja prata om vilka lösningar vi kan använda för att implementera CMS funktionalitet med JAMStack.
+
+Vissa av dessa är kostnadsfria med öppenkällkod, och andra kräver en betydlig månadskostnad. Git-baserade CMS:er är ofta gratis, och när det kommer till headless CMS:er krävs ofta en avgift.
+
+Även om det finns headless CMS:er med öppenkällkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumera på de tjänster som CMS:erna erbjuder själva.
