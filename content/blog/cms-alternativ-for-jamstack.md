@@ -75,9 +75,11 @@ Vissa av dessa är kostnadsfria med öppen källkod, och andra kräver en betydl
 
 Även om det finns headless CMS:er med öppen källkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumera på de tjänster som CMS:erna erbjuder själva.
 
+Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att integrera med en SSG. Generellt sett finns det inte någon helt kodlös lösning för CMS när det kommer till JAMStack. Det finns dock ett undantag, men jag tar upp det i listan.
+
 ### 1. Netlify CMS
 
-Netlify CMS är Git-baserad och har öppen källlod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
+Netlify CMS är Git-baserad och har öppen källlkod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
 
 Det är faktiskt den här CMS lösningen som jag använder för min webbplats. Än så länge har den fungerat bra, men jag vet inte om jag skulle rekommendera den för mindre tekniskt inriktade kunder.
 
