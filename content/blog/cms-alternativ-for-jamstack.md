@@ -9,6 +9,8 @@ image: /static/wordpress.jpg
 ---
 _Om du inte har koll på vad JAMStack är, så rekommenderar jag att du läser mitt tidigare inlägg om_ [_vad JAMStack egentligen är_](https://chjweb.se/blogg/vad-ar-egentligen-jamstack)_._
 
+CMS (Content Management System) är ett program, eller del av en webbplats, som låter användare hantera innehåll på en webbplats utan att behöva skriva någon kod. Dessa program är en viktig del av webben idag, eftersom många som driver webbplatser saknar programmeringskunskaper och förlitar sig på en CMS.
+
 De flesta har nog hört talas om Wordpress. Det är den mest populära CMS plattformen i världen. Det är så populärt att över en tredjedel av alla webbplatser på nätet drivs med hjälp av Wordpress. 
 
 Det är en siffra som fick mig att höja på ögonbrynen första gången jag hörde den.
@@ -69,6 +71,29 @@ Om man inte vill bygga om webbplatsen varje gång en ändring görs, kan man ist
 
 Nu när vi förstår vilka typer av CMS:er som finns tillgängliga för JAMStack, kan vi börja prata om vilka lösningar vi kan använda för att implementera CMS funktionalitet med JAMStack.
 
-Vissa av dessa är kostnadsfria med öppenkällkod, och andra kräver en betydlig månadskostnad. Git-baserade CMS:er är ofta gratis, och när det kommer till headless CMS:er krävs ofta en avgift.
+Vissa av dessa är kostnadsfria med öppen källkod, och andra kräver en betydlig månadskostnad. Git-baserade CMS:er är ofta gratis, och när det kommer till headless CMS:er krävs ofta en avgift.
 
-Även om det finns headless CMS:er med öppenkällkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumera på de tjänster som CMS:erna erbjuder själva.
+Även om det finns headless CMS:er med öppen källkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumera på de tjänster som CMS:erna erbjuder själva.
+
+### 1. Netlify CMS
+
+Netlify CMS är Git-baserad och har öppen källlod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
+
+Det är faktiskt den här CMS lösningen som jag använder för min webbplats. Än så länge har den fungerat bra, men jag vet inte om jag skulle rekommendera den för mindre tekniskt inriktade kunder.
+
+Problemet är inte att den är svår att använda. Den fungerar ganska bra, i alla fall för mig. Problemet är att när jag skriver inlägg så måste jag ganska ofta byta mellan markdown och det visuella läget.
+
+Anledningen till det här är antagligen att CMS:en inte är helt färdigutvecklad.
+
+Även om CMS:en är utvecklad Netlify, så behöver man inte använda den med deras plattform. Den går faktiskt att använda med vilken plattform eller egen lösning som helst, bara webbplatsen använder Git och sparas på GitHub eller liknande tjänster.
+
+Självklart är Netlify CMS helt gratis, då den har öppen källkod och är Git-baserad.
+
+#### Sammanfattning
+
+* Git-baserad
+* Öppen källkod
+* Gratis
+* Kunskap om markdown rekommenderas
+
+[Läs mer om Netlify CMS](https://www.netlifycms.org/)
