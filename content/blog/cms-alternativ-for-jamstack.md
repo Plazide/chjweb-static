@@ -79,6 +79,8 @@ Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att
 
 ### 1. Netlify CMS
 
+![Netlify CMS kontrollpanel](/static/netlify-cms.jpg "Kontrollpanelen på Netlify CMS")
+
 Netlify CMS är Git-baserad och har öppen källlkod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
 
 Det är faktiskt den här CMS lösningen som jag använder för min webbplats. Än så länge har den fungerat bra, men jag vet inte om jag skulle rekommendera den för mindre tekniskt inriktade kunder.
