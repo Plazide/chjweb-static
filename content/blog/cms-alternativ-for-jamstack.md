@@ -83,13 +83,19 @@ Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att
 
 Netlify CMS är Git-baserad och har öppen källlkod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
 
+Även om CMS:en är utvecklad Netlify, så behöver man inte använda den med deras plattform. Den går faktiskt att använda med vilken plattform eller egen lösning som helst, bara webbplatsen använder Git och sparas på GitHub eller liknande tjänster.
+
 Det är faktiskt den här CMS lösningen som jag använder för min webbplats. Än så länge har den fungerat bra, men jag vet inte om jag skulle rekommendera den för mindre tekniskt inriktade kunder.
 
 Problemet är inte att den är svår att använda. Den fungerar ganska bra, i alla fall för mig. Problemet är att när jag skriver inlägg så måste jag ganska ofta byta mellan markdown och det visuella läget.
 
 Anledningen till det här är antagligen att CMS:en inte är helt färdigutvecklad.
 
-Även om CMS:en är utvecklad Netlify, så behöver man inte använda den med deras plattform. Den går faktiskt att använda med vilken plattform eller egen lösning som helst, bara webbplatsen använder Git och sparas på GitHub eller liknande tjänster.
+Men det finns en annan del av Netlify CMS som gör lösningen lite mindre tillgänglig för mindre tekniska personer. För att skapa nya typer av innehåll (t.ex blogginlägg, produkter eller galleribilder) måste man skriva en YAML fil och lägga bland webbplatsens källkod.
+
+Detta är självklart inte optimalt om man vill ändra hur vissa typer av innehåll är strukturerat. Men även om CMS:en har ett visuellt gränssnitt för detta (som många andra lösningar har i den här listan) så måste webbplatsen ändå ändras för att läsa rätt innehåll.
+
+Alltså behövs en utvecklare i vilket fall som helst. Jag skulle inte rekommendera Netlify CMS till mina kunder, men jag tycker om att använda den.
 
 Självklart är Netlify CMS helt gratis, då den har öppen källkod och är Git-baserad.
 
@@ -101,3 +107,35 @@ Självklart är Netlify CMS helt gratis, då den har öppen källkod och är Git
 * Kunskap om markdown rekommenderas
 
 [Läs mer om Netlify CMS](https://www.netlifycms.org/)
+
+### 2. Strapi
+
+![Startskärmen för Strapi](/static/strapi.jpg "Startskärmen för Strapi")
+
+Strapi är en headless CMS med öppen källkod. Till skillnad från många andra CMS:er på den här listan erbjuder inte Strapi en molntjänst. För att använda Strapi måste man alltså installera det på en egen server.
+
+Som tur är, så har Strapi ett antal installationsguider för olika plattformar. Det är dock ingenting någon utan kännedom om Unix terminalen ger sig på. Det krävs en utvecklare för att installera Strapi, det går inte att komma ifrån.
+
+Det här betyder dock att det inte går att använda Strapi utan kostnad, du måste köra en server med mer än 1 GB RAM för att installera Strapi. Sen är det inte den bästa lösningen att köra både gränssnittet och databasen på samma server. Det behövs alltså en databasserver eller en databastjänst för att för att använda en optimal lösning.
+
+Detta kan kosta lite, men det skulle nog gå att komma undan med en månadsavgift på runt 200 kr i månaden.
+
+Strapi har ett rätt så bra verktyg för att bygga innehållstyper, de kallar det för _Content Type Builder_. Genom detta verktyg kan du ange olika namn och datatyper för så många fält du vill ha. Det här ger dig möjligheten att enkelt skapa komplexa innehållstyper.
+
+Något som saknas från Strapi är dock möjligheten att skapa en så kallad _slug_. En slug är en URL-vänlig sträng som används för att identifiera innehåll i en databas. Det är _cms-alternativ-for-jamstack_ i det här inlägget.
+
+Det är dock inte omöjligt att skapa en slug, Strapi har guide om hur man gör det i sin dokumentation. Då måste man tyvärr skriva lite JavaScript och koppla titel fältet till ett slug fält och en massa andra saker. Detta är alldeles för komplicerat för en funktion som borde finnas inbyggd.
+
+Med det sagt, så har faktiskt Strapi en inbyggd slug funktion under utveckling just nu. Funktionen förväntas komma någon gång under första kvartalet av 2020.
+
+Bortsett från dessa problem så är faktiskt Strapi en väldigt bra headless CMS. Den har support för flera olika databaser, en av de är MongoDB som jag tycker om ganska mycket.
+
+Det finns även ett rätt så ingående system för konton i Strapi. Du kan alltså olika konton som har tillåtelse att göra olika saker. Du kan till exempel ha anställda som hanterar innehåll, och samtidigt ha separat roll för chefer som kan hantera anställda.
+
+#### Sammanfattning
+
+* Headless
+* Öppen källkod
+* Krånglig att installera
+* Inte helt gratis att driva
+* System för att hantera användare
