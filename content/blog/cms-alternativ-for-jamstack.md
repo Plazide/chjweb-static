@@ -139,3 +139,38 @@ Det finns även ett rätt så ingående system för konton i Strapi. Du kan allt
 * Krånglig att installera
 * Inte helt gratis att driva
 * System för att hantera användare
+
+[Läs mer om Strapi](https://strapi.io/)
+
+### 3. Ghost
+
+Ghost är egentligen ett svar på Wordpress. Skaparna av Ghost ansåg att Wordpress försökte göra för mycket på en och samma gång, därför skapade de ett verktyg som verkligen fokuserar på att publicera innehåll.
+
+Eftersom Ghost utvecklades som ett alternativ till Wordpress, är det varken en Git-baserad eller headless CMS. Innehållet du ändrar sparas i en databas och hämtas tillsammans med varje förfrågan.
+
+Så varför finns Ghost med på den här listan? Jo, för att Ghost har möjligheten att vara en headless CMS. Det finns en API för att hämta data från en extern källa. Det betyder att man antingen kan hämta innehåll från Ghost och sätta in på webbplatsen på dynamiskt vis, eller så kan man ställa in en webhook som bygger om webbplatsen varje gång ett nytt inlägg publiceras. 
+
+Ghost är alltså en bloggplattform. Det betyder att det inte finns något verktyg för att ändra innehållstyper, allt du har är blogginlägg och undersidor.
+
+Så om du vill ha mer än endast blogginlägg, så är Ghost inget för dig. Men om du är en bloggare så rekommenderar jag dig starkt att testa Ghost. Redigeringsverktyget är otroligt bra och det finns stöd för planerad publicering, e-post utskick och en beta funktion som låter dig ställa in prenumerationer för dina läsare.
+
+Det är alltså möjligt att ta betalt för ditt innehåll.
+
+Jag testade Ghost innan jag bestämde mig för vilken CMS jag skulle använda för min webbplats, och jag övervägde starkt att använda den. Men eftersom jag förväntade mig behöva fler innehållstyper i framtiden, valde jag iställer Netlify CMS.
+
+En annan anledning var att Ghost inte är helt gratis. Trots att Ghost har öppen källkod, krävs fortfarande en server och databas för att använda CMS:en. Som billigast kan du köra Ghost för $10 per månad via en [DigitalOcean](https://m.do.co/c/ced72bda5083) droplet, där finns en så kallad One-Click installation. Eller så kan du använda [Ghosts egna tjänst](https://ghost.org/pricing/) som kostar från $29 per månad.
+
+Till skillnad från Strapi, har Ghost relativt enkla installations metoder. Även om man installerar manuellt så finns ett Command Line verktyg som gör det otroligt enkelt.
+
+Likt Strapi har även Ghost ett system för att hantera användare.
+
+#### Samanfattning
+
+* Headless (typ)
+* Öppen källkod
+* En bloggplattform, kan inte användas för andra innehållstyper
+* Relativt lätt att installera
+* Inte helt gratis att driva
+* System för att hantera användare
+
+[Läs mer om Ghost](https://ghost.org/)
