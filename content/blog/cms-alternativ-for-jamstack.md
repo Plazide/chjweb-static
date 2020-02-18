@@ -144,6 +144,8 @@ Det finns även ett rätt så ingående system för konton i Strapi. Du kan allt
 
 ### 3. Ghost
 
+![Ghost startsida](/static/ghost.jpg "Ghost startsida")
+
 Ghost är egentligen ett svar på Wordpress. Skaparna av Ghost ansåg att Wordpress försökte göra för mycket på en och samma gång, därför skapade de ett verktyg som verkligen fokuserar på att publicera innehåll.
 
 Eftersom Ghost utvecklades som ett alternativ till Wordpress, är det varken en Git-baserad eller headless CMS. Innehållet du ändrar sparas i en databas och hämtas tillsammans med varje förfrågan.
