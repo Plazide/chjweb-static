@@ -168,7 +168,7 @@ Likt Strapi har även Ghost ett system för att hantera användare.
 
 #### Samanfattning
 
-* Headless (typ)
+* Headless
 * Öppen källkod
 * En bloggplattform, kan inte användas för andra innehållstyper
 * Relativt lätt att installera
