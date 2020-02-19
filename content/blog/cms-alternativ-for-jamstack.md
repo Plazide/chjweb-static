@@ -231,15 +231,16 @@ Det enda som stoppade mig att använda Forestry från början var priset. Men de
 
 Forestry är faktiskt gratis att använda upp till 3 användare. Efter det kan man välja mellan att betala $29 i månaden, $749 i månaden eller ett skräddarsytt pris. De betalda planerna ger dig fler webbplatser, fler användare och utökad kontroll över organisationer.
 
-Den plan som är gratis ger dig alla nödvändiga funktioner. De dyrare planerna är gjorda för företag med flera olika webbplatser och författare.
+Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmågan att hantera användare. De dyrare planerna är gjorda för företag med flera olika webbplatser och författare.
 
 #### Sammanfattning
-- Git-baserad
-- Inte öppen källkod
-- Gratis, upp till 3 användare
+
+* Git-baserad
+* Inte öppen källkod
+* Gratis, upp till 3 användare
+* Inget system för att hantera användare
 
 [Läs mer om Forestry](https://forestry.io/)
-
 
 ### 6. TinaCMS
 
