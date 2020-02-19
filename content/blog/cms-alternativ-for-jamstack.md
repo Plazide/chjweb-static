@@ -211,6 +211,23 @@ Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](
 
 ### 5. Forestry
 
+Forestry är en Git-baserad CMS, men har inte öppen källkod. För att använda Forestry måste man skapa ett konto på deras hemsida och sedan koppla sitt GitHub repo till det kontot.
+
+För att ändra innehåll måste man sedan gå in på kontrollpanelen, som ligger på deras domän. Det går dock att lägga till kontrollpanelen som en undersida på din egen domän.
+
+När man är inne på kontrollpanelen går det att lägga till nya innehållstyper och hantera var Forestry sparar bilder och filer.
+
+Processen att lägga till nya innehållstyper är faktiskt rätt så trevlig. Man börjar med att lägga till sektioner i sidomenyn. Dessa kopplas sedan till en innehållstyp som du redan har skapat.
+
+Jag nämnde innan att Directus låter dig välja ikoner för olika innehållstyper. Ja, Forestry väljer en ikon baserat på innehållstypens namn. Detta gör att det går mycket snabbare att skapa nya innehållstyper än om man ska hålla på att leta efter en passande ikon.
+
+Forestry låter dig även koppla fält i innehållstyper till andra innehållstyper. Detta skulle i en databas vara en relation mellan fälten. Forestry använder dock ingen databas, utan endast markdown eller HTML filer.
+
+Forestry har imponerat mig. Jag är faktist så imponerad att jag funderar på att byta CMS för min webbplats från Netlify CMS till Forestry.
+
+Det enda som stoppade mig att använda Forestry från början var priset. Men det verkar som att jag inte var speciellt uppmärksam när jag tittade första gången.
+
+Forestry är faktiskt gratis att använda upp till 3 användare.
 
 
 ### 6. TinaCMS
