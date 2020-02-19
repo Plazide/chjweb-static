@@ -1,5 +1,5 @@
 ---
-title: CMS alternativ för JAMStack
+title: 7 CMS alternativ för JAMStack
 date: 2020-02-11T09:09:18.719Z
 updated: 2020-02-11T09:09:18.730Z
 description: >-
@@ -209,6 +209,33 @@ Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](
 
 [Läs mer om Driectus](https://directus.io/)
 
-### 5. TinaCMS
+### 5. Forestry
 
-TinaCMS är lite annorlunda från resten av lösningarna på den här listan.
+
+
+### 6. TinaCMS
+
+TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
+
+Den här lösningen har även öppen källkod och kostar inget extra att använda.
+
+Den här lösningen är, till skillnad från många andra på den här listan, inte något man installerar. Det krävs faktiskt att man implementerar den här lösningen från början av utvecklingen av webbplatsen.
+
+Den fungerar inte heller med vilken SSG som helst heller. Du måste använda en React baserad SSG, alltså Next.js eller Gatsby. Enligt dokumentationen går den även att använda med `create-react-app`, CLI verktyget från React som skapar en mall åt dig.
+
+När man sparar en ändring i TinaCMS används antingen en markdown fil eller en JSON fil. Det är utvecklaren som bestämmer detta. Dessa filer sparas sedan i Git repot och en ny version av webbplatsen byggs ihop.
+
+TinaCMS låter dock utvecklaren skapa egna så kallade backends som hanterar sparandet av ändringar. Det här betyder att man kan redigera innehåll på webbplatsen, och sedan spara ändringarna i en headless CMS om man så vill.
+
+Detta scenariot är dock ganska avancerat och skaparna av TinaCMS tycker att de flesta borde hålla sig till den Git-baserade lösningen som är standard.
+
+#### Sammanfattning
+
+* Git-baserad
+* Öppen källkod
+* Gratis
+* Behöver implementeras av utvecklaren av webbplatsen från början
+
+[Läs mer om TinaCMS](https://tinacms.org/)
+
+### 7. Contentful
