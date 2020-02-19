@@ -176,3 +176,39 @@ Likt Strapi har även Ghost ett system för att hantera användare.
 * System för att hantera användare
 
 [Läs mer om Ghost](https://ghost.org/)
+
+### 4. Directus
+
+![Directus kontrollpanel](/static/directus.jpg "Directus kontrollpanel")
+
+Directus är ännu en headless CMS. Likt Strapi finns möjligheten att skapa olika innehållstyper och att hantera användare. Skillnaden är, enligt mig, att Directus gör det mesta lite bättre.
+
+När man exempelvis skapar innehållstyper, eller collections som det heter i Directus, kan man ange en ikon för just den innehållstypen. Detta är faktiskt något som förbättrar upplevelsen av att använda CMS:en avsevärt.
+
+Directus har även stöd för ganska många språk. Bland dem finns så klart engelska, men också finska, norska, isländska och danska, men tyvärr inte svenska. Svenska kommer förmodligen läggas till i framtiden. Det krävs bara att någon sätter sig ner och gör översättningen.
+
+Directus har ju öppen källkod och genom GitHub kan man lägga till nya språk. Men det går även att översätta Directus genom Crowdin. Jag har faktiskt börjat översätta lite där, men i nu läget har endast 37% av all text översatts till svenska. Om du vill hjälpa till kan du gå till [Directus Crowdin sida](https://locales.directus.io/).
+
+Till skillnad från Strapi erbjuder Directus en hostad version av sin CMS. Dem kallar denna för Directus Cloud och den billigaste planen går på $29 i månaden. Faktiskt precis samma pris som Ghosts billigaste plan.
+
+Det går självklart att installera Directus själv på en VPS. Som vanligt kostar detta några kronor i månaden, men är billigare än att köra den hostade versionen. Precis som Ghost, finns Directus som en 1-Click app på [DigitalOcean](https://m.do.co/c/ced72bda5083). Enligt Directus dokumentation kan man installera CMS:en på alla VPS:er som DigitalOcean erbjuder.
+
+Det betyder att du kan köra Directus för så lite som 50 kr i månaden.
+
+Även om du väljer att installera Directus manuellt, så är denna process relativt enkelt. Du behöver installera lite mjukvara så som Apache, MySQL och PHP, sedan är det bara klona Git repot och  konfigurera Apache och MySQL. 
+
+Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](https://demo.directus.io/admin/#/login). Skriv `admin@example.com` som e-post och `password` som lösenord, och sen har du tillgång till en delad version av Directus.
+
+#### Sammanfattning
+
+* Headless
+* Öppen källkod
+* Inte helt gratis, men kan drivas med 50 kr i månaden.
+* Relativt enkel att installera
+* System för att hantera användare
+
+[Läs mer om Driectus](https://directus.io/)
+
+### 5. TinaCMS
+
+TinaCMS är lite annorlunda från resten av lösningarna på den här listan.
