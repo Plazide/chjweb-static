@@ -211,6 +211,8 @@ Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](
 
 ### 5. Forestry
 
+![Forestry kontrollpanel](/static/forestry.jpg "Forestry kontrollpnel")
+
 Forestry är en Git-baserad CMS, men har inte öppen källkod. För att använda Forestry måste man skapa ett konto på deras hemsida och sedan koppla sitt GitHub repo till det kontot.
 
 För att ändra innehåll måste man sedan gå in på kontrollpanelen, som ligger på deras domän. Det går dock att lägga till kontrollpanelen som en undersida på din egen domän.
@@ -227,12 +229,21 @@ Forestry har imponerat mig. Jag är faktist så imponerad att jag funderar på a
 
 Det enda som stoppade mig att använda Forestry från början var priset. Men det verkar som att jag inte var speciellt uppmärksam när jag tittade första gången.
 
-Forestry är faktiskt gratis att använda upp till 3 användare.
+Forestry är faktiskt gratis att använda upp till 3 användare. Efter det kan man välja mellan att betala $29 i månaden, $749 i månaden eller ett skräddarsytt pris. De betalda planerna ger dig fler webbplatser, fler användare och utökad kontroll över organisationer.
+
+Den plan som är gratis ger dig alla nödvändiga funktioner. De dyrare planerna är gjorda för företag med flera olika webbplatser och författare.
+
+#### Sammanfattning
+- Git-baserad
+- Inte öppen källkod
+- Gratis, upp till 3 användare
+
+[Läs mer om Forestry](https://forestry.io/)
 
 
 ### 6. TinaCMS
 
-TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
+TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid utvecklad av Forestry. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
 
 Den här lösningen har även öppen källkod och kostar inget extra att använda.
 
