@@ -244,7 +244,7 @@ Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmåga
 
 ### 6. TinaCMS
 
-![TinaCMS redigering](/static/tina.gif "TinaCMS redigering")
+![TinaCMS redigering](/static/tina.jpg "TinaCMS redigering")
 
 TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid, utvecklad av Forestry. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
 
@@ -266,6 +266,10 @@ TinaCMS låter dock utvecklaren skapa egna så kallade backends som hanterar spa
 
 Detta scenariot är dock ganska avancerat och skaparna av TinaCMS tycker att de flesta borde hålla sig till den Git-baserade lösningen som är standard.
 
+Jag skulle inte rekommendera TinaCMS som den enda CMS lösningen, men som ett bra alternativ för att redigera innehåll direkt på webbplatsen. Att använda TinaCMS för att skriva blogginlägg kommer inte vara en bra upplevelse.
+
+Sidomenyn är så pass smal, att det kommer bli irriterande att skriva något som är längre än ett par rader. Så att kombinera TinaCMS med något som Forestry eller Netlify CMS vore den bästa lösningen. Då skulle man ha en CMS för innehåll som blogginlägg eller produkter, och TinaCMS för att redigera innehåll på exempelvis startsidan. 
+
 #### Sammanfattning
 
 * Git-baserad
@@ -277,3 +281,42 @@ Detta scenariot är dock ganska avancerat och skaparna av TinaCMS tycker att de 
 [Läs mer om TinaCMS](https://tinacms.org/)
 
 ### 7. Contentful
+
+![Contentful kontrollpanel](/static/contentful.jpg "Contentful kontrollpanel")
+
+Contentful är en headless CMS utan öppen källkod. Fokus verkar ligga på företag, snarare än enskilda bloggare eller utvecklare. Detta blir ganska uppenbart när de frågar efter ett organisationsnamn under registreringen, och det kan inte lämnas tomt.
+
+Det finns en gratis version av Contentful och det verkar som att den har allt du behöver för att hantera innehåll. Självklart är den versionen begränsad i sina funktioner. Du kan exempelvis bara ha 2 webbplatser, 1 roll och som mest 24 innehållstyper. 
+
+Med 1 roll menar jag att du kan bjuda in fler användare, men alla är administratörer. Du kan alltså inte bjuda in anställda som endast kan redigera innehåll eller liknande. För att kunna göra detta måste du använda någon av dem dyrare planerna.
+
+Den billigaste betalda planen kallas för "Micro" och kostar $39 i månaden. Den planen verkar dock ha exakt samma begränsningar som gratis versionen. Jag kan faktiskt inte hitta någon skillnad mellan dessa, så om du är ensam och inte behöver mer än en webbplats, så skulle jag rekommendera att använda gratis versionen av Contentful.
+
+Om du behöver mer användare eller fler webbplatser och innehållstyper, då skulle jag nog titta på någon av de andra lösningarna på den här listan. Anledningen är att Contentful kan bli riktigt dyrt.
+
+Som sagt är deras billigaste plan $39 i månaden. Detta är inte speciellt dyrt, men det är fortfarande dyrare än de billigaste hostade alternativen på den här listan.  Den planen har också, som jag nämnde, samma begränsningar som gratis versionen.
+
+Så om du vill ha fler webbplatser och roller, måste du lägga ut $189 i månaden. Då får du 3 webbbplatser, 2 roller och fortfarande 24 innehållstyper. Det är inte en speciellt stor förbättring för en nästan 5 gånger så stor summa pengar.
+
+Fler roller får du inte förrän deras dyraste plan, $879 i månaden. I den får du 6 webbplatser och 13 roller. Den erbjuder även fler språk och innehållstyper.
+
+Med allt det här sagt, så är faktiskt Contentful en riktigt bra CMS. Det går snabbt att komma igång, de erbjuder utvecklar verktyg för flera olika språk och deras webbapplikation är fantastiskt bra byggd.
+
+Om du har pengar att spendera så rekommenderar jag dig att använda Contentful.
+
+#### Sammanfattning
+
+* Headless
+* Inte öppen källkod
+* Finns gratis version, men vill du ha mer får du betala en hel del
+* Otroligt bra webbapplikation
+
+[Läs mer om Contentful](https://www.contentful.com/)
+
+
+
+## Avslutning
+
+Vilken CMS som passar dig bäst beror självklart på dina behov och dina kunskaper. Oavsett vilken av dessa du tycker låter bäst, måste de fortfarande implementeras på webbplatsen med hjälp av en utvecklare. 
+
+Detta är något jag gör för mina kunder. Så om du är intresserad av att använda någon av dessa för din webbplats, eller bara vill veta mer om någon av CMS:erna, kan du kontakta mig.
