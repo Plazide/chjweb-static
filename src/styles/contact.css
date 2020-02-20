@@ -1,0 +1,32 @@
+section.hero.contact .content{
+	display: block;
+	text-align:center;
+}
+section.hero.contact .content .copy{
+	width: 31rem;
+	max-width: 100%;
+}
+section.hero.contact .content .copy h1{
+	font-size: 3.8rem;
+}
+section.hero.contact .content .copy .buttons{
+	margin-top: 7rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+section.hero.contact .content .info{
+	display: flex;
+	flex-direction: column;
+	margin: 5rem auto 0;
+
+	width: 31rem;
+	max-width: 100%;
+}
+section.hero.contact .content .info a{
+	font-size: 2rem;
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: bold;
+	margin: .5rem 0;
+}
