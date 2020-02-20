@@ -1,5 +1,5 @@
-import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 // css
 import "./styles/footer.css";
@@ -8,10 +8,11 @@ import "./styles/footer.css";
 import FacebookIcon from "../images/social/facebook.svg";
 import TwitterIcon from "../images/social/twitter.svg";
 
+// Utils
+import parseNumber from "../utils/parseNumber";
 
-
-export default function Footer() {
-	const { site, allMarkdownRemark } = useStaticQuery(
+export default function Footer (){
+	const{ site, allMarkdownRemark } = useStaticQuery(
 		graphql`
 		query {
 			site {
@@ -41,7 +42,7 @@ export default function Footer() {
 
 	const posts = allMarkdownRemark.edges;
 
-	return (
+	return(
 		<footer>
 			<div className="content">
 				<section className="nav">
@@ -60,7 +61,7 @@ export default function Footer() {
 						<span>{site.siteMetadata.streetAddress}</span>
 						<span>{site.siteMetadata.zipCode}, {site.siteMetadata.city}</span>
 						<span><a href={`mailto:${site.siteMetadata.email}`}>{site.siteMetadata.email}</a></span>
-						<span><a href={`tel:${strip(site.siteMetadata.phone)}`}>{site.siteMetadata.phone}</a></span>
+						<span><a href={`tel:${parseNumber(site.siteMetadata.phone)}`}>{site.siteMetadata.phone}</a></span>
 					</address>
 				</section>
 
@@ -69,22 +70,22 @@ export default function Footer() {
 					{posts.map( item => {
 						const post = item.node;
 
-						return (
+						return(
 							<div className="post" key={post.fields.slug}>
 								<a href={`/blogg/${post.fields.slug}`} className="title">{post.frontmatter.title}</a>
 							</div>
-						)
+						);
 					})}
 				</section>
 
 				<section className="misc">
 					<div className="social">
-						<SocialLink 
+						<SocialLink
 							icon={FacebookIcon}
 							title="Facebook"
 							url="https://www.facebook.com/chjweb"
 						/>
-						<SocialLink 
+						<SocialLink
 							icon={TwitterIcon}
 							title="Twitter"
 							url="https://twitter.com/chj_web"
@@ -94,20 +95,13 @@ export default function Footer() {
 				</section>
 			</div>
 		</footer>
-	)
+	);
 }
 
-function strip(str){
-	const regex = /[-\s]/gm;
-	const stripped = str.replace(regex, "");
-
-	return stripped;
-}
-
-function SocialLink ({icon, title, url}){
-	return (
+function SocialLink ({ icon, title, url }){
+	return(
 		<a href={url} title={title}>
 			<img src={icon} alt={title} className="icon" />
 		</a>
-	)
+	);
 }
