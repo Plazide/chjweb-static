@@ -1,12 +1,10 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 // Structure
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-// Components
-import ButtonLink from "../components/ButtonLink";
 
 // Utils
 import parseNumber from "../utils/parseNumber";
@@ -74,3 +72,7 @@ query {
 	}
 }
 `;
+
+kontakt.propTypes = {
+	data: PropTypes.object
+};
