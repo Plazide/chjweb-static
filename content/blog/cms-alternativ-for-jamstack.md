@@ -244,13 +244,21 @@ Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmåga
 
 ### 6. TinaCMS
 
-TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid utvecklad av Forestry. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
+![TinaCMS redigering](/static/tina.gif "TinaCMS redigering")
+
+TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid, utvecklad av Forestry. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
 
 Den här lösningen har även öppen källkod och kostar inget extra att använda.
 
-Den här lösningen är, till skillnad från många andra på den här listan, inte något man installerar. Det krävs faktiskt att man implementerar den här lösningen från början av utvecklingen av webbplatsen.
+På dokumentationssidan för TinaCMS får man snabbt veta att TinaCMS inte är en CMS. På webbplatsen skriver dem så här:
 
-Den fungerar inte heller med vilken SSG som helst heller. Du måste använda en React baserad SSG, alltså Next.js eller Gatsby. Enligt dokumentationen går den även att använda med `create-react-app`, CLI verktyget från React som skapar en mall åt dig.
+> Tina is a lightweight but powerful toolkit for creating a content editing interface with JavaScript components. Tina surfaces superpowers for developers to create an intuitive UI for real-time content editing, built directly into their website.
+
+Så enligt utvecklarna är TinaCMS inte en CMS. Det är ju då lite missvisande att ha med CMS i namnet. Egentligen så fungerar ju TinaCMS som en Git-baserad CMS. Du ändrar innehåll som sparas i en markdown fil och blir sedan en commit.
+
+Som citatet oven insinuerar, är TinaCMS inte något separat som man installerar. Man måste implementera TinaCMS från början av utveckling av webbplatsen. 
+
+Den fungerar inte heller med vilken SSG som helst. Du måste använda en React baserad SSG, alltså Next.js eller Gatsby. Enligt dokumentationen går den även att använda med `create-react-app`, CLI verktyget från React som skapar en mall åt dig.
 
 När man sparar en ändring i TinaCMS används antingen en markdown fil eller en JSON fil. Det är utvecklaren som bestämmer detta. Dessa filer sparas sedan i Git repot och en ny version av webbplatsen byggs ihop.
 
@@ -263,7 +271,8 @@ Detta scenariot är dock ganska avancerat och skaparna av TinaCMS tycker att de 
 * Git-baserad
 * Öppen källkod
 * Gratis
-* Behöver implementeras av utvecklaren av webbplatsen från början
+* Behöver implementeras av utvecklaren från början
+* Har endast stöd för React
 
 [Läs mer om TinaCMS](https://tinacms.org/)
 
