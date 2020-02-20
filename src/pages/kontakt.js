@@ -49,7 +49,7 @@ export default function kontakt ({ data }){
 						<p>Har du några frågor? Är du ute efter en webbplats? Då kan du kontakta mig här!</p>
 						<div className="buttons">
 							<a className="button button-filled" href={`mailto:${email}`}>Skicka ett mejl</a>
-							<a className="button button-outlined" href={`tel:${parseNumber(phone)}`}>Ring mig</a>
+							<a className="button button-outlined call" href={`tel:${parseNumber(phone)}`}>Ring mig</a>
 						</div>
 					</div>
 					<section className="info">
