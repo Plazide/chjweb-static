@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 
 // Components
@@ -11,8 +12,6 @@ export default function Row ({ illustration, link, align, title, children, parag
 	const translate = visible ? "0px" : "50%";
 	const opacity = visible ? "1" : "0";
 	const direction = align === "left" ? "row" : "row-reverse";
-	const alignItems = align === "left" ? "flex-start" : "flex-end";
-	const alignSelf = align === "left" ? "flex-start" : "flex-end";
 	const content = paragraph ? <p>{children}</p> : children;
 
 	const copyStyle = {
@@ -36,3 +35,13 @@ export default function Row ({ illustration, link, align, title, children, parag
 		</section>
 	);
 }
+
+Row.propTypes = {
+	illustration: PropTypes.any,
+	link: PropTypes.string,
+	align: PropTypes.string,
+	title: PropTypes.string,
+	children: PropTypes.node,
+	paragraph: PropTypes.bool,
+	threshold: PropTypes.number
+};
