@@ -1,3 +1,3 @@
 {
-	"extends": ["plugin:react/recommended", "plugin:plazide"]
+	"extends": ["plugin:react/recommended", "plazide"]
 }
