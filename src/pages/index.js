@@ -11,7 +11,7 @@ import CTA from "../components/CTA";
 import Row from "../components/Row";
 
 // Images
-import _illustrationUrl, { ReactComponent as Illustration} from "../images/illustrations/create.svg";
+import _illustrationUrl, { ReactComponent as Illustration } from "../images/illustrations/create.svg";
 import _waveUrl, { ReactComponent as Wave } from "../images/illustrations/wave.svg";
 import _arrowUrl, { ReactComponent as Arrow } from "../images/illustrations/arrow.svg";
 import hostingUrl from "../images/illustrations/hosting.svg";
@@ -44,13 +44,13 @@ const IndexPage = ({ data }) => {
 			},
 			"name": "CHJ Webblösningar"
 		}
-	]
-	
-	return (
+	];
+
+	return(
 		<Layout>
-			<SEO 
-				title="Webbutveckling i Mariestad" 
-				url="/" 
+			<SEO
+				title="Webbutveckling i Mariestad"
+				url="/"
 				description="En utvecklare med bas i Mariestad som skapar hemsidor åt mindre företag med hjälp av JAMStack."
 				structuredData={structuredData}
 			/>
@@ -58,8 +58,8 @@ const IndexPage = ({ data }) => {
 				<Wave className="background" />
 				<div className="content">
 					<div className="copy">
-						<a 
-							href={`/blogg/${data.allMarkdownRemark.nodes[0].fields.slug}`} 
+						<a
+							href={`/blogg/${data.allMarkdownRemark.nodes[0].fields.slug}`}
 							title={data.allMarkdownRemark.nodes[0].frontmatter.title} className="featured">
 							<span>Senaste inlägget: </span>
 							<span className="title">{data.allMarkdownRemark.nodes[0].frontmatter.title}</span>
@@ -85,9 +85,9 @@ const IndexPage = ({ data }) => {
 					<p>Hemsidor måste vara snabba, annars förlorar man besökarna. Snabbhet är en av de största tekniska fördelarna med att välja mig som webbutvecklare. Oavsett om ditt företag behöver en presentationssida eller webbshop, så kan jag göra en hemsida som skapar nöjda kunder.</p>
 				</div>
 
-				<Row 
-					illustration={webbyraUrl} 
-					link="/webbyra" 
+				<Row
+					illustration={webbyraUrl}
+					link="/webbyra"
 					align="left"
 					title="Inte en traditionell webbyrå">
 					De flesta av dagens webbyråer använder Wordpress för att bygga hemsidor till sina kunder. Det gör inte jag. CHJ Webblösningar bygger hemsidor som är snabbare, säkrare och billigare än vad en Wordpress sida någonsin kan vara.
@@ -116,7 +116,7 @@ const IndexPage = ({ data }) => {
 					illustration={circles1Url}
 					align="left"
 					title="Bakom CHJ Webblösningar"
-					>
+				>
 					CHJ Webblösningar är en enskild firma som drivs av Carl Hallén Jansson. Jag har nästan 10 års erfarenhet av att skapa hemsidor. Det började med enkla HTML sidor med en släng av CSS. Sedan hittade jag PHP och började skapa dynamiska hemsidor. Nu har jag hittat JAMStack och utvecklar snabbare och säkrare hemsidor än någonsin.
 				</Row>
 
@@ -124,8 +124,8 @@ const IndexPage = ({ data }) => {
 					illustration={circles2Url}
 					align="right"
 					title="Självlärd webbutvecklare"
-					>
-					Mina erfarenheter och kunskaper kommer ifrån att jag under många år testat och experimenterat mig fram genom olika projekt. Jag har skapat webbshoppar, köp- och säljsidor och presentationssidor till olika företag innan jag startade mitt företag. Jag har alltså lärt mig webbutveckling genom att skapa verkliga hemsidor som använts av riktiga människor. 
+				>
+					Mina erfarenheter och kunskaper kommer ifrån att jag under många år testat och experimenterat mig fram genom olika projekt. Jag har skapat webbshoppar, köp- och säljsidor och presentationssidor till olika företag innan jag startade mitt företag. Jag har alltså lärt mig webbutveckling genom att skapa verkliga hemsidor som använts av riktiga människor.
 				</Row>
 			</section>
 
@@ -156,19 +156,19 @@ const IndexPage = ({ data }) => {
 	);
 };
 
-function ListItem({ children, pos, last = false }){
+function ListItem ({ children, pos, last = false }){
 	const nextArrow = !last ? <img src={workflowArrowUrl} alt="Pil ner" className="next-arrow" /> : "";
 
-	return (
+	return(
 		<li>
 			<div>
 				<span className="pos">{pos}</span>
 				{nextArrow}
 			</div>
 			{children}
-			
+
 		</li>
-	)
+	);
 }
 
 export const pageQuery = graphql`
@@ -194,6 +194,6 @@ query FeaturedQuery {
 		}
 	}
 }
-`
+`;
 
 export default IndexPage;
