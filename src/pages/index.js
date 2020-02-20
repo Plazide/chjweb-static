@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 // Structure
@@ -170,6 +171,16 @@ function ListItem ({ children, pos, last = false }){
 		</li>
 	);
 }
+
+IndexPage.propTypes = {
+	data: PropTypes.object
+};
+
+ListItem.propTypes = {
+	children: PropTypes.node,
+	pos: PropTypes.string,
+	last: PropTypes.bool
+};
 
 export const pageQuery = graphql`
 query FeaturedQuery {
