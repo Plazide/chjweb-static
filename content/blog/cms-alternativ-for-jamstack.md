@@ -319,4 +319,4 @@ Om du har pengar att spendera så rekommenderar jag dig att använda Contentful.
 
 Vilken CMS som passar dig bäst beror självklart på dina behov och dina kunskaper. Oavsett vilken av dessa du tycker låter bäst, måste de fortfarande implementeras på webbplatsen med hjälp av en utvecklare. 
 
-Detta är något jag gör för mina kunder. Så om du är intresserad av att använda någon av dessa för din webbplats, eller bara vill veta mer om någon av CMS:erna, kan du kontakta mig.
+Detta är något jag gör för mina kunder. Så om du är intresserad av att använda någon av dessa för din webbplats, eller bara vill veta mer om någon av CMS:erna, kan du [kontakta mig](https://chjweb.se/kontakt).
