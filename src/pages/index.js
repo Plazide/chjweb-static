@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
@@ -12,9 +12,9 @@ import CTA from "../components/CTA";
 import Row from "../components/Row";
 
 // Images
-import _illustrationUrl, { ReactComponent as Illustration } from "../images/illustrations/create.svg";
-import _waveUrl, { ReactComponent as Wave } from "../images/illustrations/wave.svg";
-import _arrowUrl, { ReactComponent as Arrow } from "../images/illustrations/arrow.svg";
+import { ReactComponent as Illustration } from "../images/illustrations/create.svg";
+import { ReactComponent as Wave } from "../images/illustrations/wave.svg";
+import { ReactComponent as Arrow } from "../images/illustrations/arrow.svg";
 import hostingUrl from "../images/illustrations/hosting.svg";
 import granskningUrl from "../images/illustrations/granskning_front.svg";
 import webbyraUrl from "../images/illustrations/webbyra.svg";
