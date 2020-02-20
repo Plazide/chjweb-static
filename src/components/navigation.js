@@ -48,7 +48,7 @@ export default function navigation (){
 				Blogg
 			</Link>
 
-			<ButtonLink variant="outlined" href="/offert/">Få Offert</ButtonLink>
+			<ButtonLink variant="outlined" href="/kontakt/">Kontakta mig</ButtonLink>
 		</nav>
 	);
 }
