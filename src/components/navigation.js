@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from "gatsby"
-import DropdownLink from './DropdownLink'
+import React from "react";
+import { Link } from "gatsby";
+import DropdownLink from "./DropdownLink";
 import ButtonLink from "./ButtonLink";
 
-export default function navigation() {
-	return (
+export default function navigation (){
+	return(
 		<nav>
-			<Link 
-				to="/" 
+			<Link
+				to="/"
 				activeClassName="active"
 			>
 				Hem
@@ -33,14 +33,14 @@ export default function navigation() {
 				subLinks={[
 					{ name: "Webbshop", to: "/webbyra/webbshop/" },
 					{ name: "SEO", to: "/webbyra/seo/" },
-					{ name: "Hosting", to:"/webbyra/hosting/" },
+					{ name: "Hosting", to: "/webbyra/hosting/" },
 					{ name: "CMS", to: "/webbyra/cms/" }
 				]}
 			>
 				Webbyrå
 			</DropdownLink>
 
-			<Link 
+			<Link
 				to="/blogg/"
 				activeClassName="active"
 				partiallyActive={true}
@@ -50,5 +50,5 @@ export default function navigation() {
 
 			<ButtonLink variant="outlined" href="/offert/">Få Offert</ButtonLink>
 		</nav>
-	)
+	);
 }
