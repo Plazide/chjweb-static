@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
 // css
@@ -105,3 +106,9 @@ function SocialLink ({ icon, title, url }){
 		</a>
 	);
 }
+
+SocialLink.propTypes = {
+	icon: PropTypes.string,
+	title: PropTypes.string,
+	url: PropTypes.string
+};
