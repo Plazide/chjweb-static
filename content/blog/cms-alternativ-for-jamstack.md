@@ -1,7 +1,7 @@
 ---
 title: 7 CMS alternativ för JAMStack
-date: 2020-02-11T09:09:18.719Z
-updated: 2020-02-11T09:09:18.730Z
+date: 2020-02-21T09:09:18.719Z
+updated: 2020-02-21T09:09:18.730Z
 description: >-
   Vilken är den bästa lösningen för JAMStack när det kommer till CMS? I det här
   inlägget går jag igenom fördelar och nackdelar med olika verktyg.
