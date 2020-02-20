@@ -5,6 +5,7 @@ section.hero.contact .content{
 section.hero.contact .content .copy{
 	width: 31rem;
 	max-width: 100%;
+	margin: auto;
 }
 section.hero.contact .content .copy h1{
 	font-size: 3.8rem;
