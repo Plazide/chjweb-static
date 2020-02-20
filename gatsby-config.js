@@ -1,8 +1,8 @@
 
-function addTrailingSlash(path){
+function addTrailingSlash (path){
 	const hasSlash = path.substr(-1) === "/";
 	const addedSlash = path + "/";
-	return !hasSlash ? addedSlash : path;
+	return!hasSlash ? addedSlash : path;
 }
 
 module.exports = {
@@ -51,7 +51,7 @@ module.exports = {
 				`,
 				feeds: [
 					{
-						serialize: ({ query: { site, allMarkdownRemark} }) => {
+						serialize: ({ query: { site, allMarkdownRemark } }) => {
 							return allMarkdownRemark.edges.map( edge => {
 								return Object.assign({}, edge.node.frontmatter, {
 									description: edge.node.frontmatter.description,
@@ -59,8 +59,8 @@ module.exports = {
 									url: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
 									guid: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
 									custom_elements: [{ "content:encoded": edge.node.html }]
-								})
-							})
+								});
+							});
 						},
 						query: `
 						{
@@ -83,7 +83,7 @@ module.exports = {
 						`,
 						output: "/rss.xml",
 						title: "CHJ Webblösningar RSS Feed",
-						match: "^\/blogg\/.*$"
+						match: "^/blogg/.*$"
 					}
 				]
 			}
@@ -162,20 +162,19 @@ module.exports = {
 				serialize: ({ site, allSitePage }) => {
 					return allSitePage.edges.map( edge => {
 						const path = edge.node.path;
-						let priority = 0.8;
-						let changefreq = "daily";
-						let url = addTrailingSlash(site.siteMetadata.siteUrl + path);
-
+						let priority = 0.8,
+							changefreq = "daily",
+							url = addTrailingSlash(site.siteMetadata.siteUrl + path);
 
 						priority = /^\/integritetspolicy/.test(path) ? 0.2 : priority;
 						priority = /^\/blogg\/.+/.test(path) ? 0.9 : priority;
 
-						return {
+						return{
 							url,
 							changefreq,
 							priority
-						}
-					})
+						};
+					});
 				}
 			}
 		},
@@ -190,7 +189,7 @@ module.exports = {
 				display: "minimal-ui",
 				icon: "src/images/favicon.png" // This path is relative to the root of the site.
 			}
-		},
+		}
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
