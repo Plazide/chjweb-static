@@ -9,11 +9,9 @@ image: /static/wordpress.jpg
 ---
 _Om du inte har koll på vad JAMStack är, så rekommenderar jag att du läser mitt tidigare inlägg om_ [_vad JAMStack egentligen är_](https://chjweb.se/blogg/vad-ar-egentligen-jamstack)_._
 
-CMS (Content Management System) är ett program, eller del av en webbplats, som låter användare hantera innehåll på en webbplats utan att behöva skriva någon kod. Dessa program är en viktig del av webben idag, eftersom många som driver webbplatser saknar programmeringskunskaper och förlitar sig på en CMS.
+CMS (Content Management System) är ett program, eller del av en webbplats, som låter användare hantera innehåll på webbplatsen utan att behöva skriva någon kod. Dessa program är en viktig del av webben idag, eftersom många som driver webbplatser saknar programmeringskunskaper och förlitar sig på en CMS.
 
-De flesta har nog hört talas om Wordpress. Det är den mest populära CMS plattformen i världen. Det är så populärt att över en tredjedel av alla webbplatser på nätet drivs med hjälp av Wordpress. 
-
-Det är en siffra som fick mig att höja på ögonbrynen första gången jag hörde den.
+De flesta har nog hört talas om Wordpress, det populäraste CMS verktyget i världen. Över en tredje del av alla webbplatser på nätet drivs faktiskt med hjälp av Wordpress. Det är otroligt många webbplatser.
 
 Eftersom Wordpress drivs av PHP, ett språk som körs på webbservern, är det inte riktigt kompatibelt med JAMStack. En av de största kännetecknen för JAMStack är ju att webbplatserna inte använder någon webbserver.
 
@@ -47,7 +45,7 @@ Det går alltså inte att göra en ändring och sedan se den ändringen omedelba
 
 ### Headless
 
-En headless CMS innebär att innehållet och utseendet inte är sammankopplat. Det betyder att innehåll som skapas genom en headless CMS kan användas på flera olika plattformar.
+En headless CMS innebär att innehållet och webbplatsen inte är sammankopplade. Det betyder att innehåll som skapas genom en headless CMS kan användas på flera olika plattformar.
 
 Exempelvis så kan en webbplats och en mobilapp hämta innehåll från samma källa i samma format, trots att dessa använder helt olika teknologier.
 
@@ -55,13 +53,13 @@ En headless CMS sparar innehåll i en databas (t.ex. MySQL, MongoDB). Vilken dat
 
 Allt innehåll kan vanligtvis ändras via en API som genereras baserad på hur informationen är strukturerad. De flesta headless CMS:er kommer med ett användargränssnitt där man kan ändra innehåll.
 
-En viktig skillnad mellan Git-baserade och headless CMS:er är alltså att den ena sparar innehållet tillsammans med koden för webbplatsen, och den andra sparar innehållet separat på ett sätt som gör det lätt att hantera oavsett vilken teknologi som används för den visuella delen av appen.
+En viktig skillnad mellan Git-baserade och headless CMS:er är alltså att den ena sparar innehållet tillsammans med koden för webbplatsen, och den andra sparar innehållet separat på ett sätt som gör det lätt att hantera oavsett vilken teknologi som används för själva appen.
 
 #### Att bygga eller inte bygga om
 
 Eftersom en headless CMS sparar innehåll separat från applikationen och tillåter utvecklaren att hämta data via ett API, kan man välja om webbplatsen ska byggas om eller inte.
 
-Det går att bygga om webbplatsen varje gång en ändring görs på CMS:en genom att ställa in en webhook. Då skickas en HTTP förfrågan till tjänsten som bygger webbplatsen och en ny byggprocess inleds.
+Det går att bygga om webbplatsen varje gång en ändring görs på CMS:en genom att ställa in en webhook. Då skickas en HTTP förfrågan till tjänsten som bygger webbplatsen och en ny byggprocess påbörjas.
 
 Under byggprocessen hämtas helt enkelt data från CMS:en och sätts in i webbplatsen.
 
@@ -73,15 +71,15 @@ Nu när vi förstår vilka typer av CMS:er som finns tillgängliga för JAMStack
 
 Vissa av dessa är kostnadsfria med öppen källkod, och andra kräver en betydlig månadskostnad. Git-baserade CMS:er är ofta gratis, och när det kommer till headless CMS:er krävs ofta en avgift.
 
-Även om det finns headless CMS:er med öppen källkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumera på de tjänster som CMS:erna erbjuder själva.
+Även om det finns headless CMS:er med öppen källkod så krävs det ändå en server för att använda dem, något som kostar lite pengar. Detta är dock ofta billigare än att prenumerera på de tjänster som CMS:erna erbjuder själva.
 
-Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att integrera med en SSG. Generellt sett finns det inte någon helt kodlös lösning för CMS när det kommer till JAMStack. Det finns dock ett undantag, men jag tar upp det i listan.
+Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att integrera med en SSG. Generellt sett finns det inte någon helt kodlös lösning för CMS när det kommer till JAMStack. Det kommer alltid krävas att en utvecklare ser till att informationen visas på webbplatsen.
 
 ### 1. Netlify CMS
 
 ![Netlify CMS kontrollpanel](/static/netlify-cms.jpg "Kontrollpanelen på Netlify CMS")
 
-Netlify CMS är Git-baserad och har öppen källlkod. Netlify erbjuder en tjänst för att hosta JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
+Netlify CMS är Git-baserad och har öppen källlkod. Företaget Netlify erbjuder en tjänst för att driva JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
 
 Även om CMS:en är utvecklad Netlify, så behöver man inte använda den med deras plattform. Den går faktiskt att använda med vilken plattform eller egen lösning som helst, bara webbplatsen använder Git och sparas på GitHub eller liknande tjänster.
 
@@ -93,9 +91,9 @@ Anledningen till det här är antagligen att CMS:en inte är helt färdigutveckl
 
 Men det finns en annan del av Netlify CMS som gör lösningen lite mindre tillgänglig för mindre tekniska personer. För att skapa nya typer av innehåll (t.ex blogginlägg, produkter eller galleribilder) måste man skriva en YAML fil och lägga bland webbplatsens källkod.
 
-Detta är självklart inte optimalt om man vill ändra hur vissa typer av innehåll är strukturerat. Men även om CMS:en har ett visuellt gränssnitt för detta (som många andra lösningar har i den här listan) så måste webbplatsen ändå ändras för att läsa rätt innehåll.
+Detta är självklart inte optimalt om man vill ändra hur vissa typer av innehåll är strukturerat. Men även om CMS:en har ett visuellt gränssnitt för detta (som många andra lösningar har i den här listan) så måste koden på webbplatsen ändå ändras för att innehållet ska visas.
 
-Alltså behövs en utvecklare i vilket fall som helst. Jag skulle inte rekommendera Netlify CMS till mina kunder, men jag tycker om att använda den.
+Alltså behövs en utvecklare i vilket fall som helst. Jag skulle inte rekommendera Netlify CMS till mina kunder, men själv tycker jag att den fungerar utmärkt för mina behov.
 
 Självklart är Netlify CMS helt gratis, då den har öppen källkod och är Git-baserad.
 
@@ -116,13 +114,11 @@ Strapi är en headless CMS med öppen källkod. Till skillnad från många andra
 
 Som tur är, så har Strapi ett antal installationsguider för olika plattformar. Det är dock ingenting någon utan kännedom om Unix terminalen ger sig på. Det krävs en utvecklare för att installera Strapi, det går inte att komma ifrån.
 
-Det här betyder dock att det inte går att använda Strapi utan kostnad, du måste köra en server med mer än 1 GB RAM för att installera Strapi. Sen är det inte den bästa lösningen att köra både gränssnittet och databasen på samma server. Det behövs alltså en databasserver eller en databastjänst för att för att använda en optimal lösning.
-
-Detta kan kosta lite, men det skulle nog gå att komma undan med en månadsavgift på runt 200 kr i månaden.
+Det här betyder dock att det inte går att använda Strapi utan kostnad, du måste köra en server med mer än 1 GB RAM för att installera Strapi. Som billigast kan du nog driva Strapi för runt 100 kr i månaden med hjälp av en [DigitalOcean ](https://m.do.co/c/ced72bda5083)droplet.
 
 Strapi har ett rätt så bra verktyg för att bygga innehållstyper, de kallar det för _Content Type Builder_. Genom detta verktyg kan du ange olika namn och datatyper för så många fält du vill ha. Det här ger dig möjligheten att enkelt skapa komplexa innehållstyper.
 
-Något som saknas från Strapi är dock möjligheten att skapa en så kallad _slug_. En slug är en URL-vänlig sträng som används för att identifiera innehåll i en databas. Det är _cms-alternativ-for-jamstack_ i det här inlägget.
+Något som saknas från Strapi är dock möjligheten att skapa en så kallad _slug_. En slug är en URL-vänlig sträng som används för att identifiera innehåll i en databas. Det här inlägget har _cms-alternativ-for-jamstack_ som slug.
 
 Det är dock inte omöjligt att skapa en slug, Strapi har guide om hur man gör det i sin dokumentation. Då måste man tyvärr skriva lite JavaScript och koppla titel fältet till ett slug fält och en massa andra saker. Detta är alldeles för komplicerat för en funktion som borde finnas inbyggd.
 
@@ -158,11 +154,13 @@ Så om du vill ha mer än endast blogginlägg, så är Ghost inget för dig. Men
 
 Det är alltså möjligt att ta betalt för ditt innehåll.
 
-Jag testade Ghost innan jag bestämde mig för vilken CMS jag skulle använda för min webbplats, och jag övervägde starkt att använda den. Men eftersom jag förväntade mig behöva fler innehållstyper i framtiden, valde jag iställer Netlify CMS.
+Jag testade Ghost innan jag bestämde mig för vilken CMS jag skulle använda för min webbplats, och jag övervägde starkt att använda den. Men eftersom jag förväntade mig behöva fler innehållstyper i framtiden, valde jag istället Netlify CMS.
 
-En annan anledning var att Ghost inte är helt gratis. Trots att Ghost har öppen källkod, krävs fortfarande en server och databas för att använda CMS:en. Som billigast kan du köra Ghost för $10 per månad via en [DigitalOcean](https://m.do.co/c/ced72bda5083) droplet, där finns en så kallad One-Click installation. Eller så kan du använda [Ghosts egna tjänst](https://ghost.org/pricing/) som kostar från $29 per månad.
+En annan anledning var att Ghost inte är helt gratis. Trots att Ghost har öppen källkod, krävs fortfarande en server och databas för att använda CMS:en. Som billigast kan du köra Ghost för runt 100 kr per månad via en [DigitalOcean](https://m.do.co/c/ced72bda5083) droplet, där finns en så kallad 1-Click installation. 
 
-Till skillnad från Strapi, har Ghost relativt enkla installations metoder. Även om man installerar manuellt så finns ett Command Line verktyg som gör det otroligt enkelt.
+Du skulle också kunna använda [Ghosts egna tjänst](https://ghost.org/pricing/), då skulle du får betala ungefär 290 kr ($29) i månaden.
+
+Till skillnad från Strapi, har Ghost relativt enkla installationsmetoder. Även om man installerar manuellt så finns ett Command Line verktyg som gör det otroligt enkelt.
 
 Likt Strapi har även Ghost ett system för att hantera användare.
 
@@ -189,11 +187,11 @@ Directus har även stöd för ganska många språk. Bland dem finns så klart en
 
 Directus har ju öppen källkod och genom GitHub kan man lägga till nya språk. Men det går även att översätta Directus genom Crowdin. Jag har faktiskt börjat översätta lite där, men i nu läget har endast 37% av all text översatts till svenska. Om du vill hjälpa till kan du gå till [Directus Crowdin sida](https://locales.directus.io/).
 
-Till skillnad från Strapi erbjuder Directus en hostad version av sin CMS. Dem kallar denna för Directus Cloud och den billigaste planen går på $29 i månaden. Faktiskt precis samma pris som Ghosts billigaste plan.
+Till skillnad från Strapi erbjuder Directus en hostad version av sin CMS. Dem kallar denna för Directus Cloud och den billigaste planen går på runt 290 kr ($29) i månaden. Faktiskt precis samma pris som Ghosts billigaste plan.
 
 Det går självklart att installera Directus själv på en VPS. Som vanligt kostar detta några kronor i månaden, men är billigare än att köra den hostade versionen. Precis som Ghost, finns Directus som en 1-Click app på [DigitalOcean](https://m.do.co/c/ced72bda5083). Enligt Directus dokumentation kan man installera CMS:en på alla VPS:er som DigitalOcean erbjuder.
 
-Det betyder att du kan köra Directus för så lite som 50 kr i månaden.
+Det betyder att du kan köra Directus för så lite som 50 kr ($5) i månaden.
 
 Även om du väljer att installera Directus manuellt, så är denna process relativt enkelt. Du behöver installera lite mjukvara så som Apache, MySQL och PHP, sedan är det bara klona Git repot och  konfigurera Apache och MySQL. 
 
@@ -203,7 +201,7 @@ Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](
 
 * Headless
 * Öppen källkod
-* Inte helt gratis, men kan drivas med 50 kr i månaden.
+* Inte helt gratis, men kan drivas för 50 kr i månaden.
 * Relativt enkel att installera
 * System för att hantera användare
 
@@ -221,15 +219,15 @@ När man är inne på kontrollpanelen går det att lägga till nya innehållstyp
 
 Processen att lägga till nya innehållstyper är faktiskt rätt så trevlig. Man börjar med att lägga till sektioner i sidomenyn. Dessa kopplas sedan till en innehållstyp som du redan har skapat.
 
-Jag nämnde innan att Directus låter dig välja ikoner för olika innehållstyper. Ja, Forestry väljer en ikon baserat på innehållstypens namn. Detta gör att det går mycket snabbare att skapa nya innehållstyper än om man ska hålla på att leta efter en passande ikon.
+Jag nämnde innan att Directus låter dig välja ikoner för olika innehållstyper. Forestry tar det ett steg längre och väljer en ikon baserat på innehållstypens namn. Detta gör att det går mycket snabbare att skapa nya innehållstyper än om man ska hålla på att leta efter en passande ikon.
 
 Forestry låter dig även koppla fält i innehållstyper till andra innehållstyper. Detta skulle i en databas vara en relation mellan fälten. Forestry använder dock ingen databas, utan endast markdown eller HTML filer.
 
-Forestry har imponerat mig. Jag är faktist så imponerad att jag funderar på att byta CMS för min webbplats från Netlify CMS till Forestry.
+Forestry har imponerat mig. Jag är faktiskt så imponerad att jag funderar på att byta CMS för min webbplats från Netlify CMS till Forestry.
 
 Det enda som stoppade mig att använda Forestry från början var priset. Men det verkar som att jag inte var speciellt uppmärksam när jag tittade första gången.
 
-Forestry är faktiskt gratis att använda upp till 3 användare. Efter det kan man välja mellan att betala $29 i månaden, $749 i månaden eller ett skräddarsytt pris. De betalda planerna ger dig fler webbplatser, fler användare och utökad kontroll över organisationer.
+Forestry är faktiskt gratis att använda upp till 3 användare. Efter det kan man välja mellan att betala 290 kr ($29) i månaden, 7 300 kr ($749) i månaden eller ett skräddarsytt pris. De betalda planerna ger dig fler webbplatser, fler användare och utökad kontroll över organisationer.
 
 Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmågan att hantera användare. De dyrare planerna är gjorda för företag med flera olika webbplatser och författare.
 
@@ -238,7 +236,7 @@ Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmåga
 * Git-baserad
 * Inte öppen källkod
 * Gratis, upp till 3 användare
-* Inget system för att hantera användare
+* System för att hantera användare, men endast på dyrare planerna
 
 [Läs mer om Forestry](https://forestry.io/)
 
@@ -256,9 +254,9 @@ På dokumentationssidan för TinaCMS får man snabbt veta att TinaCMS inte är e
 
 Så enligt utvecklarna är TinaCMS inte en CMS. Det är ju då lite missvisande att ha med CMS i namnet. Egentligen så fungerar ju TinaCMS som en Git-baserad CMS. Du ändrar innehåll som sparas i en markdown fil och blir sedan en commit.
 
-Som citatet oven insinuerar, är TinaCMS inte något separat som man installerar. Man måste implementera TinaCMS från början av utveckling av webbplatsen. 
+Som citatet ovan insinuerar, är TinaCMS inte något separat som man installerar. Man måste implementera TinaCMS från början av utveckling av webbplatsen. 
 
-Den fungerar inte heller med vilken SSG som helst. Du måste använda en React baserad SSG, alltså Next.js eller Gatsby. Enligt dokumentationen går den även att använda med `create-react-app`, CLI verktyget från React som skapar en mall åt dig.
+Den fungerar inte heller med vilken SSG som helst. Du måste använda en React-baserad SSG, alltså Next.js eller Gatsby. Enligt dokumentationen går den även att använda med `create-react-app`, CLI verktyget från React som skapar en mall åt dig.
 
 När man sparar en ändring i TinaCMS används antingen en markdown fil eller en JSON fil. Det är utvecklaren som bestämmer detta. Dessa filer sparas sedan i Git repot och en ny version av webbplatsen byggs ihop.
 
@@ -290,17 +288,19 @@ Det finns en gratis version av Contentful och det verkar som att den har allt du
 
 Med 1 roll menar jag att du kan bjuda in fler användare, men alla är administratörer. Du kan alltså inte bjuda in anställda som endast kan redigera innehåll eller liknande. För att kunna göra detta måste du använda någon av dem dyrare planerna.
 
-Den billigaste betalda planen kallas för "Micro" och kostar $39 i månaden. Den planen verkar dock ha exakt samma begränsningar som gratis versionen. Jag kan faktiskt inte hitta någon skillnad mellan dessa, så om du är ensam och inte behöver mer än en webbplats, så skulle jag rekommendera att använda gratis versionen av Contentful.
+Den billigaste betalda planen kallas för "Micro" och kostar 380 kr ($39) i månaden. Den planen verkar dock ha exakt samma begränsningar som gratis versionen. Jag kan faktiskt inte hitta någon skillnad mellan dessa, så om du är ensam och inte behöver mer än en webbplats, så skulle jag rekommendera att använda gratis versionen av Contentful.
 
 Om du behöver mer användare eller fler webbplatser och innehållstyper, då skulle jag nog titta på någon av de andra lösningarna på den här listan. Anledningen är att Contentful kan bli riktigt dyrt.
 
-Som sagt är deras billigaste plan $39 i månaden. Detta är inte speciellt dyrt, men det är fortfarande dyrare än de billigaste hostade alternativen på den här listan.  Den planen har också, som jag nämnde, samma begränsningar som gratis versionen.
+Som sagt är deras billigaste plan 380 kr ($39) i månaden. Detta är inte speciellt dyrt, men det är fortfarande dyrare än de andra hostade alternativen på den här listan.  Den planen har också, som jag nämnde, samma begränsningar som gratis versionen.
 
-Så om du vill ha fler webbplatser och roller, måste du lägga ut $189 i månaden. Då får du 3 webbbplatser, 2 roller och fortfarande 24 innehållstyper. Det är inte en speciellt stor förbättring för en nästan 5 gånger så stor summa pengar.
+Så om du vill ha fler webbplatser och roller, måste du lägga ut 1 850 kr ($189) i månaden. Då får du 3 webbbplatser, 2 roller och fortfarande 24 innehållstyper. Det är inte en speciellt stor förbättring för en nästan 5 gånger så stor summa pengar.
 
-Fler roller får du inte förrän deras dyraste plan, $879 i månaden. I den får du 6 webbplatser och 13 roller. Den erbjuder även fler språk och innehållstyper.
+Fler roller får du inte förrän deras dyraste plan, 8 600 kr ($879) i månaden. I den får du 6 webbplatser och 13 roller. Den erbjuder även fler språk och innehållstyper.
 
-Med allt det här sagt, så är faktiskt Contentful en riktigt bra CMS. Det går snabbt att komma igång, de erbjuder utvecklar verktyg för flera olika språk och deras webbapplikation är fantastiskt bra byggd.
+Med allt det här sagt, så är faktiskt Contentful en riktigt bra CMS. Det går snabbt att komma igång, de erbjuder utvecklingsverktyg för flera olika språk och deras webbapplikation är fantastiskt bra byggd.
+
+Det finns även ett bra stöd för att skriva innehåll på flera olika språk, på de dyrare planerna i alla fall.
 
 Om du har pengar att spendera så rekommenderar jag dig att använda Contentful.
 
@@ -310,10 +310,9 @@ Om du har pengar att spendera så rekommenderar jag dig att använda Contentful.
 * Inte öppen källkod
 * Finns gratis version, men vill du ha mer får du betala en hel del
 * Otroligt bra webbapplikation
+* Byggd för större företag
 
 [Läs mer om Contentful](https://www.contentful.com/)
-
-
 
 ## Avslutning
 
