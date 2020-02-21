@@ -1,4 +1,45 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: title
+  description: Title of the blog post
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+  description: The excerpt of the blog post
+- name: date
+  type: datetime
+  label: Date
+  description: The publish date
+  config:
+    required: true
+    date_format: DD MMM, YYYY
+    time_format: 
+    display_utc: true
+  default: '2020-02-21T13:08:25Z'
+- name: updated
+  type: datetime
+  label: Updated
+  description: The date of the latest update
+  config:
+    required: false
+    date_format: DD MMM, YYYY
+    time_format: 
+    display_utc: true
+- name: image
+  type: file
+  config:
+    maxSize: '25'
+  label: Image
+  description: The cover image of the blog post
