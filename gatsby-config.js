@@ -127,7 +127,6 @@ module.exports = {
 		"gatsby-plugin-svgr",
 		"gatsby-transformer-sharp",
 		"gatsby-plugin-sharp",
-		"gatsby-plugin-netlify-cms",
 		{
 			resolve: "gatsby-plugin-robots-txt",
 			options: {
