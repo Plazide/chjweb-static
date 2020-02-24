@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 import rehypeReact from "rehype-react";
-import Img from "gatsby-image";
 
 import BackgroundImage from "gatsby-background-image";
 
@@ -30,11 +30,12 @@ import SEO from "../components/seo";
 // CSS
 import "../styles/blog.css";
 
+// eslint-disable-next-line new-cap
 const renderAst = new rehypeReact({
 	createElement: React.createElement
 }).Compiler;
 
-export default function post({ data }) {
+export default function post ({ data }){
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
 	const slug = data.markdownRemark.fields.slug;
 	const title = data.markdownRemark.frontmatter.title;
@@ -45,10 +46,10 @@ export default function post({ data }) {
 	const htmlAst = data.markdownRemark.htmlAst;
 	const logoUrl = data.imageSharp.fixed.src;
 
-	const formattedPublishDate = new Intl.DateTimeFormat("sv-SE", { 
+	const formattedPublishDate = new Intl.DateTimeFormat("sv-SE", {
 		day: "2-digit",
 		month: "short",
-		year: "numeric" 
+		year: "numeric"
 	}).format(new Date(published));
 	const pageUrl = `https://chjweb.se/blogg/${slug}`;
 
@@ -67,19 +68,19 @@ export default function post({ data }) {
 			"@type": "Organization",
 			"@id": "https://chjweb.se",
 			"name": "CHJ Webblösningar",
-			"logo": { 
+			"logo": {
 				"@type": "ImageObject",
-				"url": logoUrl,
+				"url": logoUrl
 			}
 		}
-	}
+	};
 
-	return (
+	return(
 		<Layout>
-			<SEO 
-				title={title + " | Blogg"} 
-				description={description} 
-				url={`/blogg/${slug}`} 
+			<SEO
+				title={title + " | Blogg"}
+				description={description}
+				url={`/blogg/${slug}`}
 				structuredData={structuredData}
 				breadcrumb={[
 					{ name: "Blogg", url: "/blogg" },
@@ -110,58 +111,58 @@ export default function post({ data }) {
 				<SocialShare title={title} shareUrl={pageUrl} twitterVia="chj_web" size={48} />
 			</article>
 		</Layout>
-	)
+	);
 }
 
-function SocialShare({ title, shareUrl, twitterVia, size }){
-	return (
+function SocialShare ({ title, shareUrl, twitterVia, size }){
+	return(
 		<div className="share-area">
 			<TwitterShareButton via={twitterVia} title={title} url={shareUrl}>
-				<TwitterIcon 
-					iconBgStyle={{fill: "#1da1f2"}} 
-					logoFillColor="#f7f7f2" 
+				<TwitterIcon
+					iconBgStyle={{ fill: "#1da1f2" }}
+					logoFillColor="#f7f7f2"
 					size={size}
 				/>
 			</TwitterShareButton>
 
 			<FacebookShareButton quote={title} url={shareUrl}>
-				<FacebookIcon 
-					iconBgStyle={{fill: "#4267B2"}} 
-					logoFillColor="#f7f7f2" 
+				<FacebookIcon
+					iconBgStyle={{ fill: "#4267B2" }}
+					logoFillColor="#f7f7f2"
 					size={size}
 				/>
 			</FacebookShareButton>
 
 			<RedditShareButton title={title} url={shareUrl}>
-				<RedditIcon 
-					iconBgStyle={{fill: "#ff4500"}} 
-					logoFillColor="#f7f7f2"  
+				<RedditIcon
+					iconBgStyle={{ fill: "#ff4500" }}
+					logoFillColor="#f7f7f2"
 					size={size}
 				/>
 			</RedditShareButton>
 
 			<LinkedinShareButton title={title} url={shareUrl}>
-				<LinkedinIcon 
-					iconBgStyle={{fill: "#2867b2"}} 
-					logoFillColor="#f7f7f2"  
+				<LinkedinIcon
+					iconBgStyle={{ fill: "#2867b2" }}
+					logoFillColor="#f7f7f2"
 					size={size}
 				/>
 			</LinkedinShareButton>
 
 			<EmailShareButton title={title} url={shareUrl}>
-				<EmailIcon 
-					iconBgStyle={{fill: "#56535e"}} 
-					logoFillColor="#f7f7f2" 
+				<EmailIcon
+					iconBgStyle={{ fill: "#56535e" }}
+					logoFillColor="#f7f7f2"
 					size={size}
 				/>
 			</EmailShareButton>
 		</div>
-	)
+	);
 }
 
 export const query = graphql`
 query PostQuery($slug: String!){
-	markdownRemark( fields: { slug: { eq: $slug}} ){
+	markdownRemark( fields: { slug: { eq: $slug}, published: true} ){
 		frontmatter{
 			title
 			description
@@ -187,4 +188,15 @@ query PostQuery($slug: String!){
 		}
 	}
 }
-`
+`;
+
+post.propTypes = {
+	data: PropTypes.object
+};
+
+SocialShare.propTypes = {
+	title: PropTypes.string,
+	shareUrl: PropTypes.string,
+	twitterVia: PropTypes.string,
+	size: PropTypes.number
+};
