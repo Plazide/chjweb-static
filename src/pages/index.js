@@ -184,7 +184,17 @@ ListItem.propTypes = {
 
 export const pageQuery = graphql`
 query FeaturedQuery {
-	allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}){
+	allMarkdownRemark(
+		limit: 1,
+		sort: {
+			order: DESC, 
+			fields: [frontmatter___date]
+			}, 
+			filter: {
+				frontmatter: {
+					published: { eq: true }
+				}
+			}){
 		nodes {
 			fields {
 				slug
