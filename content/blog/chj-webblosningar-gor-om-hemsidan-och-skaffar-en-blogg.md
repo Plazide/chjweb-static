@@ -1,11 +1,12 @@
 ---
 title: CHJ Webblösningar gör om hemsidan och skaffar en blogg
-date: 2019-10-02T09:34:40.248Z
-updated: 2019-12-03T08:12:25.737Z
-description: >-
-  Jag har gjort om min hemsida om skaffat en blogg. I det här första inlägget
+date: 2019-10-02T09:34:40.248+00:00
+updated: 2019-12-03T08:12:25.737+00:00
+description: Jag har gjort om min hemsida om skaffat en blogg. I det här första inlägget
   skriver jag om varför och hur jag gjorde detta.
-image: /static/img_20191119_115251_bokeh.jpg
+image: "/static/img_20191119_115251_bokeh.jpg"
+published: true
+
 ---
 **UPPDATERING:** Det här inlägget är inte längre aktuellt. Jag har gjort om hemsidan ännu än gång efter att jag publicerade detta inlägg. Det mesta som står här stämmer inte, men du är självklart välkommen att läsa ändå.
 
