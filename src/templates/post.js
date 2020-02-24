@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import rehypeReact from "rehype-react";
 
 import BackgroundImage from "gatsby-background-image";
@@ -36,6 +36,8 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default function post ({ data }){
+	if(!data.markdownRemark) return navigate("/blogg");
+
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
 	const slug = data.markdownRemark.fields.slug;
 	const title = data.markdownRemark.frontmatter.title;
