@@ -6,7 +6,7 @@ description: >-
   Vilken är den bästa lösningen för JAMStack när det kommer till CMS? I det här
   inlägget går jag igenom fördelar och nackdelar med olika verktyg.
 image: /static/wordpress.jpg
-published: false
+published: true
 ---
 _Om du inte har koll på vad JAMStack är, så rekommenderar jag att du läser mitt tidigare inlägg om_ [_vad JAMStack egentligen är_](https://chjweb.se/blogg/vad-ar-egentligen-jamstack)_._
 
