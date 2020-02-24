@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
@@ -168,3 +169,17 @@ query BloggQuery{
 		}
 	}
 }`;
+
+blogg.propTypes = {
+	data: PropTypes.object
+};
+
+Post.propTypes = {
+	title: PropTypes.string,
+	description: PropTypes.string,
+	published: PropTypes.string,
+	readTime: PropTypes.timeToRead,
+	image: PropTypes.object,
+	slug: PropTypes.string,
+	featured: PropTypes.bool
+};
