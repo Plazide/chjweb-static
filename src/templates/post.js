@@ -162,7 +162,7 @@ function SocialShare ({ title, shareUrl, twitterVia, size }){
 
 export const query = graphql`
 query PostQuery($slug: String!){
-	markdownRemark( fields: { slug: { eq: $slug}, published: true} ){
+	markdownRemark( fields: { slug: { eq: $slug}}, frontmatter: { published: { eq: true } } ){
 		frontmatter{
 			title
 			description
