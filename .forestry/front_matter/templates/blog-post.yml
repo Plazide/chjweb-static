@@ -3,6 +3,11 @@ label: Blog post
 hide_body: false
 display_field: title
 fields:
+- name: published
+  type: boolean
+  label: Published
+  description: Whether or not this post should be visible on the website
+  default: false
 - name: title
   type: text
   config:
