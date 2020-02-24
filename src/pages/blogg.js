@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 
@@ -8,7 +8,7 @@ import SEO from "../components/seo";
 // CSS
 import "../styles/blog.css";
 
-export default function blogg({ data }) {
+export default function blogg ({ data }){
 	const posts = data.allMarkdownRemark.edges;
 	const siteUrl = data.allSite.edges[0].node.siteMetadata.siteUrl;
 	const structuredData = {
@@ -16,43 +16,43 @@ export default function blogg({ data }) {
 		"@type": "ItemList",
 		"url": siteUrl,
 		"numberOfItems": posts.length,
-		"itemListElement": posts.map( (item, index) => { 
+		"itemListElement": posts.map( (item, index) => {
 			const logoUrl = data.imageSharp.fixed.src;
 			const post = item.node;
 			const pos = index + 1;
 			const image = post.frontmatter.image.childImageSharp.fixed ||
 							post.frontmatter.image.childImageSharp.fluid;
 
-			return {
-					"@type": "BlogPosting",
-					"image": {
+			return{
+				"@type": "BlogPosting",
+				"image": {
+					"@type": "ImageObject",
+					"url": image.src
+				},
+				"url": siteUrl + "/" + post.fields.slug,
+				"name": post.frontmatter.title,
+				"position": pos,
+				"headline": post.frontmatter.title,
+				"author": "Carl Hallén Jansson",
+				"datePublished": post.frontmatter.date,
+				"dateModified": post.frontmatter.updated,
+				"publisher": {
+					"@type": "Organization",
+					"@id": "https://chjweb.se",
+					"name": "CHJ Webblösningar",
+					"logo": {
 						"@type": "ImageObject",
-						"url": image.src
-					},
-					"url": siteUrl + "/" + post.fields.slug,
-					"name": post.frontmatter.title,
-					"position": pos,
-					"headline": post.frontmatter.title,
-					"author": "Carl Hallén Jansson",
-					"datePublished": post.frontmatter.date,
-					"dateModified": post.frontmatter.updated,
-					"publisher": {
-						"@type": "Organization",
-						"@id": "https://chjweb.se",
-						"name": "CHJ Webblösningar",
-						"logo": { 
-							"@type": "ImageObject",
-							"url": logoUrl
-						}
+						"url": logoUrl
 					}
 				}
-			})
-		
-	}
+			};
+		})
 
-	return (
+	};
+
+	return(
 		<Layout>
-			<SEO 
+			<SEO
 				title="Blogg"
 				description="I min blogg skriver jag om hur det är att driva företag, olika projekt som jag gör och andra saker som har med företagande eller webbutveckling att göra."
 				url="/blogg/"
@@ -75,10 +75,10 @@ export default function blogg({ data }) {
 							const slug = post.fields.slug;
 							const image = post.frontmatter.image.childImageSharp.fluid;
 
-							const publishDate = new Intl.DateTimeFormat("sv-SE", { 
-								day: "2-digit", 
-								month: "short", 
-								year: "numeric" 
+							const publishDate = new Intl.DateTimeFormat("sv-SE", {
+								day: "2-digit",
+								month: "short",
+								year: "numeric"
 							}).format(new Date(post.frontmatter.date));
 
 							return(
@@ -98,13 +98,13 @@ export default function blogg({ data }) {
 				</div>
 			</section>
 		</Layout>
-	)
+	);
 }
 
-function Post({ title, description, published, readTime, image, slug, featured }){
+function Post ({ title, description, published, readTime, image, slug, featured }){
 	const Image = <Img fluid={image} />;
 
-	return (
+	return(
 		<li className={`post ${featured ? "featured" : ""}`}>
 			<Link to={`/blogg/${slug}`}>
 				{Image}
@@ -119,10 +119,18 @@ function Post({ title, description, published, readTime, image, slug, featured }
 	);
 }
 
-
 export const pageQuery = graphql`
 query BloggQuery{
-	allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date] }) {
+	allMarkdownRemark( 
+		sort: {
+			order: DESC,
+			fields: [frontmatter___date] 
+		}, 
+		filter: {
+			frontmatter: {
+				published: { eq: true }
+			}
+		}) {
 		edges {
 			node {
 				frontmatter {
