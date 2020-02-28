@@ -11,15 +11,17 @@ image: ''
 ---
 Om du har kollat runt på nätet efter en gratis hemsida så har du förmodligen hittat Wix eller någon annan Site-builder. Problemet med dessa är att dem inte är helt gratis.
 
-Om du exempelvis använder den billigaste prenumerationen från Wix kan du koppla en domän till webbplatsen. Detta är en kritisk funktion som ligger bakom en betalvägg.
+Om du exempelvis använder den billigaste prenumerationen från Wix kan du koppla en domän till webbplatsen. Då har du redan betalat för en domän, och behöver betala för privilegiet att koppla den till din webbplats. 
 
 ![](/static/Wix priser.jpg)
 
-Om du väljer den prenumerationen kommer din hemsida visa en massa reklam, eftersom Wix måste tjäna pengar på dig på något sätt.
+Detta är egentligen ingenting som bör kosta pengar, eftersom det handlar om att sätta DNS-regler. Detta är något man gör från tjänsten som man köpte domänen från.
 
-De dyrare prenumerationerna är inte speciellt dyra. "Unlimited" är bara runt 130 kr i månaden. Men eftersom du läser det här, så antar jag att du vill ha en hemsida som inte kostar något överhuvudtaget. 
+Om du väljer den prenumerationen kommer din hemsida även visa en massa reklam, eftersom Wix måste tjäna pengar på dig på något sätt.
 
-Många skulle säga att det är omöjligt, men jag kommer bevisa motsatsen.
+De dyrare prenumerationerna är inte speciellt dyra. "Unlimited" är bara runt 130 kr i månaden. Men eftersom du läser det här, så antar jag att du vill ha en hemsida som inte kostar något överhuvudtaget.
+
+Du kanske tycker att detta är svårt att tro på, men jag kommer visa att det är möjligt.
 
 ## Ingen hemsida utan investering
 
