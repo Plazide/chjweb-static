@@ -55,6 +55,8 @@ Du kanske undrar varför Alberts städservice set bättre ut än Elit fönsterpu
 
 ### Snabbhet
 
+![](/static/speed.jpg)
+
 Hur snabbt en webbplats laddar är en av de viktigaste bitarna för en bra användarupplevelse. Det är även en viktig faktor för att ranka bra i sökresultaten.
 
 Att ha en långsam webbplats kan kosta dig väldigt mycket kunder. Närmare 50% av användare förväntar sig att webbplatsen ska ladda på under 2 sekunder. Det betyder att om din webbplats tar för lång tid att ladda, riskerar du att förlora hälften av dina potentiella kunder.
