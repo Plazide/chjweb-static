@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql, navigate } from "gatsby";
 import rehypeReact from "rehype-react";
@@ -36,7 +36,11 @@ const renderAst = new rehypeReact({
 }).Compiler;
 
 export default function post ({ data }){
-	if(!data.markdownRemark) return navigate("/blogg");
+	useEffect( () => {
+		navigate("/blogg");
+	}, [data.markdownRemark]);
+
+	if(!data.markdownRemark) return"";
 
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
 	const slug = data.markdownRemark.fields.slug;
