@@ -49,3 +49,6 @@ fields:
     maxSize: '25'
   label: Image
   description: The cover image of the blog post
+pages:
+- content/blog/hur-man-skaffar-en-hemsida-helt-gratis.md
+- content/blog/värdet-av-en-bra-hemsida.md
