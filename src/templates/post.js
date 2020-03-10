@@ -37,10 +37,9 @@ const renderAst = new rehypeReact({
 
 export default function post ({ data }){
 	useEffect( () => {
-		navigate("/blogg");
+		if(!data.markdownRemark)
+			navigate("/blogg");
 	}, [data.markdownRemark]);
-
-	if(!data.markdownRemark) return"";
 
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
 	const slug = data.markdownRemark.fields.slug;
