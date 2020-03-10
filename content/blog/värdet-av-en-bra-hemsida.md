@@ -67,6 +67,8 @@ Ett sätt att göra en hemsida snabb, är att använda sig av JAMstack principer
 
 ### Sökmotoroptimering
 
+![](/static/search.jpg)
+
 Någonting som är väldigt vanligt förekommande hos webbplatser som inte är skapade av webbyråer eller webbutvecklare, är en brist på grundläggande sökmotoroptimering.
 
 Då menar jag att man inte lägger tid på sidtitlar eller meta beskrivningar. Viktigast av dessa två är sidtiteln, det är den som visas tillsammans med ditt resultat på Google.
@@ -81,17 +83,23 @@ I vissa fall är det okej att lämna denna beskrivning tom, men i de flesta fall
 
 ### Förlorade kunder
 
+![](/static/leaving.jpg)
+
 Designen på din webbplats påverkar om potentiella kunder kommer att lite på dig. Om du inte har en webbplats som ser bra ut, så är chansen stor att du just nu förlorar en stor del av dina potentiella kunder.
 
 Dina besökare bildar en uppfattning om webbplatsen otroligt fort. Efter ungefär 0,05 sekunder har besökaren bildat en åsikt som antingen får de att stanna eller hitta ett annat företag. 
 
 ### Minskad trovärdighet
 
+![](/static/question.jpg)
+
 Din webbplats utseende påverkar även hur trovärdigt ditt företag verkar vara. Efter besökarens första intryck av din webbplats kan deras åsikt om ditt företag förbli den samma i flera år.
 
 Så ett dåligt första intryck betyder att man inte ens skulle överväga ditt företag om man behövde samma tjänster eller produkter i framtiden.
 
 ### Missad möjlighet till marknadsföring
+
+![](/static/kolar-io-QQNQjrKEl6w-unsplash.jpg)
 
 En webbplats som inte är sökmotoroptimerad är inte en marknadsföringskanal. Om du skaffade din webbplats i hopp om att du skulle får lite extra marknadsföring till en låg kostnad, men inte sökmotoroptimerade webbplatsen, så är det en bortkastad möjlighet.
 
@@ -107,15 +115,21 @@ Efter att ha läst alla problem med en dålig hemsida, kanske du förstår vad f
 
 ### Fler kunder
 
+![](/static/customers.jpg)
+
 Eftersom du nu har en hemsida som är snygg och modern, så stannar besökarna på din webbplats. Självklart måste du fortfarande skriva bra texter som får besökaren att bli en kund, men de lämnar iallafall inte så fort dem ser webbplatsen.
 
 Du kan nu skriva allt du behöver för att konvertera dina besökare. Om dina tjänster passar deras behov och du har etablerat en trovärdighet, så är chansen mycket större än innan att dessa besökare blir kunder.
 
 ### Ökad trovärdighet
 
+![](/static/trust.jpg)
+
 Precis som när besökare bildar en negativ uppfattning om ditt företag, så stannar positiva intryck hos besökaren i flera år. Det betyder att även om de väljer att inte köpa dina tjänster eller produkter just nu, så finns du i bakhuvet tills nästa gång.
 
 ### En marknadsföringskanal
+
+![](/static/marketing.jpg)
 
 Om din hemsida är sökmotoroptimerad på rätt sätt, kan den mycket möjligt fungera som en effektiv marknadsföringskanal. Genom att optimera för sökord som dina kunder söker efter, kan din webbplats öka din synlighet avsevärt.
 
