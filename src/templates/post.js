@@ -41,6 +41,8 @@ export default function post ({ data }){
 			navigate("/blogg");
 	}, [data.markdownRemark]);
 
+	if(!data.markdownRemark) return"";
+
 	const featuredImage = data.markdownRemark.frontmatter.image.childImageSharp.fluid;
 	const slug = data.markdownRemark.fields.slug;
 	const title = data.markdownRemark.frontmatter.title;
