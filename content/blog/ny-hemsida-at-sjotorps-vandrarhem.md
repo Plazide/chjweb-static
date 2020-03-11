@@ -7,6 +7,9 @@ description: CHJ Webblösningar har skapat den första hemsidan till Sjötorps V
   skapar åt en kund genom CHJ Webblösningar.
 image: "/static/framsida.jpg"
 published: true
+tags:
+- nyheter
+- tekniskt
 
 ---
 ## Sjötorps Vandrarhem har fått sin första egna hemsida
