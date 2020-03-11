@@ -49,6 +49,17 @@ fields:
     maxSize: '25'
   label: Image
   description: The cover image of the blog post
+- name: tags
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: tags
+  label: Tags
+  description: The tags to associate with the post
 pages:
 - content/blog/hur-man-skaffar-en-hemsida-helt-gratis.md
 - content/blog/värdet-av-en-bra-hemsida.md
