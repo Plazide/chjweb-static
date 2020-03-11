@@ -1,12 +1,14 @@
 ---
-date: 2020-03-10T14:08:25+01:00
+date: 2020-03-10T13:08:25.000+00:00
 published: true
 title: Värdet av en bra hemsida
 description: De flesta företag förstår vikten av att ha en egen hemsida, men allt
   färre förstår vikten av hemsidans kvalité. Jag förklarar varför det är otroligt
   viktigt att ha en bra hemsida och varför du kan förlora kunder på en dålig hemsida.
-updated: 2020-03-10T01:00:00+01:00
+updated: 2020-03-10T00:00:00.000+00:00
 image: "/static/cover.jpg"
+tags:
+- företagande
 
 ---
 Många företag vet att de behöver en hemsida.
