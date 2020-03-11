@@ -3,6 +3,11 @@ label: Blog post
 hide_body: false
 display_field: title
 fields:
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Tags to associate with the post
 - name: published
   type: boolean
   label: Published
@@ -49,18 +54,6 @@ fields:
     maxSize: '25'
   label: Image
   description: The cover image of the blog post
-- name: tags
-  type: list
-  config:
-    use_select: true
-    min: 
-    max: 
-    source:
-      type: documents
-      section: tags
-      file: content/tags/tags.md
-  label: Tags
-  description: The tags to associate with the post
 pages:
 - content/blog/hur-man-skaffar-en-hemsida-helt-gratis.md
 - content/blog/värdet-av-en-bra-hemsida.md
