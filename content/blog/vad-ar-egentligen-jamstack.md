@@ -2,9 +2,9 @@
 title: Vad är egentligen JAMStack?
 date: 2019-12-06T10:43:03.024+00:00
 updated: 2019-12-06T10:43:03.049+00:00
-description: Jag förklarar vad JAMStack är och varför jag använder det för att bygga
-  hemsidor till kunder. Förklaringen utgår ifrån att läsaren inte har någon som helst
-  kunskap om webbutveckling eller hur hemsidor fungerar.
+description: JAMstack används för att bygga supersnabba webbplatser. Men hur fungerar
+  det egentligen? I det här inlägget förklarar jag det tekniska bakom JAMstack och
+  vilka fördelar det har för ditt företag.
 image: "/static/img_20191203_120316_01_bokeh.jpg"
 published: true
 tags:
