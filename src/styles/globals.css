@@ -53,8 +53,12 @@ h2{
 h3,h4{
 	color: var(--textPrimary);
 }
+p{
+	font-weight: 200;
+}
 p a{
 	text-decoration: none;
+	color: var(--primary)
 }
 p a:hover{
 	text-decoration: underline;
@@ -80,6 +84,10 @@ p a:hover{
 .reset-button:focus,
 .reset-button:active{
 	outline: none;
+}
+.copy p{
+	font-size: 1.2em;
+	line-height: 2rem;
 }
 
 /* Main content */
@@ -119,8 +127,7 @@ h2.underlined{
 /* Hero section */
 section.hero{
 	box-sizing: border-box;
-	min-height: 80vh;
-
+	position: relative;
 }
 section.hero .featured{
 	box-sizing: border-box;
@@ -133,6 +140,7 @@ section.hero .featured{
 	background: var(--lightShadow);
 	border: 1px solid var(--lightRed);
 	padding: .5rem 2rem;
+	max-width: 30rem;
 
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
@@ -167,13 +175,14 @@ section.hero .background{
 	position: absolute;
 	z-index: -1;
 	bottom: 0;
-	width: 100%;
+	height: 45%;
+	max-width: 100%;
 }
 section.hero .content{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0;
+	padding: 6rem 0 10rem;
 
 	height: 100%;
 }
@@ -184,17 +193,22 @@ section.hero .content > a:last-child{
 	margin-left: 1em;
 }
 section.hero .content .copy{
-	width: 30em;
+	width: 30vw;
 	max-width: 100%;
 }
 section.hero .copy h1{
-	font-size: 3em;
+	font-size: 2.5em;
 	margin-top: 0;
+	margin-bottom: 1rem;
+	line-height: 2.5rem;
 }
 section.hero .copy p{
 	box-sizing: border-box;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: 7px 0 5rem;
+	font-weight: 200;
+	line-height: 2rem;
+	max-width: 30rem;
 }
 section.hero .btns{
 	display: flex;
@@ -241,8 +255,6 @@ section.features .copy.intro h1{
 }
 section.features .copy.intro p{
 	margin-top: 7px;
-	font-size: 1.4rem;
-	line-height: 1.5rem;
 }
 .row{
 	display: flex;
@@ -465,7 +477,7 @@ svg path[data-name="Rectangle 244"]{
 	section.hero .content {
 		box-sizing: border-box;
 		width: 100%;
-		padding: 5rem 2rem 5rem;
+		padding: 5rem 5rem 5rem;
 	}
 	section.hero .featured{
 		display: none;
@@ -501,8 +513,16 @@ svg path[data-name="Rectangle 244"]{
 	section.hero .btns .button:first-child{
 		margin: 0 0 1rem 0;
 	}
+	section.hero .content{
+		padding: 4rem 2rem 6rem;
+	}
 	section.hero .content .copy{
 		text-align: center;
+		width: 100%;
+	}
+	section.hero .content .copy p{
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	section.features .copy.intro{
