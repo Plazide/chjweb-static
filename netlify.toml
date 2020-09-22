@@ -30,6 +30,16 @@
 	status = 301
 
 [[redirects]]
+	from = "/anlita/"
+	to = "/kontakt"
+	status = 301
+
+[[redirects]]
+	from = "/offert/"
+	to = "/kontakt"
+	status = 301
+
+[[redirects]]
 	from = "/anlita"
 	to = "/kontakt"
 	status = 301
