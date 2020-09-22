@@ -315,6 +315,10 @@ section.about{
 	background: var(--lightBlue);
 	min-height: 50vh;
 }
+.personal-image{
+	width: 250px;
+	margin: 0 100px 0 0;
+}
 
 /* Workflow */
 section.workflow{
@@ -333,12 +337,16 @@ section.workflow ol{
 	max-width: 100%;
 }
 section.workflow ol li{
+	margin: 80px 0;
+}
+section.workflow ol li .list-content{
 	display: flex;
 	flex-wrap: nowrap;
-	margin: 80px 0;
-
 	justify-content: flex-start;
 	align-items: center;
+
+	transform: translateX(-200%);
+	transition: transform 300ms 1s ease;
 }
 section.workflow ol li .pos{
 	font-size: 1.8rem;
@@ -352,7 +360,16 @@ section.workflow ol li .pos{
 section.workflow ol li .next-arrow{
 	position: absolute;
 	margin: 3.5rem 0 0 -67px;
+	opacity: 0;
+	transition: opacity 300ms 1.5s ease;
 	/* margin: 7.4rem 0 0 1.2rem; */
+}
+section.workflow ol li:last-child .pos{
+	background-color: green;
+}
+.checkmark{
+	width: 1.3rem;
+	height: 1.3rem;
 }
 
 /* Animate squares */
@@ -492,6 +509,9 @@ svg path[data-name="Rectangle 244"]{
 	section.hero .illustration{
 		display: none;
 	}
+	.personal-image{
+		margin: 0;
+	}
 }
 
 @media only screen and (max-width: 700px){
@@ -532,6 +552,10 @@ svg path[data-name="Rectangle 244"]{
 	}
 
 	/* Rows */
+	.personal-image{
+		display: none;
+	}
+
 	section.about .row,
 	section.workflow .row,
 	section.features .row{
@@ -541,6 +565,7 @@ svg path[data-name="Rectangle 244"]{
 	section.workflow .row .copy,
 	section.features .row .copy{
 		z-index: 60;
+		position: relative;
 	}
 	section.about .row .illustration,
 	section.workflow .row .illustration,
