@@ -1,19 +1,20 @@
 section.hero.contact .content{
-	display: block;
-	text-align:center;
+	display: flex;
+	text-align:left;
+	/* padding-bottom: 4rem; */
 }
 section.hero.contact .content .copy{
 	width: 31rem;
 	max-width: 100%;
-	margin: auto;
+	margin: 0;
 }
 section.hero.contact .content .copy h1{
-	font-size: 3.8rem;
+	font-size: 3.6rem;
 }
 section.hero.contact .content .copy .buttons{
 	margin-top: 7rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 section.hero.contact .content .copy .buttons .call{
 	display: none;
@@ -35,6 +36,48 @@ section.hero.contact .content .info a{
 	margin: .5rem 0;
 }
 
+/* Form */
+section.form{
+	border-top: 1px solid var(--primary);
+	box-shadow: 0 -4px 10px var(--shadow);
+}
+section.form form .group{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+section.form form .group .text-field{
+	width: 49%;
+}
+section.form form .text-field{
+	margin: 1rem 0;
+}
+section.form form button:disabled{
+	cursor: default;
+	opacity: .5;
+	box-shadow: none;
+}
+section.form form button:disabled:hover{
+	box-shadow: none;
+}
+section.form form .success{
+	display: inline-block;
+	padding: .9rem .5rem;
+	border: 1px solid rgb(10, 66, 10);
+	background: rgba(138, 248, 138, 0.562);
+	border-radius: 3px;
+	box-shadow: 0 2px 4px var(--shadow);
+}
+section.form form .failure{
+	display: inline-block;
+	padding: .9rem .5rem;
+	border: 1px solid var(--primary);
+	background: var(--lightRed);
+	border-radius: 3px;
+	box-shadow: 0 2px 4px var(--shadow);
+	margin-left: 2rem;
+}
+
 @media only screen and (max-width: 600px){
 	section.hero.contact .content .copy h1{
 		font-size: 3rem;
@@ -48,5 +91,8 @@ section.hero.contact .content .info a{
 	}
 	section.hero.contact .content .copy .buttons .call{
 		display: block;
+	}
+	section.form form .group .text-field{
+		width: 100%;
 	}
 }

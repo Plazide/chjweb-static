@@ -25,16 +25,19 @@
 	padding: 1rem;
 	border: 1px solid var(--lightRed);
 	border-radius: 4px;
+	outline: none;
 
 	transition: border-color 100ms ease-out;
 }
 .text-field input{
 	height: 56px;
+	margin-bottom: 5px;
 }
 .text-field textarea{
 	height: 120px;
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
+	margin-bottom: 5px;
 }
 .text-field.textarea{
 	min-height: 100px;
@@ -62,6 +65,11 @@
 	border-color: var(--primary);
 }
 
+.text-field.error input,
+.text-field.error textarea{
+	border: 1px solid var(--darkLightRed);
+	box-shadow: 0 1px 2px 1px var(--lightRed)
+}
 .text-field.error .error-text{
 	animation: fadeIn 100ms ease forwards;
 }
