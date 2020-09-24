@@ -1,19 +1,40 @@
 import React from "react";
 import { Link } from "gatsby";
-import DropdownLink from "./DropdownLink";
+/* import DropdownLink from "./DropdownLink"; */
 import ButtonLink from "./ButtonLink";
 
-export default function navigation (){
+export default function navigation(){
 	return(
 		<nav>
-			<Link
+			{/* <Link
 				to="/"
 				activeClassName="active"
 			>
 				Hem
+			</Link> */}
+
+			<Link
+				to="/priser"
+				activeClassName="active"
+			>
+				Priser
 			</Link>
 
-			<DropdownLink
+			<Link
+				to="/referenser"
+				activeClassName="active"
+			>
+				Referenser
+			</Link>
+
+			<Link
+				to="/tjanster"
+				activeClassName="active"
+			>
+				Tjänster
+			</Link>
+
+			{/* <DropdownLink
 				to="/tjanster/"
 				activeClassName="active"
 				partiallyActive={true}
@@ -38,7 +59,7 @@ export default function navigation (){
 				]}
 			>
 				Webbyrå
-			</DropdownLink>
+			</DropdownLink> */}
 
 			<Link
 				to="/blogg/"
