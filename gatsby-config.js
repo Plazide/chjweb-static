@@ -92,7 +92,7 @@ module.exports = {
 			resolve: "gatsby-source-filesystem",
 			options: {
 				name: "media",
-				path: `${__dirname}/src/media`
+				path: `${__dirname}/static/media`
 			}
 		},
 		{
@@ -131,7 +131,7 @@ module.exports = {
 					{
 						resolve: "gatsby-remark-relative-images",
 						options: {
-							staticFolderName: "./src/media"
+							staticFolderName: "./static/media"
 						}
 					},
 					{

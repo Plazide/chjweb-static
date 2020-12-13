@@ -3,7 +3,7 @@ backend:
 
 local_backend: true
 
-media_folder: ./src/media
+media_folder: /static/media
 public_folder: /media
 
 slug: 
