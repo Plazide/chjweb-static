@@ -1,0 +1,31 @@
+.service{
+	max-width: 400px;
+	box-shadow: 0 4px 4px rgba(0,0,0,.3);
+	padding: .5rem 0;
+	margin: 1rem;
+}
+.service a{
+	cursor: pointer;
+}
+.service .body{
+	padding: 1rem;
+}
+.service .title{
+	font-size: 1.2rem;
+	color: var(--textAlt2);
+	font-weight: bold;
+}
+.service .image-container{
+	width: 65%;
+	height: 200px;
+	padding: 1rem 0;
+	margin: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service .image{
+	width: 250px;
+	max-height: 100%;
+}

@@ -1,5 +1,5 @@
 
-function addTrailingSlash (path){
+function addTrailingSlash(path){
 	const hasSlash = path.substr(-1) === "/";
 	const addedSlash = path + "/";
 	return!hasSlash ? addedSlash : path;
@@ -110,11 +110,30 @@ module.exports = {
 			}
 		},
 		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "tech",
+				path: `${__dirname}/content/tech`
+			}
+		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "projects",
+				path: `${__dirname}/content/projects`
+			}
+		},
+		{
 			resolve: "gatsby-transformer-remark",
 			options: {
 				plugins: [
 					"gatsby-remark-component",
-					"gatsby-remark-relative-images",
+					{
+						resolve: "gatsby-remark-relative-images",
+						options: {
+							staticFolderName: "./src/media"
+						}
+					},
 					{
 						resolve: "gatsby-remark-images",
 						options: {
@@ -177,6 +196,7 @@ module.exports = {
 				}
 			}
 		},
+		"gatsby-plugin-netlify-cms",
 		{
 			resolve: "gatsby-plugin-manifest",
 			options: {

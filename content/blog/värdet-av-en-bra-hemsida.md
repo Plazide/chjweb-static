@@ -5,10 +5,8 @@ title: Värdet av en bra hemsida
 description: De flesta företag förstår vikten av att ha en egen hemsida, men allt
   färre förstår vikten av hemsidans kvalité. Jag förklarar varför det är otroligt
   viktigt att ha en bra hemsida och varför du kan förlora kunder på en dålig hemsida.
-updated: 2020-03-10T00:00:00.000+00:00
-image: "/static/cover.jpg"
-tags:
-- företagande
+updated: 2020-03-10T01:00:00+01:00
+image: "/cover.jpg"
 
 ---
 Många företag vet att de behöver en hemsida.
@@ -39,11 +37,11 @@ Förresten, jag har inte arbetat på någon av dessa hemsidor och jag har ingen 
 
 _Elit Fönsterputs:_
 
- [**![Elit fönsterputs hemsida](/static/elit-fönsterputs.jpg "Elit fönsterputs")**](https://www.elitputs.se/)
+ [**![Elit fönsterputs hemsida](/elit-fönsterputs.jpg "Elit fönsterputs")**](https://www.elitputs.se/)
 
 _Alberts Städservice:_
 
-[![Alberts städservice hemsida](/static/alberts-service.jpg "Alberts städservice")](https://www.alberts-service.se/kungsbacka/fonsterputs)
+[![Alberts städservice hemsida](/alberts-service.jpg "Alberts städservice")](https://www.alberts-service.se/kungsbacka/fonsterputs)
 
 Företagen ovan sysslar med att putsa fönster. Båda utför antagligen ett suveränt arbete, men företaget som skulle få flest kunder från nätet är Alberts städservice.
 
@@ -57,7 +55,7 @@ Du kanske undrar varför Alberts städservice set bättre ut än Elit fönsterpu
 
 ### Snabbhet
 
-![](/static/speed.jpg)
+![](/speed.jpg)
 
 Hur snabbt en webbplats laddar är en av de viktigaste bitarna för en bra användarupplevelse. Det är även en viktig faktor för att ranka bra i sökresultaten.
 
@@ -69,7 +67,7 @@ Ett sätt att göra en hemsida snabb, är att använda sig av JAMstack principer
 
 ### Sökmotoroptimering
 
-![](/static/search.jpg)
+![](/search.jpg)
 
 Någonting som är väldigt vanligt förekommande hos webbplatser som inte är skapade av webbyråer eller webbutvecklare, är en brist på grundläggande sökmotoroptimering.
 
@@ -85,7 +83,7 @@ I vissa fall är det okej att lämna denna beskrivning tom, men i de flesta fall
 
 ### Förlorade kunder
 
-![](/static/leaving.jpg)
+![](/leaving.jpg)
 
 Designen på din webbplats påverkar om potentiella kunder kommer att lita på dig. Om du inte har en webbplats som ser bra ut, så är chansen stor att du just nu förlorar en stor del av dina potentiella kunder.
 
@@ -93,7 +91,7 @@ Dina besökare bildar en uppfattning om webbplatsen otroligt fort. Efter ungefä
 
 ### Minskad trovärdighet
 
-![](/static/question.jpg)
+![](/question.jpg)
 
 Din webbplats utseende påverkar även hur trovärdigt ditt företag verkar vara. Efter besökarens första intryck av din webbplats kan deras åsikt om ditt företag förbli den samma i flera år.
 
@@ -101,7 +99,7 @@ Så ett dåligt första intryck betyder att man inte ens skulle överväga ditt 
 
 ### Missad möjlighet till marknadsföring
 
-![](/static/kolar-io-QQNQjrKEl6w-unsplash.jpg)
+![](/kolar-io-QQNQjrKEl6w-unsplash.jpg)
 
 En webbplats som inte är sökmotoroptimerad är inte en marknadsföringskanal. Om du skaffade din webbplats i hopp om att du skulle får lite extra marknadsföring till en låg kostnad, men inte sökmotoroptimerade webbplatsen, så är det en bortkastad möjlighet.
 
@@ -117,7 +115,7 @@ Efter att ha läst alla problem med en dålig hemsida, kanske du förstår vad f
 
 ### Fler kunder
 
-![](/static/customers.jpg)
+![](/customers.jpg)
 
 Eftersom du nu har en hemsida som är snygg och modern, så stannar besökarna på din webbplats. Självklart måste du fortfarande skriva bra texter som får besökaren att bli en kund, men de lämnar iallafall inte så fort dem ser webbplatsen.
 
@@ -125,13 +123,13 @@ Om dina tjänster passar besökarens behov och du har etablerat en trovärdighet
 
 ### Ökad trovärdighet
 
-![](/static/trust.jpg)
+![](/trust.jpg)
 
 Precis som när besökare bildar en negativ uppfattning om ditt företag, så stannar även positiva intryck hos besökaren i flera år. Det betyder att även om de väljer att inte köpa dina tjänster eller produkter just nu, så finns du i bakhuvet tills nästa gång.
 
 ### En marknadsföringskanal
 
-![](/static/marketing.jpg)
+![](/marketing.jpg)
 
 Om din hemsida är sökmotoroptimerad på rätt sätt, kan den mycket möjligt fungera som en effektiv marknadsföringskanal. Genom att optimera för sökord som dina kunder söker efter, kan din webbplats öka din synlighet avsevärt.
 

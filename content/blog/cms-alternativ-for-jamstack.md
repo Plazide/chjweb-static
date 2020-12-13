@@ -1,10 +1,11 @@
 ---
 title: 7 CMS alternativ för JAMStack
-date: 2020-02-21T09:09:18.719+00:00
-updated: 2020-02-21T09:09:18.730+00:00
-description: Vilken är den bästa lösningen för JAMStack när det kommer till CMS? I
-  det här inlägget går jag igenom fördelar och nackdelar med olika verktyg.
-image: "/static/wordpress.jpg"
+date: 2020-02-21T09:09:18.719Z
+updated: 2020-02-21T09:09:18.730Z
+description: >-
+  Vilken är den bästa lösningen för JAMStack när det kommer till CMS? I det här
+  inlägget går jag igenom fördelar och nackdelar med olika verktyg.
+image: /wordpress.jpg
 published: true
 tags:
 - tekniskt
@@ -80,7 +81,7 @@ Nästan alla CMS:er som jag listar nedan kräver någon form av kodning för att
 
 ### 1. Netlify CMS
 
-![Netlify CMS kontrollpanel](/static/netlify-cms.jpg "Kontrollpanelen på Netlify CMS")
+![Netlify CMS kontrollpanel](/netlify-cms.jpg "Kontrollpanelen på Netlify CMS")
 
 Netlify CMS är Git-baserad och har öppen källlkod. Företaget Netlify erbjuder en tjänst för att driva JAMStack webbplatser. Dem erbjuder väldigt bra utvecklarverktyg och gör det enkelt att lansera nya versioner av webbplatsen.
 
@@ -111,7 +112,7 @@ Självklart är Netlify CMS helt gratis, då den har öppen källkod och är Git
 
 ### 2. Strapi
 
-![Startskärmen för Strapi](/static/strapi.jpg "Startskärmen för Strapi")
+![Startskärmen för Strapi](/strapi.jpg "Startskärmen för Strapi")
 
 Strapi är en headless CMS med öppen källkod. Till skillnad från många andra CMS:er på den här listan erbjuder inte Strapi en molntjänst. För att använda Strapi måste man alltså installera det på en egen server.
 
@@ -143,7 +144,7 @@ Det finns även ett rätt så ingående system för konton i Strapi. Du kan allt
 
 ### 3. Ghost
 
-![Ghost startsida](/static/ghost.jpg "Ghost startsida")
+![Ghost startsida](/ghost.jpg "Ghost startsida")
 
 Ghost är egentligen ett svar på Wordpress. Skaparna av Ghost ansåg att Wordpress försökte göra för mycket på en och samma gång, därför skapade de ett verktyg som verkligen fokuserar på att publicera innehåll.
 
@@ -180,7 +181,7 @@ Likt Strapi har även Ghost ett system för att hantera användare.
 
 ### 4. Directus
 
-![Directus kontrollpanel](/static/directus.jpg "Directus kontrollpanel")
+![Directus kontrollpanel](/directus.jpg "Directus kontrollpanel")
 
 Directus är ännu en headless CMS. Likt Strapi finns möjligheten att skapa olika innehållstyper och att hantera användare. Skillnaden är, enligt mig, att Directus gör det mesta lite bättre.
 
@@ -212,7 +213,7 @@ Om du vill testa Directus lite snabbt, så kan du använda deras [demo version](
 
 ### 5. Forestry
 
-![Forestry kontrollpanel](/static/forestry.jpg "Forestry kontrollpnel")
+![Forestry kontrollpanel](/forestry.jpg "Forestry kontrollpnel")
 
 Forestry är en Git-baserad CMS, men har inte öppen källkod. För att använda Forestry måste man skapa ett konto på deras hemsida och sedan koppla sitt GitHub repo till det kontot.
 
@@ -245,7 +246,7 @@ Den plan som är gratis ger dig alla nödvändiga funktioner, förutom förmåga
 
 ### 6. TinaCMS
 
-![TinaCMS redigering](/static/tina.jpg "TinaCMS redigering")
+![TinaCMS redigering](/tina.jpg "TinaCMS redigering")
 
 TinaCMS är en Git-baserad CMS med fokus på redigering av webbsidor i realtid, utvecklad av Forestry. Istället för att använda ett separat gränssnitt för att hantera innehåll, redigerar du innehållet direkt på webbsidan.
 
@@ -283,7 +284,7 @@ Sidomenyn är så pass smal, att det kommer bli irriterande att skriva något so
 
 ### 7. Contentful
 
-![Contentful kontrollpanel](/static/contentful.jpg "Contentful kontrollpanel")
+![Contentful kontrollpanel](/contentful.jpg "Contentful kontrollpanel")
 
 Contentful är en headless CMS utan öppen källkod. Fokus verkar ligga på företag, snarare än enskilda bloggare eller utvecklare. Detta blir ganska uppenbart när de frågar efter ett organisationsnamn under registreringen, och det kan inte lämnas tomt.
 

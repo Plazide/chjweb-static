@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 // Components
 import ButtonLink from "./ButtonLink";
 
-export default function Row ({ illustration, link, align, title, children, paragraph = true, threshold = 0.3 }){
+export default function Row ({ illustration, link, align, title, children, paragraph = true, threshold = 0.3, animate = true }){
 	const[ref, inView] = useInView({ threshold, triggerOnce: true });
 
 	const visible = inView;
@@ -17,7 +17,7 @@ export default function Row ({ illustration, link, align, title, children, parag
 	const copyStyle = {
 		alignItems: "flex-start",
 		textAlign: "left",
-		transform: `translate(${align === "left" ? "-" : ""}${translate})`
+		transform: animate ? `translate(${align === "left" ? "-" : ""}${translate})` : "translate(0)"
 	};
 
 	const button = link ? <ButtonLink href={link} variant="text" style={{ alignSelf: "flex-start" }}>Läs mer</ButtonLink> : "";
@@ -43,5 +43,6 @@ Row.propTypes = {
 	title: PropTypes.string,
 	children: PropTypes.node,
 	paragraph: PropTypes.bool,
-	threshold: PropTypes.number
+	threshold: PropTypes.number,
+	animate: PropTypes.bool
 };

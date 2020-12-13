@@ -2,10 +2,10 @@
 title: Vad är egentligen JAMStack?
 date: 2019-12-06T10:43:03.024+00:00
 updated: 2019-12-06T10:43:03.049+00:00
-description: JAMstack används för att bygga supersnabba webbplatser. Men hur fungerar
-  det egentligen? I det här inlägget förklarar jag det tekniska bakom JAMstack och
-  vilka fördelar det har för ditt företag.
-image: "/static/img_20191203_120316_01_bokeh.jpg"
+description: Jag förklarar vad JAMStack är och varför jag använder det för att bygga
+  hemsidor till kunder. Förklaringen utgår ifrån att läsaren inte har någon som helst
+  kunskap om webbutveckling eller hur hemsidor fungerar.
+image: "/img_20191203_120316_01_bokeh.jpg"
 published: true
 tags:
 - företagande
@@ -13,7 +13,7 @@ tags:
 ---
 På min hemsida nämner jag termen _JAMStack_ exakt 15 gånger om man inkluderar sidtitlar och beskrivningar, det här inlägget ökar den siffran rejält. Anledningen till att jag repeterar denna konstiga term, som verkar ha något med sylt att göra, är för att det är metoden jag använder för att skapa hemsidor.
 
-![Syltburk på bord](/static/jam_small.jpg "Syltburk")
+![Syltburk på bord](/jam_small.jpg "Syltburk")
 
 Jag förstår att denna term är främmande för många personer som läser på min hemsida. Det finns många webbutvecklare som ännu inte introducerats för den här typen av utveckling, så jag förväntar mig inte att personer utan teknisk kunskap ska veta vad JAMStack innebär.
 
@@ -39,7 +39,7 @@ Jag förklarar det som gör JAMStack speciellt lite senare.
 
 Det enda sättet att få hemsidor till slutanvändaren har länge varit att använda en _webbserver_. En webbserver är, som du kanske kan gissa, programvaran som är ansvarig för att servera (skicka) hemsidan till webbläsaren. Denna webbserver måste finnas på en dator någonstans i världen, helst så nära användaren som möjligt. 
 
-![Korridor med servrar](/static/servers.jpg "Webbhotell")
+![Korridor med servrar](/servers.jpg "Webbhotell")
 
 Webbservrar använder sig ofta av ett _serverspråk_. Det finns ett antal olika serverspråk, men det vanligaste serverspråket är _PHP_. Det är exempelvis det språket som används av _Wordpress_, det mest populära _CMS_ verktyget_._
 
@@ -51,13 +51,13 @@ Som du kanske kan förstå är denna metod inte optimal. Om en server som bygger
 
 Det följande diagrammet förklarar hur varje förfrågan hanteras med en traditionell webbserver.
 
-![Diagram över dataflöde med en traditionell webbserver](/static/traditionell.png "Diagram över dataflöde med en traditionell webbserver")
+![Diagram över dataflöde med en traditionell webbserver](/traditionell.png "Diagram över dataflöde med en traditionell webbserver")
 
 ### Den moderna CDN:en
 
 Jag nämnde innan att det inte var teknologin man bygger JAMStack sidor med som skiljer dem från andra hemsidor. Det som faktiskt skiljer JAMStack från andra hemsidor är saknaden av en traditionell webbserver.
 
-![Ingen server](/static/computer-2777254_1920.jpg "Ingen server")
+![Ingen server](/computer-2777254_1920.jpg "Ingen server")
 
 En JAMStack hemsida använder oftast en modern _CDN._ CDN står för **C**ontent **D**elivery **N**etwork och är inte en ny teknik för att leverera innehåll på webben. Dessa innehållsleveransnätverk, som det heter på svenska, har tidigare används för att effektivt servera bilder och andra filer till användaren. Att servera hela hemsidor från en CDN är dock något nytt.
 
@@ -71,7 +71,7 @@ För största effektivitet och hastighetsökning, bygger man inte JAMStack sidor
 
 Det följande diagrammet visar hur varje förfrågan hanteras med en JAMStack hemsida.
 
-![Dataflöde med en JAMStack hemsida.](/static/jamstack.png "Dataflöde med en JAMStack hemsida.")
+![Dataflöde med en JAMStack hemsida.](/jamstack.png "Dataflöde med en JAMStack hemsida.")
 
 ### Statiska sidor
 
@@ -89,7 +89,7 @@ Det finns ganska många fördelar med JAMStack, både för utvecklare och för f
 
 ### 1. Minskade kostnader
 
-![Spargris](/static/money-pink-coins-pig-9660.jpg "Spara pengar")
+![Spargris](/money-pink-coins-pig-9660.jpg "Spara pengar")
 
 Det här är en av de fördelarna med JAMStack som jag har personlig erfarenhet av. Jag hade nämligen min hemsida på ett traditionellt webbhotell innan jag hittade JAMStack. Det här webbhotellet kostade 137 kr i månaden och fakturerades en gång i kvartalet med en summa 550 kr.
 
@@ -101,7 +101,7 @@ När jag sedan bytte till JAMStack har mina driftkostnader bokstavligen försvun
 
 ### 2. Hanterar ökning av trafik utan problem
 
-![Ökning](/static/space-grey-ipad-air-with-graph-on-brown-wooden-table-187041.jpg "Ökning")
+![Ökning](/space-grey-ipad-air-with-graph-on-brown-wooden-table-187041.jpg "Ökning")
 
 Folk som skriver om JAMStack brukar ofta nämna e-handeln som ett exempel på den här fördelen. Syftning ligger ofta på Black Friday. E-handlar har en dag om året som trafik ökar avsevärt. Med traditionella webbservrar måste man förbereda inför den här dagen med ökade resurser.
 
@@ -113,7 +113,7 @@ JAMStack hemsidor kan alltså skalas upp automatiskt. Det är fantastiskt bra f�
 
 ### 3. Snabbare och smidigare utveckling
 
-![Utveckling](/static/dev.jpg "Utveckling")
+![Utveckling](/dev.jpg "Utveckling")
 
 Eftersom man inte behöver hantera serverspråk med JAMStack, så kan man bygga hemsidor mycket snabbare. En utvecklare kan alltså fokusera på att skapa en snygg och presterande hemsida, istället för att hantera kopplingar till databaser och andra serverfunktioner.
 
@@ -123,7 +123,7 @@ För mina kunder betyder det här att jag kan bygga deras hemsidor mycket snabba
 
 ### 4. Ökad säkerhet
 
-![Övervakningskameror på vägg](/static/scott-webb-yekglpc3vro-unsplash.jpg "Ökad säkerhet")
+![Övervakningskameror på vägg](/scott-webb-yekglpc3vro-unsplash.jpg "Ökad säkerhet")
 
 Den sista fördelen, men absolut inte den minsta, är säkerhet. Som de flesta fördelarna med JAMStack kommer den här ifrån att man inte använder traditionella webbservrar. Eftersom en JAMStack hemsida saknar en webbserver, finns det mindre att attackera för potentiella hackare.
 

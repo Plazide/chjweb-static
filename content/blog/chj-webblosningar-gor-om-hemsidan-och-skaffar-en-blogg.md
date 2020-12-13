@@ -4,7 +4,7 @@ date: 2019-10-02T09:34:40.248+00:00
 updated: 2019-12-03T08:12:25.737+00:00
 description: Jag har gjort om min hemsida om skaffat en blogg. I det här första inlägget
   skriver jag om varför och hur jag gjorde detta.
-image: "/static/img_20191119_115251_bokeh.jpg"
+image: "/img_20191119_115251_bokeh.jpg"
 published: true
 tags:
 - nyheter
