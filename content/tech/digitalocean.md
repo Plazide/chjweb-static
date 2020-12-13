@@ -1,7 +1,7 @@
 ---
 type: tech
 title: DigitalOcean
-logo: media/do_logo_vertical_blue.png
+logo: /do_logo_vertical_blue.png
 description: DigitalOcean är en molntjänst som erbjuder ett enklare gränssnitt
   och mer prisvärda tjänster. Det är ofta ett bra val att driva en webbplats på
   DigitalOcean om man krävder större kontrol över bakomliggande funktioner.

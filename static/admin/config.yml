@@ -4,7 +4,7 @@ backend:
 local_backend: true
 
 media_folder: /static/media
-public_folder: /media
+public_folder: /
 
 slug: 
   encoding: "ascii"
