@@ -13,12 +13,12 @@ export default function navigation(){
 				Hem
 			</Link> */}
 
-			<Link
+			{/* <Link
 				to="/priser"
 				activeClassName="active"
 			>
 				Priser
-			</Link>
+			</Link> */}
 
 			<Link
 				to="/referenser"

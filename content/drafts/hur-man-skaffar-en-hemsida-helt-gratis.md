@@ -13,7 +13,7 @@ Om du har kollat runt på nätet efter en gratis hemsida så har du förmodligen
 
 Om du exempelvis använder den billigaste prenumerationen från Wix kan du koppla en domän till webbplatsen. Då har du redan betalat för en domän, och behöver betala för privilegiet att koppla den till din webbplats. 
 
-![](/static/Wix priser.jpg)
+![](/media/Wix priser.jpg)
 
 Detta är egentligen ingenting som bör kosta pengar, eftersom det handlar om att sätta DNS-regler. Detta är något man gör från tjänsten som man köpte domänen från.
 

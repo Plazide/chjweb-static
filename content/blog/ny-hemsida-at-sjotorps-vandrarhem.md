@@ -5,7 +5,7 @@ updated: 2020-01-10T12:49:03.372+00:00
 description: CHJ Webblösningar har skapat den första hemsidan till Sjötorps Vandrarhem.
   Detta är både Sjötorps Vandrarhems första hemsida och den första hemsidan som jag
   skapar åt en kund genom CHJ Webblösningar.
-image: "/static/framsida.jpg"
+image: "/framsida.jpg"
 published: true
 
 ---
@@ -15,7 +15,7 @@ Sjötorps Vandrarhem har fått sin första hemsida, och jag har skapat min förs
 
 Om du vill kolla in hemsidan kan du göra det på [sjötorpsvandrarhem.se](https://sjötorpsvandrarhem.se)
 
-![Sjötorps Vandrarhem framsida](/static/hemsida.jpg "Sjötorps Vandrarhem framsida")
+![Sjötorps Vandrarhem framsida](/hemsida.jpg "Sjötorps Vandrarhem framsida")
 
 ## Bokning
 
@@ -51,7 +51,7 @@ Eftersom kunden önskade en tillgänglighetskontroll som liknade den på booking
 
 Resultatet ser ut så här:
 
-![Tillgänglighetskontrollen på sjötorpsvandrarhem.se](/static/kontrollpanel.jpg "Tillgänglighetskontrollen på sjötorpsvandrarhem.se")
+![Tillgänglighetskontrollen på sjötorpsvandrarhem.se](/kontrollpanel.jpg "Tillgänglighetskontrollen på sjötorpsvandrarhem.se")
 
 ### Bokningsfunktionen
 
@@ -73,7 +73,7 @@ När allt detta är färdigt skickas en bekräftelse på bokningen till både va
 
 Resultatet blev riktigt bra om jag får säga det själv.
 
-![bokningsfunktionen på sjötorpsvandrarhem.se](/img/bokning_1.jpg "Första sidan i bokningsprocessen på sjötorpsvandrarhem.se")
+![bokningsfunktionen på sjötorpsvandrarhem.se](/bokning_1.jpg "Första sidan i bokningsprocessen på sjötorpsvandrarhem.se")
 
 
 

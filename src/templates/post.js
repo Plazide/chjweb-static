@@ -35,7 +35,7 @@ const renderAst = new rehypeReact({
 	createElement: React.createElement
 }).Compiler;
 
-export default function post ({ data }){
+export default function post({ data }){
 	useEffect( () => {
 		if(!data.markdownRemark)
 			navigate("/blogg");
@@ -121,7 +121,7 @@ export default function post ({ data }){
 	);
 }
 
-function SocialShare ({ title, shareUrl, twitterVia, size }){
+function SocialShare({ title, shareUrl, twitterVia, size }){
 	return(
 		<div className="share-area">
 			<TwitterShareButton via={twitterVia} title={title} url={shareUrl}>

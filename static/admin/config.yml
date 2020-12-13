@@ -1,0 +1,131 @@
+backend:
+  name: git-gateway
+
+local_backend: true
+
+media_folder: ./src/media
+public_folder: /media
+
+slug: 
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections: 
+  - name: tech
+    label: Tech
+    editor:
+      preview: false
+    folder: content/tech
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - name: type
+        widget: hidden
+        default: tech
+      - name: title
+        label: Title
+        widget: string
+      - name: logo
+        label: Logo
+        widget: image
+        hint: The technology's logo
+      - name: description
+        label: Description
+        hint: A short description of the tech
+        widget: text
+      - name: url
+        label: Url
+        widget: string
+        hint: Url of the tech
+  - name: projects
+    label: Projects
+    label_singular: Project
+    editor: 
+      preview: false
+    folder: content/projects
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - name: type
+        widget: hidden
+        default: project
+      - name: title
+        label: Title
+        widget: string
+        hint: Name of the project
+      - name: description
+        label: "Description"
+        widget: text
+        hint: A short description of the project
+      - name: image
+        label: Image
+        widget: image
+        hint: Cover image for the project
+      - name: url
+        label: Url
+        widget: string
+        hint: Url of the project
+      - name: post_url
+        label: Url to blog post
+        hint: Url to blog post associated with project
+        widget: string
+        required: false
+      - name: tech
+        label: Technology
+        widget: list
+        allow_add: true
+        field:
+          name: tech
+          widget: relation
+          collection: tech
+          search_fields: ["title"]
+          value_field: "title"
+          display_fields: ["title"]
+  - name: posts
+    label: Posts
+    label_singular: Post
+    editor:
+      preview: true
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - name: type
+        widget: hidden
+        default: project
+      - name: published
+        label: Published
+        widget: boolean
+        hint: Whether or not this post should be visible on the website
+        default: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        hint: Title of the blog post
+      - name: date
+        label: Date
+        widget: datetime
+        hint: The publish date
+        required: true
+        date_format: DD MMM, YYYY
+      - name: updated
+        label: Updated
+        widget: datetime
+        description: The date of the latest update
+        required: false
+        date_format: DD MMM, YYYY
+      - name: image
+        label: Cover image
+        widget: image
+        required: true
+      - name: description
+        label: Description
+        required: true
+        widget: text
+        hint: The excerpt for the blog post
+      - name: body
+        label: Post body
+        widget: markdown
+        hint: Content of the blog post

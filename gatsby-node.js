@@ -6,12 +6,12 @@
 
 // You can delete this file if you're not using it
 const path = require("path");
-const{ fmImagesToRelative } = require("gatsby-remark-relative-images");
+// const{ fmImagesToRelative } = require("gatsby-remark-relative-images");
 const{ remove } = require("confusables");
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
 	const{ createNodeField } = actions;
-	fmImagesToRelative(node);
+	// fmImagesToRelative(node);
 	if(node.internal.type === "MarkdownRemark"){
 		const value = createSlug({ node });
 		createNodeField({
@@ -52,7 +52,7 @@ exports.createPages = async ({ actions, graphql }) => {
 	return posts;
 };
 
-function createSlug ({ node }){
+function createSlug({ node }){
 	const filePath = node.fileAbsolutePath;
 	const parts = filePath.split("/");
 	const slug = remove(parts[parts.length - 1].split(".")[0]);
