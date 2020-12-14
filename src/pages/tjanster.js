@@ -86,7 +86,7 @@ export const pageQuery = graphql`
 				title
 				logo{
 					childImageSharp{
-						fluid(maxHeight: 150){
+						fluid(maxHeight: 200){
 							...GatsbyImageSharpFluid
 						}
 					}

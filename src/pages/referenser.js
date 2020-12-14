@@ -43,7 +43,7 @@ export default function referenser({ data }){
 			<div className="content projects">
 				{
 					projects.map( project => {
-						const projectTech = project.tech.map( tech => tech.tech);
+						const projectTech = project.tech;
 						const tech = technologies.filter( tech => {
 							return projectTech.includes(tech.title);
 						});
@@ -87,12 +87,10 @@ export const pageQuery = graphql`
 					description
 					url
 					post_url
-					tech{
-						tech
-					}
+					tech
 					image{
 						childImageSharp{
-							fluid(maxWidth: 300, quality: 100){
+							fluid(maxHeight: 200, quality: 100){
 								...GatsbyImageSharpFluid
 							}
 						}
@@ -114,7 +112,7 @@ export const pageQuery = graphql`
 					url
 					logo{
 						childImageSharp{
-							fluid(maxWidth: 150){
+							fluid(maxWidth: 24){
 								...GatsbyImageSharpFluid
 							}
 						}
