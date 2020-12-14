@@ -1,7 +1,8 @@
 .project{
 	display: flex;
 	flex-direction: column;
-	margin: 0 .5rem 1rem;
+	/* justify-content: space-between; */
+	margin: 0 1rem 1rem;
 	max-width: 350px;
 
 	box-shadow: 0 4px 4px rgba(0,0,0,.3);
@@ -16,6 +17,7 @@
 	border-bottom: 1px solid var(--primary);
 }
 .project .body{
+	justify-self: flex-start;
 	padding: 1rem .5rem;
 }
 .project .body .title{
@@ -27,14 +29,19 @@
 	margin: 5px 0 40px;
 	padding: 0;
 }
+.project .more{
+	color: var(--textAlt2);
+	font-weight: bold;
+}
 .project .tech-label{
 	text-transform: uppercase;
 	font-size: .7rem;
+	padding: 0 .5rem;
 }
 .project .techs{
 	display: flex;
 	align-items: center;
-	padding: 6px 0;
+	padding: 6px .5rem;
 }
 .project .tech{
 	display: block;
@@ -47,8 +54,5 @@
 .project .flex{
 	display: flex;
 	justify-content: space-between;
-}
-.project .flex .more{
-	color: var(--textAlt2);
-	font-weight: bold;
+	margin-top: 10px;
 }
