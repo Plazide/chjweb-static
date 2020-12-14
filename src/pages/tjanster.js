@@ -65,7 +65,7 @@ export default function Tjanster({ data }){
 				</div>
 			</section>
 
-			<CTA title="Hänger med i tiden">
+			<CTA title="Häng med i tiden">
 				Jag är stolt över att använda moderna och effektiva tekniker för att skapa moderna och effektiva lösningar. Låter det intressant?
 			</CTA>
 		</Layout>
