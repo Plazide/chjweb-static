@@ -22,7 +22,7 @@ footer .content section h1{
 footer .content section nav{
 	display: flex;
 	flex-direction: column;
-	min-width: 230px;
+	min-width: 285px;
 
 	margin-top: 1rem;
 }

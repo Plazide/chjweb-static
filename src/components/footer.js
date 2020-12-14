@@ -12,7 +12,7 @@ import TwitterIcon from "../images/social/twitter.svg";
 // Utils
 import parseNumber from "../utils/parseNumber";
 
-export default function Footer (){
+export default function Footer(){
 	const{ site, allMarkdownRemark } = useStaticQuery(
 		graphql`
 		query {
@@ -61,8 +61,9 @@ export default function Footer (){
 					<h1>Bläddra</h1>
 					<nav>
 						<Link to="/">Hem</Link>
-						<Link to="tjanster">Tjänster</Link>
-						<Link to="/webbyra">Webbyrå</Link>
+						<Link to="/tjanster">Tjänster</Link>
+						<Link to="/referenser">Referenser</Link>
+						<Link to="/priser">Priser</Link>
 						<Link to="/blogg">Blogg</Link>
 					</nav>
 				</section>
@@ -110,7 +111,7 @@ export default function Footer (){
 	);
 }
 
-function SocialLink ({ icon, title, url }){
+function SocialLink({ icon, title, url }){
 	return(
 		<a href={url} title={title}>
 			<img src={icon} alt={title} className="icon" />
