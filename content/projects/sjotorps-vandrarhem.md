@@ -7,7 +7,6 @@ image: /hemsida.jpg
 url: https://sjötorpsvandrarhem.se
 post_url: /blogg/ny-hemsida-at-sjotorps-vandrarhem
 tech:
-  - Gatsby
   - DigitalOcean
   - Node.js
 ---
