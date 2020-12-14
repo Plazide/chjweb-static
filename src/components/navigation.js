@@ -13,13 +13,6 @@ export default function navigation(){
 				Hem
 			</Link> */}
 
-			{/* <Link
-				to="/priser"
-				activeClassName="active"
-			>
-				Priser
-			</Link> */}
-
 			<Link
 				to="/referenser"
 				activeClassName="active"
@@ -32,6 +25,13 @@ export default function navigation(){
 				activeClassName="active"
 			>
 				Tjänster
+			</Link>
+
+			<Link
+				to="/priser"
+				activeClassName="active"
+			>
+				Priser
 			</Link>
 
 			{/* <DropdownLink

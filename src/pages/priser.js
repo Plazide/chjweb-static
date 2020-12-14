@@ -5,7 +5,7 @@ import Pros, { Pro } from "../components/Pros";
 import SEO from "../components/seo";
 
 // Illustrations
-import { ReactComponent as Pricing } from "../images/illustrations/pricing.svg";
+import { ReactComponent as Pricing } from "../images/illustrations/pricing_red.svg";
 
 export default function priser(){
 	return(
@@ -33,24 +33,28 @@ export default function priser(){
 					<p>Innan jag ger er ett pris kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt.</p>
 				</div> */}
 				<Intro
-					title="Ett rättvist pris"
+					title="Utveckling"
 				>
-					Innan jag ger er ett pris kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt.
+					Innan jag ger er ett pris för utvecklingen av ert projekt kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt. Sedan kommer det priset att gälla för hela utvecklingen, oavsett om det tar en vecka eller en månad att slutföra.
 				</Intro>
 
 				<Pros title="Fördelar med fastpris">
 					<Pro title="Inga överraskningar">
-						Du vet exakt vad du betalar, oavsett hut lång tid det tar att slutföra arbetet
+						Du vet exakt vad du betalar, oavsett hur lång tid det tar att slutföra arbetet
 					</Pro>
 
 					<Pro title="Efter dina behov">
 						Priset är utformat efter arbetets krav och hur lång tid just din webbplats tar att bygga. Inte mer, inte mindre.
 					</Pro>
 
-					<Pro title="">
-
+					<Pro title="Till kundens fördel">
+						Ett fast pris är alltid i kundens fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar.
 					</Pro>
 				</Pros>
+
+				<Intro title="Drift">
+					Driften för din webbplats eller app kommer att kosta en liten summa varje månad. Vad summan är beror på projektets komplexitet, men du kan ofta förvänta dig runt 50 - 100 kr per månad. Denna summa kan även betalas årsvis.
+				</Intro>
 			</section>
 		</Layout>
 	);
