@@ -9,8 +9,9 @@ import SEO from "../components/seo";
 // CSS
 import "../styles/blog.css";
 
-export default function blogg ({ data }){
+export default function blogg({ data }){
 	const posts = data.allMarkdownRemark.edges;
+	const hashnodePosts = data.allHashnode.edges.map( edge => edge.node);
 	const siteUrl = data.allSite.edges[0].node.siteMetadata.siteUrl;
 	const structuredData = {
 		"@context": "http://schema.org",
@@ -51,11 +52,13 @@ export default function blogg ({ data }){
 
 	};
 
+	console.log(hashnodePosts);
+
 	return(
 		<Layout>
 			<SEO
 				title="Blogg"
-				description="I min blogg skriver jag om hur det är att driva företag, olika projekt som jag gör och andra saker som har med företagande eller webbutveckling att göra."
+				description="Hur är det att vara frilansare? Hur bygger man en hemsida? Hur skapade jag det där projektet? I den här bloggen får du svar på alla dessa frågor och mer."
 				url="/blogg/"
 				structuredData={structuredData}
 				breadcrumb={[
@@ -64,10 +67,10 @@ export default function blogg ({ data }){
 			/>
 			<section className="blog">
 				<div className="content">
-					<div className="copy">
+					{/* <div className="copy">
 						<h1>Följ CHJ Webblösningar i livet som företagare</h1>
 						<p>Mitt namn är Carl och jag är egenföretagare och webbutvecklare. Följ mitt arbete och ta del av mina erfarenheter i den här bloggen.</p>
-					</div>
+					</div> */}
 
 					<ul className="posts">
 						{posts.map( (item, index) => {
@@ -75,23 +78,40 @@ export default function blogg ({ data }){
 							const featured = index === 0;
 							const slug = post.fields.slug;
 							const image = post.frontmatter.image.childImageSharp.fluid;
-
-							const publishDate = new Intl.DateTimeFormat("sv-SE", {
-								day: "2-digit",
-								month: "short",
-								year: "numeric"
-							}).format(new Date(post.frontmatter.date));
+							const publishDate = formatDate(post.frontmatter.date);
 
 							return(
 								<Post
 									key={slug}
 									image={image}
 									featured={featured}
-									slug={slug}
+									url={`/blogg/${slug}`}
 									title={post.frontmatter.title}
 									description={post.frontmatter.description}
 									published={publishDate}
 									readTime={post.timeToRead}
+								/>
+							);
+						})}
+					</ul>
+
+					<hr style={{ marginBottom: 100 }} />
+
+					<h2 className="heading">Tekniska artiklar på engelska</h2>
+					<ul className="posts hashnode">
+						{hashnodePosts.map( post => {
+							const{ slug, title, brief, dateAdded, coverImage, readTime } = post;
+
+							return(
+								<Post
+									key={slug}
+									image={coverImage.childImageSharp.fluid}
+									featured={false}
+									url={`https://blog.chjweb.se/${slug}`}
+									title={title}
+									description={brief}
+									published={formatDate(dateAdded)}
+									readTime={readTime}
 								/>
 							);
 						})}
@@ -102,26 +122,64 @@ export default function blogg ({ data }){
 	);
 }
 
-function Post ({ title, description, published, readTime, image, slug, featured }){
-	const Image = <Img fluid={image} />;
+function Post({ title, description, published, readTime, image, url, featured }){
+	const content = <>
+		<Img fluid={image} />
+		<div className="meta">
+			<span className="published">{published}</span>
+			<span className="read-time">{readTime} minuter</span>
+		</div>
+		<h2>{title}</h2>
+		<p>{description}</p>
+	</>;
+
+	if(url.startsWith("http"))
+		return(
+			<li className={`post ${featured ? "featured" : ""}`}>
+				<a href={url}>
+					{content}
+				</a>
+			</li>
+		);
 
 	return(
 		<li className={`post ${featured ? "featured" : ""}`}>
-			<Link to={`/blogg/${slug}`}>
-				{Image}
-				<div className="meta">
-					<span className="published">{published}</span>
-					<span className="read-time">{readTime} minuter</span>
-				</div>
-				<h2>{title}</h2>
-				<p>{description}</p>
+			<Link to={url}>
+				{content}
 			</Link>
 		</li>
 	);
 }
 
+function formatDate(date){
+	return new Intl.DateTimeFormat("sv-SE", {
+		day: "2-digit",
+		month: "short",
+		year: "numeric"
+	}).format(new Date(date));
+}
+
 export const pageQuery = graphql`
 query BloggQuery{
+	allHashnode{
+		edges{
+			node{
+				title
+				slug
+				brief
+				readTime
+				dateAdded
+				dateUpdated
+				coverImage{
+					childImageSharp{
+						fluid(maxWidth: 870, maxHeight: 380, quality: 100){
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+			}
+		}		
+	}
 	allMarkdownRemark( 
 		sort: {
 			order: DESC,
@@ -180,6 +238,6 @@ Post.propTypes = {
 	published: PropTypes.string,
 	readTime: PropTypes.timeToRead,
 	image: PropTypes.object,
-	slug: PropTypes.string,
+	url: PropTypes.string,
 	featured: PropTypes.bool
 };

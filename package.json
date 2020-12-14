@@ -32,6 +32,7 @@
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-remark": "^2.8.35",
     "gatsby-transformer-sharp": "^2.5.15",
+    "graphql-request": "^3.3.0",
     "intersection-observer": "^0.7.0",
     "netlify-cms-app": "^2.14.4",
     "netlify-lambda": "^1.6.3",
