@@ -3,15 +3,15 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 // Layout
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import Hero from "../../components/Hero";
-import Intro from "../../components/Intro";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Hero from "../components/Hero";
+import Intro from "../components/Intro";
 
 // Images
-import heroIllustrationUrl from "../../images/illustrations/webbyra.svg";
-import Service from "../../components/Service";
-import CTA from "../../components/CTA";
+import heroIllustrationUrl from "../images/illustrations/webbyra.svg";
+import Service from "../components/Service";
+import CTA from "../components/CTA";
 
 export default function Tjanster({ data }){
 	const tech = data.tech.nodes.map( node => node.frontmatter);
