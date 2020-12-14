@@ -46,6 +46,7 @@ function Tech({ tech }){
 			target="_blank"
 			rel="noopener noreferrer"
 			className="tech"
+			title={tech.title}
 		>
 			<Img
 				alt={tech.title}

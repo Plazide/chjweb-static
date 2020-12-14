@@ -8,4 +8,5 @@ post_url: /blogg/ny-hemsida-at-sjotorps-vandrarhem
 tech:
   - Gatsby
   - DigitalOcean
+  - Node.js
 ---
