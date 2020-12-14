@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 // Layout
 import Layout from "../components/layout";
@@ -41,7 +41,7 @@ export default function Tjanster({ data }){
 				<Intro
 					title="Mina tjänster"
 				>
-					Jag utvecklar hemsidor med bra prestanda som kan drivas till ett billigt pris. För att uppnå detta använder jag mig av ett par olika verktyg och tekniker.
+					Jag utvecklar hemsidor med bra prestanda som kan drivas till ett billigt pris. För att uppnå detta använder jag mig av ett par olika verktyg och tekniker. Om du har en app eller webbplats som använder någon av dessa tjänster eller tekniker kan du med fördel <Link to="/kontakt">kontakta mig</Link> för hjälp.
 				</Intro>
 
 				<div className="services" style={{
