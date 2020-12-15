@@ -9,4 +9,5 @@ post_url: /blogg/ny-hemsida-at-sjotorps-vandrarhem
 tech:
   - DigitalOcean
   - Node.js
+  - MongoDB
 ---
