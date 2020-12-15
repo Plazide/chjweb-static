@@ -40,16 +40,22 @@
 }
 .project .techs{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	padding: 6px .5rem;
 }
 .project .tech{
 	display: block;
-	margin: 0 5px;
-	max-width: 70px;
+	margin: 0 10px;
+	width: 42px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .project .tech-logo{
-	width: 24px;
+	width: inherit;
+	max-height: 100%;
 }
 .project .flex{
 	display: flex;
