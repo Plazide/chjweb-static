@@ -1,16 +1,15 @@
 ---
+published: true
 title: Ny hemsida åt Sjötorps Vandrarhem
 date: 2020-01-10T21:20:05.233+00:00
 updated: 2020-01-10T12:49:03.372+00:00
-description: CHJ Webblösningar har skapat den första hemsidan till Sjötorps Vandrarhem.
-  Detta är både Sjötorps Vandrarhems första hemsida och den första hemsidan som jag
-  skapar åt en kund genom CHJ Webblösningar.
-image: "/framsida.jpg"
-published: true
+image: /framsida.jpg
+description: CHJ Webblösningar har skapat den första hemsidan till Sjötorps
+  Vandrarhem. Detta är både Sjötorps Vandrarhems första hemsida och den första
+  hemsidan som jag skapar åt en kund genom CHJ Webblösningar.
 tags:
-- nyheter
-- tekniskt
-
+  - nyheter
+  - tekniskt
 ---
 ## Sjötorps Vandrarhem har fått sin första egna hemsida
 
@@ -78,8 +77,6 @@ Resultatet blev riktigt bra om jag får säga det själv.
 
 ![bokningsfunktionen på sjötorpsvandrarhem.se](/bokning_1.jpg "Första sidan i bokningsprocessen på sjötorpsvandrarhem.se")
 
-
-
 ## Flera språk
 
 Ett annat krav från kunden var att sidan skulle ha stöd för flera olika språk. Dessa var från början svenska, engelska, nederländska och tyska. Kunden valde dock att inte inkludera tyska i slutändan.
@@ -125,7 +122,7 @@ Den första tanken med hemsidan till Sjötorps Vandrarhem var att hosta den geno
 
 Ett Agency paket, som låter mig hosta sidor åt mina kunder, hos Oderland hade en kostnad på 500 kr i månaden. När jag endast har en betalande kund är detta inte ekonomiskt sunt. Antingen skulle jag vara tvungen att ta minst 500 kr i månaden från bara en kund, eller ha stadiga utgifter som inte ger något tillbaka.
 
-Jag valde istället att göra ett konto på DigitalOcean. Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. 
+Jag valde istället att göra ett konto på [DigitalOcean](https://m.do.co/c/ced72bda5083). Eftersom server delen av Sjötorps Vandrarhem är byggd med Node.js och MongoDB, är fördelarna med ett traditionellt webbhotell minimala. Jag valde faktiskt Oderland från början för att de verkade vara det enda svenska webbhotellet som erbjöd Node.js support. 
 
 Det visade sig senare att de egentligen inte hade något gränssnitt för Node, utan man ändå var tvungen att logga in med SSH och konfigurera Node med Passenger, som de använder som reverse proxy. Detta gav mig stora problem när det kom till min egna hemsida och jag ville inte ha samma upplevelse med Sjötorps Vandrarhem.
 
@@ -133,7 +130,7 @@ Support för MongoDB hade de inte heller, det är faktiskt väldigt ovanligt med
 
 Detta skulle dock visa sig vara ganska dyrt. Att ha en server med 1 CPU och 500 MB RAM kostade mig runt 150 kr i månaden. Detta kanske inte låter som så mycket, men den summan gäller bara databasen. Tillsammans med själva webbservern blir detta totalt nästan 300 kr i månaden.
 
-När jag sedan flyttade till DigitalOcean kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att DigitalOcean erbjuder den billigaste lösningen på marknaden. 
+När jag sedan flyttade till [DigitalOcean ](https://m.do.co/c/ced72bda5083)kostade både webbserver och databas totalt 50 kr i månaden. Detta är otroligt stor skillnad. Detta låter mig även erbjuda billigare hosting till den här kunden. Det verkar faktiskt som att [DigitalOcean ](https://m.do.co/c/ced72bda5083)erbjuder den billigaste lösningen på marknaden. 
 
 Deras billigaste droplet (VPS) med 1 GB RAM, 1 CPU och 25 GB SSD kostar 50 kr i månaden. En VM Instance från Google Cloud med samma CPU och RAM kostar över 200 kr i månaden, och då har den bara en HDD med 10 GB utrymme.
 
@@ -151,7 +148,7 @@ Till slut hittade jag ett Italienskt företag vid namn Qboxmail. De erbjöd inte
 
 De erbjöd även ett så kallat reseller konto, vilket betyder att jag kan sälja vidare e-postadresser till mina kunder. Qboxmail erbjuder även en REST API som låter mig använda deras tjänst programmatiskt. 
 
-Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadressen och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
+Detta satte igång idéer i mitt huvud om att skapa en mejlkontrollpanel till mina kunder där de kan skapa nya e-postadresser och liknande. Detta är förmodligen en bit in i framtiden, men möjligheten finns.
 
 ## Avslutande ord
 
