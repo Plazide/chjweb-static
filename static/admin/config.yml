@@ -3,6 +3,8 @@ backend:
 
 local_backend: true
 
+publish_mode: editorial_workflow
+
 media_folder: /static/media
 public_folder: /
 
