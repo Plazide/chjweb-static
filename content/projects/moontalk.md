@@ -9,4 +9,5 @@ tech:
   - AWS
   - Gatsby
   - Node.js
+  - FaunaDB
 ---
