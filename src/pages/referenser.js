@@ -103,6 +103,9 @@ export const pageQuery = graphql`
 				frontmatter: {
 					type: { eq: "tech" }
 				}
+			},
+			sort: {
+				fields: frontmatter___title
 			}
 		){
 			nodes{
@@ -112,7 +115,7 @@ export const pageQuery = graphql`
 					url
 					logo{
 						childImageSharp{
-							fluid(maxWidth: 24){
+							fluid(maxWidth: 50){
 								...GatsbyImageSharpFluid
 							}
 						}
