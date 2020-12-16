@@ -47,8 +47,8 @@ export default function priser(){
 						Priset är utformat efter arbetets krav och hur lång tid just din webbplats tar att bygga. Inte mer, inte mindre.
 					</Pro>
 
-					<Pro title="Till kundens fördel">
-						Ett fast pris är alltid i kundens fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar.
+					<Pro title="Till din fördel">
+						Ett fast pris är alltid till din fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar.
 					</Pro>
 				</Pros>
 
