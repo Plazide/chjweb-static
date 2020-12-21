@@ -64,10 +64,10 @@ export default function Footer(){
 				<section className="nav">
 					<h1>{t("Footer:browse")}</h1>
 					<nav>
-						<Link to={prefix + "/tjanster"}>{t("Nav:services")}</Link>
-						<Link to={prefix + "/referenser"}>{t("Nav:projects")}</Link>
-						<Link to={prefix + "/priser"}>{t("Nav:pricing")}</Link>
-						<Link to={prefix + "/blogg"}>{t("Nav:blog")}</Link>
+						<Link to="/tjanster">{t("Nav:services")}</Link>
+						<Link to="/referenser">{t("Nav:projects")}</Link>
+						<Link to="/priser">{t("Nav:pricing")}</Link>
+						<Link to="/blogg">{t("Nav:blog")}</Link>
 					</nav>
 				</section>
 
