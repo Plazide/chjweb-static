@@ -12,3 +12,9 @@ section.not-found .content a{
 section.not-found .content .code{
 	font-size: 18rem;
 }
+
+@media only screen and (max-width: 540px){
+	section.not-found .content .code{
+		font-size: 8rem;
+	}
+}
