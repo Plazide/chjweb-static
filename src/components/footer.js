@@ -86,7 +86,7 @@ export default function Footer(){
 
 						return(
 							<div className="post" key={post.fields.slug}>
-								<a href={`/blogg/${post.fields.slug}`} className="title">{post.frontmatter.title}</a>
+								<Link to={`/blogg/${post.fields.slug}`} className="title">{post.frontmatter.title}</Link>
 							</div>
 						);
 					})}
