@@ -14,9 +14,7 @@ import TwitterIcon from "../images/social/twitter.svg";
 import parseNumber from "../utils/parseNumber";
 
 export default function Footer(){
-	const{ t, i18n } = useTranslation(["Footer", "Nav"], { useSuspense: false });
-	const{ language } = i18n;
-	const prefix = language !== "sv" ? `/${language}` : "";
+	const{ t } = useTranslation(["Footer", "Nav"], { useSuspense: false });
 	const{ site, allMarkdownRemark } = useStaticQuery(
 		graphql`
 		query {
