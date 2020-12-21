@@ -34,6 +34,7 @@ module.exports = {
 			}
 		},
 		"gatsby-plugin-react-helmet",
+		"gatsby-remark-source-name",
 		{
 			resolve: "gatsby-plugin-feed",
 			options: {
@@ -107,6 +108,20 @@ module.exports = {
 			options: {
 				name: "blog",
 				path: `${__dirname}/content/blog`
+			}
+		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "sv",
+				path: `${__dirname}/content/pages/sv`
+			}
+		},
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "en",
+				path: `${__dirname}/content/pages/en`
 			}
 		},
 		{
@@ -193,6 +208,19 @@ module.exports = {
 							priority
 						};
 					});
+				}
+			}
+		},
+		{
+			resolve: "gatsby-plugin-react-i18next",
+			options: {
+				path: `${__dirname}/src/locales`,
+				languages: ["sv", "en"],
+				defaultLanguage: "sv",
+				i18nextOptions: {
+					interpolation: {
+						escapeValue: false // not needed for react as it escapes by default
+					}
 				}
 			}
 		},

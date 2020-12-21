@@ -14,6 +14,38 @@ slug:
   sanitize_replacement: "-"
 
 collections: 
+  - name: pages_sv
+    label: Pages Swedish
+    files:
+      - name: privacy
+        label: Integritetspolicy
+        file: content/pages/sv/about.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: description
+            label: Description
+            widget: text
+          - name: body
+            label: Body
+            widget: markdown
+  - name: pages_en
+    label: Pages English
+    files:
+      - name: privacy
+        label: Privacy policy
+        file: content/pages/en/about.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: description
+            label: Description
+            widget: text
+          - name: body
+            label: Body
+            widget: markdown
   - name: tech
     label: Tech
     editor:
@@ -32,10 +64,21 @@ collections:
         label: Logo
         widget: image
         hint: The technology's logo
-      - name: description
-        label: Description
-        hint: A short description of the tech
-        widget: text
+      # - name: description
+      #   label: Description
+      #   hint: A short description of the tech
+      #   widget: text
+      - name: info
+        label: Info
+        hint: A short description of the the tech
+        widget: object
+        fields: 
+          - name: sv
+            label: Swedish
+            widget: text
+          - name: en
+            label: English
+            widget: text
       - name: url
         label: Url
         widget: string
@@ -56,10 +99,17 @@ collections:
         label: Title
         widget: string
         hint: Name of the project
-      - name: description
-        label: "Description"
-        widget: text
+      - name: info
+        label: Info
         hint: A short description of the project
+        widget: object
+        fields: 
+          - name: sv
+            label: Swedish
+            widget: text
+          - name: en
+            label: English
+            widget: text
       - name: image
         label: Image
         widget: image

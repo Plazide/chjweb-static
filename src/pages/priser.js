@@ -3,23 +3,27 @@ import Intro from "../components/Intro";
 import Layout from "../components/layout";
 import Pros, { Pro } from "../components/Pros";
 import SEO from "../components/seo";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 // Illustrations
 import { ReactComponent as Pricing } from "../images/illustrations/pricing_red.svg";
+import CTA from "../components/CTA";
 
 export default function priser(){
+	const{ t } = useTranslation("Pricing", { useSuspense: false });
+
 	return(
 		<Layout>
 			<SEO
-				title="Priser"
+				title={t("seo.title")}
 				url="/priser"
-				description="Jag tar ett fast pris, så att du aldrig behöver oroa dig för att kostnaderna springer iväg."
+				description={t("seo.description")}
 			/>
 			<section className="hero">
 				<div className="content">
 					<div className="copy">
-						<h1>Fast pris, inga överraskningar</h1>
-						<p>För att du ska känna dig så trygg som möjligt bestämmer vi alltid ett pris innan utvecklingen påbörjas, och sedan håller vi oss till det.</p>
+						<h1>{t("hero.heading")}</h1>
+						<p>{t("hero.content")}</p>
 					</div>
 					<div className="illustration">
 						<Pricing />
@@ -33,29 +37,35 @@ export default function priser(){
 					<p>Innan jag ger er ett pris kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt.</p>
 				</div> */}
 				<Intro
-					title="Utveckling"
+					title={t("features.development.heading")}
 				>
-					Innan jag ger er ett pris för utvecklingen av ert projekt kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt. Sedan kommer det priset att gälla för hela utvecklingen, oavsett om det tar en vecka eller en månad att slutföra.
+					{t("features.development.content")}
 				</Intro>
 
-				<Pros title="Fördelar med fastpris">
-					<Pro title="Inga överraskningar">
-						Du vet exakt vad du betalar, oavsett hur lång tid det tar att slutföra arbetet
+				<Pros title={t("features.benefits.heading")}>
+					<Pro title={t("features.benefits.1.heading")}>
+						{t("features.benefits.1.content")}
 					</Pro>
 
-					<Pro title="Efter dina behov">
-						Priset är utformat efter arbetets krav och hur lång tid just din webbplats tar att bygga. Inte mer, inte mindre.
+					<Pro title={t("features.benefits.2.heading")}>
+						{t("features.benefits.2.content")}
 					</Pro>
 
-					<Pro title="Till din fördel">
-						Ett fast pris är alltid till din fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar.
+					<Pro title={t("features.benefits.3.heading")}>
+						{t("features.benefits.3.content")}
 					</Pro>
 				</Pros>
 
-				<Intro title="Drift">
-					Driften för din webbplats eller app kommer att kosta en liten summa varje månad. Vad summan är beror på projektets komplexitet, men du kan ofta förvänta dig runt 50 - 100 kr per månad. Denna summa kan även betalas årsvis.
+				<Intro title={t("features.hosting.heading")}>
+					{t("features.hosting.content")}
 				</Intro>
 			</section>
+
+			<CTA
+				title={t("cta.heading")}
+			>
+				{t("cta.content")}
+			</CTA>
 		</Layout>
 	);
 }

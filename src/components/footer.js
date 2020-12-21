@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
+import { useTranslation, Link } from "gatsby-plugin-react-i18next";
 
 // css
 import "./styles/footer.css";
@@ -13,6 +14,9 @@ import TwitterIcon from "../images/social/twitter.svg";
 import parseNumber from "../utils/parseNumber";
 
 export default function Footer(){
+	const{ t, i18n } = useTranslation(["Footer", "Nav"], { useSuspense: false });
+	const{ language } = i18n;
+	const prefix = language !== "sv" ? `/${language}` : "";
 	const{ site, allMarkdownRemark } = useStaticQuery(
 		graphql`
 		query {
@@ -58,18 +62,17 @@ export default function Footer(){
 		<footer>
 			<div className="content">
 				<section className="nav">
-					<h1>Bläddra</h1>
+					<h1>{t("Footer:browse")}</h1>
 					<nav>
-						<Link to="/">Hem</Link>
-						<Link to="/tjanster">Tjänster</Link>
-						<Link to="/referenser">Referenser</Link>
-						<Link to="/priser">Priser</Link>
-						<Link to="/blogg">Blogg</Link>
+						<Link to={prefix + "/tjanster"}>{t("Nav:services")}</Link>
+						<Link to={prefix + "/referenser"}>{t("Nav:projects")}</Link>
+						<Link to={prefix + "/priser"}>{t("Nav:pricing")}</Link>
+						<Link to={prefix + "/blogg"}>{t("Nav:blog")}</Link>
 					</nav>
 				</section>
 
 				<section className="contact">
-					<h1>Kontakt</h1>
+					<h1>{t("Footer:contact")}</h1>
 					<address>
 						<span>{site.siteMetadata.streetAddress}</span>
 						<span>{site.siteMetadata.zipCode}, {site.siteMetadata.city}</span>
@@ -79,7 +82,7 @@ export default function Footer(){
 				</section>
 
 				<section className="posts">
-					<h1>Senaste blogginläggen</h1>
+					<h1>{t("Footer:posts")}</h1>
 					{posts.map( item => {
 						const post = item.node;
 
@@ -104,7 +107,7 @@ export default function Footer(){
 							url="https://twitter.com/chj_web"
 						/>
 					</div>
-					<a href="/integritetspolicy" className="privacy">Integritetspolicy</a>
+					<Link to="/integritetspolicy" className="privacy">{t("privacy")}</Link>
 				</section>
 			</div>
 		</footer>

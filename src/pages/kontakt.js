@@ -18,7 +18,7 @@ import Input from "../components/Input";
 import { useForm, Controller } from "react-hook-form";
 import Loader from "../components/Loader";
 
-export default function kontakt({ data }){
+export default function kontakt({ data, pageContext: { locale, data: localeData } }){
 	const structuredData = [
 		{
 			"@context": "https://schema.org",
@@ -34,7 +34,7 @@ export default function kontakt({ data }){
 	const{ phone, email } = data.site.siteMetadata;
 
 	return(
-		<Layout>
+		<Layout locale={locale} localeData={localeData}>
 			<SEO
 				title="Kontakta mig"
 				url="/kontakt/"

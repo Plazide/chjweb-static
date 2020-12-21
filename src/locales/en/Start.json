@@ -1,0 +1,45 @@
+{
+	"seo": {
+		"title": "Web development in Mariestad (Sweden)",
+		"description": "I am a web developer who created websites and apps for small businesses using JAMstack"
+	},
+	"hero": {
+		"heading": "I am a freelancing web developer who helps small businesses save money",
+		"paragraph": " Don't compromise between performance and cost, get a performant and secure website that doesn't require an expensive web host.",
+		"contact":"Contact me",
+		"blog": "Read my blog"
+	},
+	"features": {
+		"heading": "Cheaper, faster, safer!",
+		"paragraph": "I develop websites using <0>JAMstack</0>. That comes with a few benefits for you as a client.",
+		"hosting": {
+			"heading": "Save money on hosting",
+			"content": "It can be expensive to run a website, especially when you get a lot of traffic. Thanks to JAMstack, this is not longer a problem. It allows you to run your website almost entirely for free, no matter how many visitors you get."
+		},
+		"speed": {
+			"heading": "As fast as it gets",
+			"content": "Your users expect your website to load in under 2 seconds, otherwise they might go somewhere else. This is not a problem for JAMstack. Thanks to every page being ready at request time and the pages being stored on a global CDN, your website will load instantly."
+		},
+		"safe": {
+			"heading": "Avoid getting hacked",
+			"content": "You no longer need to worry about your website getting hacked. When using JAMstack, there are no traditional web servers or databases behind the website. That means there less vulnerable areas for an attacker to exploit."
+		}
+	},
+	"about": {
+		"heading": "Who am I?",
+		"content": "My name is Carl. I found my interest for web development in my early teens. Since then, I've only continued to learn new languages and tools for building interesting projects. It has become a kind of passion which has only grown larger with time."
+	},
+	"workflow": {
+		"heading": "How does it work?",
+		"1": "We discuss the website's content, functionality, and design",
+		"2": "I come up with a design proposal which you can give your opinions on",
+		"3": "I edit the design proposal",
+		"4": "I start building your website according to the content, functionality, and design we've agreed upon",
+		"5": "We discuss whether or not there are any other functionality which should be added",
+		"6": "We launch the website"
+	},
+	"cta": {
+		"heading": "Sound good?",
+		"content": "Let me build a fast, secure, and modern website that is incredibly cheap to run."
+	}
+}

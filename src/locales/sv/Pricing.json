@@ -1,0 +1,39 @@
+{
+	"seo": {
+		"title": "Priser",
+		"description": "Jag tar ett fast pris, så att du aldrig behöver oroa dig för att kostnaderna springer iväg."
+	},
+	"hero": {
+		"heading": "Fast pris, inga överraskningar",
+		"content": "För att du ska känna dig så trygg som möjligt bestämmer vi alltid ett pris innan utvecklingen påbörjas, och sedan håller vi oss till det."
+	},
+	"features": {
+		"development": {
+			"heading": "Utveckling",
+			"content": "Innan jag ger er ett pris för utvecklingen av ert projekt kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt. Sedan kommer det priset att gälla för hela utvecklingen, oavsett om det tar en vecka eller en månad att slutföra."
+		},
+		"benefits": {
+			"heading": "Fördelar med fastpris",
+			"1": {
+				"heading": "Inga överraskningar",
+				"content": "Du vet exakt vad du betalar, oavsett hur lång tid det tar att slutföra arbetet"
+			},
+			"2": {
+				"heading": "Efter dina behov",
+				"content": "Priset är utformat efter arbetets krav och hur lång tid just din webbplats tar att bygga. Inte mer, inte mindre."
+			},
+			"3": {
+				"heading": "Till din fördel",
+				"content": "Ett fast pris är alltid till din fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar."
+			}
+		},
+		"hosting": {
+			"heading": "Drift",
+			"content": "Driften för din webbplats eller app kommer att kosta en liten summa varje månad. Vad summan är beror på projektets komplexitet, men du kan ofta förvänta dig runt 50 - 100 kr per månad. Denna summa kan även betalas årsvis."
+		}
+	},
+	"cta": {
+		"heading": "Vill du veta ditt pris?",
+		"content": "Hör av dig till mig så tar vi fram en offert."
+	}
+}

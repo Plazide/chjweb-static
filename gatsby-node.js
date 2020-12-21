@@ -114,6 +114,48 @@ exports.createSchemaCustomization = ({ actions }) => {
 		}
 	`;
 };
+/*
+const localesContent = {
+	en: fs.readFileSync(path.join(__dirname, "src/locales/en/index.json"), "utf8"),
+	sv: fs.readFileSync(path.join(__dirname, "src/locales/sv/index.json"), "utf8")
+};
+const availableLocales = [
+	{ value: "en", text: "English" },
+	{ value: "sv", text: "Svenska" }
+];
+const defaultLocales = { value: "sv", text: "Svenska" }; */
+
+/* exports.onCreatePage = async props => {
+	const{
+		page,
+		actions: { createPage, deletePage, createRedirect }
+	} = props;
+
+	if(/^\/dev-404-page\/?$/.test(page.path))
+		return;
+
+	deletePage(page);
+
+	availableLocales.map(({ value }) => {
+		let newPath = `/${value}${page.path}`;
+		if(defaultLocales.value === value)
+			newPath = page.path;
+
+		const localePage = {
+			...page,
+			originalPath: page.path,
+			path: newPath,
+			context: {
+				availableLocales,
+				locale: value,
+				routed: true,
+				data: localesContent[value],
+				originalPath: page.path
+			}
+		};
+		createPage(localePage);
+	});
+}; */
 
 function createSlug({ node }){
 	const filePath = node.fileAbsolutePath;

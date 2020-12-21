@@ -1,12 +1,13 @@
 import React from "react";
 import Img from "gatsby-image";
 import PropTypes from "prop-types";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import "./styles/project.css";
 import { Link } from "gatsby";
 
 function Project({ title, body, url, postUrl, image, tech }){
-	console.log(tech);
+	const{ t } = useTranslation("Projects");
 
 	return(
 		<div className="project">
@@ -17,7 +18,9 @@ function Project({ title, body, url, postUrl, image, tech }){
 				/>
 			</a>
 			<div className="flex">
-				<span className="tech-label">Verktyg:</span>
+				<span className="tech-label">
+					{t("project.tech")}:
+				</span>
 			</div>
 			<div className="techs">
 
@@ -33,7 +36,9 @@ function Project({ title, body, url, postUrl, image, tech }){
 					<span className="title">{title}</span>
 					<p className="body">{body}</p>
 				</a>
-				{postUrl ? <Link to={postUrl} className="more">Läs inlägg</Link> : null}
+				{postUrl ? <Link to={postUrl} className="more">
+					{t("project.more")}
+				</Link> : null}
 
 			</div>
 		</div>

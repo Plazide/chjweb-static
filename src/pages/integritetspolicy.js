@@ -1,43 +1,57 @@
-import React from 'react'
+import React from "react";
 
 // Components
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ReactMarkdown from "react-markdown";
 
 // CSS
 import "../styles/legal.css";
+import { graphql } from "gatsby";
 
-export default function integritetspolicy() {
-	return (
+export default function integritetspolicy({ data }){
+	const meta = data.markdownRemark.frontmatter;
+	const content = data.markdownRemark.rawMarkdownBody;
+
+	return(
 		<div>
 			<Layout>
-				<SEO 
-					title="Integritetspolicy"
-					description="Integritetspolicy för CHJ Webblösningar."
+				<SEO
+					title={meta.title}
+					description={meta.description}
 					url="/integritetspolicy/"
 					breadcrumb={[
-						{ name: "Integritetspolicy", url: "/integritetspolicy/" }
+						{ name: meta.title, url: "/integritetspolicy/" }
 					]}
 				/>
 				<section className="legal">
-				<div class="content">
-					<h1>Hantering av personuppgifter</h1>
+					<div className="content">
+						<ReactMarkdown>
+							{content}
+						</ReactMarkdown>
 
-					<p>Beroende på hur du använder hemsidan kan CHJ Webblösningar komma att samla in vissa personuppgifter. Dessa personuppgifter inkluderar, för närvarande, endast din e-postadress. CHJ Webblösningar använder din e-post för att kontakta dig vid ett senare skede. Om det gäller en granskning kommer ett svar med en rapport om den angivna webbplatsen skickas till e-postadressen. Om det gäller en förfrågan om att anlita mig kommer e-posten användas som en kommunikationskanal under utvecklingen av projektet.</p>
+						{/* <ul>
+							<li><a href="https://support.google.com/chrome/answer/95647">Chrome</a></li>
+							<li><a href="https://support.mozilla.org/sv/kb/aktivera-och-inaktivera-kakor-webbplatser-installningar">Firefox</a></li>
+							<li><a href="https://support.microsoft.com/sv-se/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy">Edge</a></li>
+							<li><a href="https://support.microsoft.com/sv-se/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer</a></li>
+						</ul> */}
 
-					<h1>Hantering av cookies</h1>
-					<p>chjweb.se använder cookies för att kunna föra statistik om hur sidan används samt för att kunna upptäcka om användaren är inloggad på webbplatsen. Om du som användare inte accepterar den här användningen av cookies kan du avaktivera dem i din webbläsare genom att följa guiden för din webbläsare.</p>
-
-					<ul>
-						<li><a href="https://support.google.com/chrome/answer/95647">Chrome</a></li>
-						<li><a href="https://support.mozilla.org/sv/kb/aktivera-och-inaktivera-kakor-webbplatser-installningar">Firefox</a></li>
-						<li><a href="https://support.microsoft.com/sv-se/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy">Edge</a></li>
-						<li><a href="https://support.microsoft.com/sv-se/help/17442/windows-internet-explorer-delete-manage-cookies">Internet Explorer</a></li>
-					</ul>
-
-				</div>
+					</div>
 				</section>
 			</Layout>
 		</div>
-	)
+	);
 }
+
+export const pageQuery = graphql`
+query($language: String){
+	markdownRemark(fields: { sourceName: { eq: $language} }){
+		frontmatter{
+			title
+			description
+		}
+		rawMarkdownBody
+	}
+}
+`;

@@ -1,0 +1,39 @@
+{
+	"seo": {
+		"title": "Pricing",
+		"description": "I charge a fixed price, so that you never have to worry about how many hours a project will take to finish."
+	},
+	"hero": {
+		"heading": "Fixed price, no surprises",
+		"content": "To make you feel as confident as possible, we always agree on a price before development starts and then we stick to that, no matter what."
+	},
+	"features": {
+		"development": {
+			"heading": "Development",
+			"content": "Before I give you an initial price suggestion, I will carefully review your needs and requirements to estimate a fair price. If you agree to that price, we will stick to that through the entire development, no matter how long it takes to finish."
+		},
+		"benefits": {
+			"heading": "Benefits with fixed price",
+			"1": {
+				"heading": "No surprises",
+				"content": "You know what you'll pay, regardless of how much work I put in"
+			},
+			"2": {
+				"heading": "To your needs",
+				"content": "The price is customized to your needs and how long the project is estimated to take"
+			},
+			"3": {
+				"heading": "In your favor",
+				"content": "A fixed price is always to your advantage. The important part is that you are satisfied, not that I get paid"
+			}
+		},
+		"hosting": {
+			"heading": "Hosting",
+			"content": "The hosting for your website will be a small sum every month. What that sum will be depends on the complexity of the project, but you can often expect something between $5 - $10 per month. It is also possible to pay yearly."
+		}
+	},
+	"cta": {
+		"heading": "Want to know your price?",
+		"content": "Get in touch and I'll send you an offer."
+	}
+}

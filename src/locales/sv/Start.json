@@ -1,0 +1,45 @@
+{
+	"seo": {
+		"title": "Webbutveckling i Mariestad",
+		"description": "En utvecklare med bas i Mariestad som skapar hemsidor åt mindre företag med hjälp av JAMStack."
+	},
+	"hero": {
+		"heading": "Jag är en frilansande webbutvecklare som hjälper småföretag att spara pengar",
+		"paragraph": "Kompromissa inte mellan prestanda och kostnad, få istället en supersnabb och säker webbplats som inte kräver ett dyrt webbhotell för att drivas.",
+		"contact":"Kontakta mig",
+		"blog": "Läs min blogg"
+	},
+	"features": {
+		"heading": "Billigare, säkrare, snabbare!",
+		"paragraph": "Jag utvecklar webbplatser med <0>JAMstack</0>. Det har ett par fördelar för dig som kund.",
+		"hosting": {
+			"heading": "Spara pengar på driften",
+			"content": "Det kan kosta att driva en webbplats, speciellt om du får många besökare. Tack vare JAMStack är detta inte längre ett problem. Du kan driva webbplatsen nästan helt gratis, oavsett hur många besökare du får."
+		},
+		"speed": {
+			"heading": "Så snabbt som det går",
+			"content": "Dina besökare förväntar sig att webbplatsen laddar på under 2 sekunder, annars går dem någon annanstans. Detta är inget problem för JAMStack sidor. Tack vare att varje sida redan är färdig vid varje hämtning och att filerna ligger på ett CDN, laddas webbplatsen supersnabbt."
+		},
+		"safe": {
+			"heading": "Undvik att bli hackad",
+			"content": "Du behöver inte längre oroa dig för att webbplatsen ska bli hackad. På en JAMStack sida finns ingen webbserver eller databas bakom webbplatsen. Det betyder att det finns färre sårbara områden som en hackare kan använda för att ställa till det."
+		}
+	},
+	"about": {
+		"heading": "Vem är jag?",
+		"content": "Mitt namn är Carl. Jag fann mitt intresse för webbutveckling under min tidiga tonår. Sedan dess har jag bara fortsatt lära mig nya språk och verktyg för att bygga intressanta projekt. Det har blivit en slags passion som bara växt med tiden."
+	},
+	"workflow": {
+		"heading": "Hur går det till?",
+		"1": "Vi diskuterar hemsidans innehåll, funktioner och design",
+		"2": "Jag återkommer med design förslag som ni sedan ger synpunkter på",
+		"3": "Jag redigerar designförslaget",
+		"4": "Jag börjar bygga er hemsida utifrån det innehåll och de funktioner som vi diskuterat",
+		"5": "Vi stämmer av för att se om det finns ytterligare funktioner eller innehåll som ska läggas till",
+		"6": "Vi lanserar hemsidan"
+	},
+	"cta": {
+		"heading": "Låter det bra?",
+		"content": "Låt mig skapa en snabb, säker och modern hemsida som inte kostar något att driva."
+	}
+}

@@ -1,48 +1,39 @@
-import React, { useEffect, useRef } from 'react'
-import { Link } from "gatsby";
+import React, { Suspense } from "react";
+import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 // Components
 import Logo from "./logo";
-import ButtonLink from "./ButtonLink";
 import Navigation from "./navigation";
 
 // CSS
 import "./styles/mobile-menu.css";
 
 // Images
-import _closeUrl, { ReactComponent as CloseIcon } from "../images/icons/close.svg";
+import { ReactComponent as CloseIcon } from "../images/icons/close.svg";
 
-export default function MobileMenu({ open = false, onClose }) {
+export default function MobileMenu({ open = false, onClose }){
+	const{ t } = useTranslation("MobileMenu", { useSuspense: false });
 	const openClass = open ? "open" : "";
 
-	return (
+	return(
 		<dialog className={`mobile-menu ${openClass}`} aria-hidden={!open}>
 			<div className="wrapper">
 				<header>
 					<Logo />
-					<button className="reset-button" onClick={onClose} aria-label="Stäng meny">
+					<button className="reset-button" onClick={onClose} aria-label={t("close")}>
 						<CloseIcon />
 					</button>
 				</header>
-				<Navigation />
-				{/* <nav>
-					<Link to="/" activeClassName="active">Hem</Link>
-					<Link to="/tjanster" activeClassName="active" partiallyActive={true}>Tjänster</Link>
-					<div className="sublinks">
-						<Link to="/tjanster/email-hosting" activeClassName="active">E-post</Link>
-						<Link to="/tjanster/granskning" activeClassName="active">Granksning</Link>
-						<Link to="/webbyra">Utveckling</Link>
-					</div>
-					<Link to="/webbyra" activeClassName="active" partiallyActive={true}>Webbyrå</Link>
-					<div className="sublinks">
-						<Link to="/webbyra/seo" activeClassName="active">SEO</Link>
-						<Link to="/webbyra/cms" activeClassName="active">CMS</Link>
-						<Link to="/webbyra/hosting" activeClassName="active">Hosting</Link>
-					</div>
-
-					<ButtonLink href="/anlita" variant="outlined">Anlita mig</ButtonLink>
-				</nav> */}
+				<Suspense fallback="Loading">
+					<Navigation />
+				</Suspense>
 			</div>
 		</dialog>
-	)
+	);
 }
+
+MobileMenu.propTypes = {
+	open: PropTypes.bool,
+	onClose: PropTypes.func
+};

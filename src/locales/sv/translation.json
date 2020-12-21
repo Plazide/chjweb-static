@@ -1,0 +1,146 @@
+{
+	"MobileMenu": {
+		"close": "Stäng meny"
+	},
+	"CTA": {
+		"button": "Kontakta mig"
+	},
+	"Nav": {
+		"projects": "Referenser",
+		"services": "Tjänster",
+		"pricing": "Priser",
+		"blog": "Blogg",
+		"contact": "Kontakta mig"
+	},
+	"Footer": {
+		"browse": "Bläddra",
+		"contact": "Kontakt",
+		"posts": "Senaste blogginläggen",
+		"privacy": "Integritetspolicy"
+	},
+	"Start": {
+		"seo": {
+			"title": "Webbutveckling i Mariestad",
+			"description": "En utvecklare med bas i Mariestad som skapar hemsidor åt mindre företag med hjälp av JAMStack."
+		},
+		"hero": {
+			"heading": "Jag är en frilansande webbutvecklare som hjälper småföretag att spara pengar",
+			"paragraph": "Kompromissa inte mellan prestanda och kostnad, få istället en supersnabb och säker webbplats som inte kräver ett dyrt webbhotell för att drivas.",
+			"contact":"Kontakta mig",
+			"blog": "Läs min blogg"
+		},
+		"features": {
+			"heading": "Billigare, säkrare, snabbare!",
+			"paragraph": "Jag utvecklar webbplatser med <0>JAMstack</0>. Det har ett par fördelar för dig som kund.",
+			"hosting": {
+				"heading": "Spara pengar på driften",
+				"content": "Det kan kosta att driva en webbplats, speciellt om du får många besökare. Tack vare JAMStack är detta inte längre ett problem. Du kan driva webbplatsen nästan helt gratis, oavsett hur många besökare du får."
+			},
+			"speed": {
+				"heading": "Så snabbt som det går",
+				"content": "Dina besökare förväntar sig att webbplatsen laddar på under 2 sekunder, annars går dem någon annanstans. Detta är inget problem för JAMStack sidor. Tack vare att varje sida redan är färdig vid varje hämtning och att filerna ligger på ett CDN, laddas webbplatsen supersnabbt."
+			},
+			"safe": {
+				"heading": "Undvik att bli hackad",
+				"content": "Du behöver inte längre oroa dig för att webbplatsen ska bli hackad. På en JAMStack sida finns ingen webbserver eller databas bakom webbplatsen. Det betyder att det finns färre sårbara områden som en hackare kan använda för att ställa till det."
+			}
+		},
+		"about": {
+			"heading": "Vem är jag?",
+			"content": "Mitt namn är Carl. Jag fann mitt intresse för webbutveckling under min tidiga tonår. Sedan dess har jag bara fortsatt lära mig nya språk och verktyg för att bygga intressanta projekt. Det har blivit en slags passion som bara växt med tiden."
+		},
+		"workflow": {
+			"heading": "Hur går det till?",
+			"1": "Vi diskuterar hemsidans innehåll, funktioner och design",
+			"2": "Jag återkommer med design förslag som ni sedan ger synpunkter på",
+			"3": "Jag redigerar designförslaget",
+			"4": "Jag börjar bygga er hemsida utifrån det innehåll och de funktioner som vi diskuterat",
+			"5": "Vi stämmer av för att se om det finns ytterligare funktioner eller innehåll som ska läggas till",
+			"6": "Vi lanserar hemsidan"
+		},
+		"cta": {
+			"heading": "Låter det bra?",
+			"content": "Låt mig skapa en snabb, säker och modern hemsida som inte kostar något att driva."
+		}
+	},
+	"Projects": {
+		"seo": {
+			"title": "Mina referenser",
+			"description": "Jag har utvecklat enkla presentationssidor och avancerade webbapplikationer. Här kan du se några av de projekten."
+		},
+		"hero": {
+			"heading": "Utvalda referenser",
+			"content": "Här kan du se utvalda projekt som jag har arbetat på. Vissa projekt gjorde jag både utveckling och design för, och andra hade redan en färdig design där jag stod för den tekniska delen."
+		},
+		"cta": {
+			"heading": "Har du några frågor?",
+			"content": "Har du några frågorna gällande projekten ovan?"
+		}
+	},
+	"Services": {
+		"seo": {
+			"title": "Tjänster",
+			"description": "CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
+		},
+		"hero": {
+			"heading": "Jag utvecklar billiga och snabba webbplatser",
+			"content": "Det viktigaste för en webbplats, utöver en bra design, är dess prestanda. Den bidrar till bättre placeringar i sökresultaten och förbättrar användarnas upplevelse. Prestanda kommer dock ofta med ett högt pris, men inte om jag skapar din webbplats."
+		},
+		"features": {
+			"heading": "Mina tjänster",
+			"content": "Jag utvecklar hemsidor med bra prestanda som kan drivas till ett billigt pris. För att uppnå detta använder jag mig av ett par olika verktyg och tekniker. Om du har en app eller webbplats som använder någon av dessa tjänster eller tekniker kan du med fördel <0>kontakta mig</0> för hjälp."
+		},
+		"cta": {
+			"heading": "Häng med i tiden",
+			"content": "Jag är stolt över att använda moderna och effektiva tekniker för att skapa moderna och effektiva lösningar. Låter det intressant?"
+		}
+	},
+	"Pricing": {
+		"seo": {
+			"title": "Priser",
+			"description": "Jag tar ett fast pris, så att du aldrig behöver oroa dig för att kostnaderna springer iväg."
+		},
+		"hero": {
+			"heading": "Fast pris, inga överraskningar",
+			"content": "För att du ska känna dig så trygg som möjligt bestämmer vi alltid ett pris innan utvecklingen påbörjas, och sedan håller vi oss till det."
+		},
+		"features": {
+			"development": {
+				"heading": "Utveckling",
+				"content": "Innan jag ger er ett pris för utvecklingen av ert projekt kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt. Sedan kommer det priset att gälla för hela utvecklingen, oavsett om det tar en vecka eller en månad att slutföra."
+			},
+			"benefits": {
+				"heading": "Fördelar med fastpris",
+				"1": {
+					"heading": "Inga överraskningar",
+					"content": "Du vet exakt vad du betalar, oavsett hur lång tid det tar att slutföra arbetet"
+				},
+				"2": {
+					"heading": "Efter dina behov",
+					"content": "Priset är utformat efter arbetets krav och hur lång tid just din webbplats tar att bygga. Inte mer, inte mindre."
+				},
+				"3": {
+					"heading": "Till din fördel",
+					"content": "Ett fast pris är alltid till din fördel. Det viktigaste är att du är nöjd, inte att jag ska tjäna pengar."
+				}
+			},
+			"hosting": {
+				"heading": "Drift",
+				"content": "Driften för din webbplats eller app kommer att kosta en liten summa varje månad. Vad summan är beror på projektets komplexitet, men du kan ofta förvänta dig runt 50 - 100 kr per månad. Denna summa kan även betalas årsvis."
+			}
+		},
+		"cta": {
+			"heading": "Vill du veta ditt pris?",
+			"content": "Hör av dig till mig så tar vi fram en offert."
+		}
+	},
+	"Blog": {
+		"seo": {
+			"title": "Blogg",
+			"description": "Hur är det att vara frilansare? Hur bygger man en hemsida? Hur skapade jag det där projektet? I den här bloggen får du svar på alla dessa frågor och mer."
+		},
+		"technical": {
+			"heading": "Tekniska artiklar på engelska"
+		}
+	}
+}

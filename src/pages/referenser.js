@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Project from "../components/Project";
 import SEO from "../components/seo";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 // Illustrations
 import { ReactComponent as HeroImage } from "../images/illustrations/cms.svg";
@@ -10,19 +11,20 @@ import { ReactComponent as HeroImage } from "../images/illustrations/cms.svg";
 import "../styles/referenser.css";
 import CTA from "../components/CTA";
 
-export default function referenser({ data }){
+export default function referenser({ data, pageContext: { language } }){
+	const{ t } = useTranslation("Projects", { useSuspense: false });
 	const projects = data.projects.nodes.map( node => node.frontmatter);
 	const technologies = data.tech.nodes.map( node => node.frontmatter);
 
 	return(
 		<Layout>
 			<SEO
-				title="Mina referenser"
+				title={t("seo.title")}
 				url="/referenser"
-				description="Jag har utvecklat enkla presentationssidor och avancerade webbapplikationer. Här kan du se några av de projekten."
+				description={t("seo.description")}
 				breadcrumb={[
 					{
-						name: "Mina referenser",
+						name: t("seo.title"),
 						url: "/referenser/"
 					}
 				]}
@@ -30,8 +32,8 @@ export default function referenser({ data }){
 			<section className="hero">
 				<div className="content">
 					<div className="copy">
-						<h1>Utvalda referenser</h1>
-						<p>Här kan du se utvalda projekt som jag har arbetat på. Vissa projekt gjorde jag både utveckling och design för, och andra hade redan en färdig design där jag stod för den tekniska delen.</p>
+						<h1>{t("hero.heading")}</h1>
+						<p>{t("hero.content")}</p>
 					</div>
 
 					<div className="illustration">
@@ -52,7 +54,7 @@ export default function referenser({ data }){
 							<Project
 								title={project.title}
 								url={project.url}
-								body={project.description}
+								body={project.info[language]}
 								image={project.image.childImageSharp.fluid}
 								postUrl={project.post_url}
 								tech={tech}
@@ -64,9 +66,9 @@ export default function referenser({ data }){
 			</div>
 
 			<CTA
-				title="Har du några frågor?"
+				title={t("cta.heading")}
 			>
-				Har du några frågorna gällande projekten ovan?
+				{t("cta.content")}
 			</CTA>
 		</Layout>
 	);
@@ -84,7 +86,10 @@ export const pageQuery = graphql`
 			nodes{
 				frontmatter{
 					title
-					description
+					info{
+						en
+						sv
+					}
 					url
 					post_url
 					tech
@@ -111,7 +116,10 @@ export const pageQuery = graphql`
 			nodes{
 				frontmatter{
 					title
-					description
+					info{
+						en
+						sv
+					}
 					url
 					logo{
 						childImageSharp{

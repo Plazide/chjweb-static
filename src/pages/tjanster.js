@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
+import { useTranslation, Trans, Link } from "gatsby-plugin-react-i18next";
 
 // Layout
 import Layout from "../components/layout";
@@ -13,35 +14,37 @@ import heroIllustrationUrl from "../images/illustrations/webbyra.svg";
 import Service from "../components/Service";
 import CTA from "../components/CTA";
 
-export default function Tjanster({ data }){
+export default function Tjanster({ data, pageContext: { language } }){
+	const{ t } = useTranslation("Services", { useSuspense: false });
 	const tech = data.tech.nodes.map( node => node.frontmatter);
-	console.log(tech);
 
 	return(
 		<Layout>
 			<SEO
-				title="Tjänster"
-				description="CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
+				title={t("seo.title")}
+				description={t("seo.description")}
 				url="/tjanster/"
 				breadcrumb={[
 					{
-						name: "Tjänster",
+						name: t("seo.title"),
 						url: "/tjanster/"
 					}
 				]}
 			/>
 			<Hero
-				title="Jag utvecklar billiga och snabba webbplatser"
+				title={t("hero.heading")}
 				illustration={heroIllustrationUrl}
 			>
-				Det viktigaste för en webbplats, utöver en bra design, är dess prestanda. Den bidrar till bättre placeringar i sökresultaten och förbättrar användarnas upplevelse. Prestanda kommer dock ofta med ett högt pris, men inte om jag skapar din webbplats.
+				{t("hero.content")}
 			</Hero>
 
 			<section className="features">
 				<Intro
-					title="Mina tjänster"
+					title={t("features.heading")}
 				>
-					Jag utvecklar hemsidor med bra prestanda som kan drivas till ett billigt pris. För att uppnå detta använder jag mig av ett par olika verktyg och tekniker. Om du har en app eller webbplats som använder någon av dessa tjänster eller tekniker kan du med fördel <Link to="/kontakt">kontakta mig</Link> för hjälp.
+					<Trans i18nKey="features.content" t={t}>
+						<Link to="/kontakt">kontakta mig</Link>
+					</Trans>
 				</Intro>
 
 				<div className="services" style={{
@@ -49,14 +52,16 @@ export default function Tjanster({ data }){
 					flexDirection: "row",
 					justifyContent: "center",
 					flexWrap: "wrap",
-					paddingBottom: "100px"
+					paddingBottom: "100px",
+					maxWidth: 1400,
+					margin: "auto"
 				}}>
 					{
 						tech.map( tech => (
 							<Service
 								key={tech.title}
 								title={tech.title}
-								body={tech.description}
+								body={tech.info[language]}
 								url={tech.url}
 								image={tech.logo.childImageSharp.fluid}
 							/>
@@ -65,8 +70,8 @@ export default function Tjanster({ data }){
 				</div>
 			</section>
 
-			<CTA title="Häng med i tiden">
-				Jag är stolt över att använda moderna och effektiva tekniker för att skapa moderna och effektiva lösningar. Låter det intressant?
+			<CTA title={t("cta.heading")}>
+				{t("cta.content")}
 			</CTA>
 		</Layout>
 	);
@@ -91,7 +96,10 @@ export const pageQuery = graphql`
 						}
 					}
 				}
-				description
+				info{
+					sv
+					en
+				}
 				url
 			}
 		}
@@ -100,5 +108,6 @@ export const pageQuery = graphql`
 `;
 
 Tjanster.propTypes = {
-	data: PropTypes.object
+	data: PropTypes.object,
+	pageContext: PropTypes.object
 };

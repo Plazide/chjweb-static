@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql, navigate } from "gatsby";
 import rehypeReact from "rehype-react";
+import { useTranslation } from "react-i18next";
 
 import BackgroundImage from "gatsby-background-image";
 
@@ -35,7 +36,9 @@ const renderAst = new rehypeReact({
 	createElement: React.createElement
 }).Compiler;
 
-export default function post({ data }){
+export default function post({ data, pageContext: { locale, data: localeData } }){
+	const{ t } = useTranslation("Blog", { useSuspense: false });
+	console.log(locale);
 	useEffect( () => {
 		if(!data.markdownRemark)
 			navigate("/blogg");
@@ -83,21 +86,20 @@ export default function post({ data }){
 	};
 
 	return(
-		<Layout>
+		<Layout locale={locale} localeData={localeData}>
 			<SEO
-				title={title + " | Blogg"}
+				title={title + " | " + t("seo.title")}
 				description={description}
 				url={`/blogg/${slug}`}
 				structuredData={structuredData}
 				breadcrumb={[
-					{ name: "Blogg", url: "/blogg" },
+					{ name: t("seo.title"), url: "/blogg" },
 					{ name: title, url: `/blogg/${slug}` }
 				]}
 				image={featuredImage.src}
 			/>
 			<article className="blog-posting">
 				<div className="post-heading">
-					{/* <Img fluid={featuredImage} className="featured-image" /> */}
 					<BackgroundImage
 						className="featured-image"
 						fluid={featuredImage}

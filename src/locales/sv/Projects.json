@@ -1,0 +1,18 @@
+{
+	"seo": {
+		"title": "Mina referenser",
+		"description": "Jag har utvecklat enkla presentationssidor och avancerade webbapplikationer. Här kan du se några av de projekten."
+	},
+	"hero": {
+		"heading": "Utvalda referenser",
+		"content": "Här kan du se utvalda projekt som jag har arbetat på. Vissa projekt gjorde jag både utveckling och design för, och andra hade redan en färdig design där jag stod för den tekniska delen."
+	},
+	"project": {
+		"tech": "Verktyg",
+		"more": "Läs mer"
+	},
+	"cta": {
+		"heading": "Har du några frågor?",
+		"content": "Har du några frågorna gällande projekten ovan?"
+	}
+}

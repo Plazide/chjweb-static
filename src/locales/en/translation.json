@@ -1,0 +1,146 @@
+{
+	"MobileMenu": {
+		"close": "Close menu"
+	},
+	"CTA": {
+		"button": "Get in touch"
+	},
+	"Nav": {
+		"projects": "Projects",
+		"services": "Services",
+		"pricing": "Pricing",
+		"blog": "Blog",
+		"contact": "Contact me"
+	},
+	"Footer": {
+		"browse": "Browse",
+		"contact": "Contact",
+		"posts": "Latest posts",
+		"privacy": "Privacy policy"
+	},
+	"Start": {
+		"seo": {
+			"title": "Web development in Mariestad (Sweden)",
+			"description": "I am a web developer who created websites and apps for small businesses using JAMstack"
+		},
+		"hero": {
+			"heading": "I am a freelancing web developer who helps small businesses save money",
+			"paragraph": " Don't compromise between performance and cost, get a performant and secure website that doesn't require an expensive web host.",
+			"contact":"Contact me",
+			"blog": "Read my blog"
+		},
+		"features": {
+			"heading": "Cheaper, faster, safer!",
+			"paragraph": "I develop websites using <0>JAMstack</0>. That comes with a few benefits for you as a client.",
+			"hosting": {
+				"heading": "Save money on hosting",
+				"content": "It can be expensive to run a website, especially when you get a lot of traffic. Thanks to JAMstack, this is not longer a problem. It allows you to run your website almost entirely for free, no matter how many visitors you get."
+			},
+			"speed": {
+				"heading": "As fast as it gets",
+				"content": "Your users expect your website to load in under 2 seconds, otherwise they might go somewhere else. This is not a problem for JAMstack. Thanks to every page being ready at request time and the pages being stored on a global CDN, your website will load instantly."
+			},
+			"safe": {
+				"heading": "Avoid getting hacked",
+				"content": "You no longer need to worry about your website getting hacked. When using JAMstack, there are no traditional web servers or databases behind the website. That means there less vulnerable areas for an attacker to exploit."
+			}
+		},
+		"about": {
+			"heading": "Who am I?",
+			"content": "My name is Carl. I found my interest for web development in my early teens. Since then, I've only continued to learn new languages and tools for building interesting projects. It has become a kind of passion which has only grown larger with time."
+		},
+		"workflow": {
+			"heading": "How does it work?",
+			"1": "We discuss the website's content, functionality, and design",
+			"2": "I come up with a design proposal which you can give your opinions on",
+			"3": "I edit the design proposal",
+			"4": "I start building your website according to the content, functionality, and design we've agreed upon",
+			"5": "We discuss whether or not there are any other functionality which should be added",
+			"6": "We launch the website"
+		},
+		"cta": {
+			"heading": "Sound good?",
+			"content": "Let me build a fast, secure, and modern website that is incredibly cheap to run."
+		}
+	},
+	"Projects": {
+		"seo": {
+			"title": "My projects",
+			"description": " I've developed simple presentation sites och advanced web apps. Have a look at some of them."
+		},
+		"hero": {
+			"heading": "Selected projects",
+			"content": "Below are some of the projects I've worked on. For some, I did both development and design, for others, I was only responsible for the technical implementation."
+		},
+		"cta": {
+			"heading": "Any questions?",
+			"content": "Do you have any questions regarding the projects above? Or do want help with with your website?"
+		}
+	},
+	"Services": {
+		"seo": {
+			"title": "Services",
+			"description": "I develop websites that are fast, beautiful, and cheap to run."
+		},
+		"hero": {
+			"heading": "I develop inexpensive yet performant websites",
+			"content": "The most important part of a website, besides a nice design, is it's performance. It contributes to better placement in search results and improves the user experience. Performance often comes with a high price, but not when I create your website."
+		},
+		"features": {
+			"heading": "My services",
+			"content": "I develop performant websites that you can run at a low price. To achieve this, I use several different tools and technologies. If your current website uses any of these services or technologies, you might benefit from <0>contacting me</0>."
+		},
+		"cta": {
+			"heading": "Get with the times",
+			"content": "I am proud to use modern and effective methods to build modern and effective solutions. Does that sound interesting?"
+		}
+	},
+	"Pricing": {
+		"seo": {
+			"title": "Pricing",
+			"description": "I charge a fixed price, so that you never have to worry about how many hours a project will take to finish."
+		},
+		"hero": {
+			"heading": "Fixed price, no surprises",
+			"content": "To make you feel as confident as possible, we always agree on a price before development starts and then we stick to that, no matter what."
+		},
+		"features": {
+			"development": {
+				"heading": "Development",
+				"content": "Before I give you an initial price suggestion, I will carefully review your needs and requirements to estimate a fair price. If you agree to that price, we will stick to that through the entire development, no matter how long it takes to finish."
+			},
+			"benefits": {
+				"heading": "Benefits with fixed price",
+				"1": {
+					"heading": "No surprises",
+					"content": "You know what you'll pay, regardless of how much work I put in"
+				},
+				"2": {
+					"heading": "To your needs",
+					"content": "The price is customized to your needs and how long the project is estimated to take"
+				},
+				"3": {
+					"heading": "In your favor",
+					"content": "A fixed price is always to your advantage. The important part is that you are satisfied, not that I get paid"
+				}
+			},
+			"hosting": {
+				"heading": "Hosting",
+				"content": "The hosting for your website will be a small sum every month. What that sum will be depends on the complexity of the project, but you can often expect something between $5 - $10 per month. It is also possible to pay yearly."
+			}
+		},
+		"cta": {
+			"heading": "Want to know your price?",
+			"content": "Get in touch and I'll send you an offer."
+		}
+	},
+	"Blog": {
+		"seo": {
+			"title": "Blog",
+			"description": "What's it like to freelance? How do you build a website? How did I create that project? I'll talk about all that in this blog."
+		},
+		"technical": {
+			"heading": "Technical articles"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"seo": {
+		"title": "My projects",
+		"description": " I've developed simple presentation sites och advanced web apps. Have a look at some of them."
+	},
+	"hero": {
+		"heading": "Selected projects",
+		"content": "Below are some of the projects I've worked on. For some, I did both development and design, for others, I was only responsible for the technical implementation."
+	},
+	"project": {
+		"tech": "Tech",
+		"more": "Read more"
+	},
+	"cta": {
+		"heading": "Any questions?",
+		"content": "Do you have any questions regarding the projects above? Or do want help with with your website?"
+	}
+}

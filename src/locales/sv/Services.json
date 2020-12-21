@@ -1,0 +1,18 @@
+{
+	"seo": {
+		"title": "Tjänster",
+		"description": "CHJ Webblösningar utvecklar en webbplats som är snabb, snygg och billig att driva."
+	},
+	"hero": {
+		"heading": "Jag utvecklar billiga och snabba webbplatser",
+		"content": "Det viktigaste för en webbplats, utöver en bra design, är dess prestanda. Den bidrar till bättre placeringar i sökresultaten och förbättrar användarnas upplevelse. Prestanda kommer dock ofta med ett högt pris, men inte om jag skapar din webbplats."
+	},
+	"features": {
+		"heading": "Mina tjänster",
+		"content": "Jag utvecklar hemsidor med bra prestanda som kan drivas till ett billigt pris. För att uppnå detta använder jag mig av ett par olika verktyg och tekniker. Om du har en app eller webbplats som använder någon av dessa tjänster eller tekniker kan du med fördel <0>kontakta mig</0> för hjälp."
+	},
+	"cta": {
+		"heading": "Häng med i tiden",
+		"content": "Jag är stolt över att använda moderna och effektiva tekniker för att skapa moderna och effektiva lösningar. Låter det intressant?"
+	}
+}

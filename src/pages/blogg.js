@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import { useTranslation, Link } from "gatsby-plugin-react-i18next";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -10,6 +11,7 @@ import SEO from "../components/seo";
 import "../styles/blog.css";
 
 export default function blogg({ data }){
+	const{ t } = useTranslation("Blog", { useSuspense: false });
 	const posts = data.allMarkdownRemark.edges;
 	const hashnodePosts = data.allHashnode.edges.map( edge => edge.node);
 	const siteUrl = data.allSite.edges[0].node.siteMetadata.siteUrl;
@@ -52,26 +54,19 @@ export default function blogg({ data }){
 
 	};
 
-	console.log(hashnodePosts);
-
 	return(
 		<Layout>
 			<SEO
-				title="Blogg"
-				description="Hur är det att vara frilansare? Hur bygger man en hemsida? Hur skapade jag det där projektet? I den här bloggen får du svar på alla dessa frågor och mer."
+				title={t("seo.title")}
+				description={t("seo.description")}
 				url="/blogg/"
 				structuredData={structuredData}
 				breadcrumb={[
-					{ name: "Blogg", url: "/blogg/" }
+					{ name: t("seo.title"), url: "/blogg/" }
 				]}
 			/>
 			<section className="blog">
 				<div className="content">
-					{/* <div className="copy">
-						<h1>Följ CHJ Webblösningar i livet som företagare</h1>
-						<p>Mitt namn är Carl och jag är egenföretagare och webbutvecklare. Följ mitt arbete och ta del av mina erfarenheter i den här bloggen.</p>
-					</div> */}
-
 					<ul className="posts">
 						{posts.map( (item, index) => {
 							const post = item.node;
@@ -97,7 +92,7 @@ export default function blogg({ data }){
 
 					<hr style={{ marginBottom: 100 }} />
 
-					<h2 className="heading">Tekniska artiklar på engelska</h2>
+					<h2 className="heading">{t("technical.heading")}</h2>
 					<ul className="posts hashnode">
 						{hashnodePosts.map( post => {
 							const{ slug, title, brief, dateAdded, coverImage, readTime } = post;

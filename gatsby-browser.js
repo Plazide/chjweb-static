@@ -6,7 +6,6 @@
 
 // You can delete this file if you're not using it
 import "./src/styles/globals.css";
-import cssVars from "css-vars-ponyfill";
 
 export const onClientEntry = async () => {
 	if(typeof IntersectionObserver === "undefined")
@@ -16,10 +15,9 @@ export const onClientEntry = async () => {
 		await import("whatwg-fetch");
 
 	if(!browserCanUseCssVariables())
-		cssVars();
-	
-}
+		await import("css-vars-ponyfill")();
+};
 
-function browserCanUseCssVariables() {
-	return window.CSS && CSS.supports('color', 'var(--fake-var)');
+function browserCanUseCssVariables(){
+	return window.CSS && CSS.supports("color", "var(--fake-var)");
 }
