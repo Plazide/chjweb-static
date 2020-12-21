@@ -19,20 +19,6 @@ module.exports = {
 		phone: "0501-60 19 09"
 	},
 	plugins: [
-		{
-			resolve: "gatsby-plugin-google-analytics",
-			options: {
-				trackingId: "UA-143244918-1",
-				head: true
-			}
-		},
-		{
-			resolve: "gatsby-plugin-hotjar",
-			options: {
-				id: 1392838,
-				sv: 6
-			}
-		},
 		"gatsby-plugin-react-helmet",
 		"gatsby-remark-source-name",
 		{
