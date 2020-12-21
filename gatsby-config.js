@@ -7,9 +7,9 @@ function addTrailingSlash(path){
 
 module.exports = {
 	siteMetadata: {
-		title: "CHJ Webblösningar",
-		description: "Skaffa dig en modern, väl presterande och säker hemsida med CHJ Webblösningar.",
-		author: "CHJ Webblösningar",
+		title: "Carl Hallén Jansson",
+		description: "Jag är en frilansande webbutvecklare som kan hjälpa dig att skaffa en modern, presterande och säker hemsida.",
+		author: "Carl Hallén Jansson",
 		siteUrl: "https://chjweb.se",
 		lang: "sv",
 		streetAddress: "Basunvägen 2",
