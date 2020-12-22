@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
@@ -25,9 +25,7 @@ export default function MobileMenu({ open = false, onClose }){
 						<CloseIcon />
 					</button>
 				</header>
-				<Suspense fallback="Loading">
-					<Navigation />
-				</Suspense>
+				<Navigation />
 			</div>
 		</dialog>
 	);

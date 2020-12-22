@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 // Components
@@ -28,9 +28,7 @@ const Header = ({ siteTitle }) => {
 					<button onClick={toggleMenu} className="reset-button hamburger" aria-label="Öppna meny">
 						<HamburgerIcon />
 					</button>
-					<Suspense fallback="Loading">
-						<Navigation />
-					</Suspense>
+					<Navigation />
 				</div>
 			</header>
 		</>
