@@ -15,7 +15,7 @@ module.exports = {
 		streetAddress: "Basunvägen 2",
 		zipCode: "542 41",
 		city: "Mariestad",
-		email: "contact@chjweb.se",
+		email: "carl@chjweb.se",
 		phone: "0501-60 19 09"
 	},
 	plugins: [
