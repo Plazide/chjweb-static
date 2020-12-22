@@ -37,8 +37,8 @@ async function sendMessage({ email, name, message }){
 
 	try{
 		const result = await transporter.sendMail({
-			from: "contact@chjweb.se",
-			to: "contact@chjweb.se",
+			from: `${name} <${email}>`,
+			to: "carl@chjweb.se",
 			subject: `Nytt meddelande från ${name}`,
 			html
 		});
