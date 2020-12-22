@@ -217,7 +217,7 @@ section.hero .btns{
 section.hero .btns a:first-child{
 	margin-right: 1em;
 }
-section.hero .btn{
+section.hero .button{
 	margin-bottom: 1em;
 }
 section.hero .content .illustration{
@@ -496,6 +496,9 @@ svg path[data-name="Rectangle 244"]{
 		width: 100%;
 		padding: 5rem 5rem 5rem;
 	}
+	section.hero .content .copy{
+		width: 500px;
+	}
 	section.hero .featured{
 		display: none;
 	}
@@ -506,6 +509,9 @@ svg path[data-name="Rectangle 244"]{
 }
 
 @media only screen and (max-width: 930px){
+	section.hero .content .copy{
+		width: auto;
+	}
 	section.hero .illustration{
 		display: none;
 	}
