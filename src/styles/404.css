@@ -3,6 +3,7 @@ section.not-found .content{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 section.not-found .content a{
 	margin-bottom: 3rem;
