@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Kontakta mig",
+		"description": "Ta kontakt med Carl Hallén Jansson via e-post, telefon eller formuläret här på sidan."
+	},
+	"hero": {
+		"heading": "Kontakta mig",
+		"content": "Har du några frågor? Är du ute efter en webbplats? Då kan du kontakta mig här!",
+		"mailto": "Skicka ett mejl",
+		"tel": "Ring mig"
+	},
+	"form": {
+		"heading": "Skicka ett meddelande",
+		"content": "Vill du höra av dig, skicka ett meddelande här!",
+		"submit": "Skicka",
+		"name": {
+			"label": "Vad heter du?",
+			"hint": "Skriv gärna både för- och efternamn",
+			"error": {
+				"empty": "Du missade att skriva ditt namn!"
+			}
+		},
+		"email": {
+			"label": "E-post",
+			"hint": "En e-post jag kan nå dig på",
+			"error": {
+				"empty": "Du missade att skriva din e-post",
+				"invalid": "Adressen ser konstig ut. Stämmer den verkligen?"
+			}
+		},
+		"message": {
+			"label": "Meddelande",
+			"hint": "",
+			"error": {
+				"empty": "Du missade att skriva ett meddelande"
+			}
+		},
+		"success": "<bold>Ditt meddelande har skickats!</bold> Jag hör av mig så snart som möjligt.",
+		"failure": "<bold>Kunde inte skicka!</bold> Något gick fel, försök igen om en liten stund."
+	}
+}

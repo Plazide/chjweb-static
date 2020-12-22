@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Contact me",
+		"description": "Get in touch with Carl Hallén Jansson (freelancing web developer) via email, phone, or the form on this page."
+	},
+	"hero": {
+		"heading": "Contact me",
+		"content": "Got any questions? Looking for a new website? Feel free to get in touch with me!",
+		"mailto": "Send an email",
+		"tel": "Call me"
+	},
+	"form": {
+		"heading": "Send a message",
+		"content": "Want to contact me? Send a message here!",
+		"submit": "Send",
+		"name": {
+			"label": "What's you name?",
+			"hint": "Kindly provide both first and last name",
+			"error": {
+				"empty": "You forgot to type in your name"
+			}
+		},
+		"email": {
+			"label": "Email",
+			"hint": "Provide an email where I can send a reply",
+			"error": {
+				"empty": "You forgot to type in your email",
+				"invalid": "You email looks weird, did you make a typo?"
+			}
+		},
+		"message": {
+			"label": "Message",
+			"hint": "",
+			"error": {
+				"empty": "You forgot to type in a message"
+			}
+		},
+		"success": "<bold>Your message has been sent!</bold> I'll reply as soon as I can.",
+		"failure": "<bold>Could not send message!</bold> Something went wrong, send me an email using the button above instead."
+	}
+}
