@@ -145,7 +145,7 @@ collections:
     fields: 
       - name: type
         widget: hidden
-        default: project
+        default: post
       - name: published
         label: Published
         widget: boolean
