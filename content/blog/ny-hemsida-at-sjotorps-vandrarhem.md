@@ -1,4 +1,5 @@
 ---
+type: post
 published: true
 title: Ny hemsida åt Sjötorps Vandrarhem
 date: 2020-01-10T21:20:05.233+00:00

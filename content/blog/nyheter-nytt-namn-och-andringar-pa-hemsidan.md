@@ -1,5 +1,5 @@
 ---
-type: project
+type: post
 published: true
 title: "Nyheter: nytt namn och ändringar på hemsidan"
 date: 2020-12-23T11:05:17.268Z

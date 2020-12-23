@@ -1,4 +1,5 @@
 ---
+type: post
 date: 2020-03-10T13:08:25.000+00:00
 published: true
 title: Värdet av en bra hemsida

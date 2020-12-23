@@ -1,4 +1,5 @@
 ---
+type: post
 title: CHJ Webblösningar gör om hemsidan och skaffar en blogg
 date: 2019-10-02T09:34:40.248+00:00
 updated: 2019-12-03T08:12:25.737+00:00

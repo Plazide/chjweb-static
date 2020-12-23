@@ -1,4 +1,5 @@
 ---
+type: post
 title: Vad är egentligen JAMStack?
 date: 2019-12-06T10:43:03.024+00:00
 updated: 2019-12-06T10:43:03.049+00:00

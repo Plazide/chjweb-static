@@ -1,4 +1,5 @@
 ---
+type: post
 title: 7 CMS alternativ för JAMStack
 date: 2020-02-21T09:09:18.719Z
 updated: 2020-02-21T09:09:18.730Z
