@@ -11,7 +11,7 @@ import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
 
-function SEO({ description, lang, meta, title, url, structuredData, breadcrumb, image = "/images/logotyp.png" }){
+function SEO({ description, lang, meta, title, url, structuredData, breadcrumb, image = "/images/small.png" }){
 	const{ pathname } = useLocation();
 	const path = pathname.split("/").filter( path => path !== "en").join("/");
 	const{ site } = useStaticQuery(
