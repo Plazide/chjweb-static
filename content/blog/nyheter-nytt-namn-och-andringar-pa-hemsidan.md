@@ -50,5 +50,5 @@ Jag har alltså inga kakor kvar!
 
 ## Avslutningsvis
 
-Detta blir förmodligen det sista inlägget för i det här året. Då är det ju passande att avsluta med att säga God Jul och Gott nytt år och hoppas att nästa år blir något bättre än det nuvarande.
+Detta blir förmodligen det sista inlägget för det här året. Då är det ju passande att avsluta med att säga God Jul och Gott nytt år och hoppas att nästa år blir något bättre än det nuvarande.
 
