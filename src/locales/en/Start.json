@@ -1,7 +1,7 @@
 {
 	"seo": {
-		"title": "Web development in Mariestad (Sweden)",
-		"description": "I am a web developer who creates websites and apps for small businesses using JAMstack"
+		"title": "JAMstack developer from Sweden",
+		"description": "I am a web developer from Sweden who creates websites and apps for small businesses using JAMstack"
 	},
 	"hero": {
 		"heading": "I am a freelancing web developer who helps small businesses save money",
@@ -22,7 +22,7 @@
 		},
 		"safe": {
 			"heading": "Avoid getting hacked",
-			"content": "You no longer need to worry about your website getting hacked. When using JAMstack, there are no traditional web servers or databases behind the website. That means there less vulnerable areas for an attacker to exploit."
+			"content": "You no longer need to worry about your website getting hacked. When using JAMstack, there are no traditional web servers or databases behind the website. That means there are less vulnerable areas for an attacker to exploit."
 		}
 	},
 	"about": {
