@@ -12,7 +12,7 @@ const{ remove } = require("confusables");
 
 exports.onCreateNode = async ({ node, actions, store, cache, createNodeId }) => {
 	const{ createNodeField, createNode } = actions;
-	if(node.internal.type === "MarkdownRemark"){
+	if(node.internal.type === "MarkdownRemark" && node.frontmatter && node.frontmatter.type === "post" ){
 		const value = createSlug({ node });
 		createNodeField({
 			name: "slug",
@@ -54,6 +54,8 @@ exports.createPages = async ({ actions, graphql }) => {
 	const posts = result.data.allMarkdownRemark.edges;
 
 	posts.forEach( ({ node }) => {
+		if(!node.fields.slug) return;
+
 		createPage({
 			path: `/blogg/${node.fields.slug}`,
 			component: path.resolve("./src/templates/post.js"),
