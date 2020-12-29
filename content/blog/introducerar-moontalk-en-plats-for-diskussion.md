@@ -1,7 +1,7 @@
 ---
 type: project
 published: true
-title: MoonTalk - Att bygga med serverless
+title: Introducerar MoonTalk - En plats för diskussion
 date: 2020-12-29T15:20:52.263Z
 updated: 2020-12-29T15:20:54.815Z
 image: /skarmbild-2020-12-14-193350.jpg
@@ -19,6 +19,8 @@ Den första frågan du har är antagligen: "MoonTalk... Vad är det?". Jo, det �
 Man ställer en fråga i en av alla dem kategorier som finns på sidan (Vetenskap, Samhälle, Utbildning, etc...). Varje kategori har en deadline, och när den deadlinen är nådd kommer frågorna med flest röster att publiceras för att börja samla in röster.
 
 Innan en fråga publiceras kan användare diskutera om frågan är bra ställd, om det saknas information, osv. Detta säkerställer att endast frågor av hög kvalité publiceras för att börja diskuteras och samla in röster.
+
+[Kolla in moontalk.se](https://moontalk.se).
 
 ## Hur byggdes sidan?
 
@@ -85,6 +87,7 @@ Det fungerar än så länge riktigt bra.
 ## Poängsystem
 
 ### Hur fungerar det?
+
 Poängsystemet fungerar genom att användare får poäng genom olika handlingar. När man gillar en fråga eller kommentar, när man röstar på en fråga, osv...
 
 Dessa poäng påverkas även av en bonus som kan ses i den privata profilen. Den bonusen är baserad på antalet demografiska uppgifter som användaren har angett.
@@ -94,6 +97,7 @@ Användare kan endast se sin egen poäng, aldrig någon annans, men de kan se an
 Ranken har ingen större inverkan i nuläget, men i framtiden kommer högre rankade användare kunna utföra olika administrativa uppgifter, exempelvis hantera rapporterat innehåll.
 
 ### Hur gjordes det?
+
 Poängsystemet är egentligen ganska enkelt. Varje gång en användare utför en poänggivande handling uppdateras deras poäng.
 
 Själva uppdateringen av poängen sker i en FQL funktion, vilket innebär att jag inte behövde skapat en Lambda funktion för det endamålet.
