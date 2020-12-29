@@ -1,5 +1,5 @@
 ---
-type: project
+type: post
 published: true
 title: Introducerar MoonTalk - En plats för diskussion
 date: 2020-12-29T15:20:52.263Z
