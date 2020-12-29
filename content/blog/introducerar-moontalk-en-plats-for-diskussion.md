@@ -1,7 +1,7 @@
 ---
 type: project
 published: true
-title: Hur jag byggde MoonTalk
+title: MoonTalk - Att bygga med serverless
 date: 2020-12-29T15:20:52.263Z
 updated: 2020-12-29T15:20:54.815Z
 image: /skarmbild-2020-12-14-193350.jpg
