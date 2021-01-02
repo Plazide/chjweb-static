@@ -15,7 +15,7 @@ import CTA from "../components/CTA";
 import Row from "../components/Row";
 
 // Images
-import { ReactComponent as Illustration } from "../images/illustrations/create.svg";
+/* import { ReactComponent as Illustration } from "../images/illustrations/create.svg"; */
 import { ReactComponent as Wave } from "../images/illustrations/wave.svg";
 import { ReactComponent as Checkmark } from "../images/icons/checkmark.svg";
 import { ReactComponent as Speed } from "../images/illustrations/speed.svg";
@@ -71,7 +71,8 @@ const IndexPage = ({ data }) => {
 					</div>
 
 					<div className="illustration">
-						<Illustration />
+						{/* <Illustration /> */}
+						<Img fluid={personalImage} alt="Carl Hallén Jansson" />
 					</div>
 				</div>
 			</section>
@@ -218,7 +219,7 @@ query FeaturedQuery {
 			email
 		}
 	}
-	personalImage: file(relativePath: { eq: "raster/carl.png" }){
+	personalImage: file(relativePath: { eq: "raster/profile.jpg" }){
 		childImageSharp{
 			fluid(maxWidth: 500){
 				...GatsbyImageSharpFluid

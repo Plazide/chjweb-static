@@ -4,8 +4,10 @@
 	--textSecondary: #f7f7f2;
 	--textAlt: #2b2d42;
 	--primary: #c63d3d;
+	--primaryOpaque: #c63d3d50;
 	--secondary: #e99029;
 	--textAlt2: #232535;
+	--altOpaque: #23253550;
 	--shadow: rgba(86, 83, 94, 0.3);
 	--lightShadow: rgba(93, 92, 97, 0.1);
 	--lightBlue: #F2F9F9;
@@ -221,12 +223,15 @@ section.hero .button{
 	margin-bottom: 1em;
 }
 section.hero .content .illustration{
-	width: 550px;
+	width: 400px;
 	max-width: 40%;
 	text-align: right;
+	filter: drop-shadow(2px 10px 5px var(--altOpaque))
 }
 section.hero .content .illustration img{
 	max-width: 100%;
+
+	border-radius: 50%;
 }
 
 /* Features */
