@@ -1,9 +1,9 @@
 ---
 type: post
-published: false
+published: true
 title: Du behöver antagligen inte ett webbhotell
-date: 2021-01-05T10:21:35.223Z
-updated: 2021-01-05T10:21:35.248Z
+date: 2021-01-05T13:55:32.087Z
+updated: 2021-01-05T13:55:33.559Z
 image: /cover-du-behover-antagligen-inte-ett-webhotell.jpg
 description: Många av oss betalar varje månad för ett webbhotell som kostar
   flera hundra kronor. Tänk om man inte behövde göra detta. Tänk om man skulle
@@ -22,17 +22,27 @@ Jag har inte betalat ett öre för att driva min webbplats på över 1 år. Samt
 
 Om du är intresserad av att börja använda JAMstack till din egen webbplats bör du ställa dig själv ett par frågor:
 
-- Använder jag kommentarer?
-- Använder jag en gästbok?
-- Finns det innehåll som ändras ofta (oftare än 1 gång per dag)?
-- Använder jag ett inloggningssystem?
-- Är webbplatsen en webbshop?
+* Använder jag kommentarer?
+* Använder jag en gästbok?
+* Finns det innehåll som ändras ofta (oftare än 1 gång per dag)?
+* Använder jag ett inloggningssystem?
+* Är webbplatsen en webbshop?
+
+### Om du svarar Ja
 
 Om du svarar *Ja* på någon av de frågorna kanske det är lättare att behålla lösningen du redan använder. Det betyder dock inte att det är omöjligt att använda de funktionerna på en JAMstack sida, det är faktiskt ganska vanligt, det blir bara lite svårare.
 
 Det finns faktiskt väldigt många verksamheter som ägnar sig åt att skapa lösningar för JAMstack sidor, alltså inloggningssystem, webbshoppar, kommentarer osv. Det krävs dock att en utvecklare skapar integrationer med dessa lösningar.
 
 Det är dock värt att nämna att det är svårt att skapa detta funktioner utan JAMstack också.
+
+### Om du svarar Nej
+
+Det är mycket troligt att du svarade nej på alla frågor ovan. De flesta webbplatser behöver inte och har inte sådana funktioner. Om du endast behöver en enkel webbplats som presenterar dig eller ditt företag krävs inte avancerade funktioner.
+
+Allt du behöver är lite några sidor med lite information på. Det finns ju trots allt sociala medier där man kan komma i kontakt med kunder, så en gästbok eller kommentarsfunktion är ofta inte nödvändigt.
+
+Om detta är fallet med din hemsida är det mycket möjligt att du kan spara en hel del pengar på att byta till JAMstack.
 
 ## Hur börjar jag använda JAMstack?
 
@@ -92,10 +102,18 @@ Om du vill se vad som kan skapas med en JAMstack-sida kan du titta på följande
 
 Webbplatsen du är på just nu är en JAMstack-sida byggd med Gatsby och Netlify. Som sagt kostar den inte ett öre att driva och presterar bättre än när den låg på en webbserver.
 
+## Hur mycket kostar det att byta till JAMstack?
+
+Om du skulle ta hjälp av en utvecklare undrar du säkert hur mycket det kostar att byta till JAMstack eller få en webbplats utvecklad. Detta beror såklart på hur avancerad webbplatsen är, men om du kommer till mig kan du förvänta dig någonstans runt 2000 - 5000 kr för enklare webbplatser.
+
+Jag kan inte tala för andra webbutvecklare eller webbyråer.
+
+Beroende på hur mycket du betalar för ditt webbhotell kommer du spara in detta på några månader. 
+
 ## Avslutningsvis
 
 Som du förstår finns det många fördelar med JAMstack, men även många hinder för den som inte är utvecklare. Om du är beredd att anlita en utvecklare kan du få en webbplats som presterar fantastiskt bra och kan i många fall drivas gratis.
 
-När du är bered att ta steget till JAMstack finns jag tillgänglig. Det är bara [höra av dig](/kontakt).
+När du är beredd att ta steget till JAMstack finns jag tillgänglig. Det är bara [höra av dig](/kontakt).
 
 Tack för att du läst!
