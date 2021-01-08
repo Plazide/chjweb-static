@@ -10,9 +10,11 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 import { useLocation } from "@reach/router";
+import { useI18next } from "gatsby-plugin-react-i18next";
 
 function SEO({ description, lang, meta, title, url, structuredData, breadcrumb, image = "/images/small.png" }){
 	const{ pathname } = useLocation();
+	const{ language } = useI18next();
 	const path = pathname.split("/").filter( path => path !== "en").join("/");
 	const{ site } = useStaticQuery(
 		graphql`
@@ -34,7 +36,7 @@ function SEO({ description, lang, meta, title, url, structuredData, breadcrumb, 
 	return(
 		<Helmet
 			htmlAttributes={{
-				lang
+				lang: language
 			}}
 			title={title}
 			titleTemplate={`%s | ${site.siteMetadata.title}`}
