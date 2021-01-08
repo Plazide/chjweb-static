@@ -16,6 +16,13 @@ export default function navigation(){
 			</Link>
 
 			<Link
+				to="/om-mig"
+				activeClassName="active"
+			>
+				{t("about")}
+			</Link>
+
+			<Link
 				to="/tjanster"
 				activeClassName="active"
 			>
