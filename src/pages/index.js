@@ -115,6 +115,7 @@ const IndexPage = ({ data }) => {
 					illustration={<Img fluid={personalImage} className="personal-image" />}
 					align="left"
 					title={t("about.heading")}
+					link="/om-mig"
 				>
 					{t("about.content")}
 				</Row>
