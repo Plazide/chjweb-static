@@ -4,6 +4,12 @@ section.hero.about-page .content{
 section.hero.about-page .copy{
 	width: auto;
 }
+section.hero.about-page .illustration{
+	filter: drop-shadow(2px 10px 5px var(--primaryOpaque));
+}
+section.hero.about-page .illustration img{
+	border-radius: 50%;
+}
 
 section.story.about-page .content{
 	max-width: 800px;

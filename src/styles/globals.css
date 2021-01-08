@@ -226,11 +226,12 @@ section.hero .content .illustration{
 	width: 400px;
 	max-width: 40%;
 	text-align: right;
+}
+section.hero.frontpage .illustration{
 	filter: drop-shadow(2px 10px 5px var(--primaryOpaque))
 }
-section.hero .content .illustration img{
+section.hero.frontpage .content .illustration img{
 	max-width: 100%;
-
 	border-radius: 50%;
 }
 
