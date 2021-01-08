@@ -20,6 +20,7 @@ import { ReactComponent as Wave } from "../images/illustrations/wave.svg";
 import { ReactComponent as Checkmark } from "../images/icons/checkmark.svg";
 import { ReactComponent as Speed } from "../images/illustrations/speed.svg";
 import { ReactComponent as Secure } from "../images/illustrations/secure.svg";
+import { ReactComponent as Circle } from "../images/illustrations/circles_2.svg";
 import hostingUrl from "../images/illustrations/hosting.svg";
 import workflowUrl from "../images/illustrations/workflow.svg";
 import workflowArrowUrl from "../images/illustrations/workflow_arrow.svg";
@@ -112,7 +113,7 @@ const IndexPage = ({ data }) => {
 
 			<section className="about">
 				<Row
-					illustration={<Img fluid={personalImage} className="personal-image" />}
+					illustration={<Circle />}
 					align="left"
 					title={t("about.heading")}
 					link="/om-mig"
