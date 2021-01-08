@@ -17,6 +17,29 @@ collections:
   - name: pages_sv
     label: Pages Swedish
     files:
+      - name: about
+        label: Om mig
+        file: content/pages/sv/about.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+            hint: Page title
+          - name: description
+            label: Description
+            hint: Meta description
+            widget: text
+          - name: heading
+            label: Heading
+            widget: string
+            hint: Heading in the hero
+          - name: paragraph
+            label: Paragraph
+            widget: text
+            hint: Paragraph in the hero
+          - name: body
+            label: Body
+            widget: markdown
       - name: privacy
         label: Integritetspolicy
         file: content/pages/sv/privacy.md
@@ -33,6 +56,29 @@ collections:
   - name: pages_en
     label: Pages English
     files:
+      - name: about
+        label: About me
+        file: content/pages/en/about.md
+        fields:
+          - name: title
+            label: Title
+            widget: string
+            hint: Page title
+          - name: description
+            label: Description
+            hint: Meta description
+            widget: text
+          - name: heading
+            label: Heading
+            widget: string
+            hint: Heading in the hero
+          - name: paragraph
+            label: Paragraph
+            widget: text
+            hint: Paragraph in the hero
+          - name: body
+            label: Body
+            widget: markdown
       - name: privacy
         label: Privacy policy
         file: content/pages/en/privacy.md

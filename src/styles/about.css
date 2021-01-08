@@ -1,0 +1,19 @@
+section.hero.about-page .content{
+	padding-bottom: 30px;
+}
+section.hero.about-page .copy{
+	width: auto;
+}
+
+section.story.about-page .content{
+	max-width: 800px;
+	margin: auto;
+	padding-top: 0;
+}
+section.story.about-page p{
+	font-size: 1.2rem;
+	line-height: 150%;
+}
+section.story.about-page h2{
+	margin-top: 80px;
+}

@@ -12,7 +12,12 @@ const{ remove } = require("confusables");
 
 exports.onCreateNode = async ({ node, actions, store, cache, createNodeId }) => {
 	const{ createNodeField, createNode } = actions;
-	if(node.internal.type === "MarkdownRemark" && node.frontmatter && node.frontmatter.type === "post" ){
+	const disallowedTypes = ["tech", "project"];
+	if(
+		node.internal.type === "MarkdownRemark" &&
+		node.frontmatter &&
+		!disallowedTypes.includes(node.frontmatter.type)
+	){
 		const value = createSlug({ node });
 		createNodeField({
 			name: "slug",
