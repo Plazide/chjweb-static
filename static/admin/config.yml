@@ -19,7 +19,7 @@ collections:
     files:
       - name: privacy
         label: Integritetspolicy
-        file: content/pages/sv/about.md
+        file: content/pages/sv/privacy.md
         fields:
           - name: title
             label: Title
@@ -35,7 +35,7 @@ collections:
     files:
       - name: privacy
         label: Privacy policy
-        file: content/pages/en/about.md
+        file: content/pages/en/privacy.md
         fields:
           - name: title
             label: Title
