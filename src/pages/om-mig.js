@@ -8,6 +8,7 @@ import SEO from "../components/seo";
 
 // Styles
 import "../styles/about.css";
+import ContactForm from "../components/ContactForm";
 
 export default function About({ data }){
 	console.log(data);
@@ -40,7 +41,7 @@ export default function About({ data }){
 					</ReactMarkdown>
 				</div>
 			</section>
-
+			<ContactForm />
 		</Layout>
 	);
 }
