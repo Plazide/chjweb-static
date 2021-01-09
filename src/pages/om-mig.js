@@ -22,6 +22,7 @@ export default function About({ data }){
 			<SEO
 				title={title}
 				description={description}
+				url="/om-mig"
 			/>
 			<section className="hero about-page">
 				<div className="content">
