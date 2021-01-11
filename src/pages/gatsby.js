@@ -63,7 +63,7 @@ export default function gatsby({ data }){
 					align="left"
 					illustration={HostingIcon}
 				>
-					Eftersom Gatsby genererar JAMstack-sidor, kan din webbplats ofta drivas gratis med hjälp av en tjänst för statiska webbplatser. Detta betyder inte bara att du kan får fler kunder, utan också att din webbplats blir billigare.
+					Eftersom Gatsby genererar JAMstack-sidor, kan din webbplats ofta drivas gratis med hjälp av en tjänst för statiska webbplatser. Detta betyder inte bara att du får fler kunder, utan också att din webbplats blir billigare.
 				</Row>
 			</section>
 			<section className="features">
@@ -100,7 +100,7 @@ export default function gatsby({ data }){
 			</section>
 			<ContactForm
 				heading="Vill du veta mer?"
-				paragraph="Undrar du något? Är du intresserad av en webbplats byggd med Gatsby? Skicka ett meddelande så hör jag av inom ett dygn, ofta snabbare!"
+				paragraph="Undrar du något? Är du intresserad av en webbplats byggd med Gatsby? Skicka ett meddelande så hör jag av mig inom ett dygn, ofta snabbare!"
 			/>
 		</Layout>
 	);
