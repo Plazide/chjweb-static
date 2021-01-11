@@ -207,7 +207,13 @@ module.exports = {
 					interpolation: {
 						escapeValue: false // not needed for react as it escapes by default
 					}
-				}
+				},
+				pages: [
+					{
+						matchPath: "/gatsby",
+						languages: ["sv"]
+					}
+				]
 			}
 		},
 		"gatsby-plugin-netlify-cms",
