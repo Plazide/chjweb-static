@@ -1,6 +1,6 @@
 ---
 type: post
-published: false
+published: true
 title: Du behöver antagligen inte använda Google Analytics
 date: 2021-01-11T17:20:05.120Z
 updated: 2021-01-11T17:20:05.161Z
