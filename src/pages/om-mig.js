@@ -11,7 +11,6 @@ import "../styles/about.css";
 import ContactForm from "../components/ContactForm";
 
 export default function About({ data }){
-	console.log(data);
 	const frontmatter = data.markdownRemark.frontmatter;
 	const{ title, description, heading, paragraph } = frontmatter;
 	const content = data.markdownRemark.rawMarkdownBody;
