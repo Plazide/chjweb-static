@@ -35,4 +35,10 @@ function addAnalytics(){
 	// script.src = "https://static.cloudflareinsights.com/beacon.min.js";
 
 	document.body.append(script);
+
+	addPlausibleFunction();
+}
+
+function addPlausibleFunction(){
+	window.plausible = window.plausible || function (){ (window.plausible.q = window.plausible.q || []).push(arguments); };
 }

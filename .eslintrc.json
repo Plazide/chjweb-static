@@ -1,4 +1,7 @@
 {
 	"extends": ["plugin:react/recommended", "plazide"],
-	"parser": "babel-eslint"
+	"parser": "babel-eslint",
+	"globals": {
+		"plausible": "readonly"
+	}
 }

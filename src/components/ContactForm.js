@@ -40,11 +40,20 @@ function Form(){
 			}
 		});
 
+		// Log submit event
+		if(location.hostname !== "localhost")
+			plausible("SendMessage", { props: { page: location.pathname } });
+
 		setSuccess(response.ok);
 	}
 
+	function onFormFocus(){
+		if(location.hostname !== "localhost")
+			plausible("FormFocus", { props: { page: location.pathname } });
+	}
+
 	return(
-		<form onSubmit={handleSubmit(onSubmit)}>
+		<form onSubmit={handleSubmit(onSubmit)} onFocus={onFormFocus}>
 			<div className="group">
 				<Controller
 					name="name"
