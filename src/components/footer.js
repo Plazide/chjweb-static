@@ -63,6 +63,7 @@ export default function Footer(){
 					<h1>{t("Footer:browse")}</h1>
 					<nav>
 						<Link to="/tjanster">{t("Nav:services")}</Link>
+						<Link to="/om-mig">{t("Nav:about")}</Link>
 						<Link to="/referenser">{t("Nav:projects")}</Link>
 						<Link to="/priser">{t("Nav:pricing")}</Link>
 						<Link to="/blogg">{t("Nav:blog")}</Link>
