@@ -27,7 +27,8 @@
 	},
 	"about": {
 		"heading": "Vem är jag?",
-		"content": "Mitt namn är Carl. Jag fann mitt intresse för webbutveckling under min tidiga tonår. Sedan dess har jag bara fortsatt lära mig nya språk och verktyg för att bygga intressanta projekt. Det har blivit en slags passion som bara växt med tiden."
+		"content": "Mitt namn är Carl. Jag fann mitt intresse för webbutveckling under min tidiga tonår. Sedan dess har jag bara fortsatt lära mig nya språk och verktyg för att bygga intressanta projekt. Det har blivit en slags passion som bara växt med tiden.",
+		"readmore": "Mer om mig"
 	},
 	"workflow": {
 		"heading": "Hur går det till?",

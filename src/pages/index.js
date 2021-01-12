@@ -117,6 +117,7 @@ const IndexPage = ({ data }) => {
 					align="left"
 					title={t("about.heading")}
 					link="/om-mig"
+					linkText={t("about.readmore")}
 				>
 					{t("about.content")}
 				</Row>

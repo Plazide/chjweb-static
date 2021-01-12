@@ -1,13 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
-import { useTranslation } from "gatsby-plugin-react-i18next";
 
 // Components
 import ButtonLink from "./ButtonLink";
 
-export default function Row({ illustration, link, align, title, children, paragraph = true, threshold = 0.3, animate = true }){
-	const{ t } = useTranslation("Row");
+export default function Row({ illustration, link, linkText, align, title, children, paragraph = true, threshold = 0.3, animate = true }){
 	const[ref, inView] = useInView({ threshold, triggerOnce: true });
 
 	const visible = inView;
@@ -22,7 +20,7 @@ export default function Row({ illustration, link, align, title, children, paragr
 		transform: animate ? `translate(${align === "left" ? "-" : ""}${translate})` : "translate(0)"
 	};
 
-	const button = link ? <ButtonLink href={link} variant="outlined" style={{ alignSelf: "flex-start" }}>{t("more")}</ButtonLink> : "";
+	const button = link ? <ButtonLink href={link} variant="outlined" style={{ alignSelf: "flex-start" }}>{linkText}</ButtonLink> : "";
 
 	return(
 		<section ref={ref} className="row" style={{ flexDirection: direction, opacity }}>
@@ -41,6 +39,7 @@ export default function Row({ illustration, link, align, title, children, paragr
 Row.propTypes = {
 	illustration: PropTypes.any,
 	link: PropTypes.string,
+	linkText: PropTypes.string,
 	align: PropTypes.string,
 	title: PropTypes.string,
 	children: PropTypes.node,

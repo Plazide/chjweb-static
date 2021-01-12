@@ -27,7 +27,8 @@
 	},
 	"about": {
 		"heading": "Who am I?",
-		"content": "My name is Carl. I found my interest for web development in my early teens. Since then, I've only continued to learn new languages and tools for building interesting projects. It has become a kind of passion which has only grown larger with time."
+		"content": "My name is Carl. I found my interest for web development in my early teens. Since then, I've only continued to learn new languages and tools for building interesting projects. It has become a kind of passion which has only grown larger with time.",
+		"readmore": "More about me"
 	},
 	"workflow": {
 		"heading": "How does it work?",
