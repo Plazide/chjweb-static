@@ -44,7 +44,7 @@ export default function navigation(){
 				{t("blog")}
 			</Link>
 
-			<ButtonLink variant="outlined" href="/kontakt/">{t("contact")}</ButtonLink>
+			<ButtonLink variant="filled" href="/kontakt/">{t("contact")}</ButtonLink>
 		</nav>
 	);
 }
