@@ -31,7 +31,7 @@ function addAnalytics(){
 	script.async = true;
 	script.setAttribute("data-domain", "chjweb.se");
 	/* script.setAttribute("data-cf-beacon", "{\"token\": \"1fe9cd5b9e15450c97c3b43962d69161\"}"); */
-	script.src = "https://plausible.io/js/plausible.js";
+	script.src = "https://plausible.io/js/plausible.outbound-links.js";
 	// script.src = "https://static.cloudflareinsights.com/beacon.min.js";
 
 	document.body.append(script);
