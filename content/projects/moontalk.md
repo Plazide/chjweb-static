@@ -7,7 +7,8 @@ info:
   en: "MoonTalk is a platform where swedes can discuss, vote, and voice their
     opinion. I did the development on this project. "
 image: /skarmbild-2020-12-14-193350.jpg
-url: https://moontalk.sea
+url: https://moontalk.se
+post_url: /blogg/introducerar-moontalk-en-plats-for-diskussion
 tech:
   - AWS
   - Gatsby
