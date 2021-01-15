@@ -33,8 +33,26 @@ Det kan också bero på att någon programvara på server-datorn använder väld
 
 Om du för statistik på din webbplats, genom Google Analytics (läs om varför du [inte borde använda Google Analytics](/blogg/statistik-utan-google)) eller någon annan statistik-tjänst, kan du se hur många besökare du har just nu.
 
-Hur många besökare din webbserver klarar av på en gång beror på hur kraftfull den är från början. 
+Hur många besökare din webbserver klarar av på en gång beror på hur kraftfull den är från början. Det bästa sättet att ta reda på om din server inte klarar av antalet användare är att testa att lösa det.
 
 #### Hur löser man det?
 
-Om webbplatsen är långsam på grund av mycket trafik
+##### Uppgradera
+
+En vanlig lösning är att uppgradera din webbserver. Detta betyder ofta att uppgradera betalningsplan hos ditt webbhotell. Beroende på hur uppgraderingen sker, om dem flyttar dig till en ny server eller endast ökar resurserna på din nuvarande, kan detta lösa både problemet med antalet användare och problem med buggar eller virus.
+
+Om du uppgraderar och webbplatsen fortfarande är långsam kanske det är dags att kontakta webbhotellet och se om de kan undersöka problemet.
+
+##### Cache
+En annan lösning, som kan användas tillsammans med upgraderingen, är att cacha webbplatsen genom en med hjälp av ett CDN (Content Delivery Network). På så sätt kommer hämtningar av webbplatsen inte ske genom din webbserver, utan genom ett nätverk av servrar som är utspridda på olika platser i världen. Detta kan göras genom en tjänst som [Cloudflare CDN](https://www.cloudflare.com/cdn).
+
+Den här lösningen kan snabba upp nästan alla webbplatser, om de inte redan ligger på ett CDN. Det betyder också att du använder mindre bandbredd hos ditt webbhotell, vilket betyder att du kan spara pengar genom att använda en billigare plan.
+
+##### JAMstack
+En tredje lösning är att bygga om webbplatsen så att den inte behöver ett webbhotell och ligger på ett CDN från början. Sådana hemsidor brukar kallas "statiska webbplatser" eller ["JAMstack"](/blogg/vad-ar-egentligen-jamstack).
+
+Med en webbplats byggd på JAMstack finns, som sagt, ingen webbserver. Det betyder att du inte kommer få några virus eller buggar. Webbplatsen kommer att serveras snabbare, även för människor på andra sidan världen, och du behöver inte en tjänst som Cloudflare CDN.
+
+Med en tjänst som [Netlify](https://www.netlify.com/) kan du servera webbplatsen gratis upp till en viss användning. 
+
+Som jag nämnt i andra inlägg är det den här metoden jag använder för att bygga webbplatser åt mina kunder. Så, om du är intresserade av att göra om din hemsida med JAMstack kan du med fördel [kontakta mig](/kontakt/).
