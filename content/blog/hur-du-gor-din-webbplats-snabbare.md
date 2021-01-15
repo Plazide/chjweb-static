@@ -51,7 +51,7 @@ Den här lösningen kan snabba upp nästan alla webbplatser, om de inte redan li
 ##### JAMstack
 En tredje lösning är att bygga om webbplatsen så att den inte behöver ett webbhotell och ligger på ett CDN från början. Sådana hemsidor brukar kallas "statiska webbplatser" eller ["JAMstack"](/blogg/vad-ar-egentligen-jamstack).
 
-Med en webbplats byggd på JAMstack finns, som sagt, ingen webbserver. Det betyder att du inte kommer få några virus eller buggar. Webbplatsen kommer att serveras snabbare, även för människor på andra sidan världen, och du behöver inte en tjänst som Cloudflare CDN.
+Med en webbplats byggd på JAMstack finns, som sagt, ingen webbserver. Det betyder att du inte kommer få några virus eller buggar. Webbplatsen kommer att serveras snabbare, även för människor på andra sidan världen, och du behöver inte en tjänst som Cloudflare CDN som sitter emellan din server och användarna.
 
 Med en tjänst som [Netlify](https://www.netlify.com/) kan du servera webbplatsen gratis upp till en viss användning. 
 
