@@ -30,6 +30,16 @@ export default function kontakt({ data, pageContext: { locale, data: localeData 
 	];
 	const{ phone, email } = data.site.siteMetadata;
 
+	function handleMailto(){
+		if(location.hostname !== "localhost")
+			plausible("Mailto button clicked");
+	}
+
+	function handleTel(){
+		if(location.hostname !== "localhost")
+			plausible("Telephone button clicked");
+	}
+
 	return(
 		<Layout locale={locale} localeData={localeData}>
 			<SEO
@@ -53,10 +63,19 @@ export default function kontakt({ data, pageContext: { locale, data: localeData 
 
 						<div className="buttons">
 							<a
+								onClick={handleMailto}
 								className="button button-filled"
-								href={`mailto:${email}?subject=${t("hero.subject")}`}>{t("hero.mailto")}
+								href={`mailto:${email}?subject=${t("hero.subject")}`}
+							>
+								{t("hero.mailto")}
 							</a>
-							<a className="button button-outlined call" href={`tel:${parseNumber(phone)}`}>{t("hero.tel")}</a>
+							<a
+								onClick={handleTel}
+								className="button button-outlined call"
+								href={`tel:${parseNumber(phone)}`}
+							>
+								{t("hero.tel")}
+							</a>
 						</div>
 					</div>
 
