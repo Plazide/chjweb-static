@@ -15,6 +15,8 @@ När man pratar om en "snabb hemsida" kan man syfta på olika saker. Dessa kan v
 * Gränssnittets prestanda
 * Hämtning av bilder
 
+Jag kommer diskutera dessa och ge tips på hur man löser problemen. Det är dock inte garanterat att just ditt problem är relaterat till det jag kommer prata om. Behöver du hjälp med din hemsida efter att ha läst färdigt kan du känna dig fri att kontakta mig.
+
 ## Orsaker
 
 Dessa har olika orsaker men kan vara relaterade. Om exempelvis webbplatsen hämtas långsamt är det stor sannolikhet att även bilderna hämtas långsamt.
@@ -55,4 +57,39 @@ Med en webbplats byggd på JAMstack finns, som sagt, ingen webbserver. Det betyd
 
 Med en tjänst som [Netlify](https://www.netlify.com/) kan du servera webbplatsen gratis upp till en viss användning. 
 
-Som jag nämnt i andra inlägg är det den här metoden jag använder för att bygga webbplatser åt mina kunder. Så, om du är intresserade av att göra om din hemsida med JAMstack kan du med fördel [kontakta mig](/kontakt/).
+Som jag nämnt i andra inlägg, och på andra sidor på min hemsida, är det den här metoden jag använder för att bygga webbplatser åt mina kunder. Så, om du är intresserade av att göra om din hemsida med JAMstack kan du med fördel [kontakta mig](/kontakt/).
+
+### Dålig prestanda i gränssnittet
+Det här händer bara om man har en komplicerad webbplats med mycket element som uppdateras på skärmen.
+
+Detta är ofta ett resultat av dåligt optimerad kod.
+
+För att identifiera och lösa det här problemet måste en utvecklare undersöka saken. Chansen är att du redan anlitat en webbutvecklare som byggde sidan åt dig, då är det bäst att kontakta samma utvecklare igen.
+
+Webbplatser som byggs med verktyg som Wix, Squarespace eller Wordpress brukar inte bli avancerade nog för att orsaka problem med prestandan. Det är dock inte omöjligt.
+
+Om du exempelvis har väldigt mycket plugins installerade på din Wordpress-sida kan prestandan påverkas. Då handlar det både om gränssnittets prestanda och hur lång tid det tar för servern att svara.
+
+### Långsamma bilder
+
+#### Gör bilderna mindre
+Den här är egentligen ganska enkel att lösa: gör dina bilder mindre.
+
+Du kanske tänker att bilderna får sämre kvalité om du gör de mindre. Det stämmer till viss del, men bilderna på din webbplats behöver aldrig vara större än utrymmet dem tar upp.
+
+Om din bild tar 500x500 pixlar på webbplatsen, behöver bilden vara 1000x1000 pixlar. 
+
+Undvik att ladda större bilder än du behöver.
+
+#### Hämta mindre först
+En annan lösning är att göra som [Gatsby](https://gatsbyjs.com), ett verktyg för att skapa webbplatser med JAMstack, och hämta mindre versioner av bilderna först och sedan hämta bilder av högre kvalité.
+
+På det sättet laddar bilderna fort, samtidigt som man får de i bra kvalité. Det är det bästa av två världar.
+
+Jag använder Gatsby för att bygga webbplatser till mina kunder, så alla jag bygger åt får den här optimeringen.
+
+## Avslutningsvis
+
+Det finns många sätt att snabba upp webbplatsen, detta var bara några vanliga problem som gör den långsammare. Om du behöver hjälp med din webbplats är jag tacksam om du kontakta mig.
+
+Tack för att du har läst.
