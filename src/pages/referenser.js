@@ -9,7 +9,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 import { ReactComponent as HeroImage } from "../images/illustrations/cms.svg";
 
 import "../styles/referenser.css";
-import CTA from "../components/CTA";
+import ContactForm from "../components/ContactForm";
 
 export default function referenser({ data, pageContext: { language } }){
 	const{ t } = useTranslation("Projects", { useSuspense: false });
@@ -65,11 +65,10 @@ export default function referenser({ data, pageContext: { language } }){
 				}
 			</div>
 
-			<CTA
-				title={t("cta.heading")}
-			>
-				{t("cta.content")}
-			</CTA>
+			<ContactForm
+				heading={t("cta.heading")}
+				paragraph={t("cta.content")}
+			/>
 		</Layout>
 	);
 }

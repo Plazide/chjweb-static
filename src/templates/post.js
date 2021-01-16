@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { graphql, navigate } from "gatsby";
 import rehypeReact from "rehype-react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import BackgroundImage from "gatsby-background-image";
 
@@ -30,6 +30,7 @@ import SEO from "../components/seo";
 
 // CSS
 import "../styles/blog.css";
+import ContactForm from "../components/ContactForm";
 
 // eslint-disable-next-line new-cap
 const renderAst = new rehypeReact({
@@ -119,6 +120,10 @@ export default function post({ data, pageContext: { locale, data: localeData } }
 				</section>
 				<SocialShare title={title} shareUrl={pageUrl} twitterVia="chj_web" size={48} />
 			</article>
+			<ContactForm
+				heading={t("cta.heading")}
+				paragraph={t("cta.content")}
+			/>
 		</Layout>
 	);
 }

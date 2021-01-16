@@ -12,7 +12,7 @@ import Intro from "../components/Intro";
 // Images
 import heroIllustrationUrl from "../images/illustrations/webbyra.svg";
 import Service from "../components/Service";
-import CTA from "../components/CTA";
+import ContactForm from "../components/ContactForm";
 
 export default function Tjanster({ data, pageContext: { language } }){
 	const{ t } = useTranslation("Services", { useSuspense: false });
@@ -70,9 +70,10 @@ export default function Tjanster({ data, pageContext: { language } }){
 				</div>
 			</section>
 
-			<CTA title={t("cta.heading")}>
-				{t("cta.content")}
-			</CTA>
+			<ContactForm
+				heading={t("cta.heading")}
+				paragraph={t("cta.content")}
+			/>
 		</Layout>
 	);
 }

@@ -7,7 +7,7 @@ import { useTranslation } from "gatsby-plugin-react-i18next";
 
 // Illustrations
 import { ReactComponent as Pricing } from "../images/illustrations/pricing_red.svg";
-import CTA from "../components/CTA";
+import ContactForm from "../components/ContactForm";
 
 export default function priser(){
 	const{ t } = useTranslation("Pricing", { useSuspense: false });
@@ -61,11 +61,10 @@ export default function priser(){
 				</Intro>
 			</section>
 
-			<CTA
-				title={t("cta.heading")}
-			>
-				{t("cta.content")}
-			</CTA>
+			<ContactForm
+				heading={t("cta.heading")}
+				paragraph={t("cta.content")}
+			/>
 		</Layout>
 	);
 }

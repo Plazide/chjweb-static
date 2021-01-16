@@ -11,7 +11,6 @@ import SEO from "../components/seo";
 
 // Components
 import ButtonLink from "../components/ButtonLink";
-import CTA from "../components/CTA";
 import Row from "../components/Row";
 
 // Images
@@ -24,6 +23,7 @@ import { ReactComponent as Circle } from "../images/illustrations/circles_2.svg"
 import hostingUrl from "../images/illustrations/hosting.svg";
 import workflowUrl from "../images/illustrations/workflow.svg";
 import workflowArrowUrl from "../images/illustrations/workflow_arrow.svg";
+import ContactForm from "../components/ContactForm";
 
 const IndexPage = ({ data }) => {
 	const{ t } = useTranslation("Start", { useSuspense: false });
@@ -143,11 +143,10 @@ const IndexPage = ({ data }) => {
 				</Row>
 			</section>
 
-			<CTA
-				title={t("cta.heading")}
-			>
-				{t("cta.content")}
-			</CTA>
+			<ContactForm
+				heading={t("cta.heading")}
+				paragraph={t("cta.content")}
+			/>
 		</Layout>
 	);
 };

@@ -5,5 +5,9 @@
 	},
 	"technical": {
 		"heading": "Technical articles"
+	},
+	"cta": {
+		"heading": "Questions or comments?",
+		"content": "Do you have any questions or comments? Send me a message below."
 	}
 }
