@@ -52,7 +52,10 @@ export default function kontakt({ data, pageContext: { locale, data: localeData 
 						<p>{t("hero.content")}</p>
 
 						<div className="buttons">
-							<a className="button button-filled" href={`mailto:${email}`}>{t("hero.mailto")}</a>
+							<a
+								className="button button-filled"
+								href={`mailto:${email}?subject=${t("hero.subject")}`}>{t("hero.mailto")}
+							</a>
 							<a className="button button-outlined call" href={`tel:${parseNumber(phone)}`}>{t("hero.tel")}</a>
 						</div>
 					</div>
