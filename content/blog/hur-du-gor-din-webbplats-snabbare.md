@@ -2,9 +2,9 @@
 type: post
 published: false
 title: Hur du gör din webbplats snabbare
-date: 2021-01-14T09:39:53.987Z
-updated: 2021-01-14T09:39:54.018Z
-image: /servers.jpg
+date: 2021-01-18T16:56:52.650Z
+updated: 2021-01-18T16:56:54.418Z
+image: /snabbare-webbplats-cover.jpg
 description: Ingen vill ha en långsam hemsida. Om du tycker att din webbplats
   tar för lång tid att visas, då är det här inlägget för dig. Jag berättar om
   vanliga orsaker till långsamma hemsidor och hur man åtgärdar problemen.
