@@ -1,6 +1,6 @@
 ---
 type: post
-published: false
+published: true
 title: Hur du gör din webbplats snabbare
 date: 2021-01-18T16:56:52.650Z
 updated: 2021-01-18T16:56:54.418Z
