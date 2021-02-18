@@ -84,7 +84,7 @@
   "scripts": {
     "build": "run-s build:*",
     "build:gatsby": "gatsby build",
-    "build:lambda": "cd functions && yarn build",
+    "build:lambda": "netlify-lambda install && cd functions && yarn build",
     "develop": "run-p develop:*",
     "develop:gatsby": "gatsby develop",
     "develop:cms": "npx netlify-cms-proxy-server",
@@ -93,8 +93,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "postinstall": "netlify-lambda install"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",

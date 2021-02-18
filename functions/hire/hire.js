@@ -1,4 +1,4 @@
-const nodemailer = require("../audit/node_modules/nodemailer");
+const nodemailer = require("nodemailer");
 require("dotenv").config();
 
 const host = process.env.EMAIL_HOST;
