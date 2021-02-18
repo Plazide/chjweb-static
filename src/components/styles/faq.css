@@ -1,0 +1,36 @@
+section.faq .content h2{
+	margin-bottom: 1rem;
+}
+section.faq .questions{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+section.faq .questions .column{
+	display: flex;
+	flex-direction: column;
+	flex-basis: 48%;
+}
+details{
+	font-weight: 300;
+	border: 1px solid var(--primary);
+	margin: 0 0 1rem;
+	/* background: #f1f1f1; */
+	border-radius: 4px;
+}
+details summary{
+	font-weight: bold;
+	cursor: pointer;
+	padding: .5rem 1rem .5rem;
+	outline: none;
+}
+details .answer{
+	padding: .5rem 1rem;
+	line-height: 150%;
+}
+
+@media only screen and (max-width: 415px){
+	section.faq .questions .column{
+		flex-basis: 100%;
+	}
+}

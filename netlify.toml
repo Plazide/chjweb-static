@@ -1,8 +1,11 @@
 [build]
 	base="/"
-	command="gatsby build"
+	command="yarn build"
 	functions="functions"
 	publish="public"
+
+[dev]
+	command="yarn develop"
 
 [[redirects]]
 	from = "/blogg/chj-webblosningar-hemsida-blogg"

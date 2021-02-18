@@ -212,6 +212,10 @@ module.exports = {
 					{
 						matchPath: "/gatsby",
 						languages: ["sv"]
+					},
+					{
+						matchPath: "/egen-webbutvecklare",
+						languages: ["sv"]
 					}
 				]
 			}

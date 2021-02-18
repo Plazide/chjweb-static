@@ -1,0 +1,14 @@
+{
+	"presets": [
+		"babel-preset-gatsby",
+		"@babel/preset-typescript",
+		[
+			"@babel/preset-env",
+			{
+				"targets": {
+					"node": true
+				}
+			}
+		]
+	]
+}

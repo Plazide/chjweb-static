@@ -3,14 +3,16 @@ import Intro from "../components/Intro";
 import Layout from "../components/layout";
 import Pros, { Pro } from "../components/Pros";
 import SEO from "../components/seo";
-import { useTranslation } from "gatsby-plugin-react-i18next";
+import { Link, useTranslation } from "gatsby-plugin-react-i18next";
 
 // Illustrations
 import { ReactComponent as Pricing } from "../images/illustrations/pricing_red.svg";
 import ContactForm from "../components/ContactForm";
+import PricingPlans from "../components/PricingPlans";
 
 export default function priser(){
-	const{ t } = useTranslation("Pricing", { useSuspense: false });
+	const{ t, i18n } = useTranslation("Pricing", { useSuspense: false });
+	const{ language } = i18n;
 
 	return(
 		<Layout>
@@ -32,10 +34,6 @@ export default function priser(){
 			</section>
 
 			<section className="features">
-				{/* <div className="copy intro">
-					<h1>Ett rättvist pris</h1>
-					<p>Innan jag ger er ett pris kommer jag granska era krav och behov för att kunna uppskatta ett så rättvist pris som möjligt.</p>
-				</div> */}
 				<Intro
 					title={t("features.development.heading")}
 				>
@@ -56,9 +54,25 @@ export default function priser(){
 					</Pro>
 				</Pros>
 
-				<Intro title={t("features.hosting.heading")}>
+				{/* <Intro title={t("features.hosting.heading")}>
 					{t("features.hosting.content")}
-				</Intro>
+				</Intro> */}
+
+				{
+					language === "sv"
+						? (
+							<>
+								<Intro
+									title="Personlig webbutvecklare"
+									style={{ marginBottom: 20 }}
+								>
+								Utöver utveckling kan ni anlita mig för att ta hand om er webbplats, så att ni inte behöver oroa er över: drift, utveckling, design, innehåll eller SEO. Jag tar hand om allt. Läs mer om att anlita mig som en <Link to="/egen-webbutvecklare">personlig webbutvecklare</Link> eller välj en plan här nedanför.
+								</Intro>
+								<PricingPlans showDescription={false} showHeading={false} />
+							</>
+						)
+						: null
+				}
 			</section>
 
 			<ContactForm

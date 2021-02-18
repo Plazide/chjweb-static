@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"lib": ["DOM", "ES2020"],
+		"esModuleInterop": true,
+		"allowJs": true,
+		"checkJs": false,
+		"strict": true,
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"preserveWatchOutput": true,
+		"typeRoots": ["node_modules/@types"],
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["./*/*.ts"]
+}

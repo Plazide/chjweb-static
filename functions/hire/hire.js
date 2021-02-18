@@ -1,4 +1,4 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require("../audit/node_modules/nodemailer");
 require("dotenv").config();
 
 const host = process.env.EMAIL_HOST;
@@ -38,18 +38,19 @@ async function sendHireEmail(email, msg){
 }
 
 exports.handler = async (event, context) => {
-	if(event.httpMethod !== "POST") return { statusCode: 400, body: "Method not supported" }
+	if(event.httpMethod !== "POST") return{ statusCode: 400, body: "Method not supported" };
 
 	const body = JSON.parse(event.body);
 	const email = body.email;
 	const msg = body.msg;
-	if(!email || !/^.+@.+\..{2,8}$/.test(email)) return { statusCode: 400, body: "Malformed data" }
-	if(!msg) return { statusCode: 400, body: "Maformed data" }
+	if(!email || !/^.+@.+\..{2,8}$/.test(email)) return{ statusCode: 400, body: "Malformed data" };
+	if(!msg) return{ statusCode: 400, body: "Maformed data" };
 
 	const accepted = await sendHireEmail(email, msg);
 
 	if(accepted)
-		return { statusCode: 200, body: "Accepted" };
+		return{ statusCode: 200, body: "Accepted" };
 	else
-		return { statusCode: 500, body: "Internal Server Error" };
+		return{ statusCode: 500, body: "Internal Server Error" };
 }
+;

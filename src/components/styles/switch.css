@@ -1,0 +1,39 @@
+.switchContainer{
+	display: flex;
+}
+.checkbox{
+	appearance: none;
+	width: 0;
+	height: 0;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+.switch{
+	width: 40px;
+	height: 20px;
+	border-radius: 20px;
+	border: 1px solid var(--textAlt);
+	margin: 0 5px;
+
+	transition: background 100ms ease;
+}
+.switch .knob{
+	height: 18px;
+	width: 18px;
+	background: var(--textAlt);
+	border-radius: 50%;
+	transition: transform 100ms ease;
+}
+.switch.off .knob{
+	transform: translate(1px, 1px);
+}
+.switch.on .knob{
+	transform: translate(20px, 1px);
+}
+.switch.off{
+	background: #ccc;
+}
+.switch.on{
+	background: #fff;
+}

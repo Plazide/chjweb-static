@@ -1,0 +1,95 @@
+.pricing h2{
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.pricing > p{
+	max-width: 400px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.pricing .disclaimer{
+	text-align: center;
+}
+.pricing .tiers{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.pricing .options{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+.tier {
+	box-shadow: 0 2px 2px 2px var(--shadow);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	max-width: 250px;
+	border-radius: 4px;
+	margin: 0 1rem 1rem;
+}
+.tier .name{
+	font-weight: bold;
+	color: var(--textPrimary);
+	margin-bottom: 5px;
+	font-size: 1.1rem;
+}
+.tier .description{
+	line-height: 150%;
+	font-weight: 300;
+}
+.tier .price{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.tier .price .discount{
+	position: absolute;
+	right: 0;
+	top: -17px;
+	color: var(--green);
+	font-weight: bold;
+}
+.tier .price .monthly{
+	font-size: 2rem;
+	color: var(--primary);
+	font-weight: bold;
+}
+.tier .price .perMonth{
+	color: var(--textPrimary);
+	font-weight: normal;
+	font-size: 1rem;
+}
+.tier .price .yearly{
+	font-size: .8rem;
+	margin-top: 3px;
+}
+
+.tier .perks{
+	background: var(--grey);
+	padding: .5rem 1rem;
+	text-align: left;
+	border-radius: 4px;
+	margin-top: 30px;
+}
+.tier .perks .perk{
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+	color: var(--textAlt);
+}
+.tier .perks .perk .icon{
+	margin-right: 10px;
+}
+.tier .order{
+	margin-top: 20px;
+}
+
+.tier .thin{
+	font-weight: 300;
+}

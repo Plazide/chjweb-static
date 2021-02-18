@@ -1,0 +1,4 @@
+{
+	"extends": "plazide",
+	"parser": "@typescript-eslint/parser"
+}

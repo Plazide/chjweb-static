@@ -39,6 +39,17 @@ export default function Tjanster({ data, pageContext: { language } }){
 			</Hero>
 
 			<section className="features">
+				{
+					language === "sv"
+						? (
+							<Intro
+								title="Personlig webbutvecklare"
+							>
+								Jag kan vara er personliga webbutvecklare som hjälper er med allt som har att göra med webbplatsen. Läs mer om fördelarna med att anlita mig som <Link to="/egen-webbutvecklare">personlig webbutvecklare</Link>.
+							</Intro>
+						) : null
+				}
+
 				<Intro
 					title={t("features.heading")}
 				>

@@ -36,21 +36,22 @@ async function sendAuditEmail(email, website, link){
 }
 
 exports.handler = async (event, context) => {
-	if(event.httpMethod !== "POST") return { statusCode: 400, body: "Method not supported" };
+	if(event.httpMethod !== "POST") return{ statusCode: 400, body: "Method not supported" };
 
 	const body = JSON.parse(event.body);
 	const email = body.email;
 	const website = body.website;
 
-	if(!email || !/^.+@.+\..{2,8}$/.test(email)) return { statusCode: 400, body: "Malformed data" };
-	if(!website || !/^(https?:\/\/)?(www.)?[a-z0-9]*\.[a-z]{2,62}/.test(website)) return { statusCode: 400, body: "Malformed data" };
+	if(!email || !/^.+@.+\..{2,8}$/.test(email)) return{ statusCode: 400, body: "Malformed data" };
+	if(!website || !/^(https?:\/\/)?(www.)?[a-z0-9]*\.[a-z]{2,62}/.test(website)) return{ statusCode: 400, body: "Malformed data" };
 
 	const link = /^https?:\/\//.test(website) ? website : `https://${website}`;
 
 	const accepted = await sendAuditEmail(email, website, link);
 
 	if(accepted)
-		return { statusCode: 200, body: "Accepted" }
+		return{ statusCode: 200, body: "Accepted" };
 	else
-		return { statusCode: 500, body: "Internal Server Error" }
+		return{ statusCode: 500, body: "Internal Server Error" };
 }
+;
