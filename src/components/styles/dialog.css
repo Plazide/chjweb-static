@@ -46,6 +46,7 @@
 	border: none;
 
 	background: var(--shadow);
+	z-index: 9001;
 }
 
 .submit-success{
