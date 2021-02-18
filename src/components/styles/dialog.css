@@ -23,8 +23,10 @@
 	box-shadow: 0 2px 2px 2px var(--shadow);
 }
 .modal-body{
-	max-width: 99%;
-	width: 400px;
+	box-sizing: border-box;
+	width: 95%;
+	max-width: 400px;
+	
 	margin: auto;
 	background: var(--textSecondary);
 	padding: 1.5rem;

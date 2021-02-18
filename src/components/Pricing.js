@@ -129,7 +129,7 @@ export function Tier({
 	);
 }
 
-export function OrderForm({ order }){
+export function OrderForm({ order, onCancel }){
 	const{ handleSubmit, control, errors } = useForm();
 	const[loading, setLoading] = useState(false);
 	const[error, setError] = useState(null);
@@ -180,7 +180,7 @@ export function OrderForm({ order }){
 						onChange={onChange}
 						name={name}
 						errorText={errors["contact-name"] ? errors["contact-name"].message : ""}
-						helperText="Namnet på personen jag kommer har kontakt med"
+						helperText="Namnet på personen jag kommer att ha kontakt med"
 					/>
 				)}
 			/>
@@ -212,7 +212,7 @@ export function OrderForm({ order }){
 						onChange={onChange}
 						name={name}
 						errorText={errors.company ? errors.company.message : ""}
-						helperText="Namnet på ert företag"
+						helperText="Namnet på företag"
 					/>
 				)}
 			/>
@@ -228,13 +228,23 @@ export function OrderForm({ order }){
 			{
 				!success
 					? (
-						<Button
-							type="submit"
-							variant="filled"
-							loading={loading}
-						>
+						<div style={{ display: "flex", justifyContent: "space-between", marginTop: 15 }}>
+							<Button
+								type="submit"
+								variant="filled"
+								loading={loading}
+							>
 						Beställ
-						</Button>
+							</Button>
+
+							<Button
+								type="button"
+								variant="text"
+								onClick={onCancel}
+							>
+							Avbryt
+							</Button>
+						</div>
 					)
 					: (
 						<div className="submit-success">
@@ -273,5 +283,6 @@ Tier.propTypes = {
 };
 
 OrderForm.propTypes = {
-	order: PropTypes.object
+	order: PropTypes.object,
+	onCancel: PropTypes.func
 };

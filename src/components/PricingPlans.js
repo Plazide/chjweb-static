@@ -8,7 +8,7 @@ export default function PricingPlans({ showHeading = true, showDescription = tru
 	const[order, setOrder] = useState(null);
 
 	function handleOrder(order){
-		if(!location.hostname !== "localhost")
+		if(location.hostname !== "localhost")
 			plausible("Order Click", {
 				props: {
 					page: location.pathname,
@@ -28,7 +28,7 @@ export default function PricingPlans({ showHeading = true, showDescription = tru
 				<hr />
 				<p>Jag skickar mer information till e-postadressen nedan. Ni förbinder er inte till något genom att trycka på Beställ.</p>
 				<br />
-				<OrderForm order={order} />
+				<OrderForm order={order} onCancel={ () => setOpen(false) } />
 			</Dialog>
 			<Pricing
 				title={showHeading ? "Priser" : null}
