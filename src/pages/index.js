@@ -26,7 +26,8 @@ import workflowArrowUrl from "../images/illustrations/workflow_arrow.svg";
 import ContactForm from "../components/ContactForm";
 
 const IndexPage = ({ data }) => {
-	const{ t } = useTranslation("Start", { useSuspense: false });
+	const{ t, i18n } = useTranslation("Start", { useSuspense: false });
+	const{ language } = i18n;
 	const meta = data.site.siteMetadata;
 	const personalImage = data.personalImage.childImageSharp.fluid;
 	const structuredData = [
@@ -67,7 +68,11 @@ const IndexPage = ({ data }) => {
 						<p>{t("hero.paragraph")}</p>
 						<div className="btns">
 							<ButtonLink href="/kontakt/" variant="filled">{t("hero.contact")}</ButtonLink>
-							<ButtonLink href="/blogg/" variant="outlined">{t("hero.blog")}</ButtonLink>
+							{
+								language === "sv"
+									? <ButtonLink href="/egen-webbutvecklare/" variant="outlined">Egen utvecklare</ButtonLink>
+									: <ButtonLink href="/blogg/" variant="outlined">{t("hero.blog")}</ButtonLink>
+							}
 						</div>
 					</div>
 
