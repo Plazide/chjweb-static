@@ -58,3 +58,13 @@ En av de bästa sakerna med Gatsby är att man kan dra in information från näs
 Man kan alltså hämta information som sedan görs tillgängligt genom ett separat normaliserat lager. Detta öppnar många dörrar för hantering av information och resurser på webbplatsen.
 
 Det är bland annat den här tekniken Gatsby använder för att optimera bilder. Gatsby hämtar bilder från en eller flera platser i filsystemet, skapar flera olika storlekar av dessa bilder och gör sedan dessa tillgängliga genom samma gränssnitt som resten av informationen på webbplatsen.
+
+### Vad betyder det här för dig som kund
+
+Alla dessa fördelar och funktioner som Gatsby erbjuder kommer att ge dig en snabb webbplats och optimerad webbplats utan extra kostnad. Med hjälpa av Gatsby kan du alltså införskaffa en webbplats som presterar på topp, och samtidigt är billigare att driva än en traditionell webbplats.
+
+## Avslutningsvis
+
+Det finns andra SSG verktyg som gör liknande saker, men ingen av dem har det data lager som Gatsby erbjuder. Deta betyder att flexibiliteten som kommer med att använda Gatsby nästan är oslagbar.
+
+Jag har byggt många webbplatser med hjälp av Gatsby, så om du är intresserad av att skaffa en hemsida byggd på just Gatsby kan du med fördel [kontakta mig](/kontakt/).
