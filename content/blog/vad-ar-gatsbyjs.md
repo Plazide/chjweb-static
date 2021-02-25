@@ -45,6 +45,16 @@ När du navigerar en webbplats som är byggd med Gatsby känns det som att du ta
 
 Resurserna är även separerade från början. Istället för hämta all CSS och JavaScript när man kommer till den första sidan på webbplatsen, hämtas specifika resurser för varje sida man besöker. Detta minskar storleken på alla sidor då endast nödvändiga resurser hämtas.
 
-Detta betyder dock inte att alla resurser laddas efter att sidan har hämtats. De viktigaste resurserna inkluderas faktiskt i HTML dokumentet så att allting ser bra ut direkt. 
+### Prioriterar kritiska resurser
 
-Har du någonsin vart med om att en sida ser helt fel ut när du går in på den, som att allting är staplat och det saknas färger? Då har du varit med om att CSS filerna för den sidan laddades efter HTML dokumentet. 
+Har du någonsin varit med om att en sida ser helt fel ut när du går in på den, som att allting är staplat, bilder är jättestora och det saknas färger? Då har du varit med om att CSS filerna för den sidan laddades några hundra millisekunder (eller sekunder) efter HTML dokumentet.
+
+Gatsby förhindrar att sådant händer genom att inkludera de viktigaste resurserna, alltså CSS och JavaScript, i själva HTML-dokumentet. Detta betyder att resurserna finns tillgängliga direkt när de behövs.
+
+### Hämta data från var du vill
+
+En av de bästa sakerna med Gatsby är att man kan dra in information från nästan vilka källor som helst, och sedan komma åt den data via samma GraphQL gränssnitt. För utvecklare är detta en stor fördel. Det betyder att vi kan hämta data från exempelvis excel-filer och Wordpress, och sedan komma åt information på samma sätt när vi fyller i informationen på webbplatsen.
+
+Man kan alltså hämta information som sedan görs tillgängligt genom ett separat normaliserat lager. Detta öppnar många dörrar för hantering av information och resurser på webbplatsen.
+
+Det är bland annat den här tekniken Gatsby använder för att optimera bilder. Gatsby hämtar bilder från en eller flera platser i filsystemet, skapar flera olika storlekar av dessa bilder och gör sedan dessa tillgängliga genom samma gränssnitt som resten av informationen på webbplatsen.
