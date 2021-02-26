@@ -23,6 +23,7 @@ section.blog .posts{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	align-items: center;
 
 	list-style: none;
 	padding: 0;
@@ -51,16 +52,16 @@ section.blog .posts .post .gatsby-image-wrapper{
 }
 section.blog .posts .post .meta{
 	color: var(--textPrimary);
-	margin: .5rem 0;
+	margin: 8px 0 18px;
 	font-weight: 300;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 section.blog .posts .post h2{
-	margin: 0;
+	margin: 5px 0 0;
 	font-family: "Roboto", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 section.blog .posts .post p{
 	margin-top: 7px;

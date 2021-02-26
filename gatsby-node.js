@@ -26,7 +26,8 @@ exports.onCreateNode = async ({ node, actions, store, cache, createNodeId }) => 
 		});
 	}
 
-	if(node.internal.type === "Hashnode" && node.coverImageUrl !== null){
+	if(node.internal.type === "Hashnode" && node.coverImageUrl){
+		console.log(node.coverImageUrl);
 		const fileNode = await createRemoteFileNode({
 			url: node.coverImageUrl,
 			parentNodeId: node.id,

@@ -100,7 +100,7 @@ export default function blogg({ data }){
 							return(
 								<Post
 									key={slug}
-									image={coverImage.childImageSharp.fluid}
+									image={coverImage ? coverImage.childImageSharp.fluid : null}
 									featured={false}
 									url={`https://blog.chjweb.se/${slug}`}
 									title={title}
@@ -119,12 +119,12 @@ export default function blogg({ data }){
 
 function Post({ title, description, published, readTime, image, url, featured }){
 	const content = <>
-		<Img fluid={image} />
+		{image ? <Img fluid={image} /> : null}
+		<h2>{title}</h2>
 		<div className="meta">
 			<span className="published">{published}</span>
 			<span className="read-time">{readTime} minuter</span>
 		</div>
-		<h2>{title}</h2>
 		<p>{description}</p>
 	</>;
 
