@@ -65,7 +65,7 @@ Alla dessa fördelar och funktioner som Gatsby erbjuder kommer att ge dig en sna
 
 ## Avslutningsvis
 
-Det finns andra SSG verktyg som gör liknande saker, men ingen av dem har det data lager som Gatsby erbjuder. Deta betyder att flexibiliteten som kommer med att använda Gatsby nästan är oslagbar.
+Det finns andra SSG verktyg som gör liknande saker, men ingen av dem har det data lager som Gatsby erbjuder. Detta betyder att flexibiliteten som kommer med att använda Gatsby nästan är oslagbar.
 
 Jag har byggt många webbplatser med hjälp av Gatsby, så om du är intresserad av att skaffa en hemsida byggd på just Gatsby kan du med fördel [kontakta mig](/kontakt/).
 
