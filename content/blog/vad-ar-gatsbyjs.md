@@ -1,9 +1,9 @@
 ---
 type: post
-published: false
+published: true
 title: Vad är GatsbyJS?
-date: 2021-02-11T15:03:05.406Z
-updated: 2021-02-11T15:03:05.483Z
+date: 2021-02-26T10:34:10.668Z
+updated: 2021-02-26T10:34:12.543Z
 image: /Gatsby_Logo.png
 description: Jag använder GatsbyJS för att bygga många av mina webbplatser. I
   det här inlägget diskuterar jag vilka fördelar som finns med verktyget och hur
@@ -68,3 +68,5 @@ Alla dessa fördelar och funktioner som Gatsby erbjuder kommer att ge dig en sna
 Det finns andra SSG verktyg som gör liknande saker, men ingen av dem har det data lager som Gatsby erbjuder. Deta betyder att flexibiliteten som kommer med att använda Gatsby nästan är oslagbar.
 
 Jag har byggt många webbplatser med hjälp av Gatsby, så om du är intresserad av att skaffa en hemsida byggd på just Gatsby kan du med fördel [kontakta mig](/kontakt/).
+
+Tack för att du läst mitt inlägg och ha en fortsatt trevlig dag.
