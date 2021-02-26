@@ -19,9 +19,9 @@ Man kan bygga en komplicerad webbplats som delar komponenter mellan sidor, hämt
 
 Om man använder ett verktyg som Wordpress däremot, hämtas informationen som ska visas på en sida samtidigt som sidan själv. Detta ökar tiden tar för varje sida att visas för användaren. I normala fall är detta inte ett problem då fördröjning endast är några hundra millisekunder. Det uppstår dock problem när webbplatsen får fler besökare än vanligt. Då är risken att detta blir för mycket för webbservern att hantera och den slutar helt enkelt att fungera.
 
-En webbplats som är statisk (JAMstack) klarar av betydligt mer trafik innan den stöter på problem. En vanlig teknik när man använder en SSG (Gatsby) är att man lägger hela webblatsen på ett CDN (Content Delivery Network). Då är det nästan omöjligt för webbplatsen att överbelastas.
+En webbplats som är statisk (JAMstack) klarar av betydligt mer trafik innan den stöter på problem. En vanlig teknik när man använder en SSG (Gatsby) är att man lägger hela webbplatsen på ett CDN (Content Delivery Network). Då är det nästan omöjligt för webbplatsen att överbelastas.
 
-Ett CDN är ett nätverk av geografiskt utspridda servrar. Om en av dessa servrar blir överbelastad kommer trafiken skickas till en annan server i nätverket. Trafik till näteverket dirigeras även till den närmaste servern, vilket betyder att innehåll även levereras snabbare eftersom det alltid tar den kortaste vägen.
+Ett CDN är ett nätverk av geografiskt utspridda servrar. Om en av dessa servrar blir överbelastad kommer trafiken skickas till en annan server i nätverket. Trafik till nätverket dirigeras även till den närmaste servern, vilket betyder att innehåll även levereras snabbare eftersom det alltid tar den kortaste vägen.
 
 Det finns alltså många fördelar med att använda en SSG för att bygga webbplatser, detta var bara några av dem. Jag kommer fortsätta artikeln med att prata om fördelar med specifika till Gatsby.
 
@@ -53,7 +53,7 @@ Gatsby förhindrar att sådant händer genom att inkludera de viktigaste resurse
 
 ### Hämta data från var du vill
 
-En av de bästa sakerna med Gatsby är att man kan dra in information från nästan vilka källor som helst, och sedan komma åt den data via samma GraphQL gränssnitt. För utvecklare är detta en stor fördel. Det betyder att vi kan hämta data från exempelvis excel-filer och Wordpress, och sedan komma åt information på samma sätt när vi fyller i informationen på webbplatsen.
+En av de bästa sakerna med Gatsby är att man kan dra in information från nästan vilka källor som helst, och sedan komma åt den data via samma GraphQL gränssnitt. För utvecklare är detta en stor fördel. Det betyder att vi kan hämta data från exempelvis Excel-filer och Wordpress, och sedan komma åt information på samma sätt när vi fyller i informationen på webbplatsen.
 
 Man kan alltså hämta information som sedan görs tillgängligt genom ett separat normaliserat lager. Detta öppnar många dörrar för hantering av information och resurser på webbplatsen.
 
