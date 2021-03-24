@@ -1,7 +1,7 @@
 ---
 type: post
 published: false
-title: Varför jag använder Bokio för bokföring
+title: Mina tankar om Bokio
 date: 2021-03-01T12:45:50.408Z
 updated: 2021-03-01T12:45:50.434Z
 image: /Gatsby_Logo.png
@@ -27,10 +27,16 @@ När man läser om funktionerna som Visma erbjuder kan man se att det ingår "ko
 
 Tyvärr är detta inte något jag använder eftersom det lägger till ett extra steg. Istället för att endast bokföra verifikatet skulle jag även behöva kopiera utdraget från banken.
 
-En lösning där man nya transaktioner uppdateras automatiskt i Bokio skulle vara mycket mer användbart. Då skulle man kunna få en notis om att en transaktion har skett och att man måste bokföra den.
+En lösning där nya transaktioner uppdateras automatiskt i Bokio skulle vara mycket mer användbart. Då skulle man kunna få en notis om att en transaktion har skett, se vilken summa det gäller, och sedan enkelt bokföra den.
 
 ### Kan inte schemalägga fakturor
 
 Jag skickar manuellt fakturor till alla mina kunder. Då måste jag gå till Bokio, skapa faktura, lägga till kund, lägga till pris, och sedan skicka den till kunden. För kunder som betalar varje månad blir detta väldigt monotont och ökar risken för att jag skickar felaktiga fakturor.
 
-En bättre lösning skulle vara att schemalägga fakturor. Då skulle jag kunna ange kund och pris, samt hur ofta jag vill att fakturan ska skickas.
+En bättre lösning skulle vara att schemalägga fakturor. Då skulle jag kunna ange kund och pris, samt hur ofta jag vill att fakturan ska skickas. Sedan kan jag få en notis när fakturan är skickad och med hjälp av bankkopplingen skulle den kunna prickas av automatiskt.
+
+Det leder mig faktiskt in på nästa punkt.
+
+### Ingen automatisk avprickning av fakturor
+
+Bokio 
