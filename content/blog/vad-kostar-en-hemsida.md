@@ -59,7 +59,22 @@ Anledningen är att webbplatsen är hela idén, utan den finns det inget att tj�
 
 Om det däremot gäller en webbplats för ett lokalt företag som redan har en stadig kundbas och inkomst, kommer priset vara lägre. En webbplats kommer fortfarande tillföra värde, men dess påverkan är inte lika stor som i det tidigare exemplet.
 
-Det beror självklart på vad det är för typ av webbplats vi pratar om. Om det gäller en presentationssida kommer priset vara lågt. Om det däremot gäller en ny inkomstkanal kommer priset vara högre.
+Det beror självklart på vad det är för typ av webbplats vi pratar om. Om det gäller en presentationssida kommer priset vara lågt. Om det däremot gäller en ny inkomstkanal, exempelvis en webbshop, kommer priset att vara högre.
 
 ### Spelar det ingen roll hur komplicerat projektet är?
 
+Jag nämnde tidigare att jag noggrant måste tänka igenom varje funktion innan jag sätter ett pris, men sedan nämner jag att priset är baserat på värdet som jag tillför.
+
+Hur ska jag ha det? Är det komplexitet eller värde som avgör priset?
+
+Det är en kombination.
+
+Jag skulle vilja att priset endast bestämdes av värdet som jag tillför, men tyvärr har veckorna ett begränsat antal timmar. Komplicerade funktioner tar tid att skapa och **tid är pengar**.
+
+Därför spelar projektets komplexitet en viktig roll när jag sätter ett pris.
+
+## Avslutningsvis
+
+Att sätta pris på ett arbete innan det är utfört är svårt, men det måste göras. Ingen vill köpa något utan att veta vad det kostar.
+
+Efter att ha läst detta hoppas jag att du har en förståelse om hur jag sätter priser, och varför jag inte alltid kan säga ett pris omedelbart.
