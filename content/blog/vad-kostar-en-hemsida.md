@@ -33,7 +33,7 @@ Men det är inte så enkelt som att säga: "Okej, hemsidan ska ha startsida, om 
 
 Bokningsfunktionen dock är flera gånger mer komplicerad.
 
-Den skulle kräva ett gränssnitt för kunden att hantera bokningar på och skulle då behöva någon form av autentisering. Vi skulle också behöva skicka bekräftelser till kunder som bokar och även låta de avboka på något sätt. Vi måste också se till att det inte sker dubbelbokningar och visa kunderna vilka datum och tider som är tillgängliga. Allt detta kräver också en design och ganska mycket kod.
+Den skulle kräva ett gränssnitt för att hantera bokningar och skulle då behöva någon form av autentisering. Vi skulle också behöva skicka bekräftelser till kunder som bokar och även låta de avboka på något sätt. Vi måste också se till att det inte sker dubbelbokningar och visa kunderna vilka datum och tider som är tillgängliga. Allt detta kräver också en design och ganska mycket kod.
 
 En funktion som verkar enkel, kan alltså vara mer komplicerad än hela resten av webbplatsen.
 
@@ -63,7 +63,7 @@ Istället för att knyta priset till hur lång tid *jag* lägger ned på det, kn
 
 Alltså, om en kund kommer till mig och säger: "Tjenare, jag har en idé för en webbplats som skulle kunna tjäna riktigt mycket pengar. Är du intresserad?", kommer jag antagligen sätta ett ganska högt pris.
 
-Anledningen är att webbplatsen är hela idén, utan den finns det inget att tjäna pengar på. Då är det rimligt att sätta ett pris som reflekterar värdet jag kommer att tillföra till idén.
+Anledningen är att webbplatsen är den ensamma inkomstkällan i kundens idé. Då är det rimligt att sätta ett pris som reflekterar värdet jag kommer att tillföra till idén.
 
 Om det däremot gäller en webbplats för ett lokalt företag som redan har en stadig kundbas och inkomst, kommer priset vara lägre. En webbplats kommer fortfarande tillföra värde, men dess påverkan är inte lika stor som i det tidigare exemplet.
 
