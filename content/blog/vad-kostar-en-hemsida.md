@@ -1,19 +1,21 @@
 ---
 type: post
-published: false
+published: true
 title: Vad kostar en hemsida?
-date: 2021-03-24T09:56:30.028Z
-updated: 2021-03-24T09:56:30.051Z
-image: /bokning_1.jpg
+date: 2021-04-12T14:36:37.126Z
+updated: 2021-04-12T14:36:38.575Z
+image: /img_20210412_145938.jpg
 description: Hur mycket kostar en hemsida? Det är frågan alla vill ha ett svar
-  på. Tyvärr kan jag aldrig ge ett direkt svar eftersom det varierar väldigt
-  mycket. Läs det här inlägget för att se hur jag bestämmer mina priser.
+  på. Tyvärr kan jag aldrig ge ett direkt svar eftersom det varierar beroende på
+  projekt. Läs det här inlägget för att se hur jag bestämmer mina priser.
 ---
 Det första mina kunder vill veta är: "Vad kostar en hemsida?". Tyvärr är den frågan inte så lätt att svara på. I det här inlägget kommer jag berätta **varför** det är svårt att sätta priser och **hur** jag sätter mina priser.
 
 ## Varför är det svårt att sätta priser på hemsidor?
 
 ### Fallet med målaren
+
+![man som målar en vägg](/malare.jpg)
 
 Jag säljer en tjänst. Den tjänsten är utveckling och design av webbplatser. Du kan likna den med andra tjänster som fönsterputsning, måleri och golvläggning. Dessa tjänster använder ofta ett timpris.
 
@@ -22,6 +24,8 @@ Man kan då uppskatta priset så här: Det kostar 500 kr per timme att måla hus
 I det här fallet kan en erfaren målare titta på huset, se hur stora ytorna är och uppskatta hur lång tid det kommer att ta.
 
 ### Fallet med webbutvecklaren
+
+![skärm med kod](/dev.jpg)
 
 I fallet med webbutveckling är det inte lika enkelt. Jag måste veta vad du behöver och vill ha. Vi behöver ha en dialog, antingen över mejl eller via telefon/videosamtal. När vi kommit fram till vilka funktioner och undersidor som ska finnas på webbplatsen kan jag börja räkna ut ett pris.
 
@@ -37,6 +41,8 @@ Jag måste därför noggrant tänka igenom hur varje funktion kommer att fungera
 
 ## Hur sätter jag mina priser?
 
+![en sedel mot vit bakgrund](/cover.jpg)
+
 Att sätta ett timpris på mjukvaruutveckling verkar vara någon slags standard, men det fungerar egentligen inte jättebra.
 
 För kunden betyder det att kostnaderna kan springa iväg. Om jag som utvecklare stöter på ett problem som tar 20 timmar att lösa, vilket inte är helt ovanligt, kommer kunden behöva betala för alla de timmarna. Vid 500 kr i timmen skulle det bli 10 000 kr för ett svårlöst problem som kanske inte påverkar slutresultatet på något märkbart sätt.
@@ -48,6 +54,8 @@ Ett timpris har även nackdelar för mig som utvecklare. Min inkomst är direkt 
 Man kan ju såklart öka timpriset, men det finns en gräns där också. De flesta är inte villiga att betala 2000 kr i timmen för ett projekt som tar 100 timmar att slutföra. Nu är ju inte 200 000 kr orimligt för en komplicerad applikation om du anlitar en webbyrå, men för en ensam utvecklare som jag är den summan svårare att berättiga.
 
 ### Hur mycket är projektet värt?
+
+![spargris med mynt som ligger runtomkring](/money-pink-coins-pig-9660.jpg)
 
 Om jag inte baserar priset på hur många timmar det tar att slutföra projektet, hur sätter jag då priser?
 
