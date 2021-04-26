@@ -1,10 +1,10 @@
 ---
 type: post
-published: false
+published: true
 title: Etiska alternativ till Google Ads
-date: 2021-04-23T08:09:39.961Z
-updated: 2021-04-23T08:09:39.980Z
-image: /google-analytics-cover.jpg
+date: 2021-04-26T09:45:42.131Z
+updated: 2021-04-26T09:45:43.772Z
+image: /etiska-alternativ-till-google-ads.png
 description: Google Ads är ett populärt sätt att annonsera på nätet, men tyvärr
   respekterar inte tjänsten dina användares integritet. Jag kommer räkna upp ett
   antal alternativ till Google Ads som är integritets-vänliga.
@@ -31,6 +31,8 @@ Okej, jag har klagat nog... Här kommer listan.
 
 ### 1. Ethical Ads
 
+![Ethical Ads hemsida](/ethical-ads-website.png)
+
 [Ethical Ads](https://www.ethicalads.io/) är ett annonseringsnätverk som fokuserar på annonser till utvecklare. För att kunna visa annonser med Ethical Ads måste man bli godkänd. Anledningen är att annonserna inte ska visas på olämpliga platser, så som mitt i huvudinnehållet eller undangömt så att ingen kan se annonsen. Och ja, jag menar *annonsen* i singular. Ethical Ads låter dig endast visa en annons på sidan.
 
 Genom att visa annonser från Ethical Ads kan du tjäna ungefär 20 SEK per 1000 sidvisningar. Hur mycket du kan tjäna beror på var dina besökare kommer ifrån och vad webbplatsen har för innehåll.
@@ -38,6 +40,8 @@ Genom att visa annonser från Ethical Ads kan du tjäna ungefär 20 SEK per 1000
 Detta kan vara ett bra alternativ för dig som driver en webbplats med fokus på utvecklare, eller för dig som har en produkt eller tjänst riktad till utvecklare.
 
 ### 2. Web Monetization
+
+![Web Monetization hemsida](/wm-website.png)
 
 Okej, det här alternativet är lite annorlunda. Det är faktiskt ett alternativ till annonser i allmänhet.
 
@@ -51,6 +55,10 @@ Jag tycker att det här är spännande ny teknik och hoppas att den kommer växa
 
 ### 3. Donationer eller dricks
 
+![burk med dricks](/tip-jar.jpg)
+
+
+
 Det här är en vanlig metod för personer som håller på med YouTube eller Twitch. I fallet med YouTube hänvisar ofta skapare till [Patreon](https://www.patreon.com/). Där kan du ta emot donationer och prenumerationer för innehåll om du har en blogg eller liknande.
 
 Om du inte vill använda Patreon, har du alternativet att helt enkelt lägga till en donationsknapp på webbplatsen. För detta kan du använda [PayPal](https://www.paypal.com/donate/buttons), [Payson](https://www.payson.se/sv/foretag-betallosningar/ovriga-produkter/betalknapp/), [Klarna](https://developers.klarna.com/documentation/instant-shopping/use-cases/donations/), [Stripe](https://support.stripe.com/questions/how-to-accept-donations-through-stripe) eller med [Swish QR kod](https://www.swish.nu/skapa-qr-kod). De enklaste alternativen är förmodligen PayPal, Payson eller Swish.
@@ -59,13 +67,19 @@ Tänk på att du inte kan erbjuda något i gengäld för en donation, då blir d
 
 ### 4. AdEx Network
 
+![AdEx network kontrollpanel](/adex-dashboard.png)
+
 [AdEx network](https://www.adex.network/) är ett annonseringsnätverk som använder riktade annonser utan att kränka användarnas integritet. Hur gör dem det? Jo, de håller koll på vilket innehåll du tittar på, men informationen lämnar aldrig din webbläsare.
 
-Om du letar efter en direkt ersättare till Google Ads, då är AdEx network precis vad du vill ha. Tills skillnad från Ethical Ads är AdEx network lätt att börja visa annonser med, man verkar inte behöva bli godkänd, och annonserna är inte bara riktade till utvecklare utan är mer generaliserade.
+AdEx använder sig av tekniker som Blockchain, Peer-to-Peer och kryptografi för att verifiera att en annons har visats. Detta ska minska bedrägeri och öka integritet.
 
-När jag blir tillfrågad om ett integritets-vänligt annonseringsnätverk, vilket aldrig har hänt, hänvisar jag alltid till AdEx network!
+Utbetalningar sker endast genom en krypto-valuta vid namn DAI, som försöker hålla samma värde som den amerikanska dollarn. Detta kan nog vara en avskräckande aspekt för de som inte är vana vid krypto-valutor, men attraherar också de som är intresserade av krypto-valuta. Om du vill ta ut pengar måste du alltså skaffa en krypto-plånbok. 
 
+Inbetalningar kan dock ske med en traditionell valuta, bland annat svensk krona.
 
+Om du letar efter en direkt ersättare till Google Ads, då är AdEx network ditt bästa alternativ. Tills skillnad från Ethical Ads är AdEx network lätt att börja visa annonser med, man verkar inte behöva bli godkänd, och annonserna är inte bara riktade till utvecklare utan är mer generaliserade.
+
+När jag blir tillfrågad om ett integritets-vänligt annonseringsnätverk, vilket aldrig har hänt 😅, hänvisar jag alltid till AdEx network! 😁
 
 ## Avslutande ord
 
