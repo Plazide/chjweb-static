@@ -30,14 +30,14 @@ exports.handler = async (event) => {
 };
 
 async function sendMessage({ email, name, message }){
-	const headline = `<h1>Nytt meddelande från <i>${name}</i></h1>`;
+	const headline = `<b><i>${name}</i> har skickat ett meddelande från chjweb.se</b>`;
 	const body = `<p>${message}</p>`;
 	const replyTo = `<span>E-post: <b>${email}</b></span>`;
 	const html = headline + body + replyTo;
 
 	try{
 		const result = await transporter.sendMail({
-			from: `${name} <${email}>`,
+			from: "contact@chjweb.se",
 			to: "carl@chjweb.se",
 			subject: `Nytt meddelande från ${name}`,
 			html
