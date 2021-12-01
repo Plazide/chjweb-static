@@ -38,6 +38,7 @@ async function sendMessage({ email, name, message }){
 	try{
 		const result = await transporter.sendMail({
 			from: "contact@chjweb.se",
+			replyTo: email,
 			to: "carl@chjweb.se",
 			subject: `Nytt meddelande från ${name}`,
 			html
