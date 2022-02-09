@@ -10,11 +10,11 @@ description: Web3 är ett nytt buzzword. Men vad innebär det egentligen? Det
 ---
 Web3 är den nya "versionen" av webben som bygger decentralisering och kryptovalutor. Tanken med Web3 är ta makten ifrån de stora företagen som styr webben idag, och förflytta den till oss vanliga människor. Det är meningen att vi, användarna, ska äga vår egen data. Detta står i kontrast mot den rådande situationen där vi ger ifrån oss rättigheterna till vår data till dessa globala korporationer som Google och Facebook (numera Meta). Det är från denna verklighet som uttrycket *"If you don't pay for the product, you are the product"* kommer ifrån. 
 
-\## Hur löser Web3 detta?
+## Hur löser Web3 detta?
 
 Hur ska då den här nya webben fungera om inte stora företag erbjuder sina tjänster till oss? Det finns ingenting som säger att företag inte kan erbjuda tjänster till sina kunder. Skillnaden är att företaget som du köper ifrån inte kommer att äga din data. Det är **du** som äger din data.
 
-\### Nuvarande användningsområden
+### Nuvarande användningsområden
 
 Okej, det här låter förmodligen ganska lösdefinierat. Det är det också. Web3 är ännu bara en idé, till största del. Även om vissa delar av webben redan börjar att transformeras, finns det fortfarande en lång väg att gå. De största användningsområdena för Web3 just nu är NFTs och DeFi (decentraliserad finans).
 
@@ -22,7 +22,7 @@ Du har säkert hört att NFTs låter dig bevisa ditt ägande av en digital tillg
 
 DeFi syftar till största del på handel med kryptovalutor. På DeFi plattformar finns det ingen central organisation som bestämmer över och verifierar transaktioner, allting sker på en eller flera blockkedjor. Dessa plattformar låter dig byta mellan otroligt många olika kryptovalutor. De låter dig dock inte konvertera kryptovaluta till fiat (alltså USD, SEK, EUR, etc...). Det du kan göra är att byta kryptovalutor till något som kallas för *stablecoins*. Stablecoins är kryptovalutor som håller värdet av en fiat valuta, oftast den amerikanska dollarn.
 
-\### Blockkedjan
+### Blockkedjan
 
 Ett vanligt påstående och missförstånd är att Web3 applikationer måste använda en blockkedja (blockchain). Detta stämmer inte, även om blockkedjorna är en stor del av Web3. Frågan är då: vad är en blockkedja?
 
