@@ -31,7 +31,7 @@
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-source-name": "^1.0.0",
     "gatsby-source-filesystem": "^2.3.30",
-    "gatsby-transformer-remark": "^2.8.35",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.15",
     "graphql-request": "^3.3.0",
     "i18next": "^19.8.4",
